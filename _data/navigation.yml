@@ -1,16 +1,7 @@
 # main links links
 main:
-  - title: "Projects"
-    url: /projects/
-
-  - title: "Teaching"
-    url: /teaching/    
-        
-  - title: "CV"
-    url: /cv/
-
   - title: "Set Theory Stuff"
-    url: /set-theory-stuff/
-    
-  - title: "(Coming Soon) Solutions to Jech's *Set Theory*"
-    url: /jech-solutions/
+    url: /set-theory/
+
+  - title: "CV"
+    url: /files/Curriculum_Vitae.pdf

@@ -10,7 +10,9 @@ redirect_from:
 
 I am currently a senior at National University of Singapore, and I will be matriculating to University of Toronto in Fall 2022 as a graduate student (PhD Mathematics).
 
-My interest revolves around set theory and analysis. I like to explore how various results of analysis holds under different axiomatic systems. I wrote my Honours thesis under Asst. Prof. Spencer Unger (University of Toronto) and Prof. Yang Yue (National University of Singapore), titled "Diagonalisation Forcing of Infinite Block Sequences". Thanks to my supervisor, I also became interested in the theory of topological Ramsey spaces. Currently, I am a research assitant under Assoc. Prof. Dilip Raghavan.
+My interest revolves around set theory and analysis. I like to explore how various results of analysis holds under different axiomatic systems. I wrote my Honours thesis under Asst. Prof. Spencer Unger (University of Toronto) and Prof. Yang Yue (National University of Singapore), titled "Diagonalisation Forcing of Infinite Block Sequences". Thanks to my supervisor, I also became interested in the theory of topological Ramsey spaces.
+
+I am currently a research assistant under Assoc. Prof. Dilip Raghavan. I am exploring on minimal counterexamples to Galvin's problem in higher dimensions.
 
 You can contact me at my Gmail [yung.cwc@gmail.com](mailto:yung.cwc@gmail.com). I am rarely active on social medias, but I enjoy hanging around Math StackExchange and MathOverflow (though I usually only ask questions on MathOverflow). 
 

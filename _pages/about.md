@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I recently graduated from National University of Singapore with a Bachelor of Science (Hons) in Mathematics. I will be matriculating to University of Toronto in Fall 2022 as a graduate student (PhD Mathematics).
+I am a graduate student (PhD Mathematics) in University of Toronto. I did my undergraduate studies in National University of Singapore.
 
 My interest revolves around set theory, infinitary combinatorics, topological Ramsey spaces and set theory's interactions with analysis. In particular, I like to explore how various results of analysis holds under different axiomatic systems. I wrote my Honours thesis under Asst. Prof. Spencer Unger (University of Toronto) and Prof. Yang Yue (National University of Singapore), titled "Diagonalisation Forcing of Infinite Block Sequences". 
 

@@ -3,5 +3,8 @@ main:
   - title: "Resources"
     url: /resources/
 
+  - title: "Teaching"
+    url: /teaching/
+
   - title: "CV"
     url: /files/Curriculum_Vitae.pdf

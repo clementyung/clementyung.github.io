@@ -1,14 +1,13 @@
 ---
 layout: archive
 title: 
-permalink: /set-theory/
+permalink: /resources/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
-
 
 I only started devoting myself to set theory at the second semester of my junior year, but thanks to various resources I was able to pick up the basics rather quickly. Here I list out some of the books I've used (and are still using), and my view on their content.
 

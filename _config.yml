@@ -175,16 +175,7 @@ kramdown:
 
 # Collections
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
+  resources:
     output: true
     permalink: /:collection/:path/
 
@@ -209,10 +200,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _item
+  # _resources
   - scope:
       path: ""
-      type: item
+      type: resources
     values:
       layout: single
       author_profile: true

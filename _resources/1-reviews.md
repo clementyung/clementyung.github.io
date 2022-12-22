@@ -1,6 +1,6 @@
 ---
 title: "Reviews of Books on Set Theory"
-collection: item
+collection: resources
 type: "Type"
 permalink: /resources/book-reviews/
 venue: "Venue"

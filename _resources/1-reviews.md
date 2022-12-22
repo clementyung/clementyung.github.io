@@ -2,7 +2,7 @@
 title: "Reviews of Books on Set Theory"
 collection: resources
 type: "Type"
-permalink: /resources/book-reviews
+permalink: /resources/book-reviews/
 venue: "Venue"
 date: "Date"
 location: "City, Country"

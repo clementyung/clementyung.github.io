@@ -4,7 +4,7 @@ collection: resources
 type: "Type"
 permalink: /resources/book-reviews/
 venue: "Venue"
-date: "Date"
+date: 2014-01-01
 location: "City, Country"
 ---
 

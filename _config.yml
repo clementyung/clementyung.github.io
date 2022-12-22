@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Clement Yung"
 title_separator          : "-"
 name                     : &name "Clement Yung"
-description              : &description "Pure math undergraduate at National University of Singapore"
+description              : &description "Pure math graduate student at University of Toronto"
 url                      : https://clementyung.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "clementyung/clementyung.github.io"
@@ -209,41 +209,15 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _item
   - scope:
       path: ""
-      type: teaching
+      type: item
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:

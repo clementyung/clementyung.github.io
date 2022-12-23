@@ -6,16 +6,7 @@ permalink: /jech-solutions/chapter-2
 excerpt: ""
 ---
 
-<head> 
-  <script src="jquery.js"></script> 
-  <script> 
-  $(function(){
-    $("#includedContent").load("https://clementyung.github.io/files/commands.html"); 
-  });
-  </script> 
-</head> 
-
-<div id="includedContent"></div>
+<object type="text/html" data="https://clementyung.github.io/files/commands.html"></object>
 
 ## Exercise 2.1.
 Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.

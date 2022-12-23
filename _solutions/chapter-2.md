@@ -3,7 +3,7 @@ title: "2) Ordinal Numbers"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-2
-excerpt: false
+excerpt: ""
 ---
 
 ## Exercise 2.1.

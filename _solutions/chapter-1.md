@@ -3,7 +3,7 @@ title: "1) Axioms of Set Theory"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-1
-excerpt: False
+excerpt: ""
 ---
 
 ## Exercise 1.1.

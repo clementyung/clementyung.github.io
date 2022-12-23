@@ -1,0 +1,119 @@
+$
+\newcommand{\func}{\operatorname}
+\newcommand{\lcm}{\func{lcm}}
+\newcommand{\hl}[1]{\textbf{#1}}
+\newcommand{\lf}{\lfloor}
+\newcommand{\rf}{\rfloor}
+\newcommand{\f}[1]{\left\lf #1 \right\rf}
+\newcommand{\bb}[1]{\left( #1 \right)}
+\renewcommand{\sb}[1]{\left[ #1 \right]}
+\renewcommand{\ss}[1]{\left\{ #1 \right\}}
+\renewcommand{\mod}[1]{\left| #1 \right|}
+\newcommand{\R}{\boldsymbol{R}}
+\newcommand{\C}{\boldsymbol{C}}
+\newcommand{\Z}{\boldsymbol{Z}}
+\newcommand{\Q}{\boldsymbol{Q}}
+\renewcommand{\P}{\mathbb{P}}
+\newcommand{\Po}{\mathcal{P}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\Zz}{\Z_{\geq 0}}
+\renewcommand{\c}[1]{\left\langle #1 \right\rangle}
+\renewcommand{\mod}[1]{\left| #1 \right|}
+\newcommand{\norm}[1]{\left\| #1 \right\|}
+\renewcommand{\bar}[1]{\overline{#1}}
+
+\newcommand{\eqbreak}{\phantom{{} = {}}}
+\newcommand{\impliesbreak}{\phantom{{} \implies {}}}
+\newcommand{\iffbreak}{\phantom{{} \iff {}}}
+\renewcommand{\cal}{\mathcal}
+\renewcommand{\frak}{\mathfrak}
+\renewcommand{\sf}{\mathsf}
+\renewcommand{\bf}{\mathbf}
+\renewcommand{\it}{\mathit}
+
+\newcommand{\del}{\partial}
+\renewcommand{\d}[1]{\, \mathrm{d} #1}
+\newcommand{\dydt}{\frac{\d{y}}{\d{t}}}
+\newcommand{\dydx}{\frac{\d{y}}{\d{x}}}
+%\newcommand{\p}[2]{\frac{\del #1}{\del #2}}
+%\newcommand{\p}{\mathbf{p}}
+\newcommand{\pd}[2]{\frac{\del #1}{\del #2}}
+\newcommand{\pp}[3]{\frac{\del^2 #1}{\del #2 \del #3}}
+\newcommand{\dd}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}}
+
+\newcommand{\Inn}{\func{Inn}}
+\newcommand{\Aut}{\func{Aut}}
+\newcommand{\diag}{\func{diag}}
+\newcommand{\id}{\func{id}}
+\newcommand{\GL}{\func{GL}}
+\newcommand{\SL}{\func{SL}}
+\newcommand{\End}{\func{End}}
+\newcommand{\Hom}{\func{Hom}}
+\newcommand{\Tr}{\func{Tr}}
+\newcommand{\rank}{\func{rank}}
+
+% Set Theory commands
+\newcommand{\ORD}{\mathbf{ORD}}
+\newcommand{\OD}{\mathbf{OD}}
+\newcommand{\HOD}{\mathbf{HOD}}
+\newcommand{\ZF}{\mathsf{ZF}}
+\newcommand{\ZFC}{\mathsf{ZFC}}
+\newcommand{\ZC}{\mathsf{ZC}}
+\renewcommand{\AC}{\mathsf{AC}}
+\newcommand{\DC}{\mathsf{DC}}
+\newcommand{\CC}{\mathsf{CC}}
+\newcommand{\CH}{\mathsf{CH}}
+\newcommand{\SH}{\mathsf{SH}}
+\newcommand{\KH}{\mathsf{KH}}
+\newcommand{\GCH}{\mathsf{GCH}}
+\newcommand{\PA}{\mathsf{PA}}
+\newcommand{\BST}{\mathsf{BST}}
+\newcommand{\MA}{\mathsf{MA}}
+\newcommand{\Con}{\func{Con}}
+\newcommand{\ON}{\mathbf{ON}}
+\newcommand{\dom}{\func{dom}}
+\newcommand{\ran}{\func{ran}}
+\newcommand{\pred}{\func{pred}}
+\newcommand{\mos}{\func{mos}}
+\newcommand{\WF}{\mathbf{WF}}
+\newcommand{\type}{\func{type}}
+\newcommand{\V}{\mathbf{V}}
+\renewcommand{\L}{\cal{L}}
+\newcommand{\cl}{\func{cl}}
+\newcommand{\trcl}{\func{tc}}
+\newcommand{\TC}{\func{TC}}
+\newcommand{\A}{\mathfrak{A}}
+\newcommand{\B}{\mathfrak{B}}
+\newcommand{\add}{\func{add}}
+\newcommand{\cov}{\func{cov}}
+\newcommand{\non}{\func{non}}
+\newcommand{\cf}{\func{cf}}
+\newcommand{\forces}{\Vdash}
+\newcommand{\one}{\mathbbm{1}}
+\newcommand{\restrictedto}{\mathord{\upharpoonright}}
+\newcommand{\Fn}{\func{Fn}}
+\newcommand{\Col}{\func{Col}}
+\newcommand{\bigtriangle}{\bigop{\triangle}}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\W}{\mathcal{W}}
+\newcommand{\N}{\cal{N}}
+\newcommand{\Seq}{\mathit{Seq}}
+\newcommand{\lh}{\func{lh}}
+\newcommand{\Ult}{\func{Ult}}
+\newcommand{\In}{\func{In}}
+\newcommand{\otp}{\func{otp}}
+\newcommand{\symdiff}{\, \triangle \,}
+\newcommand{\crit}{\func{crit}}
+\newcommand{\sat}{\func{sat}}
+\renewcommand{\int}{\func{int}}
+\newcommand{\length}{\func{length}}
+\newcommand{\Lim}{\func{Lim}}
+\newcommand{\Succ}{\func{Succ}}
+\newcommand{\G}{\cal{G}}
+\newcommand{\T}{\cal{T}}
+\newcommand{\ext}{\func{ext}}
+\newcommand{\height}{\func{height}}
+\renewcommand{\diamond}{\diamondsuit}
+\newcommand{\D}{\cal{D}}
+\newcommand{\NS}{\mathrm{NS}}
+$

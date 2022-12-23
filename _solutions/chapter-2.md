@@ -21,8 +21,6 @@ excerpt: ""
   </body> 
 </html>
 
-$\newcommand{\id}{\operatorname{id}}$
-
 ## Exercise 2.1.
 Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.
     
@@ -44,4 +42,6 @@ Note that $\beta < \alpha$ iff $\beta + 1 \leq \alpha$.
     
 On the other hand, let $\beta \in \alpha$. By hypothesis, $\beta + 1 \in \alpha$, so $\beta + 1 \subseteq \bigcup\alpha$. Hence $\beta \in \bigcup\alpha$.
 
-</body>
+$$
+x = y
+$$

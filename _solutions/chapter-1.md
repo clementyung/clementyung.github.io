@@ -87,7 +87,7 @@ $$
 
 Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. Then $(f \circ g)\restrictedto X - \{x_0\} : X - \{x_0\} \to n$ is a bijection, as desired.
 
-<i>Solution.</i> Let $A = \{n \in \boldsymbol{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}\}$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \{x_0\}$ has $n$ elements by <a href="#lem1.12.A">Lemma 1.12.A</a>. Then by induction hypothesis, $X \setminus \{x_0\}$ is T-finite, so let $x \in X \setminus \{x_0\}$ be an element $\subseteq$-maximal in $X \setminus \{x_0\}$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \{x_0\}$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \{x_0\}$, a contradiction.
+<i>Solution.</i> Let $$A = \{n \in \boldsymbol{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}\}$$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \{x_0\}$ has $n$ elements by <a href="#lem1.12.A">Lemma 1.12.A</a>. Then by induction hypothesis, $X \setminus \{x_0\}$ is T-finite, so let $x \in X \setminus \{x_0\}$ be an element $\subseteq$-maximal in $X \setminus \{x_0\}$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \{x_0\}$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \{x_0\}$, a contradiction.
 
 <a name="ex1.13"></a>
 ## Exercise 1.13.
@@ -95,6 +95,7 @@ Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. 
 <b>Lemma 1.13.A</b> Let $X$ be a finite set and suppose $X$ has $n$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \notin X$, we have $X \cup x_0$ has $n + 1$ elements.
 
 <i>Proof.</i> Let $f : X \to n$ be a bijection, and fix a set $x_0$. Define $g : X \to n + 1$ by:
+
 $$    
 \begin{align*}
         g(x) = 
@@ -102,8 +103,9 @@ $$
             n, &\text{if $x = x_0$} \\
             f(x), &\text{otherwise} 
         \end{cases}
-    \end{align*}
+\end{align*}
 $$
+
 It's easy to see that $g$ is indeed a bijection as desired.
 
 <i>Solution.</i> Let $S$ be infinite and let $X$ be the set in the hint. Let $u \in X$. Since $u$ is finite and $X$ is infinite, $u \neq X$. Thus, there exists some $x \in X \setminus u$. By <a href="lem1.13.A">Lemma 1.13.A</a>, $u \cup \{x\}$ has $n + 1$ and is in particular finite, so $u \cup \{x\}$. Then $u \subsetneq u \cup \{x\}$.
@@ -115,21 +117,27 @@ It's easy to see that $g$ is indeed a bijection as desired.
 <a name="ex1.15"></a>
 ## Exercise 1.15.
 <i>Solution.</i> <u>Axiom of Union:</u> If $X$ is a set, and $Y$ is a set such that $\bigcup X \subseteq Y$, then:
+
 $$    
 \begin{align*}
         \bigcup X = \{x \in Y : (\forall u \in x)(\exists v \in X) \, u \in v\}
-    \end{align*}
+\end{align*}
 $$    
-    <u>Axiom of Power Set:</u> If $X$ is a set, and $Y$ is a set such that $P(X) \subseteq Y$, then:
+
+<u>Axiom of Power Set:</u> If $X$ is a set, and $Y$ is a set such that $P(X) \subseteq Y$, then:
+
 $$  
   \begin{align*}
         P(X) = \{x \in Y : (\forall u \in x) \, u \in X\}
     \end{align*}
 $$    
-    <u>Axiom schema of Replacement:</u> Let $F$ be a function, and fix a set $X$. Let $Y$ be such that $F(X) \subseteq Y$. Then:
+
+<u>Axiom schema of Replacement:</u> Let $F$ be a function, and fix a set $X$. Let $Y$ be such that $F(X) \subseteq Y$. Then:
+
 $$    
 \begin{align*}
         F(X) = \{x \in Y : (\exists u \in X) \, x = F(u)\}
     \end{align*}
 $$
+
 Note that if we denote $\varphi(u,x)$ as the formula ``$x = F(u)$'' then $\varphi$ is a property, so we may indeed apply Axiom Schema of Separation.

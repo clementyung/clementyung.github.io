@@ -10,7 +10,7 @@ excerpt: ""
 
 <a name="ex1.1"></a>
 ## Exercise 1.1.
-<i>Solution.</i> $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} = (c,d)$. Then $\{a\} \in \{\{c\},\{c,d\}\}$, so $\{a\} = \{c\}$ or $\{a\} = \{c,d\}$. We consider two cases.
+<i>Solution.</i> $\impliedby$ is clear. For $\implies$, suppose $$(a,b) = \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} = (c,d)$$. Then $\{a\} \in \{\{c\},\{c,d\}\}$, so $\{a\} = \{c\}$ or $\{a\} = \{c,d\}$. We consider two cases.
 <ol>
   <li>If $c = d$, then either way we have $\{a\} = \{c\}$, so we have $a = c$. We see that in this case, $\{\{a\},\{a,b\}\} = \{\{c\}\}$. Then $\{a,b\} = \{c\} = \{a\}$, so $\{a,b\} \subseteq \{a\} \implies b = a$. Hence $a = b = c = d$.</li>
         
@@ -61,7 +61,7 @@ T<i>Solution.</i> his follows from that $\boldsymbol{N}$ is inductive and <a hre
 
 <a name="ex1.10"></a>
 ## Exercise 1.10.
-<i>Solution.</i> Let $A := \{n \in \boldsymbol{N} : n \text{ is T-finite}\}$. Clearly $0 = \emptyset \in A$ as it is vacuously T-finite. Suppose $n$ is T-finite. We shall show that $n + 1$ has $n$ as its $\subseteq$-maximal element, and is hence T-finite. Let $m \in n + 1 = n \cup \{n\}$. If $m \in \{n\}$, then $m = n$ so $m \subseteq n \cup \{n\}$ immediately. If $m \in n$, then let $m' \in n$ be its $\subseteq$-maximal element. Since $n$ is transitive by <a href="#ex1.4">Exercise 1.4</a>, we have $m \subseteq m' \subseteq n \subseteq n + 1$. Thus $n + 1$ is T-finite. By induction (<a href="#ex1.9">Exercise 1.9</a>), $A = \boldsymbol{N}$ so every $n \in \boldsymbol{N}$ is T-finite.
+<i>Solution.</i> Let $A := \{n \in \boldsymbol{N} : n \text{ is T-finite}\}$. Clearly $0 = \emptyset \in A$ as it is vacuously T-finite. Suppose $n$ is T-finite. We shall show that $n + 1$ has $n$ as its $\subseteq$-maximal element, and is hence T-finite. Let $m \in n + 1 = n \cup \{n\}$. If $m \in \{n\}$, then $m = n$ so $m \subseteq n \cup \{n\}$ immediately. If $m \in n$, then let $m' \in n$ be its $\subseteq$-maximal element. Since $n$ is transitive by <a href="#ex1.4">Exercise 1.4</a>, we have $m \subseteq m' \subseteq n \subseteq n + 1$. Thus $n + 1$ is T-finite. By induction [Exercise 1.9](#ex1.9) (<a href="#ex1.9">Exercise 1.9</a>), $A = \boldsymbol{N}$ so every $n \in \boldsymbol{N}$ is T-finite.
 
 <a name="ex1.11"></a>
 ## Exercise 1.11.

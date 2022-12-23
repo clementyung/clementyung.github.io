@@ -5,8 +5,17 @@ type: "Type"
 permalink: /jech-solutions/chapter-2
 excerpt: ""
 ---
+<head>
+$(function () {
+  var includes = $('[data-include]')
+  $.each(includes, function () {
+    var file = 'views/' + $(this).data('include') + '.html'
+    $(this).load(file)
+  })
+})
+</head>
 
-<object type="text/html" data="https://clementyung.github.io/files/commands.html"></object>
+<div data-include="https://clementyung.github.io/files/commands.html"></div>
 
 ## Exercise 2.1.
 Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.

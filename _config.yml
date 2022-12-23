@@ -177,6 +177,9 @@ collections:
   resources:
     output: true
     permalink: /:collection/:path/
+  jech-solutions:
+    output: true
+    permalink: /:collection/:path/ 
 
 
 # Defaults
@@ -203,6 +206,15 @@ defaults:
   - scope:
       path: ""
       type: resources
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _jech-solutions
+  - scope:
+      path: ""
+      type: jech-solutions
     values:
       layout: single
       author_profile: true

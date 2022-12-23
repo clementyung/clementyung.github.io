@@ -65,11 +65,11 @@ permalink: /jech-solutions/chapter-1
 <button class="accordion">Exercise 1.2.</button>
 <div class="panel">
   <p>
-    <a data-toggle="collapse" data-parent="#accordion" href="#ex1.1">
+    <a data-toggle="collapse" data-parent="#accordion" data-target="#ex1.1" href="#ex1.1">
       Testing.
     </a>
 
-    If such an $X$ exists, then $X \in P(X) \subseteq X$, contradicting Axiom of Regularity (see Page 63 of the textbook).
+    If such an $X$ exists, then $X \in P(X) \subseteq X$, contradicting the Axiom of Regularity (see Page 63 of the textbook).
   </p>
 </div>
 

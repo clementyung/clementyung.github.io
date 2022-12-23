@@ -5,6 +5,7 @@ type: "Type"
 permalink: /jech-solutions/chapter-1
 ---
 
+<body>
 
 <div id="accordion">
   <div class="panel">

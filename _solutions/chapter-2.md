@@ -5,56 +5,25 @@ type: "Type"
 permalink: /jech-solutions/chapter-2
 ---
 
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="/files/style.css">
-</head>
-
-<body>
-
-<div class="container-fluid">
-  <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-            
-          </a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse">
-        <div class="panel-body">
-        </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-      </div>
-    </div>
-  </div> 
-</div>
+## Exercise 2.1.
+Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.
     
-<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Alternate Button</a>
+<b>Reflexive:</b> The identity $\id : P \to P$ is clearly an isomorphism.
+    
+<b>Symmetry:</b> By definition of an isomorphism, it's easy to see if $f : P \to Q$ is an isomorphism then so is $f^{-1} : Q \to P$.
+    
+<b>Transitive:</b> Composition of isomorphisms are isomorphisms, as they remain bijective and:
+$$
+  x < y \implies f(x) < f(y) \implies g(f(x)) < g(f(y))
+$$
+
+## Exercise 2.2.
+Note that $\beta < \alpha$ iff $\beta + 1 \leq \alpha$.
+
+<u>$\implies$:</u> Suppose $\beta \in \alpha$. Since $\alpha = \bigcup \alpha$, $\beta \in \gamma$ for some $\gamma \in \alpha$. Then $\beta + 1 \subseteq \gamma$. Since $\gamma \in \alpha$, $\beta + 1 \in \alpha$.
+    
+<u>$\impliedby$:</u> If $\beta \in \bigcup \alpha$, then $\beta \in \gamma$ for some $\gamma \in \alpha$. By transitivity of ordinals, $\gamma \subseteq \alpha$, so $\beta \in \alpha$. Thus, $\bigcup \alpha \subseteq \alpha$ (we have not used the hypothesis).
+    
+On the other hand, let $\beta \in \alpha$. By hypothesis, $\beta + 1 \in \alpha$, so $\beta + 1 \subseteq \bigcup\alpha$. Hence $\beta \in \bigcup\alpha$.
 
 </body>

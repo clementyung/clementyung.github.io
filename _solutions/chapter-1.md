@@ -20,7 +20,6 @@ excerpt: ""
 <a name="ex1.2"></a>
 ## Exercise 1.2.
 <i>Solution.</i> If such an $X$ exists, then $X \in P(X) \subseteq X$, contradicting Axiom of Regularity (see Page 63 of the textbook).
-<a href="#ex1.1">jump</a>
 
 <a name="ex1.3"></a>
 ## Exercise 1.3.
@@ -74,19 +73,17 @@ T<i>Solution.</i> his follows from that $\boldsymbol{N}$ is inductive and <a hre
 <b>Lemma 1.12.A.</b> Let $X$ be a finite set and suppose $X$ has $n + 1$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \in X$, we have $X - \{x_0\}$ has $n$ elements.
 
 <i>Proof.</i> Let $f : X \to n + 1$ be a bijection, and fix $x_0 \in X$. Let $x' = f^{-1}(n)$. Define $g : X \to X$ by:
-
-    $$
-    \begin{align*}
-        g(x) = 
-        \begin{cases}
-            x_0, &\text{if $x = x'$} \\
-            x', &\text{if $x = x_0$} \\
-            x, &\text{otherwise} 
-        \end{cases}
-    \end{align*}
-    $$
-
-    Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. Then $(f \circ g)\restrictedto X - \{x_0\} : X - \{x_0\} \to n$ is a bijection, as desired.
+$$
+\begin{align*}
+	g(x) = 
+		\begin{cases}
+            	x_0, &\text{if $x = x'$} \\
+            	x', &\text{if $x = x_0$} \\
+            	x, &\text{otherwise} 
+        	\end{cases}
+\end{align*}
+$$
+Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. Then $(f \circ g)\restrictedto X - \{x_0\} : X - \{x_0\} \to n$ is a bijection, as desired.
 
 <i>Solution.</i> Let $A = \{n \in \boldsymbol{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}\}$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \{x_0\}$ has $n$ elements by <a href="#lem1.12.A">Lemma 1.12.A</a>. Then by induction hypothesis, $X \setminus \{x_0\}$ is T-finite, so let $x \in X \setminus \{x_0\}$ be an element $\subseteq$-maximal in $X \setminus \{x_0\}$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \{x_0\}$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \{x_0\}$, a contradiction.
 

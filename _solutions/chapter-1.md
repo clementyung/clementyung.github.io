@@ -2,7 +2,7 @@
 title: "1) Axioms of Set Theory</i>"
 collection: resources
 type: "Type"
-permalink: /resources/jech-solutions/1
+permalink: /jech-solutions/1
 ---
 
 <html>

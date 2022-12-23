@@ -5,17 +5,16 @@ type: "Type"
 permalink: /jech-solutions/chapter-2
 excerpt: ""
 ---
-<head>
-$(function () {
-  var includes = $('[data-include]')
-  $.each(includes, function () {
-    var file = 'views/' + $(this).data('include') + '.html'
-    $(this).load(file)
-  })
-})
-</head>
+<head> 
+  <script src="jquery.js"></script> 
+  <script> 
+    $(function(){
+      $("#includedContent").load("b.html"); 
+    });
+  </script> 
+</head> 
 
-<div data-include="https://clementyung.github.io/files/commands.html"></div>
+<div id="includedContent"></div>
 
 ## Exercise 2.1.
 Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.

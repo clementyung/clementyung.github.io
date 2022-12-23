@@ -1,8 +1,8 @@
 ---
-title: "1) Axioms of Set Theory"
+title: "2) Ordinal Numbers"
 collection: solutions
 type: "Type"
-permalink: /jech-solutions/chapter-1
+permalink: /jech-solutions/chapter-2
 ---
 
 <head>

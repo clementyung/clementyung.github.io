@@ -5,6 +5,8 @@ type: "Type"
 permalink: /jech-solutions/chapter-1
 ---
 
+Solutions to Chapter 1, Axioms of Set Theory.
+
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">

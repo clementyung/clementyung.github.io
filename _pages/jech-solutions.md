@@ -2,7 +2,7 @@
 layout: archive
 title: "Suggested Solutions to Jech's <i>Set Theory</i>"
 collection: resources
-permalink: /solutions/
+permalink: /jech-solutions/
 author_profile: true
 ---
 
@@ -10,6 +10,6 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
 
 {% include base_path %} 	
 
-{% for post in site.solutions %}
+{% for post in site.jech-solutions %}
   {% include archive-single.html %}
 {% endfor %}

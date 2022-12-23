@@ -48,10 +48,9 @@ permalink: /jech-solutions/chapter-1
 </head>
 <body>
 
-$\usepackage{bm}$
-
 <button class="accordion">Exercise 1.1.</button>
 <div class="panel">
+<a data-toggle="collapse" data-parent="#accordion" href="#ex1.1">
   <p>
     $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} = (c,d)$. Then $\{a\} \in \{\{c\},\{c,d\}\}$, so $\{a\} = \{c\}$ or $\{a\} = \{c,d\}$. We consider two cases.
     <ol>
@@ -74,7 +73,7 @@ $\usepackage{bm}$
   <p>
     Let $Y := \{x \in X : x \subseteq X\}$. Since $X$ is inductive, $\emptyset \in X$ and $\emptyset \subseteq X$ trivially, so $\emptyset \in Y$. Now suppose $x \in Y \subseteq X$. Note that since $X$ is inductive, $x \cup \{x\} \in X$. Then $x \subseteq X$, and since $x \in X$ we have $\{x\} \in X$. Thus, $x \cup \{x\} \subseteq X$ and hence $x \cup \{x\} \in Y$. So $Y$ is indeed inductive.
     
-    Since $\bm{N}$ is the smallest inductive set, it follows that $\bm{N} = \{x \in \bm{N} : x \subseteq \bm{N}\}$, i.e. $\bm{N}$ is transitive.
+    Since $\boldsymbol{N}$ is the smallest inductive set, it follows that $\boldsymbol{N} = \{x \in \boldsymbol{N} : x \subseteq \boldsymbol{N}\}$, i.e. $\boldsymbol{N}$ is transitive.
   </p>
 </div>
 
@@ -110,7 +109,7 @@ $\usepackage{bm}$
   <p>
     Let $n \in X$. Then $X \cap n \subseteq n$, and by \nameref{ex1.6} we have that $X \cap n$ has a $\in$-minimal element. Let $m \in X \cap n$ be such a $\in$-minimal element. We shall show that $m$ is the $\in$-minimal element in $X$.
     
-    Suppose not, so there exists a $m' \in X$ such that $m' \in m$. By \nameref{ex1.3}, we have that $m = \{p \in \bm{N} : p \in m\}$. Since $m \in n$, by the same Exercise we have $p \in n$. Thus, $m' \in X \cap n$, so $m$ is not $\in$-minimal in $X \cap n$, a contradiction.
+    Suppose not, so there exists a $m' \in X$ such that $m' \in m$. By \nameref{ex1.3}, we have that $m = \{p \in \boldsymbol{N} : p \in m\}$. Since $m \in n$, by the same Exercise we have $p \in n$. Thus, $m' \in X \cap n$, so $m$ is not $\in$-minimal in $X \cap n$, a contradiction.
   </p>
 </div>
 
@@ -124,28 +123,28 @@ $\usepackage{bm}$
 <button class="accordion">Exercise 1.9.</button>
 <div class="panel">
   <p>
-    This follows from that $\bm{N}$ is inductive and \nameref{ex1.8}. 
+    This follows from that $\boldsymbol{N}$ is inductive and \nameref{ex1.8}. 
   </p>
 </div>
 
 <button class="accordion">Exercise 1.10.</button>
 <div class="panel">
   <p>
-    Let $A := \{n \in \bm{N} : n \text{ is T-finite}\}$. Clearly $0 = \emptyset \in A$ as it is vacuously T-finite. Suppose $n$ is T-finite. We shall show that $n + 1$ has $n$ as its $\subseteq$-maximal element, and is hence T-finite. Let $m \in n + 1 = n \cup \{n\}$. If $m \in \{n\}$, then $m = n$ so $m \subseteq n \cup \{n\}$ immediately. If $m \in n$, then let $m' \in n$ be its $\subseteq$-maximal element. Since $n$ is transitive by \nameref{ex1.4}, we have $m \subseteq m' \subseteq n \subseteq n + 1$. Thus $n + 1$ is T-finite. By induction (\nameref{ex1.9}), $A = \bm{N}$ so every $n \in \bm{N}$ is T-finite.
+    Let $A := \{n \in \boldsymbol{N} : n \text{ is T-finite}\}$. Clearly $0 = \emptyset \in A$ as it is vacuously T-finite. Suppose $n$ is T-finite. We shall show that $n + 1$ has $n$ as its $\subseteq$-maximal element, and is hence T-finite. Let $m \in n + 1 = n \cup \{n\}$. If $m \in \{n\}$, then $m = n$ so $m \subseteq n \cup \{n\}$ immediately. If $m \in n$, then let $m' \in n$ be its $\subseteq$-maximal element. Since $n$ is transitive by \nameref{ex1.4}, we have $m \subseteq m' \subseteq n \subseteq n + 1$. Thus $n + 1$ is T-finite. By induction (\nameref{ex1.9}), $A = \boldsymbol{N}$ so every $n \in \boldsymbol{N}$ is T-finite.
   </p>
 </div>
 
 <button class="accordion">Exercise 1.11.</button>
 <div class="panel">
   <p>
-    Suppose $\bm{N}$ is T-finite. Let $n \in \bm{N}$ be $\subseteq$-maximal. Then $n \cup \{n\} \in \bm{N}$ and therefore $n \cup \{n\} \subseteq n$. Hence $n \in n$, contradicting \nameref{ex1.4}.
+    Suppose $\boldsymbol{N}$ is T-finite. Let $n \in \boldsymbol{N}$ be $\subseteq$-maximal. Then $n \cup \{n\} \in \boldsymbol{N}$ and therefore $n \cup \{n\} \subseteq n$. Hence $n \in n$, contradicting \nameref{ex1.4}.
   </p>
 </div>
 
 <button class="accordion">Exercise 1.12.</button>
 <div class="panel">
   <p>
-    Let $A = \{n \in \bm{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}\}$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \{x_0\}$ has $n$ elements by Lemma \ref{lem1.12.A}. Then by induction hypothesis, $X \setminus \{x_0\}$ is T-finite, so let $x \in X \setminus \{x_0\}$ be an element $\subseteq$-maximal in $X \setminus \{x_0\}$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \{x_0\}$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \{x_0\}$, a contradiction.
+    Let $A = \{n \in \boldsymbol{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}\}$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \{x_0\}$ has $n$ elements by Lemma \ref{lem1.12.A}. Then by induction hypothesis, $X \setminus \{x_0\}$ is T-finite, so let $x \in X \setminus \{x_0\}$ be an element $\subseteq$-maximal in $X \setminus \{x_0\}$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \{x_0\}$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \{x_0\}$, a contradiction.
   </p>
 </div>
 

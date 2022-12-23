@@ -6,16 +6,13 @@ permalink: /jech-solutions/chapter-1
 ---
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=0.7>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<div class="container">
-  <h2>Accordion Example</h2>
-  <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+<div class="container-fluid">
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">

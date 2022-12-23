@@ -6,6 +6,8 @@ permalink: /jech-solutions/chapter-1
 excerpt: ""
 ---
 
+{% include commands.html %}
+
 <a name="ex1.1"></a>
 ## Exercise 1.1.
 $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} = (c,d)$. Then $\{a\} \in \{\{c\},\{c,d\}\}$, so $\{a\} = \{c\}$ or $\{a\} = \{c,d\}$. We consider two cases.

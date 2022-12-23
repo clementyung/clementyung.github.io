@@ -1,8 +1,8 @@
 ---
-title: "1) Axioms of Set Theory</i>"
+title: "1) Axioms of Set Theory"
 collection: resources
 type: "Type"
-permalink: /jech-solutions/1
+permalink: /jech-solutions/chapter-1
 ---
 
 <html>

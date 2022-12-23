@@ -1,7 +1,6 @@
 ---
 layout: archive
 title: "Suggested Solutions to Jech's <i>Set Theory</i>"
-collection: resources
 permalink: /jech-solutions/
 author_profile: true
 ---

@@ -48,6 +48,8 @@ permalink: /jech-solutions/chapter-1
 </head>
 <body>
 
+$\usepackage{bm}$
+
 <button class="accordion">Exercise 1.1.</button>
 <div class="panel">
   <p>

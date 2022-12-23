@@ -6,7 +6,7 @@ permalink: /jech-solutions/chapter-2
 excerpt: ""
 ---
 <head> 
-  <script src="jquery.js"></script> 
+  <script src="/js/jquery.js"></script> 
   <script> 
     $(function(){
       $("#includedContent").load("b.html"); 

@@ -50,7 +50,7 @@ permalink: /jech-solutions/chapter-1
 
 <button class="accordion">Exercise 1.1.</button>
 <div class="panel">
-<a data-toggle="collapse" data-parent="#accordion" href="#ex1.1">
+<div id="ex1.1">
   <p>
     $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} = (c,d)$. Then $\{a\} \in \{\{c\},\{c,d\}\}$, so $\{a\} = \{c\}$ or $\{a\} = \{c,d\}$. We consider two cases.
     <ol>
@@ -59,12 +59,16 @@ permalink: /jech-solutions/chapter-1
      <li>If $c \neq d$, then we must have $\{a\} = \{c\}$ and $\{c\} \neq \{c,d\}$. This also implies that $\{a,b\} = \{c,d\}$. Since $a = c$, ($b = c$ or $b = d$) and $c \neq d$, we must have $b = d$.</li>
     </ol>
   </p>
-</a>
+</div>
 </div>
 
 <button class="accordion">Exercise 1.2.</button>
 <div class="panel">
   <p>
+    <a data-toggle="collapse" data-parent="#accordion" href="#ex1.1">
+      Testing.
+    </a>
+
     If such an $X$ exists, then $X \in P(X) \subseteq X$, contradicting Axiom of Regularity (see Page 63 of the textbook).
   </p>
 </div>

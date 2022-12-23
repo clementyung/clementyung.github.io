@@ -59,6 +59,7 @@ permalink: /jech-solutions/chapter-1
      <li>If $c \neq d$, then we must have $\{a\} = \{c\}$ and $\{c\} \neq \{c,d\}$. This also implies that $\{a,b\} = \{c,d\}$. Since $a = c$, ($b = c$ or $b = d$) and $c \neq d$, we must have $b = d$.</li>
     </ol>
   </p>
+</a>
 </div>
 
 <button class="accordion">Exercise 1.2.</button>

@@ -5,16 +5,8 @@ type: "Type"
 permalink: /jech-solutions/chapter-2
 excerpt: ""
 ---
-<head> 
-  <script src="/js/jquery.js"></script> 
-  <script> 
-    $(function(){
-      $("#includedContent").load("b.html"); 
-    });
-  </script> 
-</head> 
 
-<div id="includedContent"></div>
+{% include commands.html %}
 
 ## Exercise 2.1.
 Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.

@@ -50,7 +50,7 @@ permalink: /jech-solutions/chapter-1
 
 <button class="accordion">Exercise 1.1.</button>
 <div class="panel">
-<div id="ex1.1">
+<div id="ex1.1" class="collapse">
   <p>
     $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} = (c,d)$. Then $\{a\} \in \{\{c\},\{c,d\}\}$, so $\{a\} = \{c\}$ or $\{a\} = \{c,d\}$. We consider two cases.
     <ol>
@@ -65,7 +65,7 @@ permalink: /jech-solutions/chapter-1
 <button class="accordion">Exercise 1.2.</button>
 <div class="panel">
   <p>
-    <a data-toggle="collapse" data-parent="#accordion" data-target="#ex1.1" href="#ex1.1">
+    <a data-toggle="collapse" data-parent="#accordion" href="#ex1.1">
       Testing.
     </a>
 

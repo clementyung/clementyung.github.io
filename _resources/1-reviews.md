@@ -3,8 +3,6 @@ title: "Reviews of Books on Set Theory"
 collection: resources
 type: "Type"
 permalink: /resources/book-reviews/
-venue: "Venue"
-location: "City, Country"
 ---
 
 I only started devoting myself to set theory in the second semester of my junior year, but thanks to various resources I was able to pick up the basics rather quickly. Here I list out some of the books I've used (and am still using), and my view on their content.

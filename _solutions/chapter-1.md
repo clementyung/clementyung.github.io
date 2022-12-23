@@ -1,6 +1,6 @@
 ---
 title: "1) Axioms of Set Theory"
-collection: jech-solutions
+collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-1
 ---

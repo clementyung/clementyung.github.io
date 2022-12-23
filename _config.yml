@@ -177,7 +177,7 @@ collections:
   resources:
     output: true
     permalink: /:collection/:path/
-  jech-solutions:
+  solutions:
     output: true
     permalink: /:collection/:path/ 
 
@@ -211,10 +211,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _jech-solutions
+  # _solutions
   - scope:
       path: ""
-      type: jech-solutions
+      type: solutions
     values:
       layout: single
       author_profile: true

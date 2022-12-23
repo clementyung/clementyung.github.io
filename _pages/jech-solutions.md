@@ -9,6 +9,6 @@ author_profile: true
 
 I spent most of my summer break before the start of my PhD doing exercises in Jech's book. Here are my suggested solutions.
 
-{% for post in site.jech-solutions %}
+{% for post in site.solutions %}
   {% include archive-single.html %}
 {% endfor %}

@@ -11,7 +11,7 @@ excerpt: ""
     <script src="jquery.js"></script> 
     <script> 
     $(function(){
-      $("#includedContent").load("https://clementyung.github.io/files/command.html"); 
+      $("#includedContent").load("https://clementyung.github.io/files/commands.html"); 
     });
     </script> 
   </head> 

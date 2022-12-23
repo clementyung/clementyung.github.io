@@ -9,5 +9,5 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
 
 <button class="accordion">Section 1</button>
 <div class="panel">
-  Testing. Testing LaTeX $V_\alpha$.
+  <p>Testing. Testing LaTeX $V_\alpha$.</p>
 </div>

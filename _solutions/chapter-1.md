@@ -5,49 +5,6 @@ type: "Type"
 permalink: /jech-solutions/chapter-1
 ---
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-  background-color: white;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 20px;
-  transition: 0.4s;
-  font-weight: bold;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: #eee;
-  overflow: hidden;
-}
-</style>
-</head>
-<body>
-
 
 <div id="accordion">
   <div class="panel">

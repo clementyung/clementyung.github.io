@@ -2,7 +2,7 @@
 layout: archive
 title: "Suggested Solutions to Jech's <i>Set Theory</i>"
 collection: resources
-permalink: /resources/jech-solutions/
+permalink: /jech-solutions/
 author_profile: true
 ---
 

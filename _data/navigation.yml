@@ -3,5 +3,8 @@ main:
   - title: "Resources"
     url: /resources/
 
+  - title: "Jech Solutions"
+    url: /jech-solutions/
+
   - title: "CV"
     url: /files/Curriculum_Vitae.pdf

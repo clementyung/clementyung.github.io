@@ -21,6 +21,8 @@ excerpt: ""
   </body> 
 </html>
 
+$\newcommand{\id}{\operatorname{id}}$
+
 ## Exercise 2.1.
 Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.
     

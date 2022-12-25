@@ -85,8 +85,7 @@ $\square$
 <a name="lem1.12.A"></a>
 <b>Lemma 1.12.A.</b> Let $X$ be a finite set and suppose $X$ has $n + 1$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \in X$, we have $X - \{x_0\}$ has $n$ elements.
 
-\begin{proof}
-Let $f : X \to n + 1$ be a bijection, and fix $x_0 \in X$. Let $x' = f^{-1}(n)$. Define $g : X \to X$ by:
+<i>Proof.</i> Let $f : X \to n + 1$ be a bijection, and fix $x_0 \in X$. Let $x' = f^{-1}(n)$. Define $g : X \to X$ by:
 
 $$
 \begin{align*}
@@ -99,8 +98,8 @@ x, &\text{otherwise}
 \end{align*}
 $$
 
-Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. Then $(f \circ g)\restrictedto X - \{x_0\} : X - \{x_0\} \to n$ is a bijection, as desired.
-\end{proof}
+Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. Then $(f \circ g)\restrictedto X - \{x_0\} : X - \{x_0\} \to n$ is a bijection, as desired. 
+$\blacksquare$
 
 <i>Solution.</i> Let $A = \{n \in \boldsymbol{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}\}$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \{x_0\}$ has $n$ elements by [Lemma 1.12.A](#lem1.12.A). Then by induction hypothesis, $X \setminus \{x_0\}$ is T-finite, so let $x \in X \setminus \{x_0\}$ be an element $\subseteq$-maximal in $X \setminus \{x_0\}$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \{x_0\}$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \{x_0\}$, a contradiction. 
 $\square$
@@ -110,8 +109,7 @@ $\square$
 <a name="lem1.13.A"></a>
 <b>Lemma 1.13.A.</b> Let $X$ be a finite set and suppose $X$ has $n$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \notin X$, we have $X \cup x_0$ has $n + 1$ elements.
 
-\begin{proof}
-Let $f : X \to n$ be a bijection, and fix a set $x_0$. Define $g : X \to n + 1$ by:
+<i>Proof.</i> Let $f : X \to n$ be a bijection, and fix a set $x_0$. Define $g : X \to n + 1$ by:
 
 $$
 \begin{align*}
@@ -123,8 +121,8 @@ f(x), &\text{otherwise}
 \end{align*}
 $$
 
-It's easy to see that $g$ is indeed a bijection as desired.
-\end{proof}
+It's easy to see that $g$ is indeed a bijection as desired. 
+$\blacksquare$
 
 <i>Solution.</i> Let $S$ be infinite and let $X$ be the set in the hint. Let $u \in X$. Since $u$ is finite and $X$ is infinite, $u \neq X$. Thus, there exists some $x \in X \setminus u$. By [Lemma 1.13.A](#lem1.13.A), $u \cup \{x\}$ has $n + 1$ and is in particular finite, so $u \cup \{x\}$. Then $u \subsetneq u \cup \{x\}$. 
 $\square$

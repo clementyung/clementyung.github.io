@@ -8,15 +8,13 @@ excerpt: ""
 
 {% include commands.html %}
 
-$\newcommand{\set}[1]{\left\{ #1 \right\}}$
-
 <a name="ex1.1"></a>
 ## Exercise 1.1.
-<i>Solution.</i> $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \curly{\curly{a},\curly{a,b}} = \curly{\curly{c},\curly{c,d}} = (c,d)$. Then $\curly{a} \in \curly{\curly{c},\curly{c,d}}$, so $\curly{a} = \curly{c}$ or $\curly{a} = \curly{c,d}$. We consider two cases.
+<i>Solution.</i> $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \lbrace \lbrace a\rbrace,\lbrace a,b\rbrace\rbrace = \lbrace \lbrace c\rbrace,\lbrace c,d\rbrace\rbrace = (c,d)$. Then $\lbrace a\rbrace \in \lbrace \lbrace c\rbrace,\lbrace c,d\rbrace\rbrace$, so $\lbrace a\rbrace = \lbrace c\rbrace$ or $\lbrace a\rbrace = \lbrace c,d\rbrace$. We consider two cases.
 <ol>
-<li> If $c = d$, then either way we have $\curly{a} = \curly{c}$, so we have $a = c$. We see that in this case, $\curly{\curly{a},\curly{a,b}} = \curly{\curly{c}}$. Then $\curly{a,b} = \curly{c} = \curly{a}$, so $\curly{a,b} \subseteq \curly{a} \implies b = a$. Hence $a = b = c = d$.</li>
+<li> If $c = d$, then either way we have $\lbrace a\rbrace = \lbrace c\rbrace$, so we have $a = c$. We see that in this case, $\lbrace \lbrace a\rbrace,\lbrace a,b\rbrace\rbrace = \lbrace \lbrace c\rbrace\rbrace$. Then $\lbrace a,b\rbrace = \lbrace c\rbrace = \lbrace a\rbrace$, so $\lbrace a,b\rbrace \subseteq \lbrace a\rbrace \implies b = a$. Hence $a = b = c = d$.</li>
 
-<li> If $c \neq d$, then we must have $\curly{a} = \curly{c}$ and $\curly{c} \neq \curly{c,d}$. This also implies that $\curly{a,b} = \curly{c,d}$. Since $a = c$, ($b = c$ or $b = d$) and $c \neq d$, we must have $b = d$.</li>
+<li> If $c \neq d$, then we must have $\lbrace a\rbrace = \lbrace c\rbrace$ and $\lbrace c\rbrace \neq \lbrace c,d\rbrace$. This also implies that $\lbrace a,b\rbrace = \lbrace c,d\rbrace$. Since $a = c$, ($b = c$ or $b = d$) and $c \neq d$, we must have $b = d$.</li>
 </ol> 
 $\square$
 
@@ -27,42 +25,42 @@ $\square$
 
 <a name="ex1.3"></a>
 ## Exercise 1.3.
-<i>Solution.</i> Let $Y := \curly{x \in X : x \subseteq X}$. Since $X$ is inductive, $\emptyset \in X$ and $\emptyset \subseteq X$ trivially, so $\emptyset \in Y$. Now suppose $x \in Y \subseteq X$. Note that since $X$ is inductive, $x \cup \curly{x} \in X$. Then $x \subseteq X$, and since $x \in X$ we have $\curly{x} \in X$. Thus, $x \cup \curly{x} \subseteq X$ and hence $x \cup \curly{x} \in Y$. So $Y$ is indeed inductive.
+<i>Solution.</i> Let $Y := \lbrace x \in X : x \subseteq X\rbrace$. Since $X$ is inductive, $\emptyset \in X$ and $\emptyset \subseteq X$ trivially, so $\emptyset \in Y$. Now suppose $x \in Y \subseteq X$. Note that since $X$ is inductive, $x \cup \lbrace x\rbrace \in X$. Then $x \subseteq X$, and since $x \in X$ we have $\lbrace x\rbrace \in X$. Thus, $x \cup \lbrace x\rbrace \subseteq X$ and hence $x \cup \lbrace x\rbrace \in Y$. So $Y$ is indeed inductive.
 
-Since $\boldsymbol{N}$ is the smallest inductive set, it follows that $\boldsymbol{N} = \curly{x \in \boldsymbol{N} : x \subseteq \boldsymbol{N}}$, i.e. $\boldsymbol{N}$ is transitive. 
+Since $\boldsymbol{N}$ is the smallest inductive set, it follows that $\boldsymbol{N} = \lbrace x \in \boldsymbol{N} : x \subseteq \boldsymbol{N}\rbrace$, i.e. $\boldsymbol{N}$ is transitive. 
 $\square$
 
 <a name="ex1.4"></a>
 ## Exercise 1.4.
-<i>Solution.</i> Let $Y := \curly{x \in X : x \text{ is transitive}}$. Clearly $\emptyset$ is transitive, so $\emptyset \in Y$. Now suppose $x \in X$ and $x$ is transitive. We wish to show that $x \cup \curly{x}$ is transitive, which would complete the proof.
+<i>Solution.</i> Let $Y := \lbrace x \in X : x \text{ is transitive}\rbrace$. Clearly $\emptyset$ is transitive, so $\emptyset \in Y$. Now suppose $x \in X$ and $x$ is transitive. We wish to show that $x \cup \lbrace x\rbrace$ is transitive, which would complete the proof.
 
-Let $y \in x \cup \curly{x}$. If $y \in x$, then $y \subseteq x \subseteq x \cup \curly{x}$. Otherwise, $y \in \curly{x}$ so $y = x$. Then clearly $x \subseteq x \cup \curly{x}$. Thus $x \cup \curly{x}$ is transitive. 
+Let $y \in x \cup \lbrace x\rbrace$. If $y \in x$, then $y \subseteq x \subseteq x \cup \lbrace x\rbrace$. Otherwise, $y \in \lbrace x\rbrace$ so $y = x$. Then clearly $x \subseteq x \cup \lbrace x\rbrace$. Thus $x \cup \lbrace x\rbrace$ is transitive. 
 $\square$
 
 <a name="ex1.5"></a>
 ## Exercise 1.5.
-<i>Solution.</i> Clearly $\emptyset$ is transitive and $\emptyset \notin \emptyset$ as $\emptyset$ has no elements. Now suppose $x \in X$. In the proof of [Exercise 1.4](#ex1.4) we have already seen that $x \cup \curly{x}$ is transitive. It remains to show that $x \cup \curly{x} \notin x \cup \curly{x}$.
+<i>Solution.</i> Clearly $\emptyset$ is transitive and $\emptyset \notin \emptyset$ as $\emptyset$ has no elements. Now suppose $x \in X$. In the proof of [Exercise 1.4](#ex1.4) we have already seen that $x \cup \lbrace x\rbrace$ is transitive. It remains to show that $x \cup \lbrace x\rbrace \notin x \cup \lbrace x\rbrace$.
 
-Suppose not, so $x \cup \curly{x} \in x \cup \curly{x}$. We consider two cases. If $x \cup \curly{x} \in x$, then since $x$ is transitive, $x \cup \curly{x} \subseteq x$. In particular, $x \in x$, a contradiction. Otherwise, we have $x \cup \curly{x} \in \curly{x}$, i.e. $x \cup \curly{x} = x$. But this also implies that $x \in x$, a contradiction. 
+Suppose not, so $x \cup \lbrace x\rbrace \in x \cup \lbrace x\rbrace$. We consider two cases. If $x \cup \lbrace x\rbrace \in x$, then since $x$ is transitive, $x \cup \lbrace x\rbrace \subseteq x$. In particular, $x \in x$, a contradiction. Otherwise, we have $x \cup \lbrace x\rbrace \in \lbrace x\rbrace$, i.e. $x \cup \lbrace x\rbrace = x$. But this also implies that $x \in x$, a contradiction. 
 $\square$
 
 <a name="ex1.6"></a>
 ## Exercise 1.6.
-<i>Solution.</i> Clearly $\emptyset$ is transitive and since it has no non-empty subset, the second requirement holds trivially. Now suppose $x$ is transitive and every non-empty $z \subseteq x$ has an $\in$-minimal element. In the proof of [Exercise 1.4](#ex1.4) we have already seen that $x \cup \curly{x}$ is transitive.
+<i>Solution.</i> Clearly $\emptyset$ is transitive and since it has no non-empty subset, the second requirement holds trivially. Now suppose $x$ is transitive and every non-empty $z \subseteq x$ has an $\in$-minimal element. In the proof of [Exercise 1.4](#ex1.4) we have already seen that $x \cup \lbrace x\rbrace$ is transitive.
 
-Let $z \subseteq x \cup \curly{x}$ be non-empty. We consider two cases. If $z \subseteq x$, then by induction hypothesis on $x$ we have that $z$ has an $\in$-minimal element. Otherwise, we have $z = z' \cup \curly{x}$ for some $z' \subseteq x$. Let $t \in z'$ be $\in$-minimal in $z'$. If $t$ is $\in$-minimal in $z$, then we're done. Otherwise, we must have $x \in t$. Since $t \in x$ and $x$ is transitive, we have that $x \in x$. This means that $t$ is not $\in$-minimal in $z'$, a contradiction. 
+Let $z \subseteq x \cup \lbrace x\rbrace$ be non-empty. We consider two cases. If $z \subseteq x$, then by induction hypothesis on $x$ we have that $z$ has an $\in$-minimal element. Otherwise, we have $z = z' \cup \lbrace x\rbrace$ for some $z' \subseteq x$. Let $t \in z'$ be $\in$-minimal in $z'$. If $t$ is $\in$-minimal in $z$, then we're done. Otherwise, we must have $x \in t$. Since $t \in x$ and $x$ is transitive, we have that $x \in x$. This means that $t$ is not $\in$-minimal in $z'$, a contradiction. 
 $\square$
 
 <a name="ex1.7"></a>
 ## Exercise 1.7.
 <i>Solution.</i> Let $n \in X$. Then $X \cap n \subseteq n$, and by [Exercise 1.6](#ex1.6) we have that $X \cap n$ has a $\in$-minimal element. Let $m \in X \cap n$ be such a $\in$-minimal element. We shall show that $m$ is the $\in$-minimal element in $X$.
 
-Suppose not, so there exists a $m' \in X$ such that $m' \in m$. By [Exercise 1.3](#ex1.3), we have that $m = \curly{p \in \boldsymbol{N} : p \in m}$. Since $m \in n$, by the same Exercise we have $p \in n$. Thus, $m' \in X \cap n$, so $m$ is not $\in$-minimal in $X \cap n$, a contradiction. 
+Suppose not, so there exists a $m' \in X$ such that $m' \in m$. By [Exercise 1.3](#ex1.3), we have that $m = \lbrace p \in \boldsymbol{N} : p \in m\rbrace$. Since $m \in n$, by the same Exercise we have $p \in n$. Thus, $m' \in X \cap n$, so $m$ is not $\in$-minimal in $X \cap n$, a contradiction. 
 $\square$
 
 <a name="ex1.8"></a>
 ## Exercise 1.8.
-<i>Solution.</i> $\emptyset$ is in the set by definition, and if $x$ is in the set then $x \cup \curly{x}$ is in the set by definition (precisely because $x$ is in the set). 
+<i>Solution.</i> $\emptyset$ is in the set by definition, and if $x$ is in the set then $x \cup \lbrace x\rbrace$ is in the set by definition (precisely because $x$ is in the set). 
 $\square$
 
 <a name="ex1.9"></a>
@@ -72,18 +70,18 @@ $\square$
 
 <a name="ex1.10"></a>
 ## Exercise 1.10.
-<i>Solution.</i> Let $A := \curly{n \in \boldsymbol{N} : n \text{ is T-finite}}$. Clearly $0 = \emptyset \in A$ as it is vacuously T-finite. Suppose $n$ is T-finite. We shall show that $n + 1$ has $n$ as its $\subseteq$-maximal element, and is hence T-finite. Let $m \in n + 1 = n \cup \curly{n}$. If $m \in \curly{n}$, then $m = n$ so $m \subseteq n \cup \curly{n}$ immediately. If $m \in n$, then let $m' \in n$ be its $\subseteq$-maximal element. Since $n$ is transitive by [Exercise 1.4](#ex1.4), we have $m \subseteq m' \subseteq n \subseteq n + 1$. Thus $n + 1$ is T-finite. By induction ([Exercise 1.9](#ex1.9)), $A = \boldsymbol{N}$ so every $n \in \boldsymbol{N}$ is T-finite. 
+<i>Solution.</i> Let $A := \lbrace n \in \boldsymbol{N} : n \text{ is T-finite}\rbrace$. Clearly $0 = \emptyset \in A$ as it is vacuously T-finite. Suppose $n$ is T-finite. We shall show that $n + 1$ has $n$ as its $\subseteq$-maximal element, and is hence T-finite. Let $m \in n + 1 = n \cup \lbrace n\rbrace$. If $m \in \lbrace n\rbrace$, then $m = n$ so $m \subseteq n \cup \lbrace n\rbrace$ immediately. If $m \in n$, then let $m' \in n$ be its $\subseteq$-maximal element. Since $n$ is transitive by [Exercise 1.4](#ex1.4), we have $m \subseteq m' \subseteq n \subseteq n + 1$. Thus $n + 1$ is T-finite. By induction ([Exercise 1.9](#ex1.9)), $A = \boldsymbol{N}$ so every $n \in \boldsymbol{N}$ is T-finite. 
 $\square$
 
 <a name="ex1.11"></a>
 ## Exercise 1.11.
-<i>Solution.</i> Suppose $\boldsymbol{N}$ is T-finite. Let $n \in \boldsymbol{N}$ be $\subseteq$-maximal. Then $n \cup \curly{n} \in \boldsymbol{N}$ and therefore $n \cup \curly{n} \subseteq n$. Hence $n \in n$, contradicting [Exercise 1.4](#ex1.4). 
+<i>Solution.</i> Suppose $\boldsymbol{N}$ is T-finite. Let $n \in \boldsymbol{N}$ be $\subseteq$-maximal. Then $n \cup \lbrace n\rbrace \in \boldsymbol{N}$ and therefore $n \cup \lbrace n\rbrace \subseteq n$. Hence $n \in n$, contradicting [Exercise 1.4](#ex1.4). 
 $\square$
 
 <a name="ex1.12"></a>
 ## Exercise 1.12.
 <a name="lem1.12.A"></a>
-<b>Lemma 1.12.A.</b> Let $X$ be a finite set and suppose $X$ has $n + 1$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \in X$, we have $X - \curly{x_0}$ has $n$ elements.
+<b>Lemma 1.12.A.</b> Let $X$ be a finite set and suppose $X$ has $n + 1$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \in X$, we have $X - \lbrace x_0\rbrace$ has $n$ elements.
 
 <i>Proof.</i> Let $f : X \to n + 1$ be a bijection, and fix $x_0 \in X$. Let $x' = f^{-1}(n)$. Define $g : X \to X$ by:
 
@@ -98,10 +96,10 @@ x, &\text{otherwise}
 \end{align*}
 $$
 
-Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. Then $(f \circ g)\restrictedto X - \curly{x_0} : X - \curly{x_0} \to n$ is a bijection, as desired. 
+Then $f \circ g : X \to n + 1$ is a bijection such that $(f \circ g)(x_0) = n$. Then $(f \circ g)\restrictedto X - \lbrace x_0\rbrace : X - \lbrace x_0\rbrace \to n$ is a bijection, as desired. 
 $\blacksquare$
 
-<i>Solution.</i> Let $A = \curly{n \in \boldsymbol{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}}$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \curly{x_0}$ has $n$ elements by [Lemma 1.12.A](#lem1.12.A). Then by induction hypothesis, $X \setminus \curly{x_0}$ is T-finite, so let $x \in X \setminus \curly{x_0}$ be an element $\subseteq$-maximal in $X \setminus \curly{x_0}$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \curly{x_0}$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \curly{x_0}$, a contradiction. 
+<i>Solution.</i> Let $A = \lbrace n \in \boldsymbol{N} : \text{If $X$ has $n$ elements then $X$ is T-finite}\rbrace$. Clearly $0 \in A$ as the empty set is vacuously T-finite. Suppose sets with $n$ elements are T-finite.  Let $X$ be a set with $n + 1$ element, and suppose $X$ is not T-finite. Let $x_0 \in X$, so $X \setminus \lbrace x_0\rbrace$ has $n$ elements by [Lemma 1.12.A](#lem1.12.A). Then by induction hypothesis, $X \setminus \lbrace x_0\rbrace$ is T-finite, so let $x \in X \setminus \lbrace x_0\rbrace$ be an element $\subseteq$-maximal in $X \setminus \lbrace x_0\rbrace$. Since it is not $\subseteq$-maximal in $X$, we must have $x \subsetneq x_0$. But $x_0$ is not $\subseteq$-maximal either, so $x_0 \subsetneq x'$ for some $x' \in X \setminus \lbrace x_0\rbrace$. Then $x \subsetneq x'$, so $x$ is not $\subseteq$-maximal in $X \setminus \lbrace x_0\rbrace$, a contradiction. 
 $\square$
 
 <a name="ex1.13"></a>
@@ -124,12 +122,12 @@ $$
 It's easy to see that $g$ is indeed a bijection as desired. 
 $\blacksquare$
 
-<i>Solution.</i> Let $S$ be infinite and let $X$ be the set in the hint. Let $u \in X$. Since $u$ is finite and $X$ is infinite, $u \neq X$. Thus, there exists some $x \in X \setminus u$. By [Lemma 1.13.A](#lem1.13.A), $u \cup \curly{x}$ has $n + 1$ and is in particular finite, so $u \cup \curly{x}$. Then $u \subsetneq u \cup \curly{x}$. 
+<i>Solution.</i> Let $S$ be infinite and let $X$ be the set in the hint. Let $u \in X$. Since $u$ is finite and $X$ is infinite, $u \neq X$. Thus, there exists some $x \in X \setminus u$. By [Lemma 1.13.A](#lem1.13.A), $u \cup \lbrace x\rbrace$ has $n + 1$ and is in particular finite, so $u \cup \lbrace x\rbrace$. Then $u \subsetneq u \cup \lbrace x\rbrace$. 
 $\square$
 
 <a name="ex1.14"></a>
 ## Exercise 1.14.
-<i>Solution.</i> The hint basically solves the problem. If $\varphi(x,p)$ is a property with parameter $p$, then for any $p$ we may define $F := \curly{(x,x) : \varphi(x,p)}$ instead. 
+<i>Solution.</i> The hint basically solves the problem. If $\varphi(x,p)$ is a property with parameter $p$, then for any $p$ we may define $F := \lbrace (x,x) : \varphi(x,p)\rbrace$ instead. 
 $\square$
 
 <a name="ex1.15"></a>
@@ -138,7 +136,7 @@ $\square$
 
 $$
 \begin{align*}
-\bigcup X = \curly{x \in Y : (\forall u \in x)(\exists v \in X) \, u \in v}
+\bigcup X = \lbrace x \in Y : (\forall u \in x)(\exists v \in X) \, u \in v\rbrace
 \end{align*}
 $$
 
@@ -146,7 +144,7 @@ $$
 
 $$
 \begin{align*}
-P(X) = \curly{x \in Y : (\forall u \in x) \, u \in X}
+P(X) = \lbrace x \in Y : (\forall u \in x) \, u \in X\rbrace
 \end{align*}
 $$
 
@@ -154,7 +152,7 @@ $$
 
 $$
 \begin{align*}
-F(X) = \curly{x \in Y : (\exists u \in X) \, x = F(u)}
+F(X) = \lbrace x \in Y : (\exists u \in X) \, x = F(u)\rbrace
 \end{align*}
 $$
 

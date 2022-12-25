@@ -183,7 +183,7 @@ $$
 \begin{align*}
 (\alpha^\beta)^{\delta + 1} &= (\alpha^\beta)^\delta \cdot \alpha^\beta \\
 &= \alpha^{\beta \cdot \delta} \cdot \alpha^\beta && \text{by induction hypothesis} \\
-&= \alpha^{\beta \cdot \delta + \beta} && \text{by [Exercise 2.8(ii)](#ex2.8(ii))} \\
+&= \alpha^{\beta \cdot \delta + \beta} && \text{by Exercise 2.8(ii)} \\
 &= \alpha^{\beta \cdot (\delta + 1)}
 \end{align*}
 $$

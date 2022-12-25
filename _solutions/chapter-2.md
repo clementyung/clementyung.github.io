@@ -23,7 +23,8 @@ $$
 x < y \implies f(x) < f(y) \implies g(f(x)) < g(f(y))
 \end{align*}
 $$
- $\square$
+ 
+$\square$
 
 <a name="ex2.2"></a>
 ## Exercise 2.2.
@@ -33,17 +34,19 @@ $$
 
 <u>$\impliedby$:</u> If $\beta \in \bigcup \alpha$, then $\beta \in \gamma$ for some $\gamma \in \alpha$. By transitivity of ordinals, $\gamma \subseteq \alpha$, so $\beta \in \alpha$. Thus, $\bigcup \alpha \subseteq \alpha$ (we have not used the hypothesis).
 
-On the other hand, let $\beta \in \alpha$. By hypothesis, $\beta + 1 \in \alpha$, so $\beta + 1 \subseteq \bigcup\alpha$. Hence $\beta \in \bigcup\alpha$. $\square$
+On the other hand, let $\beta \in \alpha$. By hypothesis, $\beta + 1 \in \alpha$, so $\beta + 1 \subseteq \bigcup\alpha$. Hence $\beta \in \bigcup\alpha$. 
+$\square$
 
 <a name="ex2.3"></a>
 ## Exercise 2.3.
-<i>Solution.</i> We shall show that if $A$ and $B$ are inductive, then so is $A \cap B$. Since $\boldsymbol{ORD}$ is an inductive class, it follows that $X \cap \boldsymbol{ORD}$ is also inductive.
+<i>Solution.</i> We shall show that if $A$ and $B$ are inductive, then so is $A \cap B$. Since $\boldsymbol{\mathrm{ORD}}$ is an inductive class, it follows that $X \cap \boldsymbol{\mathrm{ORD}}$ is also inductive.
 
 Clearly $\emptyset \in A \cap B$. Let $x \in A \cap B$. Then since $A$ and $B$ are inductive, $x \cup \\{x\\} \in A$ and $x \cup \\{x\\} \in B$, so $x \cup \\{x\\} \in A \cap B$. Thus $A \cap B$ is inductive.
 
-Since $\boldsymbol{N}$ is the smallest inductive set, $\boldsymbol{N} = \boldsymbol{N} \cap \boldsymbol{ORD}$, i.e. $\boldsymbol{N} \subseteq \boldsymbol{ORD}$. Since $\boldsymbol{N}$ is transitive by [Exercise 1.3](https://clementyung.github.io/jech-solutions/chapter-1#ex1.3), and is well-ordered, it is an ordinal.
+Since $\boldsymbol{N}$ is the smallest inductive set, $\boldsymbol{N} = \boldsymbol{N} \cap \boldsymbol{\mathrm{ORD}}$, i.e. $\boldsymbol{N} \subseteq \boldsymbol{\mathrm{ORD}}$. Since $\boldsymbol{N}$ is transitive by [Exercise 1.3](https://clementyung.github.io/jech-solutions/chapter-1#ex1.3), and is well-ordered, it is an ordinal.
 
-Finally, to see that $\boldsymbol{N}$ is a limit ordinal, suppose not, so $\boldsymbol{N} = n \cup \\{n\\}$ for some $n \in \boldsymbol{N}$. By the inductive property of $\boldsymbol{N}$, we have that $\boldsymbol{N} = n \cup \\{n\\} \in \boldsymbol{N}$, contradicting the Axiom of Regularity. $\square$
+Finally, to see that $\boldsymbol{N}$ is a limit ordinal, suppose not, so $\boldsymbol{N} = n \cup \\{n\\}$ for some $n \in \boldsymbol{N}$. By the inductive property of $\boldsymbol{N}$, we have that $\boldsymbol{N} = n \cup \\{n\\} \in \boldsymbol{N}$, contradicting the Axiom of Regularity. 
+$\square$
 
 <a name="ex2.4"></a>
 ## Exercise 2.4.
@@ -59,33 +62,38 @@ $$
 
 This is well-defined, as $\mod{Y}$ is well-defined for finite sets without Axiom of Infinity. By Axiom of Replacement, the image of this map is a set. Since $X$ is infinite, we have that for all $n \in \omega$, there exists $Y \subseteq X$ such that $\mod{Y} = n$. Then $Y \mapsto n$, the image of this map is $\omega$. Hence $\omega$ is a set.
 
-<u>(iii) $\implies$ (i):</u> $\omega$ is inductive by definition. $\square$
+<u>(iii) $\implies$ (i):</u> $\omega$ is inductive by definition. 
+$\square$
 
 <a name="ex2.5"></a>
 ## Exercise 2.5.
-<i>Solution.</i> If such a sequence exists, then $\\{a_n : n \in \boldsymbol{N}\\} \subseteq \boldsymbol{N}$ has no minimal element, contradicting the definition of well-order. $\square$
+<i>Solution.</i> If such a sequence exists, then $\\{a_n : n \in \boldsymbol{N}\\} \subseteq \boldsymbol{N}$ has no minimal element, contradicting the definition of well-order. 
+$\square$
 
 <a name="ex2.6"></a>
 ## Exercise 2.6.
-<i>Solution.</i> For any ordinal $\alpha$, consider the sequence $\alpha_0 := \alpha$ and $\alpha_{n+1} := \alpha_n + 1$. Let $\beta := \lim_{n \to \omega} \alpha_n$. Then $\beta$ is a limit of a (strictly) increasing sequence of ordinals, and is hence a limit ordinal (as $\bigcup\beta = \beta$). $\square$
+<i>Solution.</i> For any ordinal $\alpha$, consider the sequence $\alpha_0 := \alpha$ and $\alpha_{n+1} := \alpha_n + 1$. Let $\beta := \lim_{n \to \omega} \alpha_n$. Then $\beta$ is a limit of a (strictly) increasing sequence of ordinals, and is hence a limit ordinal (as $\bigcup\beta = \beta$). 
+$\square$
 
 <a name="ex2.7"></a>
 ## Exercise 2.7.
-<i>Solution.</i> For any $\alpha_0 \in \boldsymbol{ORD}$, define $\alpha_{n+1} = \gamma_{\alpha_n}$ as in the hint. Let $\alpha = \lim_{n \to \omega} \alpha_n$. Then, by normality of the sequence:
+<i>Solution.</i> For any $\alpha_0 \in \boldsymbol{\mathrm{ORD}}$, define $\alpha_{n+1} = \gamma_{\alpha_n}$ as in the hint. Let $\alpha = \lim_{n \to \omega} \alpha_n$. Then, by normality of the sequence:
 
 $$
 \begin{align*}
 \gamma_\alpha = \lim_{n \to \omega} \gamma_{\alpha_n} = \lim_{n \to \omega} \alpha_{n+1} = \alpha
 \end{align*}
 $$
- $\square$
+ 
+$\square$
 
 <a name="ex2.8"></a>
 ## Exercise 2.8.
 <a name="lem2.8.A"></a>
 <b>Lemma 2.8.A.</b> If $\beta$ is a limit ordinal, then so are $\alpha + \beta$, $\alpha \cdot \beta$ and $\alpha^\beta$.
 
-<i>Proof.</i> Let $F(\alpha,\beta)$ denote $\alpha + \beta$, $\alpha \cdot \beta$ or $\alpha^\beta$. In all three cases, we have $F(\alpha,\beta) = \lim_{\xi \to \beta} F(\alpha,\xi)$. Since $F(\alpha,\beta)$ is a limit ordinal iff $F(\alpha,\beta) = \lim_{\delta \to F(\alpha,\beta)} \delta$, it suffices to show that for all $\delta < F(\alpha,\beta)$, there exists some $\xi < \beta$ such that $\delta \leq F(\alpha,\xi$). But this is obviously true, for if $\delta > F(\alpha,\xi)$ for all $\xi < \beta$ then $\delta \geq \lim_{\xi \to \beta} F(\alpha,\xi) = F(\alpha,\beta)$ by definition. $\blacksquare$
+<i>Proof.</i> Let $F(\alpha,\beta)$ denote $\alpha + \beta$, $\alpha \cdot \beta$ or $\alpha^\beta$. In all three cases, we have $F(\alpha,\beta) = \lim_{\xi \to \beta} F(\alpha,\xi)$. Since $F(\alpha,\beta)$ is a limit ordinal iff $F(\alpha,\beta) = \lim_{\delta \to F(\alpha,\beta)} \delta$, it suffices to show that for all $\delta < F(\alpha,\beta)$, there exists some $\xi < \beta$ such that $\delta \leq F(\alpha,\xi$). But this is obviously true, for if $\delta > F(\alpha,\xi)$ for all $\xi < \beta$ then $\delta \geq \lim_{\xi \to \beta} F(\alpha,\xi) = F(\alpha,\beta)$ by definition. 
+$\blacksquare$
 
 <a name="ex2.8(i)"></a>
 ### Exercise 2.8(i).
@@ -121,7 +129,8 @@ $$
 &= \alpha \cdot \beta + \alpha \cdot \gamma
 \end{align*}
 $$
- $\square$
+ 
+$\square$
 
 <a name="ex2.8(ii)"></a>
 ### Exercise 2.8(ii).
@@ -155,7 +164,8 @@ $$
 &= \alpha^\beta \cdot \alpha^\gamma
 \end{align*}
 $$
- $\square$
+ 
+$\square$
 
 <a name="ex2.8(iii)"></a>
 ### Exercise 2.8(iii).
@@ -187,7 +197,8 @@ $$
 &= \alpha^{\beta \cdot \gamma} &&\text{as $\beta \cdot \gamma$ is limit, and therefore so is $\alpha^{\beta \cdot \gamma}$}
 \end{align*}
 $$
- $\square$
+ 
+$\square$
 
 <a name="ex2.9"></a>
 ## Exercise 2.9.
@@ -201,7 +212,8 @@ $$
 \end{align*}
 $$
 
-Now we have $(\omega + 1) \cdot 2 = \omega + 1 + \omega + 1 = \omega + \omega + 1 = \omega \cdot 2 + 1$. By Lemma 2.25(i), we have $\omega \cdot 2 + 1 < \omega \cdot 2 + 2$. $\square$
+Now we have $(\omega + 1) \cdot 2 = \omega + 1 + \omega + 1 = \omega + \omega + 1 = \omega \cdot 2 + 1$. By Lemma 2.25(i), we have $\omega \cdot 2 + 1 < \omega \cdot 2 + 2$. 
+$\square$
 
 <a name="ex2.9(ii)"></a>
 ### Exercise 2.9(ii).
@@ -213,7 +225,8 @@ $$
 \end{align*}
 $$
 
-We have $(\omega \cdot 2)^2 = \omega \cdot 2 \cdot \omega \cdot 2 = \omega \cdot \omega \cdot 2 = \omega^2 \cdot 2$. By Lemma 2.25(iii), we have that $\omega^2 \cdot 2 < \omega^2 \cdot 4$. $\square$
+We have $(\omega \cdot 2)^2 = \omega \cdot 2 \cdot \omega \cdot 2 = \omega \cdot \omega \cdot 2 = \omega^2 \cdot 2$. By Lemma 2.25(iii), we have that $\omega^2 \cdot 2 < \omega^2 \cdot 4$. 
+$\square$
 
 <a name="ex2.10"></a>
 ## Exercise 2.10.
@@ -278,17 +291,20 @@ $$
 &= \beta^\gamma
 \end{align*}
 $$
- $\square$
+ 
+$\square$
 
 <a name="ex2.11"></a>
 ## Exercise 2.11.
 <a name="ex2.11(i)"></a>
 ### Exercise 2.11(i).
-<i>Solution.</i> As we saw in the proof of [Exercise 2.9(i)](#ex2.9(i)), $0 < 1$ but $0 + \omega = \omega = 1 + \omega$. $\square$
+<i>Solution.</i> As we saw in the proof of [Exercise 2.9(i)](#ex2.9(i)), $0 < 1$ but $0 + \omega = \omega = 1 + \omega$. 
+$\square$
 
 <a name="ex2.11(ii)"></a>
 ### Exercise 2.11(ii).
-<i>Solution.</i> As we saw in the proof of [Exercise 2.9(ii)](#ex2.9(ii)), $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$. $\square$
+<i>Solution.</i> As we saw in the proof of [Exercise 2.9(ii)](#ex2.9(ii)), $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$. 
+$\square$
 
 <a name="ex2.11(iii)"></a>
 ### Exercise 2.11(iii).
@@ -299,7 +315,8 @@ $$
 2^\omega = \sup_{n < \omega} 2^n = \omega = \sup_{n < \omega} 3^n = 3^\omega
 \end{align*}
 $$
- $\square$
+ 
+$\square$
 
 <a name="ex2.12"></a>
 ## Exercise 2.12.
@@ -319,7 +336,8 @@ $$
 \end{align*}
 $$
 
-So $\varepsilon \geq \alpha_n$ for all $n$. Thus $\varepsilon$ is an upper bound of the sequence $\c{\alpha_n : n \in \omega}$, so $\varepsilon_0 \leq \varepsilon$. $\square$
+So $\varepsilon \geq \alpha_n$ for all $n$. Thus $\varepsilon$ is an upper bound of the sequence $\c{\alpha_n : n \in \omega}$, so $\varepsilon_0 \leq \varepsilon$. 
+$\square$
 
 <a name="ex2.13"></a>
 ## Exercise 2.13.
@@ -363,11 +381,13 @@ $$
 \end{align*}
 $$
 
-If $\beta$ is a limit ordinal, then for $\alpha < \omega^\beta$ we have that $\alpha < \omega^\xi$ for some $\xi < \beta$. By induction hypothesis, $\alpha + \omega^\xi = \omega^\xi$. Thus we have that $\omega^\beta = \lim_{\xi \to \beta} (\alpha + \omega^\xi) = \lim_{\xi \to \beta} \omega^\xi = \omega^\beta$ for $\alpha < \omega^\beta$. $\square$
+If $\beta$ is a limit ordinal, then for $\alpha < \omega^\beta$ we have that $\alpha < \omega^\xi$ for some $\xi < \beta$. By induction hypothesis, $\alpha + \omega^\xi = \omega^\xi$. Thus we have that $\omega^\beta = \lim_{\xi \to \beta} (\alpha + \omega^\xi) = \lim_{\xi \to \beta} \omega^\xi = \omega^\beta$ for $\alpha < \omega^\beta$. 
+$\square$
 
 <a name="ex2.14"></a>
 ## Exercise 2.14.
-<i>Solution.</i> Suppose such a sequence exists. Consider $X := \\{a_n : n \in \boldsymbol{N}\\} \subseteq P$. Since $E$ is well-founded, $X$ has some $E$-minimal element, which is $a_n$ for some $n \in \boldsymbol{N}$. Yet $a_n \; E \; a_{n+1}$, a contradiction. $\square$
+<i>Solution.</i> Suppose such a sequence exists. Consider $X := \\{a_n : n \in \boldsymbol{N}\\} \subseteq P$. Since $E$ is well-founded, $X$ has some $E$-minimal element, which is $a_n$ for some $n \in \boldsymbol{N}$. Yet $a_n \; E \; a_{n+1}$, a contradiction. 
+$\square$
 
 <a name="ex2.15"></a>
 ## Exercise 2.15.
@@ -377,4 +397,5 @@ If $\beta$ is a limit ordinal, then for $\alpha < \omega^\beta$ we have that $\a
 
 <li> $x = G(\c{a_y : y \; E \; x})$.</li>
 </ol>
-The proof of Theorem 2.15 can be followed similarly to show that the $F$ above works. $\square$
+The proof of Theorem 2.15 can be followed similarly to show that the $F$ above works. 
+$\square$

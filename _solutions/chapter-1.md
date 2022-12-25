@@ -8,6 +8,8 @@ excerpt: ""
 
 {% include commands.html %}
 
+$\newcommand{\set}[1]{\left\{ #1 \right\}}$
+
 <a name="ex1.1"></a>
 ## Exercise 1.1.
 <i>Solution.</i> $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \set{\set{a},\set{a,b}} = \set{\set{c},\set{c,d}} = (c,d)$. Then $\set{a} \in \set{\set{c},\set{c,d}}$, so $\set{a} = \set{c}$ or $\set{a} = \set{c,d}$. We consider two cases.

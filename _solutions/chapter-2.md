@@ -10,6 +10,8 @@ excerpt: ""
 
 <a name="ex2.1"></a>
 ## Exercise 2.1.
+The relation "$(P,<)$ is isomorphic to $(Q,<)$" is an equivalence relation (on the class of all partially ordered sets).
+
 <i>Solution.</i> Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.
 
 <b>Reflexive:</b> The identity $\id : P \to P$ is clearly an isomorphism.
@@ -28,6 +30,8 @@ $\square$
 
 <a name="ex2.2"></a>
 ## Exercise 2.2.
+$\alpha$ is a limit ordinal if and only if $\beta < \alpha$ implies $\beta + 1 < \alpha$, for every $\beta$.
+
 <i>Solution.</i> Note that $\beta < \alpha$ iff $\beta + 1 \leq \alpha$.
 
 <u>$\implies$:</u> Suppose $\beta \in \alpha$. Since $\alpha = \bigcup \alpha$, $\beta \in \gamma$ for some $\gamma \in \alpha$. Then $\beta + 1 \subseteq \gamma$. Since $\gamma \in \alpha$, $\beta + 1 \in \alpha$.
@@ -39,20 +43,35 @@ $\square$
 
 <a name="ex2.3"></a>
 ## Exercise 2.3.
+If a set $X$ is inductive, then $X \cap \boldsymbol{\mathrm{ORD}}$ is inductive. The set $\boldsymbol{N} = \bigcap\lbrace X : \text{$X$ is inductive}\rbrace$ is the least limit ordinal $\neq 0$.
+
 <i>Solution.</i> We shall show that if $A$ and $B$ are inductive, then so is $A \cap B$. Since $\boldsymbol{\mathrm{ORD}}$ is an inductive class, it follows that $X \cap \boldsymbol{\mathrm{ORD}}$ is also inductive.
 
-Clearly $\emptyset \in A \cap B$. Let $x \in A \cap B$. Then since $A$ and $B$ are inductive, $x \cup \\{x\\} \in A$ and $x \cup \\{x\\} \in B$, so $x \cup \\{x\\} \in A \cap B$. Thus $A \cap B$ is inductive.
+Clearly $\emptyset \in A \cap B$. Let $x \in A \cap B$. Then since $A$ and $B$ are inductive, $x \cup \lbrace x\rbrace \in A$ and $x \cup \lbrace x\rbrace \in B$, so $x \cup \lbrace x\rbrace \in A \cap B$. Thus $A \cap B$ is inductive.
 
-Since $\boldsymbol{N}$ is the smallest inductive set, $\boldsymbol{N} = \boldsymbol{N} \cap \boldsymbol{\mathrm{ORD}}$, i.e. $\boldsymbol{N} \subseteq \boldsymbol{\mathrm{ORD}}$. Since $\boldsymbol{N}$ is transitive by [Exercise 1.3](https://clementyung.github.io/jech-solutions/chapter-1#ex1.3), and is well-ordered, it is an ordinal.
+Since $\boldsymbol{N}$ is the smallest inductive set, $\boldsymbol{N} = \boldsymbol{N} \cap \boldsymbol{\mathrm{ORD}}$, i.e. $\boldsymbol{N} \subseteq \boldsymbol{\mathrm{ORD}}$. Since $\boldsymbol{N}$ is transitive by [Exercise 1.3](#ex1.3), and is well-ordered, it is an ordinal.
 
-Finally, to see that $\boldsymbol{N}$ is a limit ordinal, suppose not, so $\boldsymbol{N} = n \cup \\{n\\}$ for some $n \in \boldsymbol{N}$. By the inductive property of $\boldsymbol{N}$, we have that $\boldsymbol{N} = n \cup \\{n\\} \in \boldsymbol{N}$, contradicting the Axiom of Regularity. 
+Finally, to see that $\boldsymbol{N}$ is a limit ordinal, suppose not, so $\boldsymbol{N} = n \cup \lbrace n\rbrace$ for some $n \in \boldsymbol{N}$. By the inductive property of $\boldsymbol{N}$, we have that $\boldsymbol{N} = n \cup \lbrace n\rbrace \in \boldsymbol{N}$, contradicting the Axiom of Regularity. 
 $\square$
 
 <a name="ex2.4"></a>
 ## Exercise 2.4.
+(Without the Axiom of Infinity). Let $\omega = $ least limit $\alpha \neq 0$ if it exists, $\omega = \boldsymbol{\mathrm{ORD}}$ otherwise. Prove that the following statements are equivalent:
+<ol>
+<li> There exists an inductive set.</li>
+
+<li> There exists an infinite set.</li>
+
+<li> $\omega$ is a set.</li>
+</ol>
+
+\begin{hint}
+For (ii) $\to$ (iii), apply Replacement to the set of all finite subsets of $X$.
+\end{hint}
+
 <i>Solution.</i> <u>(i) $\implies$ (ii):</u> If $X$ is inductive, then $\boldsymbol{N} \subseteq X$. Then there exists an injective map $\boldsymbol{N} \to X$, which is the inclusion map. Then $\mod{\boldsymbol{N}} \leq \mod{X}$, so $X$ is infinite.
 
-<u>(ii) $\implies$ (iii):</u> Let $X$ be an infinite set. Consider the map on $[X]^{<\omega}$ (the set of all finite subsets of $X$) defined by:
+<u>(ii) $\implies$ (iii):</u> Let $X$ be an infinite set. Consider the map on $\Sb{X}^{<\omega}$ (the set of all finite subsets of $X$) defined by:
 
 $$
 \begin{align*}
@@ -67,16 +86,30 @@ $\square$
 
 <a name="ex2.5"></a>
 ## Exercise 2.5.
-<i>Solution.</i> If such a sequence exists, then $\\{a_n : n \in \boldsymbol{N}\\} \subseteq \boldsymbol{N}$ has no minimal element, contradicting the definition of well-order. 
+If $W$ is a well-ordered set, then there exists no sequence $\c{a_n : n \in \boldsymbol{N}}$ in $W$ such that $a_0 > a_1 > a_2 > \dots$.
+
+<i>Solution.</i> If such a sequence exists, then $\lbrace a_n : n \in \boldsymbol{N}\rbrace \subseteq \boldsymbol{N}$ has no minimal element, contradicting the definition of well-order. 
 $\square$
 
 <a name="ex2.6"></a>
 ## Exercise 2.6.
+There are arbitrarily large limit ordinals; i.e. $\forall \alpha \, \exists \beta > \alpha \, (\beta \text{ is a limit})$.
+
+\begin{hint}
+Consider $\lim_{n \to \omega} \alpha_n$, where $\alpha_{n+1} = \alpha_n + 1$.
+\end{hint}
+
 <i>Solution.</i> For any ordinal $\alpha$, consider the sequence $\alpha_0 := \alpha$ and $\alpha_{n+1} := \alpha_n + 1$. Let $\beta := \lim_{n \to \omega} \alpha_n$. Then $\beta$ is a limit of a (strictly) increasing sequence of ordinals, and is hence a limit ordinal (as $\bigcup\beta = \beta$). 
 $\square$
 
 <a name="ex2.7"></a>
 ## Exercise 2.7.
+Every normal sequence $\c{\gamma_\alpha : \alpha \in \boldsymbol{\mathrm{ORD}}}$ has arbitrarily large <b>fixed points</b>, i.e. $\alpha$ such that $\gamma_\alpha = \alpha$.
+
+\begin{hint}
+Let $\alpha_{n+1} = \gamma_{\alpha_n}$, and $\alpha = \lim_{n \to \omega} \alpha_n$.
+\end{hint}
+
 <i>Solution.</i> For any $\alpha_0 \in \boldsymbol{\mathrm{ORD}}$, define $\alpha_{n+1} = \gamma_{\alpha_n}$ as in the hint. Let $\alpha = \lim_{n \to \omega} \alpha_n$. Then, by normality of the sequence:
 
 $$
@@ -89,6 +122,8 @@ $\square$
 
 <a name="ex2.8"></a>
 ## Exercise 2.8.
+For all $\alpha,\beta$ and $\gamma$:
+
 <a name="lem2.8.A"></a>
 <b>Lemma 2.8.A.</b> If $\beta$ is a limit ordinal, then so are $\alpha + \beta$, $\alpha \cdot \beta$ and $\alpha^\beta$.
 
@@ -97,6 +132,8 @@ $\blacksquare$
 
 <a name="ex2.8(i)"></a>
 ### Exercise 2.8(i).
+$\alpha \cdot (\beta + \gamma) = \alpha \cdot \beta + \alpha \cdot \gamma$.
+
 <i>Solution.</i> We induct on $\gamma$. For $\gamma = 0$, we have:
 
 $$
@@ -118,14 +155,14 @@ $$
 \end{align*}
 $$
 
-If $\gamma$ is a limit ordinal, then note that $\beta + \gamma$ is also a limit ordinal by [Lemma 2.8.A](#lem2.8.A). Thus:
+If $\gamma$ is a limit ordinal, then note that $\beta + \gamma$ is also a limit ordinal by [Lemma 2.8.A](https://clementyung.github.io/jech-solutions/chapter-2#lem2.8.A). Thus:
 
 $$
 \begin{align*}
 \alpha \cdot (\beta + \gamma) &= \alpha \cdot \lim_{\xi \to \gamma} (\beta + \xi) \\
 &= \lim_{\xi \to \gamma} \alpha \cdot (\beta + \xi) \text{} && \text{as $\beta + \gamma$ is limit} \\
 &= \lim_{\xi \to \gamma} (\alpha \cdot \beta + \alpha \cdot \xi) && \text{by induction hypothesis} \\
-&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by [Lemma 2.8.A](#lem2.8.A)} \\
+&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by [Lemma 2.8.A](https://clementyung.github.io/jech-solutions/chapter-2#lem2.8.A)} \\
 &= \alpha \cdot \beta + \alpha \cdot \gamma
 \end{align*}
 $$
@@ -134,6 +171,8 @@ $\square$
 
 <a name="ex2.8(ii)"></a>
 ### Exercise 2.8(ii).
+$\alpha^{\beta + \gamma} = \alpha^\beta \cdot \alpha^\gamma$.
+
 <i>Solution.</i> We induct on $\gamma$. For $\gamma = 0$, we have:
 
 $$
@@ -169,6 +208,8 @@ $\square$
 
 <a name="ex2.8(iii)"></a>
 ### Exercise 2.8(iii).
+$(\alpha^\beta)\gamma = \alpha^{\beta\cdot\gamma}$.
+
 <i>Solution.</i> We induct on $\gamma$. If $\gamma = 0$, then:
 
 $$
@@ -183,7 +224,7 @@ $$
 \begin{align*}
 (\alpha^\beta)^{\delta + 1} &= (\alpha^\beta)^\delta \cdot \alpha^\beta \\
 &= \alpha^{\beta \cdot \delta} \cdot \alpha^\beta && \text{by induction hypothesis} \\
-&= \alpha^{\beta \cdot \delta + \beta} && \text{by Exercise 2.8(ii)} \\
+&= \alpha^{\beta \cdot \delta + \beta} && \text{by [Exercise 2.8(ii)](https://clementyung.github.io/jech-solutions/chapter-2#ex2.8(ii))} \\
 &= \alpha^{\beta \cdot (\delta + 1)}
 \end{align*}
 $$
@@ -204,6 +245,8 @@ $\square$
 ## Exercise 2.9.
 <a name="ex2.9(i)"></a>
 ### Exercise 2.9(i).
+Show that $(\omega + 1) \cdot 2 \neq \omega \cdot 2 + 1 \cdot 2$.
+
 <i>Solution.</i> We first note that:
 
 $$
@@ -217,6 +260,8 @@ $\square$
 
 <a name="ex2.9(ii)"></a>
 ### Exercise 2.9(ii).
+Show that $(\omega \cdot 2)^2 \neq \omega^2 \cdot 2^2$.
+
 <i>Solution.</i> Observe that:
 
 $$
@@ -230,6 +275,8 @@ $\square$
 
 <a name="ex2.10"></a>
 ## Exercise 2.10.
+If $\alpha < \beta$ then $\alpha + \gamma \leq \beta + \gamma$, $\alpha \cdot \gamma \leq \beta \cdot \gamma$, and $\alpha^\gamma \leq \beta^\gamma$.
+
 <i>Solution.</i> We induct on $\gamma$.
 
 <u>$\alpha + \gamma \leq \beta + \gamma$:</u> If $\gamma = 0$ then this follows from $\alpha < \beta$. If $\gamma = \delta + 1$, then by Lemma 2.25(i) we have that:
@@ -296,18 +343,26 @@ $\square$
 
 <a name="ex2.11"></a>
 ## Exercise 2.11.
+Find $\alpha$, $\beta$, $\gamma$ such that:
+
 <a name="ex2.11(i)"></a>
 ### Exercise 2.11(i).
-<i>Solution.</i> As we saw in the proof of [Exercise 2.9(i)](#ex2.9(i)), $0 < 1$ but $0 + \omega = \omega = 1 + \omega$. 
+$\alpha < \beta$ and $\alpha + \gamma = \beta + \gamma$.
+
+<i>Solution.</i> As we saw in the proof of [Exercise 2.9(i)](https://clementyung.github.io/jech-solutions/chapter-2#ex2.9(i)), $0 < 1$ but $0 + \omega = \omega = 1 + \omega$. 
 $\square$
 
 <a name="ex2.11(ii)"></a>
 ### Exercise 2.11(ii).
-<i>Solution.</i> As we saw in the proof of [Exercise 2.9(ii)](#ex2.9(ii)), $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$. 
+$\alpha < \beta$ and $\alpha \cdot \gamma = \beta \cdot \gamma$.
+
+<i>Solution.</i> As we saw in the proof of [Exercise 2.9(ii)](https://clementyung.github.io/jech-solutions/chapter-2#ex2.9(ii)), $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$. 
 $\square$
 
 <a name="ex2.11(iii)"></a>
 ### Exercise 2.11(iii).
+$\alpha < \beta$ and $\alpha^\gamma = \beta^\gamma$.
+
 <i>Solution.</i> $2 < 3$ but:
 
 $$
@@ -320,6 +375,8 @@ $\square$
 
 <a name="ex2.12"></a>
 ## Exercise 2.12.
+Let $\varepsilon_0 = \lim_{n \to \omega} \alpha_n$ where $\alpha_0 = \omega$ and $\alpha_{n+1} = \omega^{\alpha_n}$ for all $n$. Show that $\varepsilon_0$ is the least ordinal $\varepsilon$ such that $\omega^\varepsilon = \varepsilon$.
+
 <i>Solution.</i> We first show that $\omega^{\varepsilon_0} = \varepsilon_0$. Indeed:
 
 $$
@@ -328,7 +385,7 @@ $$
 \end{align*}
 $$
 
-Now suppose $\varepsilon$ is another ordinal such that $\omega^\varepsilon = \varepsilon$. Note that $\varepsilon \neq 0$, as $\omega^0 = 1 \neq 0$. Thus, $\varepsilon \geq \omega \alpha_0$. If $\varepsilon \geq \alpha_n$, then by [Exercise 2.10](#ex2.10):
+Now suppose $\varepsilon$ is another ordinal such that $\omega^\varepsilon = \varepsilon$. Note that $\varepsilon \neq 0$, as $\omega^0 = 1 \neq 0$. Thus, $\varepsilon \geq \omega \alpha_0$. If $\varepsilon \geq \alpha_n$, then by [Exercise 2.10](https://clementyung.github.io/jech-solutions/chapter-2#ex2.10):
 
 $$
 \begin{align*}
@@ -341,9 +398,15 @@ $\square$
 
 <a name="ex2.13"></a>
 ## Exercise 2.13.
+\begin{definition}
+A limit ordinal $\gamma > 0$ is called <b>indecomposable</b> if there exist no $\alpha < \gamma$ and $\beta < \gamma$ such that $\alpha + \beta = \gamma$.
+\end{definition}
+
+A limit ordinal $\gamma > 0$ is indecomposable if and only if $\alpha + \gamma = \gamma$ for all $\alpha < \gamma$ if and only iff $\gamma = \omega^\alpha$ for some $\alpha$.
+
 <i>Solution.</i> Call those definitions (i), (ii) and (iii) respectively.
 
-<u>(i) $\implies$ (ii):</u> Let $\alpha < \gamma$. By Lemma 2.25(ii), there exists some $\delta$ such that $\alpha + \delta = \gamma$. Since $\alpha$ is indecomposable, $\delta \geq \gamma$. If $\delta > \gamma$, then by Lemma 2.25(i) and [Exercise 2.10](#ex2.10) we have $\alpha + \delta > \alpha + \gamma \geq \gamma$. Thus $\delta = \gamma$.
+<u>(i) $\implies$ (ii):</u> Let $\alpha < \gamma$. By Lemma 2.25(ii), there exists some $\delta$ such that $\alpha + \delta = \gamma$. Since $\alpha$ is indecomposable, $\delta \geq \gamma$. If $\delta > \gamma$, then by Lemma 2.25(i) and [Exercise 2.10](https://clementyung.github.io/jech-solutions/chapter-2#ex2.10) we have $\alpha + \delta > \alpha + \gamma \geq \gamma$. Thus $\delta = \gamma$.
 
 <u>(ii) $\implies$ (i):</u> For $\alpha < \gamma$ and $\beta < \gamma$, by Lemma 2.25(i) we have $\alpha + \beta < \alpha + \gamma = \gamma$.
 
@@ -386,11 +449,15 @@ $\square$
 
 <a name="ex2.14"></a>
 ## Exercise 2.14.
-<i>Solution.</i> Suppose such a sequence exists. Consider $X := \\{a_n : n \in \boldsymbol{N}\\} \subseteq P$. Since $E$ is well-founded, $X$ has some $E$-minimal element, which is $a_n$ for some $n \in \boldsymbol{N}$. Yet $a_n \; E \; a_{n+1}$, a contradiction. 
+If $E$ is a well-founded relation on $P$, then there is no sequence $\c{a_n : n \in \boldsymbol{N}}$ in $P$ such that $a_1 \; E \; a_0$, $a_2 \; E \; a_1$, $a_3 \; E \; a_2$, $\dots$.
+
+<i>Solution.</i> Suppose such a sequence exists. Consider $X := \lbrace a_n : n \in \boldsymbol{N}\rbrace \subseteq P$. Since $E$ is well-founded, $X$ has some $E$-minimal element, which is $a_n$ for some $n \in \boldsymbol{N}$. Yet $a_n \; E \; a_{n+1}$, a contradiction. 
 $\square$
 
 <a name="ex2.15"></a>
 ## Exercise 2.15.
+<b>(Well-Founded Recursion).</b> Let $E$ be a well-founded relation on a set $P$, and let $G$ be a function. Then there exists a function $F$ such that for all $x \in P$, $F(x) = G(x,F\restrictedto\lbrace y \in P : y \; E \; x\rbrace)$.
+
 <i>Solution.</i> The proof of Theorem 2.15 can be mimicked. Define the function $F$ such that $F(x) = X$ iff there is a sequence $\c{a_y : y \; E \; x}$ (where $a_x := G(\c{a_y : y \; E \; x})$) such that:
 <ol>
 <li> $(\forall y \; E \; x) \, a_y = F(\c{a_z : z \; E \; y})$.</li>

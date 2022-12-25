@@ -10,11 +10,11 @@ excerpt: ""
 
 <a name="ex2.1"></a>
 ## Exercise 2.1.
-<i>Solution.</i> Suppose $f : P \to Q$ and $g : Q \to R$ are two isomorphisms.
+<i>Solution.</i> Suppose $$f : P \to Q$$ and $$g : Q \to R$$ are two isomorphisms.
 
-<b>Reflexive:</b> The identity $\id : P \to P$ is clearly an isomorphism.
+<b>Reflexive:</b> The identity $$\id : P \to P$$ is clearly an isomorphism.
 
-<b>Symmetry:</b> By definition of an isomorphism, it's easy to see if $f : P \to Q$ is an isomorphism then so is $f^{-1} : Q \to P$.
+<b>Symmetry:</b> By definition of an isomorphism, it's easy to see if $$f : P \to Q$$ is an isomorphism then so is $$f^{-1} : Q \to P$$.
 
 <b>Transitive:</b> Composition of isomorphisms are isomorphisms, as they remain bijective and:
 
@@ -23,73 +23,73 @@ $$
 x < y \implies f(x) < f(y) \implies g(f(x)) < g(f(y))
 \end{align*}
 $$
-
-a
+ $$\blacksquare$$
 
 <a name="ex2.2"></a>
 ## Exercise 2.2.
-<i>Solution.</i> Note that $\beta < \alpha$ iff $\beta + 1 \leq \alpha$.
+<i>Solution.</i> Note that $$\beta < \alpha$$ iff $$\beta + 1 \leq \alpha$$.
 
-<u>$\implies$:</u> Suppose $\beta \in \alpha$. Since $\alpha = \bigcup \alpha$, $\beta \in \gamma$ for some $\gamma \in \alpha$. Then $\beta + 1 \subseteq \gamma$. Since $\gamma \in \alpha$, $\beta + 1 \in \alpha$.
+<u>$$\implies$$:</u> Suppose $$\beta \in \alpha$$. Since $$\alpha = \bigcup \alpha$$, $$\beta \in \gamma$$ for some $$\gamma \in \alpha$$. Then $$\beta + 1 \subseteq \gamma$$. Since $$\gamma \in \alpha$$, $$\beta + 1 \in \alpha$$.
 
-<u>$\impliedby$:</u> If $\beta \in \bigcup \alpha$, then $\beta \in \gamma$ for some $\gamma \in \alpha$. By transitivity of ordinals, $\gamma \subseteq \alpha$, so $\beta \in \alpha$. Thus, $\bigcup \alpha \subseteq \alpha$ (we have not used the hypothesis).
+<u>$$\impliedby$$:</u> If $$\beta \in \bigcup \alpha$$, then $$\beta \in \gamma$$ for some $$\gamma \in \alpha$$. By transitivity of ordinals, $$\gamma \subseteq \alpha$$, so $$\beta \in \alpha$$. Thus, $$\bigcup \alpha \subseteq \alpha$$ (we have not used the hypothesis).
 
-On the other hand, let $\beta \in \alpha$. By hypothesis, $\beta + 1 \in \alpha$, so $\beta + 1 \subseteq \bigcup\alpha$. Hence $\beta \in \bigcup\alpha$.
+On the other hand, let $$\beta \in \alpha$$. By hypothesis, $$\beta + 1 \in \alpha$$, so $$\beta + 1 \subseteq \bigcup\alpha$$. Hence $$\beta \in \bigcup\alpha$$. $$\blacksquare$$
 
 <a name="ex2.3"></a>
 ## Exercise 2.3.
-<i>Solution.</i> We shall show that if $A$ and $B$ are inductive, then so is $A \cap B$. Since $\ORD$ is an inductive class, it follows that $X \cap \ORD$ is also inductive.
+<i>Solution.</i> We shall show that if $$A$$ and $$B$$ are inductive, then so is $$A \cap B$$. Since $$\ORD$$ is an inductive class, it follows that $$X \cap \ORD$$ is also inductive.
 
-Clearly $\emptyset \in A \cap B$. Let $x \in A \cap B$. Then since $A$ and $B$ are inductive, $x \cup \{x\} \in A$ and $x \cup \{x\} \in B$, so $x \cup \{x\} \in A \cap B$. Thus $A \cap B$ is inductive.
+Clearly $$\emptyset \in A \cap B$$. Let $$x \in A \cap B$$. Then since $$A$$ and $$B$$ are inductive, $$x \cup \{x\} \in A$$ and $$x \cup \{x\} \in B$$, so $$x \cup \{x\} \in A \cap B$$. Thus $$A \cap B$$ is inductive.
 
-Since $\boldsymbol{N}$ is the smallest inductive set, $\boldsymbol{N} = \boldsymbol{N} \cap \ORD$, i.e. $\boldsymbol{N} \subseteq \ORD$. Since $\boldsymbol{N}$ is transitive by [Exercise ex1.3](https://clementyung.github.io/jech-solutions/chapter-1#ex1.3), and is well-ordered, it is an ordinal.
+Since $$\boldsymbol{N}$$ is the smallest inductive set, $$\boldsymbol{N} = \boldsymbol{N} \cap \ORD$$, i.e. $$\boldsymbol{N} \subseteq \ORD$$. Since $$\boldsymbol{N}$$ is transitive by [Exercise ex1.3](https://clementyung.github.io/jech-solutions/chapter-1#ex1.3), and is well-ordered, it is an ordinal.
 
-Finally, to see that $\boldsymbol{N}$ is a limit ordinal, suppose not, so $\boldsymbol{N} = n \cup \{n\}$ for some $n \in \boldsymbol{N}$. By the inductive property of $\boldsymbol{N}$, we have that $\boldsymbol{N} = n \cup \{n\} \in \boldsymbol{N}$, contradicting the Axiom of Regularity.
+Finally, to see that $$\boldsymbol{N}$$ is a limit ordinal, suppose not, so $$\boldsymbol{N} = n \cup \{n\}$$ for some $$n \in \boldsymbol{N}$$. By the inductive property of $$\boldsymbol{N}$$, we have that $$\boldsymbol{N} = n \cup \{n\} \in \boldsymbol{N}$$, contradicting the Axiom of Regularity. $$\blacksquare$$
 
 <a name="ex2.4"></a>
 ## Exercise 2.4.
-<i>Solution.</i> <u>(i) $\implies$ (ii):</u> If $X$ is inductive, then $\boldsymbol{N} \subseteq X$. Then there exists an injective map $\boldsymbol{N} \to X$, which is the inclusion map. Then $|\boldsymbol{N}| \leq |X|$, so $X$ is infinite.
+<i>Solution.</i> <u>(i) $$\implies$$ (ii):</u> If $$X$$ is inductive, then $$\boldsymbol{N} \subseteq X$$. Then there exists an injective map $$\boldsymbol{N} \to X$$, which is the inclusion map. Then $$\mod{\boldsymbol{N}} \leq \mod{X}$$, so $$X$$ is infinite.
 
-<u>(ii) $\implies$ (iii):</u> Let $X$ be an infinite set. Consider the map on $[X]^{<\omega}$ (the set of all finite subsets of $X$) defined by:
+<u>(ii) $$\implies$$ (iii):</u> Let $$X$$ be an infinite set. Consider the map on $$[X]^{<\omega}$$ (the set of all finite subsets of $$X$$) defined by:
 
 $$
 \begin{align*}
-Y \mapsto |Y|
+Y \mapsto \mod{Y}
 \end{align*}
 $$
 
-This is well-defined, as $|Y|$ is well-defined for finite sets without Axiom of Infinity. By Axiom of Replacement, the image of this map is a set. Since $X$ is infinite, we have that for all $n \in \omega$, there exists $Y \subseteq X$ such that $|Y| = n$. Then $Y \mapsto n$, the image of this map is $\omega$. Hence $\omega$ is a set.
+This is well-defined, as $$\mod{Y}$$ is well-defined for finite sets without Axiom of Infinity. By Axiom of Replacement, the image of this map is a set. Since $$X$$ is infinite, we have that for all $$n \in \omega$$, there exists $$Y \subseteq X$$ such that $$\mod{Y} = n$$. Then $$Y \mapsto n$$, the image of this map is $$\omega$$. Hence $$\omega$$ is a set.
 
-<u>(iii) $\implies$ (i):</u> $\omega$ is inductive by definition.
+<u>(iii) $$\implies$$ (i):</u> $$\omega$$ is inductive by definition. $$\blacksquare$$
 
 <a name="ex2.5"></a>
 ## Exercise 2.5.
-<i>Solution.</i> If such a sequence exists, then $\{a_n : n \in \boldsymbol{N}\} \subseteq \boldsymbol{N}$ has no minimal element, contradicting the definition of well-order.
+<i>Solution.</i> If such a sequence exists, then $$\{a_n : n \in \boldsymbol{N}\} \subseteq \boldsymbol{N}$$ has no minimal element, contradicting the definition of well-order. $$\blacksquare$$
 
 <a name="ex2.6"></a>
 ## Exercise 2.6.
-<i>Solution.</i> For any ordinal $\alpha$, consider the sequence $\alpha_0 := \alpha$ and $\alpha_{n+1} := \alpha_n + 1$. Let $\beta := \lim_{n \to \omega} \alpha_n$. Then $\beta$ is a limit of a (strictly) increasing sequence of ordinals, and is hence a limit ordinal (as $\bigcup\beta = \beta$).
+<i>Solution.</i> For any ordinal $$\alpha$$, consider the sequence $$\alpha_0 := \alpha$$ and $$\alpha_{n+1} := \alpha_n + 1$$. Let $$\beta := \lim_{n \to \omega} \alpha_n$$. Then $$\beta$$ is a limit of a (strictly) increasing sequence of ordinals, and is hence a limit ordinal (as $$\bigcup\beta = \beta$$). $$\blacksquare$$
 
 <a name="ex2.7"></a>
 ## Exercise 2.7.
-<i>Solution.</i> For any $\alpha_0 \in \ORD$, define $\alpha_{n+1} = \gamma_{\alpha_n}$ as in the hint. Let $\alpha = \lim_{n \to \omega} \alpha_n$. Then, by normality of the sequence:
+<i>Solution.</i> For any $$\alpha_0 \in \ORD$$, define $$\alpha_{n+1} = \gamma_{\alpha_n}$$ as in the hint. Let $$\alpha = \lim_{n \to \omega} \alpha_n$$. Then, by normality of the sequence:
 
 $$
 \begin{align*}
 \gamma_\alpha = \lim_{n \to \omega} \gamma_{\alpha_n} = \lim_{n \to \omega} \alpha_{n+1} = \alpha
 \end{align*}
 $$
+ $$\blacksquare$$
 
 <a name="ex2.8"></a>
 ## Exercise 2.8.
 <a name="lem2.8.A"></a>
-<b>Lemma 2.8.A.</b> If $\beta$ is a limit ordinal, then so are $\alpha + \beta$, $\alpha \cdot \beta$ and $\alpha^\beta$.
+<b>Lemma 2.8.A.</b> If $$\beta$$ is a limit ordinal, then so are $$\alpha + \beta$$, $$\alpha \cdot \beta$$ and $$\alpha^\beta$$.
 
-<i>Proof.</i> Let $F(\alpha,\beta)$ denote $\alpha + \beta$, $\alpha \cdot \beta$ or $\alpha^\beta$. In all three cases, we have $F(\alpha,\beta) = \lim_{\xi \to \beta} F(\alpha,\xi)$. Since $F(\alpha,\beta)$ is a limit ordinal iff $F(\alpha,\beta) = \lim_{\delta \to F(\alpha,\beta)} \delta$, it suffices to show that for all $\delta < F(\alpha,\beta)$, there exists some $\xi < \beta$ such that $\delta \leq F(\alpha,\xi$). But this is obviously true, for if $\delta > F(\alpha,\xi)$ for all $\xi < \beta$ then $\delta \geq \lim_{\xi \to \beta} F(\alpha,\xi) = F(\alpha,\beta)$ by definition.
+<i>Proof.</i> Let $$F(\alpha,\beta)$$ denote $$\alpha + \beta$$, $$\alpha \cdot \beta$$ or $$\alpha^\beta$$. In all three cases, we have $$F(\alpha,\beta) = \lim_{\xi \to \beta} F(\alpha,\xi)$$. Since $$F(\alpha,\beta)$$ is a limit ordinal iff $$F(\alpha,\beta) = \lim_{\delta \to F(\alpha,\beta)} \delta$$, it suffices to show that for all $$\delta < F(\alpha,\beta)$$, there exists some $$\xi < \beta$$ such that $$\delta \leq F(\alpha,\xi$$). But this is obviously true, for if $$\delta > F(\alpha,\xi)$$ for all $$\xi < \beta$$ then $$\delta \geq \lim_{\xi \to \beta} F(\alpha,\xi) = F(\alpha,\beta)$$ by definition. $$\qedsymbol$$
 
-<a name=ex"2.8(i)"></a>
+<a name="ex2.8(i)"></a>
 # Exercise 2.8(i).
-<i>Solution.</i> We induct on $\gamma$. For $\gamma = 0$, we have:
+<i>Solution.</i> We induct on $$\gamma$$. For $$\gamma = 0$$, we have:
 
 $$
 \begin{align*}
@@ -97,7 +97,7 @@ $$
 \end{align*}
 $$
 
-Suppose $\gamma = \delta + 1$ and $\alpha \cdot (\beta + \delta) = \alpha \cdot \beta + \alpha \cdot \delta$. Then:
+Suppose $$\gamma = \delta + 1$$ and $$\alpha \cdot (\beta + \delta) = \alpha \cdot \beta + \alpha \cdot \delta$$. Then:
 
 $$
 \begin{align*}
@@ -110,21 +110,22 @@ $$
 \end{align*}
 $$
 
-If $\gamma$ is a limit ordinal, then note that $\beta + \gamma$ is also a limit ordinal by [Lemma lem2.8.A](#lem2.8.A). Thus:
+If $$\gamma$$ is a limit ordinal, then note that $$\beta + \gamma$$ is also a limit ordinal by [Lemma lem2.8.A](#lem2.8.A). Thus:
 
 $$
 \begin{align*}
 \alpha \cdot (\beta + \gamma) &= \alpha \cdot \lim_{\xi \to \gamma} (\beta + \xi) \\
-&= \lim_{\xi \to \gamma} \alpha \cdot (\beta + \xi) \text{} && \text{as $\beta + \gamma$ is limit} \\
+&= \lim_{\xi \to \gamma} \alpha \cdot (\beta + \xi) \text{} && \text{as $$\beta + \gamma$$ is limit} \\
 &= \lim_{\xi \to \gamma} (\alpha \cdot \beta + \alpha \cdot \xi) && \text{by induction hypothesis} \\
-&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by [Lemma lem2.8.A](#lem2.8.A)} \\
+&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $$\alpha \cdot \gamma$$ is limit, by [Lemma lem2.8.A](#lem2.8.A)} \\
 &= \alpha \cdot \beta + \alpha \cdot \gamma
 \end{align*}
 $$
+ $$\blacksquare$$
 
-<a name=ex"2.8(ii)"></a>
+<a name="ex2.8(ii)"></a>
 # Exercise 2.8(ii).
-<i>Solution.</i> We induct on $\gamma$. For $\gamma = 0$, we have:
+<i>Solution.</i> We induct on $$\gamma$$. For $$\gamma = 0$$, we have:
 
 $$
 \begin{align*}
@@ -132,7 +133,7 @@ $$
 \end{align*}
 $$
 
-Suppose $\gamma = \delta + 1$ and $\alpha^{\beta+\gamma} = \alpha^\beta \cdot \alpha^\gamma$. Then:
+Suppose $$\gamma = \delta + 1$$ and $$\alpha^{\beta+\gamma} = \alpha^\beta \cdot \alpha^\gamma$$. Then:
 
 $$
 \begin{align*}
@@ -144,20 +145,21 @@ $$
 \end{align*}
 $$
 
-Suppose $\gamma$ is a limit ordinal. Then $\alpha^\gamma$ and $\alpha^{\beta+\gamma}$ is a limit ordinal, so:
+Suppose $$\gamma$$ is a limit ordinal. Then $$\alpha^\gamma$$ and $$\alpha^{\beta+\gamma}$$ is a limit ordinal, so:
 
 $$
 \begin{align*}
 \alpha^{\beta+\gamma} &= \lim_{\xi \to \gamma} \alpha^{\beta+\xi} \\
 &= \lim_{\xi \to \gamma} \alpha^\beta \cdot \alpha^\xi && \text{by induction hypothesis} \\
-&= \alpha^\beta \cdot \lim_{\xi \to \gamma} \alpha^\xi && \text{as $\alpha^\gamma$ is a limit ordinal} \\
+&= \alpha^\beta \cdot \lim_{\xi \to \gamma} \alpha^\xi && \text{as $$\alpha^\gamma$$ is a limit ordinal} \\
 &= \alpha^\beta \cdot \alpha^\gamma
 \end{align*}
 $$
+ $$\blacksquare$$
 
-<a name=ex"2.8(iii)"></a>
+<a name="ex2.8(iii)"></a>
 # Exercise 2.8(iii).
-<i>Solution.</i> We induct on $\gamma$. If $\gamma = 0$, then:
+<i>Solution.</i> We induct on $$\gamma$$. If $$\gamma = 0$$, then:
 
 $$
 \begin{align*}
@@ -165,30 +167,31 @@ $$
 \end{align*}
 $$
 
-If $\gamma = \delta + 1$, then:
+If $$\gamma = \delta + 1$$, then:
 
 $$
 \begin{align*}
 (\alpha^\beta)^{\delta + 1} &= (\alpha^\beta)^\delta \cdot \alpha^\beta \\
 &= \alpha^{\beta \cdot \delta} \cdot \alpha^\beta && \text{by induction hypothesis} \\
-&= \alpha^{\beta \cdot \delta + \beta} && \text{by [Exercise ex2.8(ii)](#ex2.8(ii))} \\
+&= \alpha^{\beta \cdot \delta + \beta} && \text{by [Exercise 2.8(ii)](#ex2.8(ii))} \\
 &= \alpha^{\beta \cdot (\delta + 1)}
 \end{align*}
 $$
 
-If $\gamma$ is a limit ordinal, then:
+If $$\gamma$$ is a limit ordinal, then:
 
 $$
 \begin{align*}
 (\alpha^\beta)^\gamma &= \lim_{\xi \to \gamma} (\alpha^\beta)^\xi \\
 &= \lim_{\xi \to \gamma} \alpha^{\beta\cdot\xi} && \text{by induction hypothesis} \\
-&= \alpha^{\beta \cdot \gamma} &&\text{as $\beta \cdot \gamma$ is limit, and therefore so is $\alpha^{\beta \cdot \gamma}$}
+&= \alpha^{\beta \cdot \gamma} &&\text{as $$\beta \cdot \gamma$$ is limit, and therefore so is $$\alpha^{\beta \cdot \gamma}$$}
 \end{align*}
 $$
+ $$\blacksquare$$
 
 <a name="ex2.9"></a>
 ## Exercise 2.9.
-<a name=ex"2.9(i)"></a>
+<a name="ex2.9(i)"></a>
 # Exercise 2.9(i).
 <i>Solution.</i> We first note that:
 
@@ -198,9 +201,9 @@ $$
 \end{align*}
 $$
 
-Now we have $(\omega + 1) \cdot 2 = \omega + 1 + \omega + 1 = \omega + \omega + 1 = \omega \cdot 2 + 1$. By Lemma 2.25(i), we have $\omega \cdot 2 + 1 < \omega \cdot 2 + 2$.
+Now we have $$(\omega + 1) \cdot 2 = \omega + 1 + \omega + 1 = \omega + \omega + 1 = \omega \cdot 2 + 1$$. By Lemma 2.25(i), we have $$\omega \cdot 2 + 1 < \omega \cdot 2 + 2$$. $$\blacksquare$$
 
-<a name=ex"2.9(ii)"></a>
+<a name="ex2.9(ii)"></a>
 # Exercise 2.9(ii).
 <i>Solution.</i> Observe that:
 
@@ -210,13 +213,13 @@ $$
 \end{align*}
 $$
 
-We have $(\omega \cdot 2)^2 = \omega \cdot 2 \cdot \omega \cdot 2 = \omega \cdot \omega \cdot 2 = \omega^2 \cdot 2$. By Lemma 2.25(iii), we have that $\omega^2 \cdot 2 < \omega^2 \cdot 4$.
+We have $$(\omega \cdot 2)^2 = \omega \cdot 2 \cdot \omega \cdot 2 = \omega \cdot \omega \cdot 2 = \omega^2 \cdot 2$$. By Lemma 2.25(iii), we have that $$\omega^2 \cdot 2 < \omega^2 \cdot 4$$. $$\blacksquare$$
 
 <a name="ex2.10"></a>
 ## Exercise 2.10.
-<i>Solution.</i> We induct on $\gamma$.
+<i>Solution.</i> We induct on $$\gamma$$.
 
-<u>$\alpha + \gamma \leq \beta + \gamma$:</u> If $\gamma = 0$ then this follows from $\alpha < \beta$. If $\gamma = \delta + 1$, then by Lemma 2.25(i) we have that:
+<u>$$\alpha + \gamma \leq \beta + \gamma$$:</u> If $$\gamma = 0$$ then this follows from $$\alpha < \beta$$. If $$\gamma = \delta + 1$$, then by Lemma 2.25(i) we have that:
 
 $$
 \begin{align*}
@@ -224,7 +227,7 @@ $$
 \end{align*}
 $$
 
-If $\gamma$ is a limit ordinal, then:
+If $$\gamma$$ is a limit ordinal, then:
 
 $$
 \begin{align*}
@@ -234,18 +237,18 @@ $$
 \end{align*}
 $$
 
-<u>$\alpha \cdot \gamma \leq \beta \cdot \gamma$:</u> If $\gamma = 0$ then $\alpha \cdot 0 = 0 = \beta \cdot 0$. If $\gamma = \delta + 1$, then:
+<u>$$\alpha \cdot \gamma \leq \beta \cdot \gamma$$:</u> If $$\gamma = 0$$ then $$\alpha \cdot 0 = 0 = \beta \cdot 0$$. If $$\gamma = \delta + 1$$, then:
 
 $$
 \begin{align*}
 \alpha \cdot (\delta + 1) &= \alpha \cdot \delta + \alpha \\
 &\leq \beta \cdot \delta + \alpha && \text{by above and induction hypothesis} \\
-&\leq \beta \cdot \delta + \beta && \text{by $\alpha < \beta$ and Lemma 2.25(i)} \\
+&\leq \beta \cdot \delta + \beta && \text{by $$\alpha < \beta$$ and Lemma 2.25(i)} \\
 &= \beta \cdot (\delta + 1)
 \end{align*}
 $$
 
-If $\gamma$ is a limit ordinal, then:
+If $$\gamma$$ is a limit ordinal, then:
 
 $$
 \begin{align*}
@@ -255,18 +258,18 @@ $$
 \end{align*}
 $$
 
-<u>$\alpha^\gamma \leq \beta^\gamma$:</u> If $\gamma = 0$ then $\alpha^0 = 1 = \beta^0$. If $\gamma = \delta + 1$ then by above and Lemma 2.25:
+<u>$$\alpha^\gamma \leq \beta^\gamma$$:</u> If $$\gamma = 0$$ then $$\alpha^0 = 1 = \beta^0$$. If $$\gamma = \delta + 1$$ then by above and Lemma 2.25:
 
 $$
 \begin{align*}
 \alpha^{\delta+1} &= \alpha^\delta \cdot \alpha \\
 &\leq \beta^\delta \cdot \alpha && \text{by above and induction hypothesis} \\
-&\leq \beta^\delta \cdot \beta && \text{by $\alpha < \beta$ and Lemma 2.25(iii)} \\
+&\leq \beta^\delta \cdot \beta && \text{by $$\alpha < \beta$$ and Lemma 2.25(iii)} \\
 &= \beta^{\delta+1}
 \end{align*}
 $$
 
-If $\gamma$ is a limit ordinal, then:
+If $$\gamma$$ is a limit ordinal, then:
 
 $$
 \begin{align*}
@@ -275,32 +278,32 @@ $$
 &= \beta^\gamma
 \end{align*}
 $$
+ $$\blacksquare$$
 
 <a name="ex2.11"></a>
 ## Exercise 2.11.
-Find $\alpha$, $\beta$, $\gamma$ such that:
-
-<a name=ex"2.11(i)"></a>
+<a name="ex2.11(i)"></a>
 # Exercise 2.11(i).
-<i>Solution.</i> As we saw in the proof of [Exercise ex2.9(i)](#ex2.9(i)), $0 < 1$ but $0 + \omega = \omega = 1 + \omega$.
+<i>Solution.</i> As we saw in the proof of [Exercise 2.9(i)](#ex2.9(i)), $$0 < 1$$ but $$0 + \omega = \omega = 1 + \omega$$. $$\blacksquare$$
 
-<a name=ex"2.11(ii)"></a>
+<a name="ex2.11(ii)"></a>
 # Exercise 2.11(ii).
-<i>Solution.</i> As we saw in the proof of [Exercise ex2.9(ii)](#ex2.9(ii)), $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$.
+<i>Solution.</i> As we saw in the proof of [Exercise 2.9(ii)](#ex2.9(ii)), $$1 < 2$$ but $$1 \cdot \omega = \omega = 2 \cdot \omega$$. $$\blacksquare$$
 
-<a name=ex"2.11(iii)"></a>
+<a name="ex2.11(iii)"></a>
 # Exercise 2.11(iii).
-<i>Solution.</i> $2 < 3$ but:
+<i>Solution.</i> $$2 < 3$$ but:
 
 $$
 \begin{align*}
 2^\omega = \sup_{n < \omega} 2^n = \omega = \sup_{n < \omega} 3^n = 3^\omega
 \end{align*}
 $$
+ $$\blacksquare$$
 
 <a name="ex2.12"></a>
 ## Exercise 2.12.
-<i>Solution.</i> We first show that $\omega^{\varepsilon_0} = \varepsilon_0$. Indeed:
+<i>Solution.</i> We first show that $$\omega^{\varepsilon_0} = \varepsilon_0$$. Indeed:
 
 $$
 \begin{align*}
@@ -308,7 +311,7 @@ $$
 \end{align*}
 $$
 
-Now suppose $\varepsilon$ is another ordinal such that $\omega^\varepsilon = \varepsilon$. Note that $\varepsilon \neq 0$, as $\omega^0 = 1 \neq 0$. Thus, $\varepsilon \geq \omega \alpha_0$. If $\varepsilon \geq \alpha_n$, then by [Exercise ex2.10](#ex2.10):
+Now suppose $$\varepsilon$$ is another ordinal such that $$\omega^\varepsilon = \varepsilon$$. Note that $$\varepsilon \neq 0$$, as $$\omega^0 = 1 \neq 0$$. Thus, $$\varepsilon \geq \omega \alpha_0$$. If $$\varepsilon \geq \alpha_n$$, then by [Exercise ex2.10](#ex2.10):
 
 $$
 \begin{align*}
@@ -316,17 +319,17 @@ $$
 \end{align*}
 $$
 
-So $\varepsilon \geq \alpha_n$ for all $n$. Thus $\varepsilon$ is an upper bound of the sequence $\c{\alpha_n : n \in \omega}$, so $\varepsilon_0 \leq \varepsilon$.
+So $$\varepsilon \geq \alpha_n$$ for all $$n$$. Thus $$\varepsilon$$ is an upper bound of the sequence $$\c{\alpha_n : n \in \omega}$$, so $$\varepsilon_0 \leq \varepsilon$$. $$\blacksquare$$
 
 <a name="ex2.13"></a>
 ## Exercise 2.13.
 <i>Solution.</i> Call those definitions (i), (ii) and (iii) respectively.
 
-<u>(i) $\implies$ (ii):</u> Let $\alpha < \gamma$. By Lemma 2.25(ii), there exists some $\delta$ such that $\alpha + \delta = \gamma$. Since $\alpha$ is indecomposable, $\delta \geq \gamma$. If $\delta > \gamma$, then by Lemma 2.25(i) and [Exercise ex2.10](#ex2.10) we have $\alpha + \delta > \alpha + \gamma \geq \gamma$. Thus $\delta = \gamma$.
+<u>(i) $$\implies$$ (ii):</u> Let $$\alpha < \gamma$$. By Lemma 2.25(ii), there exists some $$\delta$$ such that $$\alpha + \delta = \gamma$$. Since $$\alpha$$ is indecomposable, $$\delta \geq \gamma$$. If $$\delta > \gamma$$, then by Lemma 2.25(i) and [Exercise ex2.10](#ex2.10) we have $$\alpha + \delta > \alpha + \gamma \geq \gamma$$. Thus $$\delta = \gamma$$.
 
-<u>(ii) $\implies$ (i):</u> For $\alpha < \gamma$ and $\beta < \gamma$, by Lemma 2.25(i) we have $\alpha + \beta < \alpha + \gamma = \gamma$.
+<u>(ii) $$\implies$$ (i):</u> For $$\alpha < \gamma$$ and $$\beta < \gamma$$, by Lemma 2.25(i) we have $$\alpha + \beta < \alpha + \gamma = \gamma$$.
 
-<u>(ii) $\implies$ (iii):</u> By Cantor's Normal Form (Theorem 2.26), we may write:
+<u>(ii) $$\implies$$ (iii):</u> By Cantor's Normal Form (Theorem 2.26), we may write:
 
 $$
 \begin{align*}
@@ -334,7 +337,7 @@ $$
 \end{align*}
 $$
 
-where $\gamma \geq \beta_1 > \cdots > \beta_n$, and $k_1,\dots,k_n$ are non-zero natural numbers. Observe that:
+where $$\gamma \geq \beta_1 > \cdots > \beta_n$$, and $$k_1,\dots,k_n$$ are non-zero natural numbers. Observe that:
 
 $$
 \begin{align*}
@@ -344,11 +347,11 @@ $$
 \end{align*}
 $$
 
-as $\omega^{\beta_1} \cdot (k_1 - 1) + \dots + \omega^{\beta_n} \cdot k_n < \gamma$ by uniqueness of Cantor's Normal Form. Thus $\gamma = \omega^{\beta_1}$ (i.e. $n = 1$ and $k_1 = 1$).
+as $$\omega^{\beta_1} \cdot (k_1 - 1) + \dots + \omega^{\beta_n} \cdot k_n < \gamma$$ by uniqueness of Cantor's Normal Form. Thus $$\gamma = \omega^{\beta_1}$$ (i.e. $$n = 1$$ and $$k_1 = 1$$).
 
-<u>(iii) $\implies$ (ii):</u> We induct on $\beta$ where $\gamma = \omega^\beta$. If $\beta = 0$, then $\omega^0 = 1$, so the only $\alpha < \gamma$ is $\alpha = 0$, in which then of course $0 + \omega^\beta = \omega^\beta$.
+<u>(iii) $$\implies$$ (ii):</u> We induct on $$\beta$$ where $$\gamma = \omega^\beta$$. If $$\beta = 0$$, then $$\omega^0 = 1$$, so the only $$\alpha < \gamma$$ is $$\alpha = 0$$, in which then of course $$0 + \omega^\beta = \omega^\beta$$.
 
-If $\beta = \delta + 1$, then for $\alpha < \gamma$ we write its Cantor's Normal Form $\alpha = \omega^{\beta_1} \cdot k_1 + \dots + \omega^{\beta_n} \cdot k_n$. Since $\alpha < \gamma$, $\beta_1 < \delta + 1$ so $\beta_1 \leq \delta$. Then:
+If $$\beta = \delta + 1$$, then for $$\alpha < \gamma$$ we write its Cantor's Normal Form $$\alpha = \omega^{\beta_1} \cdot k_1 + \dots + \omega^{\beta_n} \cdot k_n$$. Since $$\alpha < \gamma$$, $$\beta_1 < \delta + 1$$ so $$\beta_1 \leq \delta$$. Then:
 
 $$
 \begin{align*}
@@ -360,18 +363,18 @@ $$
 \end{align*}
 $$
 
-If $\beta$ is a limit ordinal, then for $\alpha < \omega^\beta$ we have that $\alpha < \omega^\xi$ for some $\xi < \beta$. By induction hypothesis, $\alpha + \omega^\xi = \omega^\xi$. Thus we have that $\omega^\beta = \lim_{\xi \to \beta} (\alpha + \omega^\xi) = \lim_{\xi \to \beta} \omega^\xi = \omega^\beta$ for $\alpha < \omega^\beta$.
+If $$\beta$$ is a limit ordinal, then for $$\alpha < \omega^\beta$$ we have that $$\alpha < \omega^\xi$$ for some $$\xi < \beta$$. By induction hypothesis, $$\alpha + \omega^\xi = \omega^\xi$$. Thus we have that $$\omega^\beta = \lim_{\xi \to \beta} (\alpha + \omega^\xi) = \lim_{\xi \to \beta} \omega^\xi = \omega^\beta$$ for $$\alpha < \omega^\beta$$. $$\blacksquare$$
 
 <a name="ex2.14"></a>
 ## Exercise 2.14.
-<i>Solution.</i> Suppose such a sequence exists. Consider $X := \{a_n : n \in \boldsymbol{N}\} \subseteq P$. Since $E$ is well-founded, $X$ has some $E$-minimal element, which is $a_n$ for some $n \in \boldsymbol{N}$. Yet $a_n \; E \; a_{n+1}$, a contradiction.
+<i>Solution.</i> Suppose such a sequence exists. Consider $$X := \{a_n : n \in \boldsymbol{N}\} \subseteq P$$. Since $$E$$ is well-founded, $$X$$ has some $$E$$-minimal element, which is $$a_n$$ for some $$n \in \boldsymbol{N}$$. Yet $$a_n \; E \; a_{n+1}$$, a contradiction. $$\blacksquare$$
 
 <a name="ex2.15"></a>
 ## Exercise 2.15.
-<i>Solution.</i> The proof of Theorem 2.15 can be mimicked. Define the function $F$ such that $F(x) = X$ iff there is a sequence $\c{a_y : y \; E \; x}$ (where $a_x := G(\c{a_y : y \; E \; x})$) such that:
+<i>Solution.</i> The proof of Theorem 2.15 can be mimicked. Define the function $$F$$ such that $$F(x) = X$$ iff there is a sequence $$\c{a_y : y \; E \; x}$$ (where $$a_x := G(\c{a_y : y \; E \; x})$$) such that:
 <ol>
-<li> $(\forall y \; E \; x) \, a_y = F(\c{a_z : z \; E \; y})$.</li>
+<li> $$(\forall y \; E \; x) \, a_y = F(\c{a_z : z \; E \; y})$$.</li>
 
-<li> $x = G(\c{a_y : y \; E \; x})$.</li>
+<li> $$x = G(\c{a_y : y \; E \; x})$$.</li>
 </ol>
-The proof of Theorem 2.15 can be followed similarly to show that the $F$ above works.
+The proof of Theorem 2.15 can be followed similarly to show that the $$F$$ above works. $$\blacksquare$$

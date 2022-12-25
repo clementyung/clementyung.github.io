@@ -8,8 +8,6 @@ excerpt: ""
 
 {% include commands.html %}
 
-{% raw %}
-
 <a name="ex1.1"></a>
 ## Exercise 1.1.
 <i>Solution.</i> $\impliedby$ is clear. For $\implies$, suppose $(a,b) = \{\{a\},\{a,b\}\} = \{\{c\},\{c,d\}\} = (c,d)$. Then $\{a\} \in \{\{c\},\{c,d\}\}$, so $\{a\} = \{c\}$ or $\{a\} = \{c,d\}$. We consider two cases.
@@ -162,5 +160,3 @@ $$
 
 Note that if we denote $\varphi(u,x)$ as the formula "$x = F(u)$" then $\varphi$ is a property, so we may indeed apply Axiom Schema of Separation. 
 $\square$
-
-{% endraw %}

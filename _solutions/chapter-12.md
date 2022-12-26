@@ -8,7 +8,6 @@ excerpt: ""
 
 {% include commands.html %}
 
-<p>
 <a name="ex12.1"></a>
 ## Exercise 12.1.
 <i>Solution.</i> <b>Step 1 - Construct isomorphism $f$:</b> We define $f : \A_a \to \Ult_U\lbrace \A_x : x \in S\rbrace$ as follows: Fix any $y_x \in \A_x$ for each $x \in S - \lbrace a\rbrace$. For each $y \in \A_a$, define $g_y : S \to \prod_{x \in S} \A_x$ by stipulating that:
@@ -521,4 +520,3 @@ $$
 
 Replace each $M_i$ with $W_\alpha$, where $\alpha$ is the least ordinal such that $M_i \subseteq W_\alpha$. The rest of the proof passes again by transitivity of $W$. 
 $\square$
-</p>

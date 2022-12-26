@@ -36,7 +36,7 @@ $$
 
 This is well-defined as $A \cap B = \emptyset$. It's easy to see that $h$ is a bijection.
 
-For the general case, we observe that $A \cup B = A \cup (B - A)$, $A \cap (B - A) = \emptyset$, and $B - A \subseteq B$ so it is also finite by [Exercise 3.1(i)](#ex3.1(i)). 
+For the general case, we observe that $A \cup B = A \cup (B - A)$, $A \cap (B - A) = \emptyset$, and $B - A \subseteq B$ so it is also finite by <a href="#ex3.1(i)">Exercise 3.1(i)</a>. 
 $\square$
 
 <a name="ex3.1(iii)"></a>
@@ -122,12 +122,14 @@ $$
 \end{align*}
 $$
 
-Clearly this map is injective, so $\vert [\boldsymbol{N}]^{<\omega}\vert  \leq \vert \boldsymbol{N}^{<\omega}\vert $. By Exercise [Exercise 3.4(i)](#ex3.4(i)), we have that $\vert [\boldsymbol{N}]^{<\omega}\vert  = \vert \boldsymbol{N}\vert $, so $[\boldsymbol{N}]^{<\omega}$ is countable. 
+Clearly this map is injective, so $\vert [\boldsymbol{N}]^{<\omega}\vert  \leq \vert \boldsymbol{N}^{<\omega}\vert $. By Exercise <a href="#ex3.4(i)">Exercise 3.4(i)</a>, we have that $\vert [\boldsymbol{N}]^{<\omega}\vert  = \vert \boldsymbol{N}\vert $, so $[\boldsymbol{N}]^{<\omega}$ is countable. 
 $\square$
 
 <a name="ex3.5"></a>
 ## Exercise 3.5.
-<a name="lem3.5.A"></a>
+Show that $\Gamma(\alpha \times \alpha) \leq \omega^\alpha$. Thus, $\Gamma(\alpha \times \alpha) = \alpha$ for all indecomposable $\alpha$.
+
+<a name="https://clementyung.github.io/jech-solutions/chapter-3#lem3.5.A"></a>
 <b>Lemma 3.5.A.</b> For all ordinals $\alpha$, we have $\alpha \leq \omega^\alpha$.
 
 <i>Proof.</i> We induct on $\alpha$. For $\alpha = 0$ we have $\omega^0 = 1$. If $\beta \leq \omega^\beta$, then:
@@ -164,7 +166,7 @@ $$
 \end{align*}
 $$
 
-Thus, this is of order type $\beta\cdot 2 + 1$, so by [Lemma 3.5.A](#lem3.5.A):
+Thus, this is of order type $\beta\cdot 2 + 1$, so by <a href="#lem3.5.A">Lemma 3.5.A</a>:
 
 $$
 \begin{align*}
@@ -177,7 +179,7 @@ $$
 \end{align*}
 $$
 
-The second part of the exercise is false. However, it is true that the fixed points of $\gamma(\alpha) = \Gamma(\alpha \times \alpha)$ are precisely the <i>multiplicatively indecomposable</i> ordinals. See Exercise I.11.7 of \cite{kunen}. The notion of indecomposable ordinals introduced in [Exercise 2.13](https://clementyung.github.io/jech-solutions/chapter-2#ex2.13) is also called <i>additively indecomposable</i>.
+The second part of the exercise is false. However, it is true that the fixed points of $\gamma(\alpha) = \Gamma(\alpha \times \alpha)$ are precisely the <i>multiplicatively indecomposable</i> ordinals. See Exercise I.11.7 of \cite{kunen}. The notion of indecomposable ordinals introduced in <a href="https://clementyung.github.io/jech-solutions/chapter-2#ex2.13">Exercise 2.13</a> is also called <i>additively indecomposable</i>.
 
 We shall show that $\Gamma(\omega^2 \times \omega^2) > \omega^2$. To do this, it suffices to show that $\Gamma((\omega + \omega) \times (\omega + \omega)) \geq \omega^2$. For each $n \in \omega$, the set:
 
@@ -199,7 +201,9 @@ $\square$
 
 <a name="ex3.6"></a>
 ## Exercise 3.6.
-<a name="lem3.6.A"></a>
+There is a well-ordering of the class of all finite sequences of ordinals such that for each $\alpha$, the set of all finite sequences in $\omega_\alpha$ is an initial segment and its order-type is $\omega_\alpha$.
+
+<a name="https://clementyung.github.io/jech-solutions/chapter-3#lem3.6.A"></a>
 <b>Lemma 3.6.A.</b> Let $\alpha < \omega_\beta$ be an ordinal. Let $\alpha^{<\omega}$ be the set of all finite sequences of ordinals below $\alpha$. Then $\vert \alpha^{<\omega}\vert  < \kappa$.
 
 <i>Proof.</i> Let $f : \alpha \to \vert \alpha\vert $ be a bijection. By Theorem 3.5 we know that $\Gamma(\vert \alpha\vert  \times \vert \alpha\vert ) = \vert \alpha\vert $. Thus, we obtain a choiceless bijection $g := f^{-1} \circ \Gamma \circ (f,f) : \alpha \times \alpha \to \alpha$. Let $g_2 := g$, and inductively define $g_n : \alpha^n \to \alpha$ by $g_n := (g_{n-1},g)$. With this, we may define $h : \alpha^{<\omega} \to \alpha \times \omega$ by:
@@ -257,7 +261,7 @@ Suppose all elements of $Z$ has length $n$. For each $i < n$, let:
 </ol>
 By well-ordering of ordinals all of $Z_i$'s are non-empty. Let $z \in Z_{n-1}$. Then $z$ is the minimal element in $Z$ - otherwise, if $z' < z$, then since $\height(z) = \height(z')$ and $\length(z) = \length(z')$, we have that $z'(k) < z(k)$ for some $k < n$, and $z'(i) = z(i)$ for $i < k$. Since $z(i)$ is minimal for all $i$, we have that $z'(i)$ is minimal for all $i < k$, therefore $z' \in Z_{k-1}$. But $z \in Z_k$ and $z'(k) < z(k)$, contradicting minimality of $z(k)$.
 
-Thus, we may denote $\Lambda(s)$ as the order type of the set of all finite sequences below $s$ under $<$. Let $\Lambda(\alpha^{<\omega}) := \Lambda((\alpha))$. $\Lambda(\omega_\alpha^{<\omega}) = \omega_\alpha$ for all $\alpha$. We first observe that $(\beta) < (\omega_\alpha)$ for all $\beta < \omega_\alpha$, so $\Lambda(\omega_\alpha^{<\omega}) \geq \omega_\alpha$. Now suppose for a contradiction that $\Lambda(\omega_\alpha^{<\omega}) > \omega_\alpha$. Let $s$ be the $<$-minimal sequence such that $\Lambda(s) = \omega_\alpha$. Let $\delta < \omega_\alpha$ such that $\delta > s(i)$ for all $i < \length(s)$. Then $\omega_\alpha \subseteq \Lambda(\delta^{<\omega})$. Now observe that $\Lambda(\delta^{<\omega}) \subseteq \delta^{<\omega}$, so $\vert \delta^{<\omega}\vert  \geq \aleph_\alpha$. This contradicts [Lemma 3.6.A](#lem3.6.A). 
+Thus, we may denote $\Lambda(s)$ as the order type of the set of all finite sequences below $s$ under $<$. Let $\Lambda(\alpha^{<\omega}) := \Lambda((\alpha))$. $\Lambda(\omega_\alpha^{<\omega}) = \omega_\alpha$ for all $\alpha$. We first observe that $(\beta) < (\omega_\alpha)$ for all $\beta < \omega_\alpha$, so $\Lambda(\omega_\alpha^{<\omega}) \geq \omega_\alpha$. Now suppose for a contradiction that $\Lambda(\omega_\alpha^{<\omega}) > \omega_\alpha$. Let $s$ be the $<$-minimal sequence such that $\Lambda(s) = \omega_\alpha$. Let $\delta < \omega_\alpha$ such that $\delta > s(i)$ for all $i < \length(s)$. Then $\omega_\alpha \subseteq \Lambda(\delta^{<\omega})$. Now observe that $\Lambda(\delta^{<\omega}) \subseteq \delta^{<\omega}$, so $\vert \delta^{<\omega}\vert  \geq \aleph_\alpha$. This contradicts <a href="#lem3.6.A">Lemma 3.6.A</a>. 
 $\square$
 
 <a name="ex3.7"></a>
@@ -267,7 +271,7 @@ $\square$
 
 <a name="ex3.8"></a>
 ## Exercise 3.8.
-<i>Solution.</i> We note that by restricting the well-order in [Exercise 3.6](#ex3.6) to finite sequences of $\omega_\alpha$, we obtain a choiceless well-order in $\omega_\alpha^{<\omega}$, along with the order type $\Lambda$. Then $\Lambda^{-1}(\omega_\alpha) = \omega_\alpha^{<\omega}$, so $\omega_\alpha^{<\omega}$ is a projection of $\omega_\alpha$. Clearly the set of all finite subsets of $\omega_\alpha$ is a projection of $\omega_\alpha^{<\omega}$, so the set of all finite subsets of $\omega_\alpha$ is a projection of $\omega_\alpha$ itself. By [Exercise 3.7](#ex3.7), this set has cardinality $\leq \aleph_\alpha$. On the other hand, the map $\beta \mapsto \lbrace \beta\rbrace$ is a one-to-one function on $\omega_\alpha$ to this set, so it has cardinality $\geq \aleph_\alpha$. Thus equality follows. 
+<i>Solution.</i> We note that by restricting the well-order in <a href="#ex3.6">Exercise 3.6</a> to finite sequences of $\omega_\alpha$, we obtain a choiceless well-order in $\omega_\alpha^{<\omega}$, along with the order type $\Lambda$. Then $\Lambda^{-1}(\omega_\alpha) = \omega_\alpha^{<\omega}$, so $\omega_\alpha^{<\omega}$ is a projection of $\omega_\alpha$. Clearly the set of all finite subsets of $\omega_\alpha$ is a projection of $\omega_\alpha^{<\omega}$, so the set of all finite subsets of $\omega_\alpha$ is a projection of $\omega_\alpha$ itself. By <a href="#ex3.7">Exercise 3.7</a>, this set has cardinality $\leq \aleph_\alpha$. On the other hand, the map $\beta \mapsto \lbrace \beta\rbrace$ is a one-to-one function on $\omega_\alpha$ to this set, so it has cardinality $\geq \aleph_\alpha$. Thus equality follows. 
 $\square$
 
 <a name="ex3.9"></a>
@@ -294,7 +298,7 @@ $\square$
 
 <a name="ex3.11"></a>
 ## Exercise 3.11.
-<i>Solution.</i> By Lemma 3.3, $\aleph_{\alpha+1} < 2^{\aleph_{\alpha+1}}$. By [Exercise 3.10](#ex3.10), $\omega_{\alpha+1}$is a projection of $P(\omega_\alpha)$, so by [Exercise 3.9](#ex3.9) we have that $\vert P(\omega_{\alpha+1})\vert  \leq \vert P(P(\omega_\alpha))\vert $, i.e. $2^{\aleph_{\alpha+1}} \leq 2^{2^{\aleph_\alpha}}$. Thus $\aleph_{\alpha+1} < 2^{2^{\aleph_\alpha}}$. 
+<i>Solution.</i> By Lemma 3.3, $\aleph_{\alpha+1} < 2^{\aleph_{\alpha+1}}$. By <a href="#ex3.10">Exercise 3.10</a>, $\omega_{\alpha+1}$is a projection of $P(\omega_\alpha)$, so by <a href="#ex3.9">Exercise 3.9</a> we have that $\vert P(\omega_{\alpha+1})\vert  \leq \vert P(P(\omega_\alpha))\vert $, i.e. $2^{\aleph_{\alpha+1}} \leq 2^{2^{\aleph_\alpha}}$. Thus $\aleph_{\alpha+1} < 2^{2^{\aleph_\alpha}}$. 
 $\square$
 
 <a name="ex3.12"></a>
@@ -338,7 +342,7 @@ $\square$
 ## Exercise 3.15.
 <a name="ex3.15(i)"></a>
 ### Exercise 3.15(i).
-<i>Solution.</i> Suppose $A \cup B$ is D-infinite, so by [Exercise 3.14](#ex3.14) it contains a countable subset. Let $X \subseteq A \cup B$ be countable. Then $X = (X \cap A) \cup (X \cap B)$. By [Exercise 3.2(i)](#ex3.2(i)), $X \cap A$ and $X \cap B$ are at most countable. Since $A$ and $B$ are $D$-finite, they do not contain a countable subset. Thus, $X \cap A$ and $X \cap B$ are both finite. By [Exercise 3.1(ii)](#ex3.1(ii)), $X$ is finite, a contradiction.
+<i>Solution.</i> Suppose $A \cup B$ is D-infinite, so by <a href="#ex3.14">Exercise 3.14</a> it contains a countable subset. Let $X \subseteq A \cup B$ be countable. Then $X = (X \cap A) \cup (X \cap B)$. By <a href="#ex3.2(i)">Exercise 3.2(i)</a>, $X \cap A$ and $X \cap B$ are at most countable. Since $A$ and $B$ are $D$-finite, they do not contain a countable subset. Thus, $X \cap A$ and $X \cap B$ are both finite. By <a href="#ex3.1(ii)">Exercise 3.1(ii)</a>, $X$ is finite, a contradiction.
 
 Suppose $A \times B$ is D-infinite with $X \subseteq A \times B$ countable. Let:
 
@@ -349,7 +353,7 @@ X_B := \lbrace b \in B : (\exists a \in A) \, (a,b) \in X\rbrace
 \end{gather*}
 $$
 
-$X_A$ and $X_B$ are images under the mappings $(a,b) \mapsto a$ and $(a,b) \mapsto b$ of $X$ respectively, so by [Exercise 3.2(iii)](#ex3.2(iii)) they are both finite. But observe that $X \subseteq X_A \times X_B$, so by [Lemma 3.15(i).A](#lem3.15(i).A) and [Exercise 3.1(i)](#ex3.1(i)) $X$ is finite, a contradiction. 
+$X_A$ and $X_B$ are images under the mappings $(a,b) \mapsto a$ and $(a,b) \mapsto b$ of $X$ respectively, so by <a href="#ex3.2(iii)">Exercise 3.2(iii)</a> they are both finite. But observe that $X \subseteq X_A \times X_B$, so by <a href="#lem3.15(i).A">Lemma 3.15(i).A</a> and <a href="#ex3.1(i)">Exercise 3.1(i)</a> $X$ is finite, a contradiction. 
 $\square$
 
 <a name="ex3.15(ii)"></a>
@@ -376,12 +380,12 @@ X \subseteq \bigcup_{i \leq N} \prod_{j < i} F'
 \end{align*}
 $$
 
-but RHS is finite by [Lemma 3.15(i).A](#lem3.15(i).A) and [Exercise 3.1(ii)](#ex3.1(ii)), a contradiction. 
+but RHS is finite by <a href="#lem3.15(i).A">Lemma 3.15(i).A</a> and <a href="#ex3.1(ii)">Exercise 3.1(ii)</a>, a contradiction. 
 $\square$
 
 <a name="ex3.15(iii)"></a>
 ### Exercise 3.15(iii).
 <i>Solution.</i> As in the hint, it suffices to show that $\lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty for each $n$, in which it's clear that they are pairwise unequal, so $P(P(A))$ is D-infinite.
 
-We induct on $n$ that $S_n := \lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $\vert X \cup \lbrace x\rbrace\vert  = n + 1$ by [Lemma 1.13.A](https://clementyung.github.io/jech-solutions/chapter-1#lem1.13.A), so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty. 
+We induct on $n$ that $S_n := \lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $\vert X \cup \lbrace x\rbrace\vert  = n + 1$ by <a href="https://clementyung.github.io/jech-solutions/chapter-1#lem1.13.A">Lemma 1.13.A</a>, so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty. 
 $\square$

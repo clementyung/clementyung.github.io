@@ -7,7 +7,7 @@ excerpt: ""
 ---
 {% raw %}
 $
-\newcommand{\AC}{\mathcal{AC}}
+\newcommand{\AC}{\mathsf{AC}}
 $
 {% endraw %}
 

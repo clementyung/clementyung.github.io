@@ -23,8 +23,6 @@ $$
 This is a contradiction - if $\mu(M) = 0$, then $\sum_{i=1}^\infty \mu(M) = 0$, violating the identity. If $\mu(M) > 0$, then $\sum_{i=1}^\infty \mu(M) = +\infty$, also violating the identity. 
 $\square$
 
-<b>Remark.</b>. The exact set constructed in the set is called a \hyperlink{https://en.wikipedia.org/wiki/Vitali\_set}{Vitali set}.
-
 <a name="ex10.2"></a>
 ## Exercise 10.2.
 <i>Solution.</i> We follow the hint and prove their first claim.

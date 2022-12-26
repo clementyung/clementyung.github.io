@@ -26,8 +26,6 @@ Since every perfect set is closed, there are at most $2^{\aleph_0}$ closed sets.
 We now show that both $A$ and $B$ contain no perfect subset of reals. This follows from the observation that $A \cap B = \emptyset$, and every perfect set $P_\alpha$ has non-empty intersection with $A$ and $B$. 
 $\square$
 
-<b>Remark.</b>. Such a set is called a \hyperlink{https://en.wikipedia.org/wiki/Bernstein\_set}{Bernstein Set}.
-
 <a name="ex5.2"></a>
 ## Exercise 5.2.
 <i>Solution.</i> We have:

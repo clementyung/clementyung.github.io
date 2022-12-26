@@ -127,7 +127,7 @@ $$
 \alpha \cdot (\beta + \gamma) &= \alpha \cdot \lim_{\xi \to \gamma} (\beta + \xi) \\
 &= \lim_{\xi \to \gamma} \alpha \cdot (\beta + \xi) \text{} && \text{as $\beta + \gamma$ is limit} \\
 &= \lim_{\xi \to \gamma} (\alpha \cdot \beta + \alpha \cdot \xi) && \text{by induction hypothesis} \\
-&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by <a href="#lem2.8.A">Lemma 2.8.A</a>} \\
+&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by Lemma 2.8.A} \\
 &= \alpha \cdot \beta + \alpha \cdot \gamma
 \end{align*}
 $$
@@ -185,7 +185,7 @@ $$
 \begin{align*}
 (\alpha^\beta)^{\delta + 1} &= (\alpha^\beta)^\delta \cdot \alpha^\beta \\
 &= \alpha^{\beta \cdot \delta} \cdot \alpha^\beta && \text{by induction hypothesis} \\
-&= \alpha^{\beta \cdot \delta + \beta} && \text{by <a href="#ex2.8(ii)">Exercise 2.8(ii)</a>} \\
+&= \alpha^{\beta \cdot \delta + \beta} && \text{by Exercise 2.8(ii)} \\
 &= \alpha^{\beta \cdot (\delta + 1)}
 \end{align*}
 $$

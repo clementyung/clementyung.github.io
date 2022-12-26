@@ -12,17 +12,17 @@ excerpt: ""
 ## Exercise 3.1.
 <a name="ex3.1(i)"></a>
 ### Exercise 3.1(i).
-<i>Solution.</i> Let $X$ be a set with finite cardinality $\mod{X} = n$. We induct on $n$. If $n = 0$, then the only subset is $\emptyset$, which is finite. If $\mod{X} = n + 1$, then let $Y \subseteq X$. We consider two cases.
+<i>Solution.</i> Let $X$ be a set with finite cardinality $\vert X\vert  = n$. We induct on $n$. If $n = 0$, then the only subset is $\emptyset$, which is finite. If $\vert X\vert  = n + 1$, then let $Y \subseteq X$. We consider two cases.
 <ol>
 <li> If $Y = X$, then since $X$ is finite, so is $Y$.</li>
 
-<li> If $Y \subsetneq X$, then let $x_0 \in X - Y$. Then $Y \subseteq X - \lbrace x_0\rbrace$. By [Lemma 1.12.A](https://clementyung.github.io/jech-solutions/chapter-1#lem1.12.A), $\mod{X - \lbrace x_0\rbrace} = n$, so by induction hypothesis $Y$ is also finite.</li>
+<li> If $Y \subsetneq X$, then let $x_0 \in X - Y$. Then $Y \subseteq X - \lbrace x_0\rbrace$. By <a href="https://clementyung.github.io/jech-solutions/chapter-1#lem1.12.A">Lemma 1.12.A</a>, $\vert X - \lbrace x_0\rbrace\vert  = n$, so by induction hypothesis $Y$ is also finite.</li>
 </ol> 
 $\square$
 
 <a name="ex3.1(ii)"></a>
 ### Exercise 3.1(ii).
-<i>Solution.</i> First assume $A \cap B = \emptyset$. Suppose $\mod{A} = m$ and $\mod{B} = n$. First suppose $A \cap B = \emptyset$. Let $f : A \to m$ and $g : B \to n$ be bijections. Then define $h : A \sqcup B \to m + n$ by:
+<i>Solution.</i> First assume $A \cap B = \emptyset$. Suppose $\vert A\vert  = m$ and $\vert B\vert  = n$. First suppose $A \cap B = \emptyset$. Let $f : A \to m$ and $g : B \to n$ be bijections. Then define $h : A \sqcup B \to m + n$ by:
 
 $$
 \begin{align*}
@@ -41,7 +41,7 @@ $\square$
 
 <a name="ex3.1(iii)"></a>
 ### Exercise 3.1(iii).
-<i>Solution.</i> This follows from Lemma 3.3, which asserts that if $\mod{X} = n$ then $\mod{P(X)} = 2^n$, which is finite. 
+<i>Solution.</i> This follows from Lemma 3.3, which asserts that if $\vert X\vert  = n$ then $\vert P(X)\vert  = 2^n$, which is finite. 
 $\square$
 
 <a name="ex3.1(iv)"></a>
@@ -53,14 +53,14 @@ $\square$
 ## Exercise 3.2.
 <a name="ex3.2(i)"></a>
 ### Exercise 3.2(i).
-<i>Solution.</i> Note that a set is at most countable iff $\mod{X} \leq \mod{\omega}$, iff there exists an injective mapping $X \to \omega$.
+<i>Solution.</i> Note that a set is at most countable iff $\vert X\vert  \leq \vert \omega\vert $, iff there exists an injective mapping $X \to \omega$.
 
 Let $X$ be a countable set, and let $Y \subseteq X$. Consider the inclusion map $i : Y \to X$, which is of course injective. Since $X$ is countably, there exists a bijective map $f : X \to \omega$. Then $f \circ i : Y \to \omega$ is an injective mapping, so $Y$ is at most countable. 
 $\square$
 
 <a name="ex3.2(ii)"></a>
 ### Exercise 3.2(ii).
-<i>Solution.</i> Suppose $X_1,\dots,X_n$ are countable sets. Let $X := \bigcup_{i=1}^n X_i$. Since $X_1 \subseteq X$, $\mod{X_1} \leq \mod{X}$ so $\mod{X} \geq \aleph_0$. To finish the proof, we need to find an injective mapping $X \to \omega$, so $\mod{X} \leq \aleph_0$.
+<i>Solution.</i> Suppose $X_1,\dots,X_n$ are countable sets. Let $X := \bigcup_{i=1}^n X_i$. Since $X_1 \subseteq X$, $\vert X_1\vert  \leq \vert X\vert $ so $\vert X\vert  \geq \aleph_0$. To finish the proof, we need to find an injective mapping $X \to \omega$, so $\vert X\vert  \leq \aleph_0$.
 
 For each $i$, let $f_i : X_i \to \boldsymbol{N}$ be a bijection. Define $f : X \to \omega$ by stipulating that:
 
@@ -107,14 +107,14 @@ f(s) = p_1^{s(0)+1}\cdots p_n^{s(n-1)+1}
 \end{align*}
 $$
 
-where $p_k$ is the $k^\text{th}$ smallest prime number. The injectivity of this map follows from the Fundamental Theorem of Arithmetic, so $\mod{\boldsymbol{N}^{<\omega}} \leq \mod{\boldsymbol{N}}$. On the other hand, the map $n \mapsto \c{n}$ is clearly an injective map $\boldsymbol{N} \to \boldsymbol{N}^{<\omega}$, so $\mod{\boldsymbol{N}^{<\omega}} \geq \mod{\boldsymbol{N}}$. By Cantor-Bernstein Theorem (Theorem 3.2), we have that $\mod{\boldsymbol{N}^{<\omega}} = \mod{\boldsymbol{N}}$, so $\boldsymbol{N}^{<\omega}$ is countably infinite. 
+where $p_k$ is the $k^\text{th}$ smallest prime number. The injectivity of this map follows from the Fundamental Theorem of Arithmetic, so $\vert \boldsymbol{N}^{<\omega}\vert  \leq \vert \boldsymbol{N}\vert $. On the other hand, the map $n \mapsto \c{n}$ is clearly an injective map $\boldsymbol{N} \to \boldsymbol{N}^{<\omega}$, so $\vert \boldsymbol{N}^{<\omega}\vert  \geq \vert \boldsymbol{N}\vert $. By Cantor-Bernstein Theorem (Theorem 3.2), we have that $\vert \boldsymbol{N}^{<\omega}\vert  = \vert \boldsymbol{N}\vert $, so $\boldsymbol{N}^{<\omega}$ is countably infinite. 
 $\square$
 
 <a name="ex3.4(ii)"></a>
 ### Exercise 3.4(ii).
 <i>Solution.</i> WLOG we may show the statement for finite subsets of $\boldsymbol{N}$, the general case follows from establishing a bijection between $\boldsymbol{N}$ and the arbitrary countable set.
 
-Clearly $\mod{\boldsymbol{N}} \leq \mod{[\boldsymbol{N}]^{<\omega}}$ by the injective map $n \mapsto \lbrace n\rbrace$. On the other hand, for each $\lbrace a_0,\dots,a_{n-1}\rbrace \in [\boldsymbol{N}]^{<\omega}$, where $a_0 < \cdots < a_{n-1}$, define the map from $[\boldsymbol{N}]^{<\omega}$ to $\boldsymbol{N}^{<\omega}$ by:
+Clearly $\vert \boldsymbol{N}\vert  \leq \vert [\boldsymbol{N}]^{<\omega}\vert $ by the injective map $n \mapsto \lbrace n\rbrace$. On the other hand, for each $\lbrace a_0,\dots,a_{n-1}\rbrace \in [\boldsymbol{N}]^{<\omega}$, where $a_0 < \cdots < a_{n-1}$, define the map from $[\boldsymbol{N}]^{<\omega}$ to $\boldsymbol{N}^{<\omega}$ by:
 
 $$
 \begin{align*}
@@ -122,7 +122,7 @@ $$
 \end{align*}
 $$
 
-Clearly this map is injective, so $\mod{[\boldsymbol{N}]^{<\omega}} \leq \mod{\boldsymbol{N}^{<\omega}}$. By Exercise [Exercise 3.4(i)](#ex3.4(i)), we have that $\mod{[\boldsymbol{N}]^{<\omega}} = \mod{\boldsymbol{N}}$, so $[\boldsymbol{N}]^{<\omega}$ is countable. 
+Clearly this map is injective, so $\vert [\boldsymbol{N}]^{<\omega}\vert  \leq \vert \boldsymbol{N}^{<\omega}\vert $. By Exercise [Exercise 3.4(i)](#ex3.4(i)), we have that $\vert [\boldsymbol{N}]^{<\omega}\vert  = \vert \boldsymbol{N}\vert $, so $[\boldsymbol{N}]^{<\omega}$ is countable. 
 $\square$
 
 <a name="ex3.5"></a>
@@ -200,9 +200,9 @@ $\square$
 <a name="ex3.6"></a>
 ## Exercise 3.6.
 <a name="lem3.6.A"></a>
-<b>Lemma 3.6.A.</b> Let $\alpha < \omega_\beta$ be an ordinal. Let $\alpha^{<\omega}$ be the set of all finite sequences of ordinals below $\alpha$. Then $\mod{\alpha^{<\omega}} < \kappa$.
+<b>Lemma 3.6.A.</b> Let $\alpha < \omega_\beta$ be an ordinal. Let $\alpha^{<\omega}$ be the set of all finite sequences of ordinals below $\alpha$. Then $\vert \alpha^{<\omega}\vert  < \kappa$.
 
-<i>Proof.</i> Let $f : \alpha \to \mod{\alpha}$ be a bijection. By Theorem 3.5 we know that $\Gamma(\mod{\alpha} \times \mod{\alpha}) = \mod{\alpha}$. Thus, we obtain a choiceless bijection $g := f^{-1} \circ \Gamma \circ (f,f) : \alpha \times \alpha \to \alpha$. Let $g_2 := g$, and inductively define $g_n : \alpha^n \to \alpha$ by $g_n := (g_{n-1},g)$. With this, we may define $h : \alpha^{<\omega} \to \alpha \times \omega$ by:
+<i>Proof.</i> Let $f : \alpha \to \vert \alpha\vert $ be a bijection. By Theorem 3.5 we know that $\Gamma(\vert \alpha\vert  \times \vert \alpha\vert ) = \vert \alpha\vert $. Thus, we obtain a choiceless bijection $g := f^{-1} \circ \Gamma \circ (f,f) : \alpha \times \alpha \to \alpha$. Let $g_2 := g$, and inductively define $g_n : \alpha^n \to \alpha$ by $g_n := (g_{n-1},g)$. With this, we may define $h : \alpha^{<\omega} \to \alpha \times \omega$ by:
 
 $$
 \begin{align*}
@@ -214,7 +214,7 @@ Then clearly $h$ is one-to-one, so we have:
 
 $$
 \begin{align*}
-\mod{\alpha^{<\omega}} < \mod{\alpha \times }\omega\mod{ = }\alpha\mod{ \cdot \aleph_0 \leq }\alpha\mod{ < \omega_\beta
+\vert \alpha^{<\omega}\vert  < \vert \alpha \times \vert \omega\vert  = \vert \alpha\vert  \cdot \aleph_0 \leq \vert \alpha\vert  < \omega_\beta
 \end{align*}
 $$
  
@@ -257,12 +257,12 @@ Suppose all elements of $Z$ has length $n$. For each $i < n$, let:
 </ol>
 By well-ordering of ordinals all of $Z_i$'s are non-empty. Let $z \in Z_{n-1}$. Then $z$ is the minimal element in $Z$ - otherwise, if $z' < z$, then since $\height(z) = \height(z')$ and $\length(z) = \length(z')$, we have that $z'(k) < z(k)$ for some $k < n$, and $z'(i) = z(i)$ for $i < k$. Since $z(i)$ is minimal for all $i$, we have that $z'(i)$ is minimal for all $i < k$, therefore $z' \in Z_{k-1}$. But $z \in Z_k$ and $z'(k) < z(k)$, contradicting minimality of $z(k)$.
 
-Thus, we may denote $\Lambda(s)$ as the order type of the set of all finite sequences below $s$ under $<$. Let $\Lambda(\alpha^{<\omega}) := \Lambda((\alpha))$. $\Lambda(\omega_\alpha^{<\omega}) = \omega_\alpha$ for all $\alpha$. We first observe that $(\beta) < (\omega_\alpha)$ for all $\beta < \omega_\alpha$, so $\Lambda(\omega_\alpha^{<\omega}) \geq \omega_\alpha$. Now suppose for a contradiction that $\Lambda(\omega_\alpha^{<\omega}) > \omega_\alpha$. Let $s$ be the $<$-minimal sequence such that $\Lambda(s) = \omega_\alpha$. Let $\delta < \omega_\alpha$ such that $\delta > s(i)$ for all $i < \length(s)$. Then $\omega_\alpha \subseteq \Lambda(\delta^{<\omega})$. Now observe that $\Lambda(\delta^{<\omega}) \subseteq \delta^{<\omega}$, so $}\delta^{<\omega}\mod{ \geq \aleph_\alpha$. This contradicts [Lemma 3.6.A](#lem3.6.A). 
+Thus, we may denote $\Lambda(s)$ as the order type of the set of all finite sequences below $s$ under $<$. Let $\Lambda(\alpha^{<\omega}) := \Lambda((\alpha))$. $\Lambda(\omega_\alpha^{<\omega}) = \omega_\alpha$ for all $\alpha$. We first observe that $(\beta) < (\omega_\alpha)$ for all $\beta < \omega_\alpha$, so $\Lambda(\omega_\alpha^{<\omega}) \geq \omega_\alpha$. Now suppose for a contradiction that $\Lambda(\omega_\alpha^{<\omega}) > \omega_\alpha$. Let $s$ be the $<$-minimal sequence such that $\Lambda(s) = \omega_\alpha$. Let $\delta < \omega_\alpha$ such that $\delta > s(i)$ for all $i < \length(s)$. Then $\omega_\alpha \subseteq \Lambda(\delta^{<\omega})$. Now observe that $\Lambda(\delta^{<\omega}) \subseteq \delta^{<\omega}$, so $\vert \delta^{<\omega}\vert  \geq \aleph_\alpha$. This contradicts [Lemma 3.6.A](#lem3.6.A). 
 $\square$
 
 <a name="ex3.7"></a>
 ## Exercise 3.7.
-<i>Solution.</i> Let $f : \omega_\alpha \to B$ be an onto function. Define $g : B \to \omega_\alpha$ by stipulating that for $x \in B$, $g(x) = \min\lbrace f_{-1}(\lbrace x\rbrace)\rbrace$. This is well defined as for $x \neq y$, $f_{-1}(\lbrace x\rbrace)$ and $f_{-1}(\lbrace y\rbrace)$ are disjoint. They are also non-empty as $f$ is onto. Then $g$ is a one-to-one function on $B$ into $\omega_\alpha$, so $}B\mod{ \leq }\omega_\alpha\mod{ = \aleph_\alpha$. 
+<i>Solution.</i> Let $f : \omega_\alpha \to B$ be an onto function. Define $g : B \to \omega_\alpha$ by stipulating that for $x \in B$, $g(x) = \min\lbrace f_{-1}(\lbrace x\rbrace)\rbrace$. This is well defined as for $x \neq y$, $f_{-1}(\lbrace x\rbrace)$ and $f_{-1}(\lbrace y\rbrace)$ are disjoint. They are also non-empty as $f$ is onto. Then $g$ is a one-to-one function on $B$ into $\omega_\alpha$, so $\vert B\vert  \leq \vert \omega_\alpha\vert  = \aleph_\alpha$. 
 $\square$
 
 <a name="ex3.8"></a>
@@ -279,7 +279,7 @@ $\square$
 ## Exercise 3.10.
 <i>Solution.</i> By the pairing function $\Gamma$ in Theorem 3.5 we have that $\omega_\alpha \times \omega_\alpha$ is a projection of $\omega_\alpha$, and therefore $P(\omega_\alpha \times \omega_\alpha)$ is a projection of $P(\omega_\alpha)$. Let $f$ be the function in the hint (and if $R$ is not a well-order, let $f(R) := 0$). We shall show that $\ran(f) = \omega_{\alpha+1}$.
 
-<u>$\ran(f) \supseteq \omega_{\alpha+1</u>$:} Let $\beta < \omega_{\alpha+1}$. Then $}\beta\mod{ \leq \aleph_\alpha$, so there exists a one-to-one function $f : \beta \to \omega_\alpha$. Define a well-ordering $R \subseteq \omega_\alpha \times \omega_\alpha$ by:
+<u>$\ran(f) \supseteq \omega_{\alpha+1</u>$:} Let $\beta < \omega_{\alpha+1}$. Then $\vert \beta\vert  \leq \aleph_\alpha$, so there exists a one-to-one function $f : \beta \to \omega_\alpha$. Define a well-ordering $R \subseteq \omega_\alpha \times \omega_\alpha$ by:
 
 $$
 \begin{align*}
@@ -289,12 +289,12 @@ $$
 
 Then clearly $R$ is a well order of order type $\beta$.
 
-<u>$\ran(f) \subseteq \omega_{\alpha+1</u>$:} Let $R$ be a well order and let $\beta = f(R)$. We may then define $g : \beta \to \omega_\alpha$ by having $g(\gamma) := \alpha_\gamma$, where $\alpha_\gamma$ is the $\gamma^\text{th}$ ordinal under the well order $R$. The well order of $R$ also implies that $g$ must be one-to-one, so $}\beta\mod{ \leq }\alpha\mod{ < \omega_{\alpha+1}$. Hence $\beta \in \omega_{\alpha+1}$. 
+<u>$\ran(f) \subseteq \omega_{\alpha+1</u>$:} Let $R$ be a well order and let $\beta = f(R)$. We may then define $g : \beta \to \omega_\alpha$ by having $g(\gamma) := \alpha_\gamma$, where $\alpha_\gamma$ is the $\gamma^\text{th}$ ordinal under the well order $R$. The well order of $R$ also implies that $g$ must be one-to-one, so $\vert \beta\vert  \leq \vert \alpha\vert  < \omega_{\alpha+1}$. Hence $\beta \in \omega_{\alpha+1}$. 
 $\square$
 
 <a name="ex3.11"></a>
 ## Exercise 3.11.
-<i>Solution.</i> By Lemma 3.3, $\aleph_{\alpha+1} < 2^{\aleph_{\alpha+1}}$. By [Exercise 3.10](#ex3.10), $\omega_{\alpha+1}$is a projection of $P(\omega_\alpha)$, so by [Exercise 3.9](#ex3.9) we have that $}P(\omega_{\alpha+1})\mod{ \leq }P(P(\omega_\alpha))\mod{$, i.e. $2^{\aleph_{\alpha+1}} \leq 2^{2^{\aleph_\alpha}}$. Thus $\aleph_{\alpha+1} < 2^{2^{\aleph_\alpha}}$. 
+<i>Solution.</i> By Lemma 3.3, $\aleph_{\alpha+1} < 2^{\aleph_{\alpha+1}}$. By [Exercise 3.10](#ex3.10), $\omega_{\alpha+1}$is a projection of $P(\omega_\alpha)$, so by [Exercise 3.9](#ex3.9) we have that $\vert P(\omega_{\alpha+1})\vert  \leq \vert P(P(\omega_\alpha))\vert $, i.e. $2^{\aleph_{\alpha+1}} \leq 2^{2^{\aleph_\alpha}}$. Thus $\aleph_{\alpha+1} < 2^{2^{\aleph_\alpha}}$. 
 $\square$
 
 <a name="ex3.12"></a>
@@ -312,7 +312,7 @@ f(n,\beta) = \text{the $\beta^\text{th}$ element of $S_n$}
 \end{align*}
 $$
 
-where if $\beta \geq \alpha_n$ then $f(n,\beta) := 0$. Now $}\omega \times \alpha\mod{ = \aleph_0 \cdot }\alpha\mod{ \leq \omega_1$, so $\alpha \times \omega$ is a projection of $\omega_1$. Composing these two maps implies that $\omega_2$ is a projection of $\omega_1$, a contradiction. 
+where if $\beta \geq \alpha_n$ then $f(n,\beta) := 0$. Now $\vert \omega \times \alpha\vert  = \aleph_0 \cdot \vert \alpha\vert  \leq \omega_1$, so $\alpha \times \omega$ is a projection of $\omega_1$. Composing these two maps implies that $\omega_2$ is a projection of $\omega_1$, a contradiction. 
 $\square$
 
 <a name="ex3.14"></a>
@@ -368,7 +368,7 @@ $$
 \end{align*}
 $$
 
-Therefore $X \subseteq [F']^{<\omega}$ for some finite set $F'$. Thus, if $}F'\mod{ = N$, then since all sequences in $X$ are one-to-one, we have:
+Therefore $X \subseteq [F']^{<\omega}$ for some finite set $F'$. Thus, if $\vert F'\vert  = N$, then since all sequences in $X$ are one-to-one, we have:
 
 $$
 \begin{align*}
@@ -381,7 +381,7 @@ $\square$
 
 <a name="ex3.15(iii)"></a>
 ### Exercise 3.15(iii).
-<i>Solution.</i> As in the hint, it suffices to show that $\lbrace X \subseteq A : }X\mod{ = n\rbrace$ is non-empty for each $n$, in which it's clear that they are pairwise unequal, so $P(P(A))$ is D-infinite.
+<i>Solution.</i> As in the hint, it suffices to show that $\lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty for each $n$, in which it's clear that they are pairwise unequal, so $P(P(A))$ is D-infinite.
 
-We induct on $n$ that $S_n := \lbrace X \subseteq A : }X\mod{ = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $}X \cup \lbrace x\rbrace| = n + 1$ by [Lemma 1.13.A](https://clementyung.github.io/jech-solutions/chapter-1#lem1.13.A), so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty. 
+We induct on $n$ that $S_n := \lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $\vert X \cup \lbrace x\rbrace\vert  = n + 1$ by [Lemma 1.13.A](https://clementyung.github.io/jech-solutions/chapter-1#lem1.13.A), so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty. 
 $\square$

@@ -10,7 +10,7 @@ excerpt: ""
 
 <a name="ex4.1"></a>
 ## Exercise 4.1.
-<i>Solution.</i> Let $C(\R)$ be the set of all continuous functions $\R \to \R$. Following the hint, by identifying the continuous functions $f : \R \to \R$ by their definition on $\Q$, there is an injection $F : C(\R) \to {}^{\R}\Q$ given by $F(f) = f\restrictedto\Q$. But $\vert {}^{\R}\Q\vert  = \vert \R\vert ^{\vert \Q\vert } = (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0 \cdot \aleph_0} = 2^{\aleph_0} = \frak{c}$. 
+<i>Solution.</i> Let $C(\R)$ be the set of all continuous functions $\R \to \R$. Following the hint, by identifying the continuous functions $f : \R \to \R$ by their definition on $\Q$, there is an injection $F : C(\R) \to {}^{\R}\Q$ given by $F(f) = f\restrictedto\Q$. But $\vert {}^{\R}\Q\vert  = \vert \R\vert ^{\vert \Q\vert } = (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0 \cdot \aleph_0} = 2^{\aleph_0} = \mathfrak{c}$. 
 $\square$
 
 <a name="ex4.2"></a>
@@ -85,7 +85,7 @@ X = \prod_{i \in \omega} \lbrace f_i(i)+1,f_i(i)+2\rbrace
 \end{align*}
 $$
 
-Clearly $X \cap S = \emptyset$, for if $f \in X$ then for any $i \in \omega$, $f(i) > f_i(i)$. Thus, $X \subseteq \N - S$. Clearly $\vert X\vert  = 2^{\aleph_0} = \frak{c}$, so $\vert \N - S\vert  \geq \frak{c}$. On the other hand, $\vert \N - S\vert  \leq \vert \N\vert  = \frak{c}$. 
+Clearly $X \cap S = \emptyset$, for if $f \in X$ then for any $i \in \omega$, $f(i) > f_i(i)$. Thus, $X \subseteq \N - S$. Clearly $\vert X\vert  = 2^{\aleph_0} = \mathfrak{c}$, so $\vert \N - S\vert  \geq \mathfrak{c}$. On the other hand, $\vert \N - S\vert  \leq \vert \N\vert  = \mathfrak{c}$. 
 $\square$
 
 <a name="ex4.5"></a>
@@ -114,9 +114,9 @@ For each $x \in U$, let $U_x \subseteq U$ be the maximal open interval that cont
 Write $\U = \lbrace U_i : i \in I\rbrace$, where $I$ is an index set and $U_i \cap U_j = \emptyset$ for $i \neq j$. For each $i$, there exists a rational number $q_i \in U_i$. Since the $U_i$'s are disjoint, the map $U_i \mapsto q_i$ is one-to-one. Thus $I$ is countable as desired. Note that the map $U_i \mapsto q_i$ does not require the Axiom of Choice, as there is a choiceless algorithm to obtain a rational number $q_i \in U_i$. 
 $\blacksquare$
 
-<i>Solution.</i> Let $X := \lbrace \c{a,b} \in \R \times \R : a < b\rbrace$, and let $\cal{T}$ denote the set of all open subsets of $\R$. let $\cal{B}$ be the set of all open intervals of $\R$. Consider the one-to-one map $f$ of $X$ onto $\cal{B}$ defined by $f(\c{a,b}) = (a,b)$. Clearly $\vert X\vert  = \frak{c}$, so $\vert \cal{B}\vert  = \frak{c}$.
+<i>Solution.</i> Let $X := \lbrace \c{a,b} \in \R \times \R : a < b\rbrace$, and let $\mathcal{T}$ denote the set of all open subsets of $\R$. let $\mathcal{B}$ be the set of all open intervals of $\R$. Consider the one-to-one map $f$ of $X$ onto $\mathcal{B}$ defined by $f(\c{a,b}) = (a,b)$. Clearly $\vert X\vert  = \mathfrak{c}$, so $\vert \mathcal{B}\vert  = \mathfrak{c}$.
 
-Now define $g : [\cal{B}]^\omega \to \cal{T}$ by:
+Now define $g : [\mathcal{B}]^\omega \to \mathcal{T}$ by:
 
 $$
 \begin{align*}
@@ -128,11 +128,11 @@ By <a href="#lem4.6.A">Lemma 4.6.A</a>, $g$ is onto. Thus:
 
 $$
 \begin{align*}
-\vert \cal{T}\vert  \leq \vert [\cal{B}]^\omega\vert  = \vert \cal{B}\vert ^{\aleph_0} = \frak{c}^{\aleph_0} = \frak{c}
+\vert \mathcal{T}\vert  \leq \vert [\mathcal{B}]^\omega\vert  = \vert \mathcal{B}\vert ^{\aleph_0} = \mathfrak{c}^{\aleph_0} = \mathfrak{c}
 \end{align*}
 $$
 
-On the other hand, we have$\vert \cal{T}\vert  \geq \vert \cal{B}\vert  = \frak{c}$, so equality holds. 
+On the other hand, we have$\vert \mathcal{T}\vert  \geq \vert \mathcal{B}\vert  = \mathfrak{c}$, so equality holds. 
 $\square$
 
 <a name="ex4.7"></a>
@@ -158,12 +158,12 @@ We shall define a one-to-one function $f$ with $\dom(f) = 2^{<\omega}$ and $f(s)
 
 Let $f(\emptyset) = (a,b)$. Suppose for all $s \in \omega^{<\omega}$ with $\length(s) = n$, $f(s)$ are defined such that $f(s) \cap P \neq \emptyset$, and $f(s_1) \cap f(s_2) = \emptyset$ for $s_1 \neq s_2$ of length $n$. Say $x \in f(s) \cap P$, and let $(c,d) \subseteq f(s)$ such that $x \in (c,d)$. Since $P$ is perfect, $x$ is a limit point so there exists $x_0,x_1 \in P \cap (c,d)$ such that $x_0 \neq x_1$ and $\vert x_0 - x\vert  > 0$, $\vert x_1 - x\vert  > 0$. We define $f(s^\frown(0)),f(s^\frown(1))$ as the open sets containing $x_0$ and $x_1$ respectively such that $x,x_1 \notin f(s^\frown(0))$ and $x,x_0 \notin f(s^\frown(1))$ (clearly such open sets exist). Note that if $s' \neq s$ and $\length(s') = n$, then since $f(s^\frown(i)) \subseteq f(s)$ we have $f(s^\frown(i)) \cap f(s'^\frown(i')) = \emptyset$ for $i,i' \in \lbrace 0,1\rbrace$.
 
-Now for each $l \in 2^\omega$, let $X_l := \bigcap_{n=0}^\infty f(l\restrictedto n)$. $X_l$ is a nested intersection of bounded open sets, so it contains a single point $x_l \in X_l$. Then $\lbrace x_l : l \in 2^\omega\rbrace \subseteq P \cap (a,b)$, so $\vert P \cap (a,b)\vert  = \frak{c}$. 
+Now for each $l \in 2^\omega$, let $X_l := \bigcap_{n=0}^\infty f(l\restrictedto n)$. $X_l$ is a nested intersection of bounded open sets, so it contains a single point $x_l \in X_l$. Then $\lbrace x_l : l \in 2^\omega\rbrace \subseteq P \cap (a,b)$, so $\vert P \cap (a,b)\vert  = \mathfrak{c}$. 
 $\square$
 
 <a name="ex4.9"></a>
 ## Exercise 4.9.
-<i>Solution.</i> Let $x \in P_2 - P_1$. Since $x \notin P_1$ and $P_1$ is perfect, $x$ is isolated from $P_1$, i.e. there exists an open neighbourhood $(a,b) \ni x$ such that $(a,b) \cap P_1 = \emptyset$. Then $\emptyset \neq P_2 \cap (a,b) \subseteq P_2 - P_1$, and by <a href="#ex4.8">Exercise 4.8</a> $\vert P_2 \cap (a,b)\vert  = \frak{c}$. Thus $\vert P_2 - P_1\vert  = \frak{c}$. 
+<i>Solution.</i> Let $x \in P_2 - P_1$. Since $x \notin P_1$ and $P_1$ is perfect, $x$ is isolated from $P_1$, i.e. there exists an open neighbourhood $(a,b) \ni x$ such that $(a,b) \cap P_1 = \emptyset$. Then $\emptyset \neq P_2 \cap (a,b) \subseteq P_2 - P_1$, and by <a href="#ex4.8">Exercise 4.8</a> $\vert P_2 \cap (a,b)\vert  = \mathfrak{c}$. Thus $\vert P_2 - P_1\vert  = \mathfrak{c}$. 
 $\square$
 
 <a name="ex4.10"></a>

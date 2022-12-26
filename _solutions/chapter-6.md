@@ -111,13 +111,13 @@ $\square$
 <i>Solution.</i> We can do better. We show that if $\rank(x) = \alpha$ and $\rank(y) = \beta$, then:
 
 | Set | Header2 |
-|:----:|:----------:|
-| $\lbrace x,y\rbrace$ | | $\max\lbrace\alpha,\beta\rbrace + 1$ |
-| $\c{x,y}$ | | $\max\lbrace\alpha,\beta\rbrace + 2$ |
-| $x \cup y$ | | $\max\lbrace\alpha,\beta\rbrace$ |
-| $\bigcup x$ | | $\bigcup \alpha$ |
-| $P(x)$ | | $\alpha + 1$ |
-| $x^y$ | | $\max\lbrace\alpha,\beta\rbrace$ |
+|:--:|:----:|
+| $\lbrace x,y\rbrace$ | $\max\lbrace\alpha,\beta\rbrace + 1$ |
+| $\c{x,y}$ | $\max\lbrace\alpha,\beta\rbrace + 2$ |
+| $x \cup y$ | $\max\lbrace\alpha,\beta\rbrace$ |
+| $\bigcup x$ | $\bigcup \alpha$ |
+| $P(x)$ | $\alpha + 1$ |
+| $x^y$ | $\max\lbrace\alpha,\beta\rbrace$ |
 
 We use <a href="#ex6.1">Exercise 6.1</a>. It's clear that if $x \subseteq y$ then $\rank(x) \leq \rank(y)$.
 

@@ -300,7 +300,7 @@ $$
 \begin{align*}
 S \cap F &= S \cap F \cap \Tr(T) \\
 &= S \cap F \cap \Tr(A \cup B \cup C) \\
-&= S \cap F \cap (\Tr(A) \cup \Tr(B) \cup \Tr(C)) && \text{by <a href="#ex8.11(ii)">Exercise 8.11(ii)</a>} \\
+&= S \cap F \cap (\Tr(A) \cup \Tr(B) \cup \Tr(C)) && \text{by Exercise 8.11(ii)} \\
 &= S \cap F \cap \Tr(C)
 \end{align*}
 $$

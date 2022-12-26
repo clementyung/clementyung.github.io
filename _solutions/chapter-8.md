@@ -75,9 +75,10 @@ $\square$
 
 <i>Proof.</i> Let $\c{\alpha_\gamma : \gamma < \beta}$ be an increasing sequence of ordinals such that $\alpha_\gamma < \alpha$ for all $\gamma < \beta$, and $\lim_{\gamma < \beta} \alpha_\gamma = \alpha$. For $\gamma < \beta$ define $\alpha_\gamma'$ inductively as follows:
 <ol>
-<li> $\alpha_0' := \alpha_0$.</li><br/><li> Suppose $\alpha_\gamma'$ is defined and $\sum_{\delta < \gamma} \alpha_\delta' = \alpha_\gamma$. Now $\alpha_\gamma < \alpha_{\gamma+1}$, so by Lemma 2.25(ii) let $\alpha_{\gamma+1}'$ be the unique ordinal such that $\alpha_\gamma + \alpha_{\gamma+1}' = \alpha_{\gamma+1}$. Then $\sum_{\delta<\gamma+1} \alpha_\delta' = \alpha_{\gamma+1}$.</li>
+<li> $\alpha_0' := \alpha_0$..</li>
+<li> Suppose $\alpha_\gamma'$ is defined and $\sum_{\delta < \gamma} \alpha_\delta' = \alpha_\gamma$. Now $\alpha_\gamma < \alpha_{\gamma+1}$, so by Lemma 2.25(ii) let $\alpha_{\gamma+1}'$ be the unique ordinal such that $\alpha_\gamma + \alpha_{\gamma+1}' = \alpha_{\gamma+1}$. Then $\sum_{\delta<\gamma+1} \alpha_\delta' = \alpha_{\gamma+1}$.</li>
 
-<li> If $\gamma$ is a limit ordinal, $\alpha_\gamma' := \sup_{\delta<\gamma} \alpha_\delta'$.</li><br/></ol>
+<li> If $\gamma$ is a limit ordinal, $\alpha_\gamma' := \sup_{\delta<\gamma} \alpha_\delta'$..</li></ol>
 Then we have:
 
 $$
@@ -92,7 +93,7 @@ $\blacksquare$
 <ol>
 <li> If $\xi_n < \sup{A_{\beta+1}}$ for all $n$, then $\lim_n \xi_n \in A_\beta \subseteq A_\alpha$ by closedness of $A_{\beta+1}$ (and that $\sup A_{\beta+1} \in A_{\beta+1}$).</li>
 
-<li> If $\xi_n = \sup{A_{\beta+1}}$ for some $n$, then $\lim_n \xi_n = \sup{A_{\beta+1}} \in A_\alpha$.</li><br/></ol>
+<li> If $\xi_n = \sup{A_{\beta+1}}$ for some $n$, then $\lim_n \xi_n = \sup{A_{\beta+1}} \in A_\alpha$..</li></ol>
 If $\alpha$ is a limit ordinal, then by <a href="#lem8.5.A">Lemma 8.5.A</a> write $\alpha = \sum_n \alpha_n$, where $\alpha_n < \alpha$ for all $n$. Let $A_n$ be a closed set of ordinals such that $\sup \bigcup_{i < n} A_i < \min A_n$ (by induction hypothesis). Let $A_\alpha := \bigcup_{n=0}^\infty A_n$. Clearly $A_\alpha$ is of length $\alpha$, and $A_\alpha$ is closed as if $\delta < \sup A_\alpha$ is a limit ordinal, then $\delta < \sup A_n$ for some $n \in \omega$, and $\delta \in \bigcup_{i \leq n} A_i$ by closure of all $A_i$'s (finite disjoint union of closed sets of ordinals is still closed. This is also why the exercise  doesn't immediately generalise to stationary sets $S \subseteq \omega_2$).
 
 It remains to show the case where $\alpha = \beta + 1$, where $\beta$ is a limit ordinal. The reason why we can't simply mimic the proof for $\beta + 2$ is because if $A_\beta$ is a closed set of ordinals of length $\beta$, we need not have $\sup A_\beta \in S$. Thus, we use the hint to help us resolve this case.
@@ -248,7 +249,8 @@ $\blacksquare$
 <ol>
 <li> $S < T$.</li>
 
-<li> There exists a closed unbounded set $C$ such that $T \cap C \subseteq \Tr(S)$.</li><br/><li> $T - \Tr(S)$ is non-stationary.</li>
+<li> There exists a closed unbounded set $C$ such that $T \cap C \subseteq \Tr(S)$..</li>
+<li> $T - \Tr(S)$ is non-stationary.</li>
 </ol>
 Therefore, if $S < T$ and $X$ is a stationary subset of $T$, then $S < X$.
 
@@ -339,9 +341,11 @@ $\square$
 ## Exercise 8.14.
 <i>Solution.</i>
 <ol>
-<li> <u>$\implies$:</u> Suppose $\kappa$ is not weakly inaccessible. Then $\kappa = \mu^+$ for some $\mu$ (we only define $o(\kappa)$ on regular cardinals). Let $S \subseteq \kappa$ be stationary such that $o(S) > \mu$. For each regular $\lambda < \kappa$, we have $E_\lambda^\kappa < S$ by <a href="#ex8.13">Exercise 8.13</a> and <a href="#lem8.13.E">Lemma 8.13.E</a>, so by <a href="#lem8.13.B">Lemma 8.13.B</a> there exists a closed unbounded set $C_\lambda$ such that $S \cap C_\lambda \subseteq \Tr(E_\lambda^\kappa)$. Let $C := \bigcap_{\lambda\leq\mu} C_\lambda$, so $C$ remains closed unbounded as $\mu < \kappa$. Since $\Tr(E_\lambda^\kappa) = \lbrace \alpha < \kappa : \cf(\lambda) \geq \lambda^+\rbrace$, this implies that $S \cap C \subseteq \lbrace \alpha < \kappa : \cf(\lambda) \geq \mu^+\rbrace = \emptyset$, a contradiction.<br/><u>$\impliedby$:</u> Suppose $\kappa$ is weakly inaccessible. Then $\kappa = \sup\lbrace \lambda < \kappa : \lambda \text{ is regular}\rbrace$. Since $\kappa$ is regular, $\vert \lbrace \lambda < \kappa : \lambda \text{ is regular}\rbrace\vert  = \kappa$, i.e. $\kappa$ is the $\kappa^\text{th}$ regular cardinal. Thus for each $\alpha < \kappa$, there if $\lambda$ is the $\alpha^\text{th}$ regular cardinal then $o(\kappa) \geq E_\lambda^\kappa = \alpha$, so $o(\kappa) \geq \kappa$.</li>
+<li> <u>$\implies$:</u> Suppose $\kappa$ is not weakly inaccessible. Then $\kappa = \mu^+$ for some $\mu$ (we only define $o(\kappa)$ on regular cardinals). Let $S \subseteq \kappa$ be stationary such that $o(S) > \mu$. For each regular $\lambda < \kappa$, we have $E_\lambda^\kappa < S$ by <a href="#ex8.13">Exercise 8.13</a> and <a href="#lem8.13.E">Lemma 8.13.E</a>, so by <a href="#lem8.13.B">Lemma 8.13.B</a> there exists a closed unbounded set $C_\lambda$ such that $S \cap C_\lambda \subseteq \Tr(E_\lambda^\kappa)$. Let $C := \bigcap_{\lambda\leq\mu} C_\lambda$, so $C$ remains closed unbounded as $\mu < \kappa$. Since $\Tr(E_\lambda^\kappa) = \lbrace \alpha < \kappa : \cf(\lambda) \geq \lambda^+\rbrace$, this implies that $S \cap C \subseteq \lbrace \alpha < \kappa : \cf(\lambda) \geq \mu^+\rbrace = \emptyset$, a contradiction.<br/>
+<u>$\impliedby$:</u> Suppose $\kappa$ is weakly inaccessible. Then $\kappa = \sup\lbrace \lambda < \kappa : \lambda \text{ is regular}\rbrace$. Since $\kappa$ is regular, $\vert \lbrace \lambda < \kappa : \lambda \text{ is regular}\rbrace\vert  = \kappa$, i.e. $\kappa$ is the $\kappa^\text{th}$ regular cardinal. Thus for each $\alpha < \kappa$, there if $\lambda$ is the $\alpha^\text{th}$ regular cardinal then $o(\kappa) \geq E_\lambda^\kappa = \alpha$, so $o(\kappa) \geq \kappa$.</li>
 
-<li> <u>$\implies$:</u> Suppose $o(\kappa) \geq \kappa + 1$. By (i), we have that $\kappa$ is weakly inaccessible. Let $S \subseteq \kappa$ be stationary such that $o(S) = \kappa$. Let $\c{\lambda_\xi : \xi < \kappa}$ be an increasing enumeration of regular cardinals below $\kappa$. Then $E_{\lambda_\xi}^\kappa < S$ for all $\xi$, so there exists a closed unbounded $C_\xi$, consisting only of cardinals (the set of all cardinals below $\kappa$ is closed unbounded) such that $S \cap C_\xi \subseteq \Tr(E_{\mu_\xi}^\kappa)$. Let $C := \bigtriangle_{\xi<\kappa} C_\xi$, so $C$ is closed unbounded. We shall show that $S \cap C$ is a stationary set of regular cardinals, which implies that $\kappa$ is weakly Mahlo. Indeed, if $\lambda \in S \cap C$ then $\lambda \in S \cap C_{\lambda_\xi} \subseteq \Tr(E_{\lambda_\xi}^\kappa)$ for all $\xi < \lambda$, so $\cf(\lambda) > \lambda_\xi$. Thus we must have $\cf(\lambda) = \lambda$, for otherwise we would have $\cf(\lambda) > \lambda_{\cf(\lambda)} \geq \cf(\lambda)$, a contradiction.<br/><u>$\impliedby$:</u> Suppose $\kappa$ is weakly Mahlo. Then $S := \lbrace \lambda < \kappa : \lambda \text{ is regular}\rbrace$ is stationary. Since for each $\lambda < \kappa$ regular, we have $S \cap (\kappa - \lambda^+) \subseteq \Tr(E_\lambda^\kappa)$ ($\kappa - \lambda^+$ is an end-segment of $\kappa$, hence closed unbounded). Thus $E_\lambda^\kappa < S$ for all regular $\lambda < \kappa$, so $o(S) \geq \kappa$. Therefore $o(\kappa) \geq \kappa + 1$.</li>
+<li> <u>$\implies$:</u> Suppose $o(\kappa) \geq \kappa + 1$. By (i), we have that $\kappa$ is weakly inaccessible. Let $S \subseteq \kappa$ be stationary such that $o(S) = \kappa$. Let $\c{\lambda_\xi : \xi < \kappa}$ be an increasing enumeration of regular cardinals below $\kappa$. Then $E_{\lambda_\xi}^\kappa < S$ for all $\xi$, so there exists a closed unbounded $C_\xi$, consisting only of cardinals (the set of all cardinals below $\kappa$ is closed unbounded) such that $S \cap C_\xi \subseteq \Tr(E_{\mu_\xi}^\kappa)$. Let $C := \bigtriangle_{\xi<\kappa} C_\xi$, so $C$ is closed unbounded. We shall show that $S \cap C$ is a stationary set of regular cardinals, which implies that $\kappa$ is weakly Mahlo. Indeed, if $\lambda \in S \cap C$ then $\lambda \in S \cap C_{\lambda_\xi} \subseteq \Tr(E_{\lambda_\xi}^\kappa)$ for all $\xi < \lambda$, so $\cf(\lambda) > \lambda_\xi$. Thus we must have $\cf(\lambda) = \lambda$, for otherwise we would have $\cf(\lambda) > \lambda_{\cf(\lambda)} \geq \cf(\lambda)$, a contradiction.<br/>
+<u>$\impliedby$:</u> Suppose $\kappa$ is weakly Mahlo. Then $S := \lbrace \lambda < \kappa : \lambda \text{ is regular}\rbrace$ is stationary. Since for each $\lambda < \kappa$ regular, we have $S \cap (\kappa - \lambda^+) \subseteq \Tr(E_\lambda^\kappa)$ ($\kappa - \lambda^+$ is an end-segment of $\kappa$, hence closed unbounded). Thus $E_\lambda^\kappa < S$ for all regular $\lambda < \kappa$, so $o(S) \geq \kappa$. Therefore $o(\kappa) \geq \kappa + 1$.</li>
 </ol> 
 $\square$
 

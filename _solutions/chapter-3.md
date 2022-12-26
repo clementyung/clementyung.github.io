@@ -179,7 +179,7 @@ $$
 \end{align*}
 $$
 
-The second part of the exercise is false. However, it is true that the fixed points of $\gamma(\alpha) = \Gamma(\alpha \times \alpha)$ are precisely the <i>multiplicatively indecomposable</i> ordinals. See Exercise I.11.7 of \cite{kunen}. The notion of indecomposable ordinals introduced in <a href="https://clementyung.github.io/jech-solutions/chapter-2#ex2.13">Exercise 2.13</a> is also called <i>additively indecomposable</i>.
+The second part of the exercise is false. However, it is true that the fixed points of $\gamma(\alpha) = \Gamma(\alpha \times \alpha)$ are precisely the <i>multiplicatively indecomposable</i> ordinals. See Exercise I.11.7 of Kunen's <i>Set Theory</i>. The notion of indecomposable ordinals introduced in <a href="https://clementyung.github.io/jech-solutions/chapter-2#ex2.13">Exercise 2.13</a> is also called <i>additively indecomposable</i>.
 
 We shall show that $\Gamma(\omega^2 \times \omega^2) > \omega^2$. To do this, it suffices to show that $\Gamma((\omega + \omega) \times (\omega + \omega)) \geq \omega^2$. For each $n \in \omega$, the set:
 

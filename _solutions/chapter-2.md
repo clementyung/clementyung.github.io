@@ -43,24 +43,24 @@ $\square$
 
 Clearly $\emptyset \in A \cap B$. Let $x \in A \cap B$. Then since $A$ and $B$ are inductive, $x \cup \lbrace x\rbrace \in A$ and $x \cup \lbrace x\rbrace \in B$, so $x \cup \lbrace x\rbrace \in A \cap B$. Thus $A \cap B$ is inductive.
 
-Since $\boldsymbol{N}$ is the smallest inductive set, $\boldsymbol{N} = \boldsymbol{N} \cap \boldsymbol{\mathrm{ORD}}$, i.e. $\boldsymbol{N} \subseteq \boldsymbol{\mathrm{ORD}}$. Since $\boldsymbol{N}$ is transitive by [Exercise 1.3](https://clementyung.github.io/jech-solutions/chapter-1#ex1.3), and is well-ordered, it is an ordinal.
+Since $\boldsymbol{N}$ is the smallest inductive set, $\boldsymbol{N} = \boldsymbol{N} \cap \boldsymbol{\mathrm{ORD}}$, i.e. $\boldsymbol{N} \subseteq \boldsymbol{\mathrm{ORD}}$. Since $\boldsymbol{N}$ is transitive by <a href="https://clementyung.github.io/jech-solutions/chapter-1#ex1.3">Exercise 1.3</a>, and is well-ordered, it is an ordinal.
 
 Finally, to see that $\boldsymbol{N}$ is a limit ordinal, suppose not, so $\boldsymbol{N} = n \cup \lbrace n\rbrace$ for some $n \in \boldsymbol{N}$. By the inductive property of $\boldsymbol{N}$, we have that $\boldsymbol{N} = n \cup \lbrace n\rbrace \in \boldsymbol{N}$, contradicting the Axiom of Regularity. 
 $\square$
 
 <a name="ex2.4"></a>
 ## Exercise 2.4.
-<i>Solution.</i> <u>(i) $\implies$ (ii):</u> If $X$ is inductive, then $\boldsymbol{N} \subseteq X$. Then there exists an injective map $\boldsymbol{N} \to X$, which is the inclusion map. Then $\mod{\boldsymbol{N}} \leq \mod{X}$, so $X$ is infinite.
+<i>Solution.</i> <u>(i) $\implies$ (ii):</u> If $X$ is inductive, then $\boldsymbol{N} \subseteq X$. Then there exists an injective map $\boldsymbol{N} \to X$, which is the inclusion map. Then $\vert \boldsymbol{N}\vert  \leq \vert X\vert $, so $X$ is infinite.
 
 <u>(ii) $\implies$ (iii):</u> Let $X$ be an infinite set. Consider the map on $[X]^{<\omega}$ (the set of all finite subsets of $X$) defined by:
 
 $$
 \begin{align*}
-Y \mapsto \mod{Y}
+Y \mapsto \vert Y\vert 
 \end{align*}
 $$
 
-This is well-defined, as $\mod{Y}$ is well-defined for finite sets without Axiom of Infinity. By Axiom of Replacement, the image of this map is a set. Since $X$ is infinite, we have that for all $n \in \omega$, there exists $Y \subseteq X$ such that $\mod{Y} = n$. Then $Y \mapsto n$, the image of this map is $\omega$. Hence $\omega$ is a set.
+This is well-defined, as $\vert Y\vert $ is well-defined for finite sets without Axiom of Infinity. By Axiom of Replacement, the image of this map is a set. Since $X$ is infinite, we have that for all $n \in \omega$, there exists $Y \subseteq X$ such that $\vert Y\vert  = n$. Then $Y \mapsto n$, the image of this map is $\omega$. Hence $\omega$ is a set.
 
 <u>(iii) $\implies$ (i):</u> $\omega$ is inductive by definition. 
 $\square$
@@ -89,7 +89,9 @@ $\square$
 
 <a name="ex2.8"></a>
 ## Exercise 2.8.
-<a name="lem2.8.A"></a>
+For all $\alpha,\beta$ and $\gamma$:
+
+<a name="https://clementyung.github.io/jech-solutions/chapter-2#lem2.8.A"></a>
 <b>Lemma 2.8.A.</b> If $\beta$ is a limit ordinal, then so are $\alpha + \beta$, $\alpha \cdot \beta$ and $\alpha^\beta$.
 
 <i>Proof.</i> Let $F(\alpha,\beta)$ denote $\alpha + \beta$, $\alpha \cdot \beta$ or $\alpha^\beta$. In all three cases, we have $F(\alpha,\beta) = \lim_{\xi \to \beta} F(\alpha,\xi)$. Since $F(\alpha,\beta)$ is a limit ordinal iff $F(\alpha,\beta) = \lim_{\delta \to F(\alpha,\beta)} \delta$, it suffices to show that for all $\delta < F(\alpha,\beta)$, there exists some $\xi < \beta$ such that $\delta \leq F(\alpha,\xi$). But this is obviously true, for if $\delta > F(\alpha,\xi)$ for all $\xi < \beta$ then $\delta \geq \lim_{\xi \to \beta} F(\alpha,\xi) = F(\alpha,\beta)$ by definition. 
@@ -118,14 +120,14 @@ $$
 \end{align*}
 $$
 
-If $\gamma$ is a limit ordinal, then note that $\beta + \gamma$ is also a limit ordinal by [Lemma 2.8.A](#lem2.8.A). Thus:
+If $\gamma$ is a limit ordinal, then note that $\beta + \gamma$ is also a limit ordinal by <a href="#lem2.8.A">Lemma 2.8.A</a>. Thus:
 
 $$
 \begin{align*}
 \alpha \cdot (\beta + \gamma) &= \alpha \cdot \lim_{\xi \to \gamma} (\beta + \xi) \\
 &= \lim_{\xi \to \gamma} \alpha \cdot (\beta + \xi) \text{} && \text{as $\beta + \gamma$ is limit} \\
 &= \lim_{\xi \to \gamma} (\alpha \cdot \beta + \alpha \cdot \xi) && \text{by induction hypothesis} \\
-&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by [Lemma 2.8.A](#lem2.8.A)} \\
+&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by <a href="#lem2.8.A">Lemma 2.8.A</a>} \\
 &= \alpha \cdot \beta + \alpha \cdot \gamma
 \end{align*}
 $$
@@ -183,7 +185,7 @@ $$
 \begin{align*}
 (\alpha^\beta)^{\delta + 1} &= (\alpha^\beta)^\delta \cdot \alpha^\beta \\
 &= \alpha^{\beta \cdot \delta} \cdot \alpha^\beta && \text{by induction hypothesis} \\
-&= \alpha^{\beta \cdot \delta + \beta} && \text{by [Exercise 2.8(ii)](#ex2.8(ii))} \\
+&= \alpha^{\beta \cdot \delta + \beta} && \text{by <a href="#ex2.8(ii)">Exercise 2.8(ii)</a>} \\
 &= \alpha^{\beta \cdot (\delta + 1)}
 \end{align*}
 $$
@@ -298,12 +300,12 @@ $\square$
 ## Exercise 2.11.
 <a name="ex2.11(i)"></a>
 ### Exercise 2.11(i).
-<i>Solution.</i> As we saw in the proof of [Exercise 2.9(i)](#ex2.9(i)), $0 < 1$ but $0 + \omega = \omega = 1 + \omega$. 
+<i>Solution.</i> As we saw in the proof of <a href="#ex2.9(i)">Exercise 2.9(i)</a>, $0 < 1$ but $0 + \omega = \omega = 1 + \omega$. 
 $\square$
 
 <a name="ex2.11(ii)"></a>
 ### Exercise 2.11(ii).
-<i>Solution.</i> As we saw in the proof of [Exercise 2.9(ii)](#ex2.9(ii)), $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$. 
+<i>Solution.</i> As we saw in the proof of <a href="#ex2.9(ii)">Exercise 2.9(ii)</a>, $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$. 
 $\square$
 
 <a name="ex2.11(iii)"></a>
@@ -328,7 +330,7 @@ $$
 \end{align*}
 $$
 
-Now suppose $\varepsilon$ is another ordinal such that $\omega^\varepsilon = \varepsilon$. Note that $\varepsilon \neq 0$, as $\omega^0 = 1 \neq 0$. Thus, $\varepsilon \geq \omega \alpha_0$. If $\varepsilon \geq \alpha_n$, then by [Exercise 2.10](#ex2.10):
+Now suppose $\varepsilon$ is another ordinal such that $\omega^\varepsilon = \varepsilon$. Note that $\varepsilon \neq 0$, as $\omega^0 = 1 \neq 0$. Thus, $\varepsilon \geq \omega \alpha_0$. If $\varepsilon \geq \alpha_n$, then by <a href="#ex2.10">Exercise 2.10</a>:
 
 $$
 \begin{align*}
@@ -343,7 +345,7 @@ $\square$
 ## Exercise 2.13.
 <i>Solution.</i> Call those definitions (i), (ii) and (iii) respectively.
 
-<u>(i) $\implies$ (ii):</u> Let $\alpha < \gamma$. By Lemma 2.25(ii), there exists some $\delta$ such that $\alpha + \delta = \gamma$. Since $\alpha$ is indecomposable, $\delta \geq \gamma$. If $\delta > \gamma$, then by Lemma 2.25(i) and [Exercise 2.10](#ex2.10) we have $\alpha + \delta > \alpha + \gamma \geq \gamma$. Thus $\delta = \gamma$.
+<u>(i) $\implies$ (ii):</u> Let $\alpha < \gamma$. By Lemma 2.25(ii), there exists some $\delta$ such that $\alpha + \delta = \gamma$. Since $\alpha$ is indecomposable, $\delta \geq \gamma$. If $\delta > \gamma$, then by Lemma 2.25(i) and <a href="#ex2.10">Exercise 2.10</a> we have $\alpha + \delta > \alpha + \gamma \geq \gamma$. Thus $\delta = \gamma$.
 
 <u>(ii) $\implies$ (i):</u> For $\alpha < \gamma$ and $\beta < \gamma$, by Lemma 2.25(i) we have $\alpha + \beta < \alpha + \gamma = \gamma$.
 

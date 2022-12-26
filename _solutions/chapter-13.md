@@ -10,13 +10,11 @@ excerpt: ""
 
 <a name="ex13.1"></a>
 ## Exercise 13.1.
-<i>Solution.</i> Let $Z \in \cl(M)$, the transitive closure of $M$ under the G\"{o}del operations. We induct on the complexity of $Z$ under the operations to show that:
-\begin{center}
-If $x \in^\ast  Z$ (i.e. there's a finite sequence $x \in x_1 \in \cdots \in x_n \in Z$), then $x \in \cl(M)$.
-\end{center}
+<i>Solution.</i> Let $Z \in \cl(M)$, the transitive closure of $M$ under the G\"{o}del operations. We induct on the complexity of $Z$ under the operations to show that: If $x \in^\ast  Z$ (i.e. there's a finite sequence $x \in x_1 \in \cdots \in x_n \in Z$), then $x \in \cl(M)$.
+
 Call this property (T). Note that if a set is transitive, then every element of this set satisfies this condition. Let $X,Y \in \cl(M)$:
 <ol>
-<li> If $Z = \lbrace X,Y\rbrace$, then immediately $Z \subseteq \cl(M)$, and satisfies the property (T)..</li>
+<li> If $Z = \lbrace X,Y\rbrace$, then immediately $Z \subseteq \cl(M)$, and satisfies the property (T).</li>
 <li> If $Z = X \times Y \in \cl(M)$, let $z = (x,y) = \lbrace \lbrace x\rbrace,\lbrace x,y\rbrace\rbrace \in Z$. Then $x,y \in Z$ by IH on $X,Y \in \cl(M)$, so by $G_1$ we have that $\lbrace x\rbrace,\lbrace x,y\rbrace \in \cl(M)$. By $G_1$ again, $x = \lbrace \lbrace x\rbrace,\lbrace x,y\rbrace\rbrace \in \cl(M)$, so $Z \subseteq \cl(M)$. This also proves that property (T) is satisfied.</li>
 
 <li> Since $\varepsilon(X,Y) \subseteq X \times Y$, this follows from (2)..</li>

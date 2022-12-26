@@ -283,7 +283,7 @@ $\square$
 ## Exercise 3.10.
 <i>Solution.</i> By the pairing function $\Gamma$ in Theorem 3.5 we have that $\omega_\alpha \times \omega_\alpha$ is a projection of $\omega_\alpha$, and therefore $P(\omega_\alpha \times \omega_\alpha)$ is a projection of $P(\omega_\alpha)$. Let $f$ be the function in the hint (and if $R$ is not a well-order, let $f(R) := 0$). We shall show that $\ran(f) = \omega_{\alpha+1}$.
 
-<u>$\ran(f) \supseteq \omega_{\alpha+1</u>$:} Let $\beta < \omega_{\alpha+1}$. Then $\vert \beta\vert  \leq \aleph_\alpha$, so there exists a one-to-one function $f : \beta \to \omega_\alpha$. Define a well-ordering $R \subseteq \omega_\alpha \times \omega_\alpha$ by:
+<u>$\ran(f) \supseteq \omega_{\alpha+1}$:</u> Let $\beta < \omega_{\alpha+1}$. Then $\vert \beta\vert  \leq \aleph_\alpha$, so there exists a one-to-one function $f : \beta \to \omega_\alpha$. Define a well-ordering $R \subseteq \omega_\alpha \times \omega_\alpha$ by:
 
 $$
 \begin{align*}
@@ -293,7 +293,7 @@ $$
 
 Then clearly $R$ is a well order of order type $\beta$.
 
-<u>$\ran(f) \subseteq \omega_{\alpha+1</u>$:} Let $R$ be a well order and let $\beta = f(R)$. We may then define $g : \beta \to \omega_\alpha$ by having $g(\gamma) := \alpha_\gamma$, where $\alpha_\gamma$ is the $\gamma^\text{th}$ ordinal under the well order $R$. The well order of $R$ also implies that $g$ must be one-to-one, so $\vert \beta\vert  \leq \vert \alpha\vert  < \omega_{\alpha+1}$. Hence $\beta \in \omega_{\alpha+1}$. 
+<u>$\ran(f) \subseteq \omega_{\alpha+1}$:</u> Let $R$ be a well order and let $\beta = f(R)$. We may then define $g : \beta \to \omega_\alpha$ by having $g(\gamma) := \alpha_\gamma$, where $\alpha_\gamma$ is the $\gamma^\text{th}$ ordinal under the well order $R$. The well order of $R$ also implies that $g$ must be one-to-one, so $\vert \beta\vert  \leq \vert \alpha\vert  < \omega_{\alpha+1}$. Hence $\beta \in \omega_{\alpha+1}$. 
 $\square$
 
 <a name="ex3.11"></a>

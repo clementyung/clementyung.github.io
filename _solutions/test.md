@@ -5,11 +5,7 @@ type: "Type"
 permalink: /jech-solutions/testing
 excerpt: ""
 ---
-{% raw %}
-$
-\newcommand{\AC}{\mathsf{AC}}
-$
-{% endraw %}
+{% include commands.html}
 
 <head>
    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

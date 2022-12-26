@@ -13,13 +13,11 @@ excerpt: ""
 <a name="lem5.1.A"></a>
 <b>Lemma 5.1.A.</b> There are exactly $2^{\aleph_0}$ many open sets, $2^{\aleph_0}$ many closed sets, and $2^{\aleph_0}$ many perfect sets.
 
-\begin{proof}
-Let $\lbrace (a_\alpha,b_\alpha) : \alpha < \omega\rbrace$ be an enumeration of all open intervals with rational endpoints (possible as $\vert \Q \times \Q\vert  = \aleph_0$). Then, for any open set $U \subseteq \R$, we may write $U = \bigcup_{\alpha \in I} (a_\alpha,b_\alpha)$ for some $I \subseteq \omega$. Thus, by $\AC$, there exists an injection from $\lbrace \text{open subsets of $\R$}\rbrace$ to $P(\omega)$, in which the latter has cardinality $2^{\aleph_0}$. On the other hand, there are clearly at least $2^{\aleph_0}$ open sets, e.g. those of the form $(-\infty,r)$ for some $r \in \R$. Thus, there are exactly $2^{\aleph_0}$ open sets.
+<b>Proof.</b> Let $\lbrace (a_\alpha,b_\alpha) : \alpha < \omega\rbrace$ be an enumeration of all open intervals with rational endpoints (possible as $\vert \Q \times \Q\vert  = \aleph_0$). Then, for any open set $U \subseteq \R$, we may write $U = \bigcup_{\alpha \in I} (a_\alpha,b_\alpha)$ for some $I \subseteq \omega$. Thus, by $\AC$, there exists an injection from $\lbrace \text{open subsets of $\R$}\rbrace$ to $P(\omega)$, in which the latter has cardinality $2^{\aleph_0}$. On the other hand, there are clearly at least $2^{\aleph_0}$ open sets, e.g. those of the form $(-\infty,r)$ for some $r \in \R$. Thus, there are exactly $2^{\aleph_0}$ open sets.
 
 Since $A$ is open iff $\R - A$ is closed, there is a bijection between the collection of open sets and collection of closed sets, so there are also exactly $2^{\aleph_0}$ closed sets.
 
-Since every perfect set is closed, there are at most $2^{\aleph_0}$ closed sets. On the other hand, all closed $[0,r]$, where $r > 0$, are perfect, so there are at least $2^{\aleph_0}$ perfect sets.
-\end{proof}
+Since every perfect set is closed, there are at most $2^{\aleph_0}$ closed sets. On the other hand, all closed $[0,r]$, where $r > 0$, are perfect, so there are at least $2^{\aleph_0}$ perfect sets. $\blacksquare$
 
 <i>Solution.</i> Let $A,B$ be the sets in the hint. Note that such a construction works, as Theorem 4.5 asserts that $\vert P_\alpha\vert  = 2^{\aleph_0}$ for all $\alpha$, and so $P_\alpha - \lbrace a_\xi : \xi \leq \alpha\rbrace$ is always non-empty, hence all $b_\alpha$'s can indeed be chosen. The construction of $A$ and $B$ also requires $\AC$, since the $a_\alpha$'s and $b_\alpha$'s have to be chosen. Finally, such an enumeration of the perfect sets is possible by <a href="#lem5.1.A">Lemma 5.1.A</a>.
 

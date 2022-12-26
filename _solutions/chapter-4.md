@@ -8,6 +8,8 @@ excerpt: ""
 
 {% include commands.html %}
 
+In this chapter, we shall not use the Axiom of Choice for any of the exercises.
+
 <a name="ex4.1"></a>
 ## Exercise 4.1.
 <i>Solution.</i> Let $C(\R)$ be the set of all continuous functions $\R \to \R$. Following the hint, by identifying the continuous functions $f : \R \to \R$ by their definition on $\Q$, there is an injection $F : C(\R) \to {}^{\R}\Q$ given by $F(f) = f\restrictedto\Q$. But $\vert {}^{\R}\Q\vert  = \vert \R\vert ^{\vert \Q\vert } = (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0 \cdot \aleph_0} = 2^{\aleph_0} = \mathfrak{c}$. 

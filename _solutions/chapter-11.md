@@ -6,7 +6,7 @@ permalink: /jech-solutions/chapter-11
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex11.1"></a>
 ## Exercise 11.1.

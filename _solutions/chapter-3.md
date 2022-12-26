@@ -16,7 +16,7 @@ excerpt: ""
 <ol>
 <li> If $Y = X$, then since $X$ is finite, so is $Y$.</li>
 
-<li> If $Y \subsetneq X$, then let $x_0 \in X - Y$. Then $Y \subseteq X - \lbrace x_0\rbrace$. By <a href="https://clementyung.github.io/jech-solutions/chapter-1#lem1.12.A">Lemma 1.12.A</a>, $\vert X - \lbrace x_0\rbrace\vert  = n$, so by induction hypothesis $Y$ is also finite.</li>
+<li> If $Y \subsetneq X$, then let $x_0 \in X - Y$. Then $Y \subseteq X - \lbrace x_0\rbrace$. By <a name="#1#lem1.12.A">Lemma 1.12.A</a>, $\vert X - \lbrace x_0\rbrace\vert  = n$, so by induction hypothesis $Y$ is also finite.</li>
 </ol> 
 $\square$
 
@@ -127,9 +127,7 @@ $\square$
 
 <a name="ex3.5"></a>
 ## Exercise 3.5.
-Show that $\Gamma(\alpha \times \alpha) \leq \omega^\alpha$. Thus, $\Gamma(\alpha \times \alpha) = \alpha$ for all indecomposable $\alpha$.
-
-<a name="https://clementyung.github.io/jech-solutions/chapter-3#lem3.5.A"></a>
+<a name="lem3.5.A"></a>
 <b>Lemma 3.5.A.</b> For all ordinals $\alpha$, we have $\alpha \leq \omega^\alpha$.
 
 <i>Proof.</i> We induct on $\alpha$. For $\alpha = 0$ we have $\omega^0 = 1$. If $\beta \leq \omega^\beta$, then:
@@ -201,9 +199,7 @@ $\square$
 
 <a name="ex3.6"></a>
 ## Exercise 3.6.
-There is a well-ordering of the class of all finite sequences of ordinals such that for each $\alpha$, the set of all finite sequences in $\omega_\alpha$ is an initial segment and its order-type is $\omega_\alpha$.
-
-<a name="https://clementyung.github.io/jech-solutions/chapter-3#lem3.6.A"></a>
+<a name="lem3.6.A"></a>
 <b>Lemma 3.6.A.</b> Let $\alpha < \omega_\beta$ be an ordinal. Let $\alpha^{<\omega}$ be the set of all finite sequences of ordinals below $\alpha$. Then $\vert \alpha^{<\omega}\vert  < \kappa$.
 
 <i>Proof.</i> Let $f : \alpha \to \vert \alpha\vert $ be a bijection. By Theorem 3.5 we know that $\Gamma(\vert \alpha\vert  \times \vert \alpha\vert ) = \vert \alpha\vert $. Thus, we obtain a choiceless bijection $g := f^{-1} \circ \Gamma \circ (f,f) : \alpha \times \alpha \to \alpha$. Let $g_2 := g$, and inductively define $g_n : \alpha^n \to \alpha$ by $g_n := (g_{n-1},g)$. With this, we may define $h : \alpha^{<\omega} \to \alpha \times \omega$ by:
@@ -385,7 +381,28 @@ $\square$
 
 <a name="ex3.15(iii)"></a>
 ### Exercise 3.15(iii).
+<i>Solution.</i> Let $I$ be D-finite, and for each $i \in I$ let $A_i$ be a D-finite set such that $i \neq j \implies A_i \cap A_j = \emptyset$. Let $A := \bigsqcup_{i \in I} A_i$. Suppose $A$ is D-infinite with a countable subset $X \subseteq A$. Write $X = \lbrace x_i : i < \omega\rbrace$.
+
+Define $Y = \lbrace y_i : i < \omega\rbrace \subseteq X$ inductively as follows:
+<ol>
+<li> $y_0 := x_0$. Let $i_0 \in I$ be the unique element of $I$ such that $y_0 \in A_{i_0}$. This $i_0$ is well-defined, as the set $\lbrace i \in I : x_0 \in i\rbrace$ is singleton.</li>
+
+<li> Let $y_n \in X$ be such that $y_n \notin \bigcup_{k < n} A_{i_k}$. Such a $y_n$ exists, for otherwise we have that $X \subseteq \bigcup_{k < n} A_{i_k}$. RHS is a finite union of D-finite set, which is D-finite by <a href="#ex3.15(i)">Exercise 3.15(i)</a>, a contradiction. Let $i_n \in I$ be (unique) such that $y_n \in A_{i_n}$.</li>
+</ol>
+In particular, this gives us $I' := \lbrace i_k : k < \omega\rbrace \subseteq I$, contradicting that $I$ is D-finite. 
+$\square$
+
+<a name="ex3.16"></a>
+## Exercise 3.16.
+<b>Remark.</b>. On the other hand, one cannot prove without the Axiom of Choice that a projection, power set, or the set of all finite subsets of a D-finite set is D-finite, or that the union of a D-finite family of D-finite sets is D-finite.
+
+If $A$ is an infinite set, then $PP(A)$ is D-infinite.
+
+\begin{hint}
+Consider the set $\lbrace \lbrace X \subseteq A : \vert X\vert  = n\rbrace : n < \omega\rbrace$.
+\end{hint}
+
 <i>Solution.</i> As in the hint, it suffices to show that $\lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty for each $n$, in which it's clear that they are pairwise unequal, so $P(P(A))$ is D-infinite.
 
-We induct on $n$ that $S_n := \lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $\vert X \cup \lbrace x\rbrace\vert  = n + 1$ by <a href="https://clementyung.github.io/jech-solutions/chapter-1#lem1.13.A">Lemma 1.13.A</a>, so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty. 
+We induct on $n$ that $S_n := \lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $\vert X \cup \lbrace x\rbrace\vert  = n + 1$ by <a name="#1#lem1.13.A">Lemma 1.13.A</a>, so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty. 
 $\square$

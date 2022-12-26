@@ -13,11 +13,13 @@ excerpt: ""
 <a name="lem5.1.A"></a>
 <b>Lemma 5.1.A.</b> There are exactly $2^{\aleph_0}$ many open sets, $2^{\aleph_0}$ many closed sets, and $2^{\aleph_0}$ many perfect sets.
 
-<b>Proof.</b> Let $\lbrace (a_\alpha,b_\alpha) : \alpha < \omega\rbrace$ be an enumeration of all open intervals with rational endpoints (possible as $\vert \Q \times \Q\vert  = \aleph_0$). Then, for any open set $U \subseteq \R$, we may write $U = \bigcup_{\alpha \in I} (a_\alpha,b_\alpha)$ for some $I \subseteq \omega$. Thus, by $\AC$, there exists an injection from $\lbrace \text{open subsets of $\R$}\rbrace$ to $P(\omega)$, in which the latter has cardinality $2^{\aleph_0}$. On the other hand, there are clearly at least $2^{\aleph_0}$ open sets, e.g. those of the form $(-\infty,r)$ for some $r \in \R$. Thus, there are exactly $2^{\aleph_0}$ open sets.
+\begin{proof}
+Let $\lbrace (a_\alpha,b_\alpha) : \alpha < \omega\rbrace$ be an enumeration of all open intervals with rational endpoints (possible as $\vert \Q \times \Q\vert  = \aleph_0$). Then, for any open set $U \subseteq \R$, we may write $U = \bigcup_{\alpha \in I} (a_\alpha,b_\alpha)$ for some $I \subseteq \omega$. Thus, by $\AC$, there exists an injection from $\lbrace \text{open subsets of $\R$}\rbrace$ to $P(\omega)$, in which the latter has cardinality $2^{\aleph_0}$. On the other hand, there are clearly at least $2^{\aleph_0}$ open sets, e.g. those of the form $(-\infty,r)$ for some $r \in \R$. Thus, there are exactly $2^{\aleph_0}$ open sets.
 
 Since $A$ is open iff $\R - A$ is closed, there is a bijection between the collection of open sets and collection of closed sets, so there are also exactly $2^{\aleph_0}$ closed sets.
 
-Since every perfect set is closed, there are at most $2^{\aleph_0}$ closed sets. On the other hand, all closed $[0,r]$, where $r > 0$, are perfect, so there are at least $2^{\aleph_0}$ perfect sets. $\blacksquare$
+Since every perfect set is closed, there are at most $2^{\aleph_0}$ closed sets. On the other hand, all closed $[0,r]$, where $r > 0$, are perfect, so there are at least $2^{\aleph_0}$ perfect sets.
+\end{proof}
 
 <i>Solution.</i> Let $A,B$ be the sets in the hint. Note that such a construction works, as Theorem 4.5 asserts that $\vert P_\alpha\vert  = 2^{\aleph_0}$ for all $\alpha$, and so $P_\alpha - \lbrace a_\xi : \xi \leq \alpha\rbrace$ is always non-empty, hence all $b_\alpha$'s can indeed be chosen. The construction of $A$ and $B$ also requires $\AC$, since the $a_\alpha$'s and $b_\alpha$'s have to be chosen. Finally, such an enumeration of the perfect sets is possible by <a href="#lem5.1.A">Lemma 5.1.A</a>.
 
@@ -278,6 +280,258 @@ $\square$
 
 <a name="ex5.15"></a>
 ## Exercise 5.15.
+<i>Solution.</i> We fill in some details of the hint.
+<ol>
+<li> $\alpha \leq \beta$, as for all $\alpha > \beta$ we have $\alpha + \beta \geq \beta + \beta > \beta$.</li>
+
+<li> If $\alpha + \beta = \beta$, then $\alpha + 1 + \beta = \alpha + \beta = \beta$ as $\beta \geq \omega$. Thus $\alpha$ is a limit ordinal.</li>
+
+<li> $\beta < \alpha + \beta \implies \alpha + \beta < \alpha + \alpha + \beta$, so $\aleph_{\alpha+\beta} < \aleph_{\alpha+\alpha+\beta}$.</li>
+</ol> 
+$\square$
+
+<a name="ex5.16"></a>
+## Exercise 5.16.
+$\prod_{\alpha<\omega_1+\omega} \aleph_\alpha = \aleph_{\omega_1+\omega}^{\aleph_1}$.
+
+\begin{hint}
+$\aleph_{\omega_1+\omega}^{\aleph_1} \leq \mathbb{\prod_{n=0}^\infty \aleph_{\omega_1+n}}^{\aleph_1} = \prod_n \aleph_{\omega_1+n}^{\aleph_1} = \prod_n (\aleph_{\omega_1}^{\aleph_1} \cdot \aleph_{\omega_1+n}^{\aleph_1}) = \aleph_{\omega_1}^{\aleph_1} \cdot \prod_n \aleph_{\omega_1+n} = \prod_{\alpha<\omega_1+\omega} \aleph_\alpha$.
+\end{hint}
+
+<i>Solution.</i> Alternatively, observe that one may easily generalise Lemma 5.9 such that for ordinals $\alpha$, we have:
+
+$$
+\begin{align*}
+\prod_{i < \alpha} \kappa_i = \mathbb{\sup_i \kappa_i}^{\vert \alpha\vert }
+\end{align*}
+$$
+
+In which then this exercise follows immediately. 
+$\square$
+
+<a name="ex5.17"></a>
+## Exercise 5.17.
+If $\kappa$ is a limit cardinal and $\lambda < \cf{\kappa}$, then $\kappa^\lambda = \sum_{\alpha<\kappa} \vert \alpha\vert ^\lambda$.
+
+<i>Solution.</i> On one hand we have $\sum_{\alpha<\kappa} \vert \alpha\vert ^\lambda \leq \sum_{\alpha<\kappa} \kappa^\lambda = \kappa$. On the other hand, since $\lambda < \cf(\kappa)$ we have that all subsets in $[\kappa]^\lambda$ are bounded, so:
+
+$$
+\begin{align*}
+[\kappa]^\lambda = \bigcup_{\alpha < \kappa} [\alpha]^\lambda
+\end{align*}
+$$
+
+Therefore:
+
+$$
+\begin{align*}
+\kappa^\lambda = \vert [\kappa]^\lambda\vert  = \mod{\bigcup_{\alpha<\kappa} [\alpha]^\lambda} \leq \sum_{\alpha<\kappa} \vert [\alpha]^\lambda\vert  = \sum_{\alpha<\kappa} \vert \alpha\vert ^\lambda
+\end{align*}
+$$
+ 
+$\square$
+
+<a name="ex5.18"></a>
+## Exercise 5.18.
+$\aleph_\omega^{\aleph_1} = \aleph_\omega^{\aleph_0} \cdot 2^{\aleph_1}$.
+
+<a name="lem5.18.A"></a>
+<b>Lemma 5.18.A.</b> For $\beta < \omega_{\alpha+1}$, we have:
+
+$$
+\begin{align*}
+\aleph_\beta^{\aleph_{\alpha+1}} = \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}
+\end{align*}
+$$
+
+<i>Proof.</i> Note that clearly $\aleph_\beta^{\aleph_{\alpha+1}} \geq \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}$, so it suffices to prove $\leq$. We induct on $\beta$. For $\beta \leq \alpha + 1$, by Theorem 5.20(i) we have:
+
+$$
+\begin{align*}
+\aleph_\beta^{\aleph_{\alpha+1}} = 2^{\aleph_{\alpha+1}} = 2^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}} = \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}
+\end{align*}
+$$
+
+Note that $2^{\aleph_\alpha} \leq \aleph_{\alpha+1}^{\aleph_\alpha} \leq (2^{\aleph_\alpha})^{\aleph_\alpha} = 2^{\aleph_\alpha}$. Now assume that $\beta > \alpha + 1$. Suppose $\aleph_\beta^{\aleph_{\alpha+1}} = \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}$. Then, by the Hausdorff formula:
+
+$$
+\begin{align*}
+\aleph_{\beta+1}^{\aleph_{\alpha+1}} &= \aleph_\beta^{\aleph_{\alpha+1}} \cdot \aleph_{\beta+1} \\
+&= \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}} \cdot \aleph_{\beta+1} \\
+&= \aleph_\beta^{\aleph_\alpha} \cdot \aleph_{\beta+1} \cdot 2^{\aleph_{\alpha+1}} \\
+&= \aleph_{\beta+1}^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}
+\end{align*}
+$$
+
+Now suppose $\beta$ is a limit ordinal, and for all $\gamma < \beta$ we have $\aleph_\gamma^{\aleph_{\alpha+1}} = \aleph_\gamma^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}$. By Theorem 5.20, there are three possible cases ((i) is not possible as $\beta > \alpha + 1$).
+<ol>
+<li> If $\aleph_\beta^{\aleph_{\alpha+1}} = \aleph_\gamma^{\aleph_{\alpha+1}}$ for some $\gamma < \beta$, then:
+
+$$
+\begin{align*}
+\aleph_\beta^{\aleph_{\alpha+1}} = \aleph_\gamma^{\aleph_{\alpha+1}} = \aleph_\gamma^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}} \leq \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}
+\end{align*}
+$$
+</li>
+
+<li> If $\cf(\aleph_\beta) > \aleph_{\alpha+1}$, then:
+
+$$
+\begin{align*}
+\aleph_\beta^{\aleph_{\alpha+1}} = \aleph_\beta \leq \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}
+\end{align*}
+$$
+</li>
+
+<li> If $\cf(\aleph_\beta) \leq \aleph_{\alpha+1}$, then since $\aleph_{\alpha+1} < \aleph_\beta$:
+
+$$
+\begin{align*}
+\aleph_\beta^{\aleph_{\alpha+1}} = \aleph_\beta^{\cf(\aleph_\beta)} \leq \aleph_\beta^{\aleph_\alpha} \leq \aleph_\beta^{\aleph_\alpha} \cdot 2^{\aleph_{\alpha+1}}
+\end{align*}
+$$
+</li>
+</ol>
+This completes the induction. 
+$\blacksquare$
+
+<i>Solution.</i> This follows from <a href="#lem5.18.A">Lemma 5.18.A</a>. 
+$\square$
+
+<a name="ex5.19"></a>
+## Exercise 5.19.
+If $\alpha < \omega_1$, then $\aleph_\alpha^{\aleph_1} = \aleph_\alpha^{\aleph_0} \cdot 2^{\aleph_1}$.
+
+<i>Solution.</i> This follows from <a href="#lem5.18.A">Lemma 5.18.A</a>. 
+$\square$
+
+<a name="ex5.20"></a>
+## Exercise 5.20.
+If $\alpha < \omega_2$, then $\aleph_\alpha^{\aleph_2} = \aleph_\alpha^{\aleph_1} \cdot 2^{\aleph_2}$.
+
+<i>Solution.</i> This follows from <a href="#lem5.18.A">Lemma 5.18.A</a>. 
+$\square$
+
+<a name="ex5.21"></a>
+## Exercise 5.21.
+If $\kappa$ is regular and limit, then $\kappa^{<\kappa} = 2^{<\kappa}$. If $\kappa$ is regular and strong limit then $\kappa^{<\kappa} = \kappa$.
+
+<i>Solution.</i> Suppose $\kappa$ is regular and limit. Clearly $\kappa^{<\kappa} \geq 2^{<\kappa}$. On the other hand, let $\lambda < \kappa$. Since $\kappa$ is regular, we have:
+
+$$
+\begin{align*}
+\kappa^\lambda = \sum_{\mu < \kappa} \mu^\lambda \leq \sum_{\mu < \kappa} 2^{\mu^+} = 2^{<\kappa}
+\end{align*}
+$$
+
+Suppose $\kappa$ is regular and strong limit. Clearly $\kappa^{<\kappa} \geq 2^{<\kappa}$. On the other hand, by above we have $\kappa^{<\kappa} = 2^{<\kappa}$. Since $\kappa$ is strong limit, we have $2^\lambda < \kappa$ for all $\lambda < \kappa$. Thus $2^{<\kappa} \leq \kappa$. 
+$\square$
+
+<a name="ex5.22"></a>
+## Exercise 5.22.
+If $\kappa$ is singular and is not strong limit, then $\kappa^{<\kappa} = 2^{<\kappa} > \kappa$.
+
+<i>Solution.</i> Again, clearly $\kappa^{<\kappa} \geq 2^{<\kappa}$. On the other hand, let $\lambda < \kappa$. Since $\kappa$ is not a strong limit, there exists $\mu < \kappa$ such that $\kappa \leq 2^\mu$. Then $\kappa^\lambda \leq (2^\mu)^{\lambda} = 2^{\mu \cdot \lambda} \leq 2^{<\kappa}$, so $\kappa^{<\kappa} \leq 2^{<\kappa}$.
+
+For the second inequality, it follows from Corollary 5.14 that $\kappa < \kappa^{\cf(\kappa)} \leq \kappa^{<\kappa}$. 
+$\square$
+
+<a name="ex5.23"></a>
+## Exercise 5.23.
+If $\kappa$ is singular and strong limit, then $2^{<\kappa} = \kappa$ and $\kappa^{<\kappa} = \kappa^{\cf(\kappa)}$.
+
+<i>Solution.</i> Since $\kappa$ is a strong limit:
+
+$$
+\begin{align*}
+\kappa = \sup\lbrace \lambda : \lambda < \kappa\rbrace \leq \underbrace{\sup\lbrace 2^\lambda : \lambda < \kappa\rbrace}_{=2^{<\kappa}} \leq \kappa
+\end{align*}
+$$
+
+For the second equality, we note that for $\lambda < \kappa$ and $\mu < \kappa$, we have $\mu^\lambda \leq 2^{\mu^+} < \kappa$. Thus for $\lambda \geq \cf(\kappa)$ we have $\kappa^\lambda = \kappa^{\cf(\kappa)}$ by Theorem 5.20. This implies that $\kappa^{<\kappa} = \kappa^{\cf(\kappa)}$. 
+$\square$
+
+<a name="ex5.24"></a>
+## Exercise 5.24.
+If $2^{\aleph_0} > \aleph_\omega$, then $\aleph_\omega^{\aleph_0} = 2^{\aleph_0}$.
+
+<i>Solution.</i> 
+$$
+\begin{align*}
+2^{\aleph_0} \leq \aleph_\omega^{\aleph_0} \leq (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0}
+\end{align*}
+$$
+ 
+$\square$
+
+<a name="ex5.25"></a>
+## Exercise 5.25.
+If $2^{\aleph_1} = \aleph_2$ and $\aleph_\omega^{\aleph_0} > \aleph_{\omega_1}$, then $\aleph_{\omega_1}^{\aleph_1} = \aleph_\omega^{\aleph_0}$.
+
+<i>Solution.</i> By <a href="#ex5.18">Exercise 5.18</a>:
+
+$$
+\begin{align*}
+\aleph_\omega^{\aleph_0} \leq \aleph_{\omega_1}^{\aleph_1} \leq (\aleph_\omega^{\aleph_0})^{\aleph_1} = \aleph_\omega^{\aleph_1} = \aleph_\omega^{\aleph_0} \cdot 2^{\aleph_1} = \aleph_\omega^{\aleph_0} \cdot \aleph_2 = \aleph_\omega^{\aleph_0}
+\end{align*}
+$$
+ 
+$\square$
+
+<a name="ex5.26"></a>
+## Exercise 5.26.
+If $2^{\aleph_0} \geq \aleph_{\omega_1}$, then $\gimel(\aleph_\omega) = 2^{\aleph_0}$ and $\gimel(\aleph_{\omega_1}) = 2^{\aleph_1}$.
+
+<i>Solution.</i> We have $\gimel(\aleph_\omega) = \aleph_\omega^{\aleph_0}$, and:
+
+$$
+\begin{align*}
+2^{\aleph_0} = \aleph_\omega^{\aleph_0} \leq \aleph_{\omega_1}^{\aleph_0} \leq (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0}
+\end{align*}
+$$
+
+For second part, we have $\gimel(\aleph_{\omega_1}) = \aleph_{\omega_1}^{\aleph_1}$, and:
+
+$$
+\begin{align*}
+2^{\aleph_1} = \aleph_{\omega_1}^{\aleph_1} \leq (2^{\aleph_0})^{\aleph_1} = 2^{\aleph_1}
+\end{align*}
+$$
+ 
+$\square$
+
+<a name="ex5.27"></a>
+## Exercise 5.27.
+If $2^{\aleph_1} = \aleph_2$, then $\aleph_\omega^{\aleph_0} \neq \aleph_{\omega_1}$.
+
+<i>Solution.</i> If $2^{\aleph_1} = \aleph_2$ then by <a href="#ex5.18">Exercise 5.18</a> we have $\aleph_\omega^{\aleph_0} = \aleph_\omega^{\aleph_1}$. Thus, if $\aleph_\omega^{\aleph_1} = \aleph_{\omega_1}$ then:
+
+$$
+\begin{align*}
+\cf(\aleph_\omega^{\aleph_1}) = \cf(\aleph_{\omega_1}) = \omega_1
+\end{align*}
+$$
+
+contradicting Corollary 5.13. 
+$\square$
+
+<a name="ex5.28"></a>
+## Exercise 5.28.
+If $\kappa$ is a singular cardinal and if $\kappa < \gimel(\lambda)$ for some $\lambda < \kappa$ such that $\cf{\kappa} \leq \cf{\lambda}$ then $\gimel(\kappa) \leq \gimel(\lambda)$.
+
+<i>Solution.</i> 
+$$
+\begin{align*}
+\gimel(\kappa) = \kappa^{\cf(\kappa)} \leq (\lambda^{\cf(\lambda)})^{\cf(\kappa)} \leq (\lambda^{\cf(\lambda)})^{\cf(\lambda)} = \lambda^{\cf(\lambda)} = \gimel(\lambda)
+\end{align*}
+$$
+ 
+$\square$
+
+<a name="ex5.29"></a>
+## Exercise 5.29.
+If $\kappa$ is a singular cardinal such that $2^{\cf{\kappa}} < \kappa \leq \lambda^{\cf{\kappa}}$ for some $\lambda < \kappa$, then $\gimel(\kappa) = \gimel(\lambda)$ where $\lambda$ is the least $\lambda$ such that $\kappa \leq \lambda^{\cf{\kappa}}$.
+
 <i>Solution.</i> By Theorem 5.20(ii), we have that $\gimel(\kappa) = \kappa^{\cf(\kappa)} = \lambda^{\cf(\kappa)}$. If $\mu < \lambda$ and $\mu^{\cf(\kappa)} \geq \lambda$, then $\mu^{\cf(\kappa)} = \lambda^{\cf(\kappa)}$, contradicting minimality of $\lambda$. Thus, we must have that $\mu^{\cf(\kappa)} < \lambda$ for all $\mu < \lambda$.
 
 Now observe that we can't have $\cf(\lambda) > \cf(\kappa)$ - otherwise, by Theorem 5.20(iii) we have $\lambda^{\cf(\kappa)} = \lambda < \kappa$, a contradiction. Thus, by the same theorem, $\cf(\lambda) \leq \cf(\kappa)$ implies that $\lambda^{\cf(\kappa)} = \lambda^{\cf(\lambda)} = \gimel(\lambda)$, as desired. 

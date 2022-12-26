@@ -9,3 +9,5 @@ excerpt: ""
 {% include commands.html %}
 
 $\mathbb{Z}$
+$\mathcal{U}$
+$\mathfrak{c}$

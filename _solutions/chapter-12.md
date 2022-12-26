@@ -316,7 +316,7 @@ $\square$
 
 $$
 \begin{align*}
-\neg (\exists f \underbrace{(\exists \beta \in \alpha)\, (\text{$f$ is a function of $\alpha$ onto $\beta$})}_{\text{$\Delta_0$ formula, by <a href="#ex12.5">Exercise 12.5</a>}})
+\neg (\exists f \underbrace{(\exists \beta \in \alpha)\, (\text{$f$ is a function of $\alpha$ onto $\beta$})}_{\text{$\Delta_0$ formula, by Exercise 12.5}})
 \end{align*}
 $$
 

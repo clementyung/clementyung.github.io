@@ -1,5 +1,5 @@
 ---
-title: "14)Forcing
+title: "14) Forcing
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-14
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex14.1"></a>
+<a name="ex14.1"></a>
 ## Exercise 14.1.
 <i>Solution.</i> We shall show that the $D$ in the hint is dense (for fixed $p,q \in P$). This gives the conclusion, as if $G$ is generic then $G \cap D \neq \emptyset$, so we have $r \in G \cap D$. Since all elements in $G$ are compatible, neither $r$ is incompatible with $p$ now $r$ is incompatible with $q$ is possible. It follows that $r \leq p$ and $r \leq q$, as desired.
 

@@ -1,5 +1,5 @@
 ---
-title: "11)Borel and Analytic Sets
+title: "11) Borel and Analytic Sets
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-11
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex11.1"></a>
+<a name="ex11.1"></a>
 ## Exercise 11.1.
 <i>Solution.</i> Let $\lbrace A_n : n < \omega\rbrace$ be a countable collection of sets.
 

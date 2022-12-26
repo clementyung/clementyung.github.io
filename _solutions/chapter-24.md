@@ -1,5 +1,5 @@
 ---
-title: "24)The Singular Cardinal Problem
+title: "24) The Singular Cardinal Problem
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-24
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex24.1"></a>
+<a name="ex24.1"></a>
 ## Exercise 24.1.
 <i>Solution.</i> We first note that under this exercise's hypothesis, $\aleph_{\omega_1}$ is a strong limit cardinal (in particular, $2^{\aleph_1} < \aleph_{\omega_1}$) - indeed, let $\alpha < \omega_1$, and since stationary sets are unbounded there exists an $\alpha < \gamma < \omega_1$ such that $2^{\aleph_\alpha} \leq 2^{\aleph_\gamma} \leq \aleph_{\gamma+\beta} < \aleph_{\omega_1}$. Hence, $\aleph_{\omega_1}^{\aleph_1} = 2^{\aleph_{\omega_1}}$.
 

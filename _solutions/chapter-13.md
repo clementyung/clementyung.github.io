@@ -1,5 +1,5 @@
 ---
-title: "13)Constructible Sets
+title: "13) Constructible Sets
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-13
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex13.1"></a>
+<a name="ex13.1"></a>
 ## Exercise 13.1.
 <i>Solution.</i> Let $Z \in \cl(M)$, the transitive closure of $M$ under the G\"{o}del operations. We induct on the complexity of $Z$ under the operations to show that:
 \begin{center}

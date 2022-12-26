@@ -1,5 +1,5 @@
 ---
-title: "22)Saturated Ideals
+title: "22) Saturated Ideals
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-22
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex22.1"></a>
+<a name="ex22.1"></a>
 ## Exercise 22.1.
 <i>Solution.</i> Let $\lbrace Z_\alpha : \alpha < \lambda\rbrace$ be the sets defined in the hint. Clearly they are pairwise disjoint. To see that they are of positive $I$-measure, we observe that:
 

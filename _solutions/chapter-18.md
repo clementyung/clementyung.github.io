@@ -1,5 +1,5 @@
 ---
-title: "18)Large Cardinals and $L$
+title: "18) Large Cardinals and $L$
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-18
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex18.1"></a>
+<a name="ex18.1"></a>
 ## Exercise 18.1.
 <i>Solution.</i> By Lemma 17.29, we have that $\kappa \to (\alpha)_{2^{\aleph_0}}^{<\omega}$, so by Lemma 17.24, $(\L_\kappa,\in)$ has a set of indiscernibles of order-type $\omega_1$. By Lemma 18.17, this implies that there exists a remarkable model, and hence $0^\sharp$ exists. 
 $\square$

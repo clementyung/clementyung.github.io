@@ -1,5 +1,5 @@
 ---
-title: "20)Very Large Cardinals
+title: "20) Very Large Cardinals
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-20
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex20.1"></a>
+<a name="ex20.1"></a>
 ## Exercise 20.1.
 <i>Solution.</i> We first prove an intermediate claim:
 

@@ -1,5 +1,5 @@
 ---
-title: "12)Models of Set Theory
+title: "12) Models of Set Theory
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-12
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex12.1"></a>
+<a name="ex12.1"></a>
 ## Exercise 12.1.
 <i>Solution.</i> <b>Step 1 - Construct isomorphism $f$:</b> We define $f : \A_a \to \Ult_U\lbrace \A_x : x \in S\rbrace$ as follows: Fix any $y_x \in \A_x$ for each $x \in S - \lbrace a\rbrace$. For each $y \in \A_a$, define $g_y : S \to \prod_{x \in S} \A_x$ by stipulating that:
 

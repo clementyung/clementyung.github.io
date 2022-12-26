@@ -1,5 +1,5 @@
 ---
-title: "19)Iterated Ultrapowers and $L[U]$
+title: "19) Iterated Ultrapowers and $L[U]$
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-19
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex19.1"></a>
+<a name="ex19.1"></a>
 ## Exercise 19.1.
 <i>Solution.</i> Let $M$ be the direct limit. Following the hint, it suffices to show that $M \models i_{n,\omega}(\kappa) > i_{n+1,\omega}(\kappa)$. By elementarity and commutativity of $i_{m,n}$'s it suffices to show that $M_{n+1} \models i_{n,n+1}(\kappa) > \kappa$. Since $i_{n,n+1} = j\restrictedto M_{n+1}$, this is equivalent to asserting that $j(\kappa) > \kappa$, which we know is true. 
 $\square$

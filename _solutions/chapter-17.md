@@ -1,5 +1,5 @@
 ---
-title: "17)Large Cardinals
+title: "17) Large Cardinals
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-17
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex17.1"></a>
+<a name="ex17.1"></a>
 ## Exercise 17.1.
 <i>Solution.</i> The hint basically solves the problem, we just need to make sure that indeed $f_i \ni^\ast  f_{i+1}$ for all $i \in \omega$. In other words:
 

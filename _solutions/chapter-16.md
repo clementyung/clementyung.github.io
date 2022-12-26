@@ -1,5 +1,5 @@
 ---
-title: "16)Iterated Forcing and Martin's Axiom
+title: "16) Iterated Forcing and Martin's Axiom
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-16
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex16.1"></a>
+<a name="ex16.1"></a>
 ## Exercise 16.1.
 <i>Solution.</i> By Lemma 16.3 we know that $B(P) * B(\dot{Q})$ is a complete Boolean algebra. Thus, it suffices to show that $P * \dot{Q}$ embeds densely in $B(P) * B(\dot{Q})$, by the uniqueness of Boolean completion.
 

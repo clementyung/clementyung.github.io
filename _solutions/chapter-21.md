@@ -1,5 +1,5 @@
 ---
-title: "21)Large Cardinals and Forcing
+title: "21) Large Cardinals and Forcing
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-21
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex21.1"></a>
+<a name="ex21.1"></a>
 ## Exercise 21.1.
 <i>Solution.</i> Clearly $\kappa \in W$ and $W$ is upward-closed. To see that, $W$ is $\kappa$-complete, fix $\gamma < \kappa$ and let $\lbrace X_\alpha : \alpha < \gamma\rbrace \subseteq W$. Let $p_0 \in G$ be such that $G \forces (\forall \alpha < \gamma) \, \dot{X}_\alpha \in \dot{J}$, where $\dot{X}_\alpha$ and $\dot{J}$ are names for $X_\alpha$ and $J$ respectively.
 

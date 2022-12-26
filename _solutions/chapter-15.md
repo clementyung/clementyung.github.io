@@ -1,5 +1,5 @@
 ---
-title: "15)Applications of Forcing
+title: "15) Applications of Forcing
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-15
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex15.1"></a>
+<a name="ex15.1"></a>
 ## Exercise 15.1.
 <i>Solution.</i> We note that in the proof of Theorem  7.13, the cuts $U$ in $B(P)$ are exactly:
 

@@ -1,5 +1,5 @@
 ---
-title: "23)The Nonstationary Ideal
+title: "23) The Nonstationary Ideal
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-23
@@ -8,7 +8,7 @@ excerpt: ""
 
 { % include commands.html % }
 
-    <a name="ex23.1"></a>
+<a name="ex23.1"></a>
 ## Exercise 23.1.
 <i>Solution.</i> The proof of Theorem 23.3 can be replicated with $E_\lambda^\kappa$ replaced with $E$. We provide more details.
 

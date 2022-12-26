@@ -73,7 +73,7 @@ $\blacksquare$
 <i>Solution.</i> Let $X$ be the set of all algebraic reals. Define $h : X \to \boldsymbol{N} \times \Z[x]$ by $h(a) = (k,p(x))$, where $p(x)$ is the $\prec$-least polynomial (as in <a href="#lem4.3.B">Lemma 4.3.B</a>), and $a$ is the $(k + 1)^\text{th}$ smallest root of $p(x)$. Then $h$ is clearly injective, and since $\Z[x]$ is countable by <a href="#lem4.3.A">Lemma 4.3.A</a>, $\boldsymbol{N} \times \Z[x]$ is also countable, so $X$ must be countable. 
 $\square$
 
-<b>Remark.</b>. If we assume $\AC$, then this exercise becomes far easier as countable union of countable sets is countable (which makes proving <a href="#lem4.3.A">Lemma 4.3.A</a> slightly easier), and every set is well-orderable (trivialising <a href="#lem4.3.B">Lemma 4.3.B</a>).
+<b>Remark.</b>. If we assume $\newcommand{\AC}{AC} \AC$, then this exercise becomes far easier as countable union of countable sets is countable (which makes proving <a href="#lem4.3.A">Lemma 4.3.A</a> slightly easier), and every set is well-orderable (trivialising <a href="#lem4.3.B">Lemma 4.3.B</a>).
 
 <a name="ex4.4"></a>
 ## Exercise 4.4.

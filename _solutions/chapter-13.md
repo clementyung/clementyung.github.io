@@ -9,7 +9,6 @@ excerpt: ""
 {% include commands.html %}
 
 
-{% raw %} {{
 <a name="ex13.1"></a>
 ## Exercise 13.1.
 <i>Solution.</i> Let $Z \in \cl(M)$, the transitive closure of $M$ under the G\"{o}del operations. We induct on the complexity of $Z$ under the operations to show that: If $x \in^\ast  Z$ (i.e. there's a finite sequence $x \in x_1 \in \cdots \in x_n \in Z$), then $x \in \cl(M)$.
@@ -34,7 +33,7 @@ $\square$
 ## Exercise 13.2.
 <i>Solution.</i> Note that if $M = \emptyset$ then the assertion holds true vacuously, so assume otherwise. We induct on $\vert X\vert $. If $\vert X\vert  = 0$, then trivially $X \subseteq M$. Now assume the assertion holds for $\vert X\vert  = k$. Let $X = \lbrace x_1,\dots,x_{k+1}\rbrace \in M$.
 
-Now we observe that at least one of $x_i$ must be in $M$ - otherwise, we have $\func{ext}_\in(X) = \func{ext}_\in(\emptyset)$ (note that $\emptyset \in M$ necessary, as we may take any $Y \in M$ and we have $\emptyset = Y - Y \in M$). WLOG suppose $x_{k+1} \in M$, and we have that $\lbrace x_{k+1}\rbrace \in M$ by $G_1$, so $X - \lbrace x_{k+1}\rbrace = \lbrace x_1,\dots,x_n\rbrace \in M$. By IH, $x_i \in M$ for all $1 \leq i \leq n$, completing the proof. 
+Now we observe that at least one of $x_i$ must be in $M$ - otherwise, we have <span>$\func{ext}_\in(X) = \func{ext}_\in(\emptyset)$</span> (note that $\emptyset \in M$ necessary, as we may take any $Y \in M$ and we have $\emptyset = Y - Y \in M$). WLOG suppose $x_{k+1} \in M$, and we have that $\lbrace x_{k+1}\rbrace \in M$ by $G_1$, so $X - \lbrace x_{k+1}\rbrace = \lbrace x_1,\dots,x_n\rbrace \in M$. By IH, $x_i \in M$ for all $1 \leq i \leq n$, completing the proof. 
 $\square$
 
 <a name="ex13.3"></a>
@@ -737,4 +736,3 @@ $\square$
 ## Exercise 13.37.
 <i>Solution.</i> Let $M$ be a transitive model of $\ZF$ such that there exists a definable one-to-one correspondence with the class of all ordinals. By <a href="#ex13.36">Exercise 13.36</a>, we have $M \subseteq OD$. But since $M$ is transitive, for all $x \in M$ we have $\TC(\lbrace x\rbrace) \subseteq M \subseteq OD$. Thus $x \in HOD$, so we have in fact that $M \subseteq HOD$. 
 $\square$
-}} {% endraw %}

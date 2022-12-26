@@ -110,7 +110,7 @@ $\square$
 ## Exercise 6.4.
 <i>Solution.</i> We can do better. We show that if $\rank(x) = \alpha$ and $\rank(y) = \beta$, then:
 
-| Set | Header2 |
+| Set | Rank |
 |:--:|:----:|
 | $\lbrace x,y\rbrace$ | $\max\lbrace\alpha,\beta\rbrace + 1$ |
 | $\c{x,y}$ | $\max\lbrace\alpha,\beta\rbrace + 2$ |

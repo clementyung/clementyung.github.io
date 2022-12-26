@@ -1,18 +1,4 @@
 {% raw %}
-$
-\makeatletter
-\DeclareRobustCommand\bigop[2][1]{%
-  \mathop{\vphantom{\sum}\mathpalette\bigop@{{#1}{#2}}}\slimits@
-}
-\newcommand{\bigop@}[2]{\bigop@@#1#2}
-\newcommand{\bigop@@}[3]{%
-  \vcenter{%
-    \sbox\z@{$#1\sum$}%
-    \hbox{\resizebox{\ifx#1\displaystyle#2\fi\dimexpr\ht\z@+\dp\z@}{!}{$\m@th#3$}}%
-  }%
-}
-\makeatother
-$
 
 $
 \newcommand{\func}{\operatorname}
@@ -97,7 +83,7 @@ $
 \newcommand{\restrictedto}{\mathord{\upharpoonright}}
 \newcommand{\Fn}{\func{Fn}}
 \newcommand{\Col}{\func{Col}}
-\newcommand{\bigtriangle}{\bigop{\triangle}}
+\newcommand{\bigtriangle}{\triangle}
 \newcommand{\U}{\mathcal{U}}
 \newcommand{\W}{\mathcal{W}}
 \newcommand{\N}{\mathcal{N}}

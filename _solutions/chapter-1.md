@@ -80,9 +80,7 @@ $\square$
 
 <a name="ex1.12"></a>
 ## Exercise 1.12.
-Every finite set is $T$-finite.
-
-<a name="https://clementyung.github.io/jech-solutions/chapter-1#lem1.12.A"></a>
+<a name="lem1.12.A"></a>
 <b>Lemma 1.12.A.</b> Let $X$ be a finite set and suppose $X$ has $n + 1$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \in X$, we have $X - \lbrace x_0\rbrace$ has $n$ elements.
 
 <i>Proof.</i> Let $f : X \to n + 1$ be a bijection, and fix $x_0 \in X$. Let $x' = f^{-1}(n)$. Define $g : X \to X$ by:
@@ -106,13 +104,7 @@ $\square$
 
 <a name="ex1.13"></a>
 ## Exercise 1.13.
-Ever infinite set is $T$-infinite.
-
-\begin{hint}
-If $S$ is infinite, consider $X = \lbrace u \subseteq S : u \text{ is finite}\rbrace$.
-\end{hint}
-
-<a name="https://clementyung.github.io/jech-solutions/chapter-1#lem1.13.A"></a>
+<a name="lem1.13.A"></a>
 <b>Lemma 1.13.A.</b> Let $X$ be a finite set and suppose $X$ has $n$ elements for some $n \in \boldsymbol{N}$. Then, for any $x_0 \notin X$, we have $X \cup x_0$ has $n + 1$ elements.
 
 <i>Proof.</i> Let $f : X \to n$ be a bijection, and fix a set $x_0$. Define $g : X \to n + 1$ by:

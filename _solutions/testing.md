@@ -6,21 +6,21 @@ permalink: /jech-solutions/testing
 excerpt: ""
 ---
 
-Main paragraph underscore $X_a = Y_a$, some text $Z_a$.
+Main paragraph underscore otherwise, we have $\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)$ (note that $\emptyset \in M$ necessary, as we may take any $Y \in M$ and we have $\emptyset = Y - Y \in M$). WLOG suppose $x_{k+1} \in M$.
 <ol>
-<li>Item underscores $X_a = Y_a$, $Z_a$.</li>
+<li>Item underscores $\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)$, $Z_a$.</li>
 </ol>
     
 $$
-X_a = Y_a, A \cup B = Z_a
+\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)
 $$
 
 
-Main paragraph underscore $X\_a = Y\_a$, some text $Z\_a$.
+Main paragraph underscore $\operatorname{ext}\_\in(X) = \operatorname{ext}\_\in(\emptyset)$.
 <ol>
-<li>Item underscores $X\_a = Y\_a$, $Z\_a$.</li>
+<li>Item underscores $\operatorname{ext}\_\in(X) = \operatorname{ext}\_\in(\emptyset)$.
 </ol>
     
 $$
-X\_a = Y\_a, A \cup B = Z\_a
+\operatorname{ext}\_\in(X) = \operatorname{ext}\_\in(\emptyset)
 $$

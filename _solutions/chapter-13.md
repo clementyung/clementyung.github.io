@@ -7,6 +7,7 @@ excerpt: ""
 ---
 
 {% include commands.html %}
+{% include mathjax.html %}
 
 
 <a name="ex13.1"></a>
@@ -33,7 +34,7 @@ $\square$
 ## Exercise 13.2.
 <i>Solution.</i> Note that if $M = \emptyset$ then the assertion holds true vacuously, so assume otherwise. We induct on $\vert X\vert $. If $\vert X\vert  = 0$, then trivially $X \subseteq M$. Now assume the assertion holds for $\vert X\vert  = k$. Let $X = \lbrace x_1,\dots,x_{k+1}\rbrace \in M$.
 
-Now we observe that at least one of $x_i$ must be in $M$ - otherwise, we have <div>$\func{ext}_\in(X) = \func{ext}_\in(\emptyset)$</div> (note that $\emptyset \in M$ necessary, as we may take any $Y \in M$ and we have $\emptyset = Y - Y \in M$). WLOG suppose $x_{k+1} \in M$, and we have that $\lbrace x_{k+1}\rbrace \in M$ by $G_1$, so $X - \lbrace x_{k+1}\rbrace = \lbrace x_1,\dots,x_n\rbrace \in M$. By IH, $x_i \in M$ for all $1 \leq i \leq n$, completing the proof. 
+Now we observe that at least one of $x_i$ must be in $M$ - otherwise, we have $\func{ext}_\in(X) = \func{ext}_\in(\emptyset)$ (note that $\emptyset \in M$ necessary, as we may take any $Y \in M$ and we have $\emptyset = Y - Y \in M$). WLOG suppose $x_{k+1} \in M$, and we have that $\lbrace x_{k+1}\rbrace \in M$ by $G_1$, so $X - \lbrace x_{k+1}\rbrace = \lbrace x_1,\dots,x_n\rbrace \in M$. By IH, $x_i \in M$ for all $1 \leq i \leq n$, completing the proof. 
 $\square$
 
 <a name="ex13.3"></a>

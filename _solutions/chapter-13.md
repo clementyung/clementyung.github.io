@@ -9,7 +9,7 @@ excerpt: ""
 {% include commands.html %}
 
 
-{% raw %}
+{% raw %} {{
 <a name="ex13.1"></a>
 ## Exercise 13.1.
 <i>Solution.</i> Let $Z \in \cl(M)$, the transitive closure of $M$ under the G\"{o}del operations. We induct on the complexity of $Z$ under the operations to show that: If $x \in^\ast  Z$ (i.e. there's a finite sequence $x \in x_1 \in \cdots \in x_n \in Z$), then $x \in \cl(M)$.
@@ -737,4 +737,4 @@ $\square$
 ## Exercise 13.37.
 <i>Solution.</i> Let $M$ be a transitive model of $\ZF$ such that there exists a definable one-to-one correspondence with the class of all ordinals. By <a href="#ex13.36">Exercise 13.36</a>, we have $M \subseteq OD$. But since $M$ is transitive, for all $x \in M$ we have $\TC(\lbrace x\rbrace) \subseteq M \subseteq OD$. Thus $x \in HOD$, so we have in fact that $M \subseteq HOD$. 
 $\square$
-{% endraw %}
+}} {% endraw %}

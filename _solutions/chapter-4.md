@@ -18,9 +18,9 @@ $\square$
 <i>Solution.</i> We shall write:
 
 $$
-\begin{align\ast }
+\begin{align*}
 \tau_a = a_0 + \xi_0 + a_1 + \xi_1 + a_2 + \xi_2 + \cdots
-\end{align\ast }
+\end{align*}
 $$
 
 Suppose $\tau_a = \tau_b$, so there exists an isomorphism $f : \tau_a \to \tau_b$. Suppose for a contradiction that there is some $n$ such that $a_n \neq b_n$. Let $n$ be the least natural number such that $a_n \neq b_n$, and assume WLOG that $a_n > b_n$. Let $y = \max b_n$, and suppose $f(x) = y$. Then $y < f(x + 1) \in \xi_n$. Since $\xi_n$ is the order-type of the integers, there exists a $y' \in \tau_b$ such that $f(x) < y' < f(x + 1)$. By order-preserving property, there is no $x'$ such that $f(x') = y'$, contradicting bijectivity. 
@@ -34,21 +34,21 @@ $\square$
 <i>Proof.</i> Note that $\Z$ is countable, as the map $f : \boldsymbol{N} \to \Z$ defined by:
 
 $$
-\begin{align\ast }
+\begin{align*}
 f(n) =
 \begin{cases}
 k, &\text{if $n = 2k$ for some $k \in \boldsymbol{N}$} \\
 -k, &\text{if $n = 2k + 1$ for some $k \in \boldsymbol{N}$}
 \end{cases}
-\end{align\ast }
+\end{align*}
 $$
 
 is a bijection. We may now define a map $g : \Z[x] \to \boldsymbol{N}$ defined by:
 
 $$
-\begin{align\ast }
+\begin{align*}
 g(a_nx^n + \cdots + a_1x + a_0) = 2^{f^{-1}(a_0)}3^{f^{-1}(a_1)}\cdots p_{n+1}^{f^{-1}(a_n)}
-\end{align\ast }
+\end{align*}
 $$
 
 where $p_n$ is the $n^\text{th}$ smallest prime number. Fundamental Theorem of Arithmetic then tells us that $g$ is injective (in fact it's bijective, but we do not need it here). Thus, $\Z[x]$ is countable, and clearly it is infinite. 
@@ -60,11 +60,11 @@ $\blacksquare$
 <i>Proof.</i> We define $\prec \; \subseteq \Z[x] \times \Z[x]$ as follows: Given $a_nx^n + \cdots + a_1x + a_0,b_mx^m + \cdots + b_1x + b_0 \in \Z[x]$, we define:
 
 $$
-\begin{gather\ast }
+\begin{gather*}
 a_nx^n + \cdots + a_1x + a_0 \prec b_mx^m + \cdots + b_1x + b_0 \\
 \updownarrow \\
 n < m \text{ or } (n = m \wedge a_n < b_m)
-\end{gather\ast }
+\end{gather*}
 $$
 
 It's easy to check that $\prec$ defines a well-order, with the zero polynomial being the minimal element. 
@@ -80,9 +80,9 @@ $\square$
 <i>Solution.</i> Using a choiceless bijection we may work with the Baire space $\N = \omega^\omega$ in place of $\R$, and $S \subseteq \N$. Let $S = \lbrace f_i : i \in \omega\rbrace$. Define:
 
 $$
-\begin{align\ast }
+\begin{align*}
 X = \prod_{i \in \omega} \lbrace f_i(i)+1,f_i(i)+2\rbrace
-\end{align\ast }
+\end{align*}
 $$
 
 Clearly $X \cap S = \emptyset$, for if $f \in X$ then for any $i \in \omega$, $f(i) > f_i(i)$. Thus, $X \subseteq \N - S$. Clearly $\vert X\vert  = 2^{\aleph_0} = \frak{c}$, so $\vert \N - S\vert  \geq \frak{c}$. On the other hand, $\vert \N - S\vert  \leq \vert \N\vert  = \frak{c}$. 
@@ -119,17 +119,17 @@ $\blacksquare$
 Now define $g : [\cal{B}]^\omega \to \cal{T}$ by:
 
 $$
-\begin{align\ast }
+\begin{align*}
 g(\lbrace B_i : i \in \omega\rbrace) = \bigcup_{i \in \omega}
-\end{align\ast }
+\end{align*}
 $$
 
 By <a href="#lem4.6.A">Lemma 4.6.A</a>, $g$ is onto. Thus:
 
 $$
-\begin{align\ast }
+\begin{align*}
 \vert \cal{T}\vert  \leq \vert [\cal{B}]^\omega\vert  = \vert \cal{B}\vert ^{\aleph_0} = \frak{c}^{\aleph_0} = \frak{c}
-\end{align\ast }
+\end{align*}
 $$
 
 On the other hand, we have$\vert \cal{T}\vert  \geq \vert \cal{B}\vert  = \frak{c}$, so equality holds. 
@@ -140,9 +140,9 @@ $\square$
 <i>Solution.</i> We first show that the Cantor set $\C$ is closed. Let $x \in \R$, and write $x = \sum_{n=1}^\infty \frac{a_n}{3^n}$ where $a_n \in \lbrace 0,1,2\rbrace$. Suppose on the contrary that $a_N = 1$ for some $N$, and it's not the case that $a_n = 0$ for all $n > N$ or $a_n = 2$ for all $n > N$. We write:
 
 $$
-\begin{align\ast }
+\begin{align*}
 x = \sum_{n=0}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N} + s = \sum_{n=0}^{N-1} \frac{a_n}{3^n} + \frac{2}{3^N} - t
-\end{align\ast }
+\end{align*}
 $$
 
 where $0 < s,t < \frac{1}{3^N}$. Now let $y = \sum_{n=1}^\infty \frac{b_n}{3^n} \in \C$. If $y \leq x$, then it can't be that $y > \sum_{n=1}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N}$, for otherwise we must have $b_N = 1$. Thus $y \leq \sum_{n=1}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N}$, hence $x - y \geq s$. By similar reasoning, if $y \geq x$ then $y - x \geq t$. Thus, $x$ is not a limit point of $\C$, so all points not in $\C$ are not limit points.
@@ -202,9 +202,9 @@ To see that $F$ is one-one, let $x,y \in X$ and suppose $x \neq y$. Let $d(x,y) 
 Let $U \subseteq \lbrace 0,1\rbrace^\omega$ be open, and we wish to show that $F_{-1}(U)$ is open. Let $x \in F_{-1}(U)$, and let $\epsilon_0,\dots,\epsilon_n > 0$ be such that $\prod_{i<n} B_{\epsilon_i}(F(x)(i)) \times [0,1]^\omega \subseteq U$. Let $V := \bigcap_{i<n} B_{\epsilon_i}(x)$, which is open. If $y \in V$, then for $i < n$ we have:
 
 $$
-\begin{align\ast }
+\begin{align*}
 \vert d(y,x_i) - d(x,x_i)\vert  \leq d(y,x) < \epsilon_i \implies F(y)(i) \in B_{\epsilon_i}(F(x)(i))
-\end{align\ast }
+\end{align*}
 $$
 
 Thus $F(y) \in U$, so $x \in V \subseteq F_{-1}(U)$. Hence $F_{-1}(U)$ is open.
@@ -212,9 +212,9 @@ Thus $F(y) \in U$, so $x \in V \subseteq F_{-1}(U)$. Hence $F_{-1}(U)$ is open.
 Now let $V \subseteq X$ be open, and we wish to show that $F"(V) \subseteq F"(X)$ is open under the subspace topology. Let $f \in F"(V)$, and let $x \in V$ such that $F(x) = f$. Let $\epsilon > 0$ such that $B_\epsilon(x) \subseteq V$. WLOG suppose $x_0 \in B_{\frac{\epsilon}{3}}(x)$. Then we see that $f \in (B_{\frac{\epsilon}{3}}(f(0)) \times [0,1]^\omega) \cap F"(X) \subseteq F"(X)$, for if $y \in X$ is such that $F(y) \in B_\epsilon(f(0)) \times [0,1]^\omega$, then:
 
 $$
-\begin{align\ast }
+\begin{align*}
 d(x,y) \leq d(x,x_0) + d(x_0,y) \leq 2d(x,x_0) + \frac{\epsilon}{3} < \epsilon
-\end{align\ast }
+\end{align*}
 $$
 
 Thus $y \in B_\epsilon(x) \subseteq V$, so $F"(V)$ is open.
@@ -222,9 +222,9 @@ Thus $y \in B_\epsilon(x) \subseteq V$, so $F"(V)$ is open.
 It remains to show that $F"(X)$ is a $G_\delta$ subspace of $[0,1]^\omega$. We shall show that:
 
 $$
-\begin{align\ast }
+\begin{align*}
 F"(X) = \bigcap_{n=1}^\infty \bigcup_{x \in X} B_{\frac{1}{n}}(f(x)) =: Y
-\end{align\ast }
+\end{align*}
 $$
 
 Clearly $F"(X) \subseteq Y$. Conversely, we see that $y \in Y$ precisely if $(\forall n > 0)(\exists x \in X) \, d(f(x),y) < \frac{1}{n}$. In other words, $y$ is in the closure of $F"(X)$. But since $F$ is a homeomorphism and $X$ is complete, $F"(X)$ is closed and therefore $y \in F"(X)$. 

@@ -7,7 +7,7 @@ excerpt: ""
 ---
 {% raw %}
 $
-\newcommand{\cal}{\mathcal}
+\newcommand{\AC}{\mathcal{AC}}
 $
 {% endraw %}
 
@@ -18,3 +18,4 @@ $
 $\mathbb{Z}$
 $\mathcal{U}$
 $\mathfrak{c}$
+$\AC$

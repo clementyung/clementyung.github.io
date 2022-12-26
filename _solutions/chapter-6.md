@@ -158,13 +158,13 @@ $$
 
 $$
 \begin{align*}
-\rank\mathbb{\bigcup x} &= \sup\ss{\rank(z) + 1 : z \in \bigcup x} \\
+\rank\bb{\bigcup x} &= \sup\ss{\rank(z) + 1 : z \in \bigcup x} \\
 &\leq \sup\lbrace \beta : \beta < \rank(x)\rbrace \\
 &= \bigcup \alpha
 \end{align*}
 $$
 
-On the other hand, suppose $\rank\mathbb{\bigcup x} < \bigcup \alpha$, so there exists some $\beta < \alpha$ such that $\rank\mathbb{\bigcup x} < \beta$. Since $\rank(x) = \alpha$, there exists $y \in x$ such that $\rank(y) \geq \beta$. Since $\rank\mathbb{\bigcup x} < \beta$, this implies that $\rank(z) + 1 \geq \rank\mathbb{\bigcup x}$ for some $z \in y$. This contradicts that $\rank(z) + 1 < \rank(x)$.
+On the other hand, suppose $\rank\bb{\bigcup x} < \bigcup \alpha$, so there exists some $\beta < \alpha$ such that $\rank\bb{\bigcup x} < \beta$. Since $\rank(x) = \alpha$, there exists $y \in x$ such that $\rank(y) \geq \beta$. Since $\rank\bb{\bigcup x} < \beta$, this implies that $\rank(z) + 1 \geq \rank\bb{\bigcup x}$ for some $z \in y$. This contradicts that $\rank(z) + 1 < \rank(x)$.
 
 <u>$P(x)$:</u> Since $x \in P(x)$, clearly $\rank(x) + 1 \leq P(x)$. On the other hand:
 

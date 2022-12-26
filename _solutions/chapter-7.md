@@ -138,7 +138,7 @@ Clearly this is a partition of $\boldsymbol{N}$ into $\aleph_0$ pieces, each whi
 
 $$
 \begin{align*}
-X - A_n = X \cap \mathbb{\bigcup_{k<n} B_k} = \bigcup_{k<n} X \cap B_k
+X - A_n = X \cap \bb{\bigcup_{k<n} B_k} = \bigcup_{k<n} X \cap B_k
 \end{align*}
 $$
 
@@ -245,7 +245,7 @@ $\square$
 
 $$
 \begin{align*}
-\mu\mathbb{\bigcup_{n=0}^\infty X_n} \leq \sum_{n=0}^\infty \mu(X_n) = \sum_{n=0}^\infty 0 = 0
+\mu\bb{\bigcup_{n=0}^\infty X_n} \leq \sum_{n=0}^\infty \mu(X_n) = \sum_{n=0}^\infty 0 = 0
 \end{align*}
 $$
 </li>
@@ -278,7 +278,7 @@ $$
 \begin{align*}
 Q \in \bigcap_{\alpha < \lambda} \hat{P}_\alpha &\iff (\forall \alpha < \lambda) \, P_\alpha \subseteq Q \\
 &\iff \bigcup_{\alpha < \lambda} P_\alpha \subseteq Q \\
-&\iff Q \in \mathbb{\bigcup_{\alpha < \lambda} P_\alpha}^\wedge
+&\iff Q \in \bb{\bigcup_{\alpha < \lambda} P_\alpha}^\wedge
 \end{align*}
 $$
 
@@ -640,7 +640,7 @@ We notice further that if $h$ is a complete homomorphism, then the extension of 
 
 $$
 \begin{align*}
-h\mathbb{\sum X} &= h(w) \\
+h\bb{\sum X} &= h(w) \\
 &= h(a \cdot u + b \cdot (-u)) \\
 &= h(a) \cdot v + h(b) \cdot (-v)
 \end{align*}

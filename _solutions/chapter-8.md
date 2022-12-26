@@ -16,7 +16,7 @@ To see that it's closed, suppose $\c{\alpha_\gamma : \gamma < \beta}$ is a stric
 
 $$
 \begin{align*}
-f(\alpha) = f\mathbb{\lim_{\gamma \to \beta} \alpha_\gamma} = \lim_{\gamma \to  \beta} f(\alpha_\gamma) = \lim_{\gamma < \beta} \alpha_\gamma = \alpha
+f(\alpha) = f\bb{\lim_{\gamma \to \beta} \alpha_\gamma} = \lim_{\gamma \to  \beta} f(\alpha_\gamma) = \lim_{\gamma < \beta} \alpha_\gamma = \alpha
 \end{align*}
 $$
 
@@ -26,7 +26,7 @@ To see that it's unbounded, fix any $\alpha_0 < \kappa$. Define inductively $\al
 
 $$
 \begin{align*}
-f(\alpha) = f\mathbb{\lim_{n \to \omega} \alpha_n} = \lim_{n \to \omega} f(\alpha_n) = \lim_{n \to \omega} \alpha_{n+1} = \alpha
+f(\alpha) = f\bb{\lim_{n \to \omega} \alpha_n} = \lim_{n \to \omega} f(\alpha_n) = \lim_{n \to \omega} \alpha_{n+1} = \alpha
 \end{align*}
 $$
 

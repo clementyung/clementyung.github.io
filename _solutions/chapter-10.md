@@ -52,7 +52,7 @@ $\blacksquare$
 
 $$
 \begin{align*}
-\mu(Y \cap X_\alpha) = \mu\mathbb{Y \cap \bigcap_{\beta < \alpha} X_\beta} = \inf_{\beta < \alpha} \mu(Y \cap X_\beta) = \inf_{\beta < \alpha}\mu(Y) = \mu(Y)
+\mu(Y \cap X_\alpha) = \mu\bb{Y \cap \bigcap_{\beta < \alpha} X_\beta} = \inf_{\beta < \alpha} \mu(Y \cap X_\beta) = \inf_{\beta < \alpha}\mu(Y) = \mu(Y)
 \end{align*}
 $$
  
@@ -65,7 +65,7 @@ $\square$
 <a name="lem10.3.A"></a>
 <b>Lemma 10.3.A.</b> Let $\mu$ be an atomless measure on $S$. For all $\epsilon > 0$ and $X \subseteq S$, there exists $Y \subseteq S$ such that $0 < \mu(Y) < \epsilon$.
 
-<i>Proof.</i> By the atomless property, we may split $X$ into $X_0 \sqcup X_1$ such that $0 < \mu(X_0) \leq \frac{\mu(X)}{2}$ or $0 < \mu(X_1) \leq \frac{\mu(X)}{2}$. Assume the former. Then, repeat the argument to give $X_{0,0} \subseteq X_0$ such that $0 < \mu(X_{0,0}) \leq \frac{\mu(X_0)}{2} \leq \frac{\mu(X)}{4}$. Repeat this inductively and we have that for all $n \in \mathbb{N}$, there exists a $Y_n \subseteq X$ such that $\mu(Y_n) \leq \frac{\mu(X)}{2^n}$. Now choose $n$ large enough so that $\frac{\mu(X)}{2^n} < \epsilon$. 
+<i>Proof.</i> By the atomless property, we may split $X$ into $X_0 \sqcup X_1$ such that $0 < \mu(X_0) \leq \frac{\mu(X)}{2}$ or $0 < \mu(X_1) \leq \frac{\mu(X)}{2}$. Assume the former. Then, repeat the argument to give $X_{0,0} \subseteq X_0$ such that $0 < \mu(X_{0,0}) \leq \frac{\mu(X_0)}{2} \leq \frac{\mu(X)}{4}$. Repeat this inductively and we have that for all $n \in \bb{N}$, there exists a $Y_n \subseteq X$ such that $\mu(Y_n) \leq \frac{\mu(X)}{2^n}$. Now choose $n$ large enough so that $\frac{\mu(X)}{2^n} < \epsilon$. 
 $\blacksquare$
 
 <i>Solution.</i> The construction in the hint is clear except for the successor case. Given $S_\alpha$ with $\mu(S_\alpha) \geq \frac{1}{2}$, assume $\mu(S_\alpha) = \frac{1}{2} + \epsilon > \frac{1}{2}$ (otherwise we have found our $Z$). By <a href="#lem10.3.A">Lemma 10.3.A</a>, there exists $S_{\alpha+1}' \subseteq S_\alpha$ such that $0 < \mu(S_{\alpha+1}') < \epsilon$. Let $S_{\alpha+1} := S_\alpha - S_{\alpha+1}'$, and we have that $\frac{1}{2} \leq \mu(S_{\alpha+1}) < \mu(S_\alpha)$.
@@ -81,15 +81,15 @@ $\square$
 
 $$
 \begin{align*}
-0 = \sum_{\alpha < \kappa} \mu(X - X_\alpha) = \mu\mathbb{\bigcup_{\alpha<\kappa} X - X_\alpha} = \mu\mathbb{X - \bigcap_{\alpha < \kappa} X_\alpha}
+0 = \sum_{\alpha < \kappa} \mu(X - X_\alpha) = \mu\bb{\bigcup_{\alpha<\kappa} X - X_\alpha} = \mu\bb{X - \bigcap_{\alpha < \kappa} X_\alpha}
 \end{align*}
 $$
 
-So $\mu\mathbb{\bigcap_{\alpha<\kappa} X_\alpha} = 1$, hence $\bigcap_{\alpha<\kappa} X_\alpha \in U$. Thus $U$ is $\kappa$-complete.
+So $\mu\bb{\bigcap_{\alpha<\kappa} X_\alpha} = 1$, hence $\bigcap_{\alpha<\kappa} X_\alpha \in U$. Thus $U$ is $\kappa$-complete.
 
-<u>$\impliedby$:</u> Let $\lbrace X_\alpha : \alpha < \kappa\rbrace$ be subsets of $X$. If $\mu(X_\alpha) = 1$ for some $\alpha < \kappa$, then $X_\alpha \in U$ so $\bigcup_{\alpha<\kappa} X_\alpha \in U$ by upward closure. Hence $\mu\mathbb{\bigcup_{\alpha<\kappa} X_\alpha} = 1$.
+<u>$\impliedby$:</u> Let $\lbrace X_\alpha : \alpha < \kappa\rbrace$ be subsets of $X$. If $\mu(X_\alpha) = 1$ for some $\alpha < \kappa$, then $X_\alpha \in U$ so $\bigcup_{\alpha<\kappa} X_\alpha \in U$ by upward closure. Hence $\mu\bb{\bigcup_{\alpha<\kappa} X_\alpha} = 1$.
 
-If $\mu(X_\alpha) = 0$ for all $\alpha < \kappa$, then $\mu(X - X_\alpha) = 1$ for all $\alpha < \kappa$. By $\kappa$-completeness of $U$, we have that $\bigcap_{\alpha < \kappa} X - X_\alpha = X - \bigcup_{\alpha < \kappa} X_\alpha \in U$. Thus, $\mu\mathbb{X - \bigcup_{\alpha < \kappa} X_\alpha} = 1$, so $\mu\mathbb{\bigcup_{\alpha < \kappa} X_\alpha} = 0 = \sum_{\alpha < \kappa} \mu(X_\alpha)$.
+If $\mu(X_\alpha) = 0$ for all $\alpha < \kappa$, then $\mu(X - X_\alpha) = 1$ for all $\alpha < \kappa$. By $\kappa$-completeness of $U$, we have that $\bigcap_{\alpha < \kappa} X - X_\alpha = X - \bigcup_{\alpha < \kappa} X_\alpha \in U$. Thus, $\mu\bb{X - \bigcup_{\alpha < \kappa} X_\alpha} = 1$, so $\mu\bb{\bigcup_{\alpha < \kappa} X_\alpha} = 0 = \sum_{\alpha < \kappa} \mu(X_\alpha)$.
 l\end{solution}
 
 <a name="ex10.5"></a>
@@ -156,7 +156,7 @@ so $P_\kappa(\kappa) - P \in U$.
 
 $$
 \begin{align*}
-\bigtriangle_{\alpha < \kappa} P_\alpha \in U &\iff \mathbb{\bigtriangle_{\alpha < \kappa} P_\alpha} \cap \kappa \in D \\
+\bigtriangle_{\alpha < \kappa} P_\alpha \in U &\iff \bb{\bigtriangle_{\alpha < \kappa} P_\alpha} \cap \kappa \in D \\
 &\iff \ss{x \in P_\kappa(\kappa) : x \in \bigcap_{\beta \in x} P_\beta} \cap \kappa \in D \\
 &\iff \ss{\alpha \in \kappa : x \in \bigcap_{\beta \in \alpha} P_\beta} \in D \\
 &\iff \bigtriangle_{\alpha < \kappa} (P_\alpha \cap \kappa) \in D

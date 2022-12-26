@@ -135,7 +135,7 @@ $\blacksquare$
 
 $$
 \begin{align*}
-B := \bigcup_{n=0}^\infty \ran(f(A_n)) = \bigcup_{n=0}^\infty \mathbb{\ran(f(A_{n+1})) - \bigcup_{i<n} \ran(f(A_i))}
+B := \bigcup_{n=0}^\infty \ran(f(A_n)) = \bigcup_{n=0}^\infty \bb{\ran(f(A_{n+1})) - \bigcup_{i<n} \ran(f(A_i))}
 \end{align*}
 $$
 
@@ -176,7 +176,7 @@ We now show that the order types work. We note that for each $n$, we have $X_n^{
 
 $$
 \begin{align*}
-\otp(X_{n+1}^\alpha) &= \otp\mathbb{\bigcup_{\gamma < \cf(\alpha)} (X_n^{\alpha_{\gamma+1}} - \alpha_\gamma)} \\
+\otp(X_{n+1}^\alpha) &= \otp\bb{\bigcup_{\gamma < \cf(\alpha)} (X_n^{\alpha_{\gamma+1}} - \alpha_\gamma)} \\
 &= \sum_{\gamma < \cf(\alpha)} \otp(X_n^{\alpha_{\gamma+1}} - \alpha_\gamma) \\
 &\leq \sum_{\gamma < \cf(\alpha)} \otp(X_n^{\alpha_{\gamma+1}}) \\
 &\leq \sum_{\gamma < \cf(\alpha)} \kappa^n \\
@@ -293,14 +293,14 @@ $\square$
 $\prod_{\alpha<\omega_1+\omega} \aleph_\alpha = \aleph_{\omega_1+\omega}^{\aleph_1}$.
 
 \begin{hint}
-$\aleph_{\omega_1+\omega}^{\aleph_1} \leq \mathbb{\prod_{n=0}^\infty \aleph_{\omega_1+n}}^{\aleph_1} = \prod_n \aleph_{\omega_1+n}^{\aleph_1} = \prod_n (\aleph_{\omega_1}^{\aleph_1} \cdot \aleph_{\omega_1+n}^{\aleph_1}) = \aleph_{\omega_1}^{\aleph_1} \cdot \prod_n \aleph_{\omega_1+n} = \prod_{\alpha<\omega_1+\omega} \aleph_\alpha$.
+$\aleph_{\omega_1+\omega}^{\aleph_1} \leq \bb{\prod_{n=0}^\infty \aleph_{\omega_1+n}}^{\aleph_1} = \prod_n \aleph_{\omega_1+n}^{\aleph_1} = \prod_n (\aleph_{\omega_1}^{\aleph_1} \cdot \aleph_{\omega_1+n}^{\aleph_1}) = \aleph_{\omega_1}^{\aleph_1} \cdot \prod_n \aleph_{\omega_1+n} = \prod_{\alpha<\omega_1+\omega} \aleph_\alpha$.
 \end{hint}
 
 <i>Solution.</i> Alternatively, observe that one may easily generalise Lemma 5.9 such that for ordinals $\alpha$, we have:
 
 $$
 \begin{align*}
-\prod_{i < \alpha} \kappa_i = \mathbb{\sup_i \kappa_i}^{\vert \alpha\vert }
+\prod_{i < \alpha} \kappa_i = \bb{\sup_i \kappa_i}^{\vert \alpha\vert }
 \end{align*}
 $$
 

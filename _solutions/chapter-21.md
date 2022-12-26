@@ -1,12 +1,12 @@
 ---
-title: "21) Large Cardinals and Forcing
+title: "21) Large Cardinals and Forcing"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-21
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex21.1"></a>
 ## Exercise 21.1.

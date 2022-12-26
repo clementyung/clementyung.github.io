@@ -1,12 +1,12 @@
 ---
-title: "18) Large Cardinals and $L$
+title: "18) Large Cardinals and $L$"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-18
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex18.1"></a>
 ## Exercise 18.1.

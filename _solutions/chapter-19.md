@@ -1,12 +1,12 @@
 ---
-title: "19) Iterated Ultrapowers and $L[U]$
+title: "19) Iterated Ultrapowers and $L[U]$"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-19
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex19.1"></a>
 ## Exercise 19.1.
@@ -274,22 +274,19 @@ $\square$
 
 <a name="ex19.11"></a>
 ## Exercise 19.11.
-<i>Solution.</i> The definition of $L[\W]$ appears to be circular, so we first clarify the construction: Let $\W^\ast  := \c{U_\alpha,U^0,U^1}_{\alpha \in B}$, and consider the inner model $L[\W^\ast ]$. Let $W_\alpha = U_\alpha \cap L[\W^\ast ]$, $W^\varepsilon = U^\varepsilon \cap L[\W^\ast ]$, and let $\W = \c{W_\alpha,W^0,W^1}_{\alpha \in B}$. By a proof similar to Lemma 13.23, we can prove that $L[\W] = L[\W^\ast ]$ (so we indeed have $W_\alpha = U_\alpha \cap L[\W]$ and $W^\varepsilon = U^\varepsilon \cap L[\W]$), and $\W \in L[\W]$. This also implies that $W_\alpha,W^0,W^1 \in L[\W]$ for $\alpha \in B$.
+<i>Solution.</i> It is immediate by definition that $F$ is any filter (e.g. the closed unbounded filter) then $F := F \cap L$ is immediately an $L$-filter. $D$ is furthermore an $L$-ultrafilter, as if $X \subseteq \omega_1$ and $X \in L$, then $X \in F$ or $\omega_1 - X \in F$ as either $X$ contains a closed unbounded set of $\omega_1 - X$ contains a closed unbounded set. It remains to show that $D$ is iterable.
 
-We now check that $L[\W]$ satisfies (i)-(iii) of (19.24). For (i) and (ii), we first note that since $U^0,U^1$ are normal measures on $\kappa$ in $L[\U]$, it's easy to verify by definition that $W^\varepsilon = U^\varepsilon \cap L[\W]$ are normal measures on $\kappa$ in $L[\W]$. By Theorem 19.38, $W_\alpha,W^0,W^1$ are the only normal measures in $L[\W]$, which implies that each $W_\alpha$ is of order $0$. It remains to show that:
-<ol>
-<li> $W^0 < W^1$ in $L[\W]$..</li>
-<li> $\c{W_\alpha : \alpha \in B}$ represents $W^0$ in $\Ult_{W^1}(L[\W])$.</li>
-</ol>
-We first note that:
+Let $\c{X_\alpha : \alpha < \omega_1} \in L$, where (we may assume WLOG) that $X_\alpha \subseteq \omega_1$ for all $\alpha$. Then:
 
 $$
 \begin{align*}
-U^0 < U^1 \iff U^0 \in \Ult_{U^1}(L[\U]) \iff U^0 \in L[j_{U_1}(\U)]
+&\eqbreak \lbrace \alpha < \omega_1 : X_\alpha \in D\rbrace \\
+&= \lbrace \alpha < \omega_1 : X_\alpha \text{ contains a closed unbounded set}\rbrace \\
+&= \lbrace \alpha < \omega_1 : (\exists C \subseteq X_\alpha) \, \varphi(C,\omega_1)\rbrace
 \end{align*}
 $$
 
-Thus, 
+where $\varphi$ is a first-order formula asserting that $C$ is a closed unbounded subset of $\omega_1$. Since $\omega_1 \in L$, $\lbrace \alpha < \omega_1 : X_\alpha \in D\rbrace \in L$, as desired. 
 $\square$
 
 <a name="ex19.13"></a>

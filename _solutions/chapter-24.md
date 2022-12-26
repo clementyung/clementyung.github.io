@@ -1,12 +1,12 @@
 ---
-title: "24) The Singular Cardinal Problem
+title: "24) The Singular Cardinal Problem"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-24
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex24.1"></a>
 ## Exercise 24.1.
@@ -104,87 +104,6 @@ $$
 for every $\alpha < \cf(\eta)$. Then $\vert F\vert  \leq \aleph_{\eta + \Vert \varphi\Vert }$.}
 
 But since $\vert \lbrace \varphi : \cf(\eta) \to \eta\rbrace\vert  = \vert \eta\vert ^{\cf(\eta)}$, we clearly have that $\Vert \varphi\Vert  \leq \vert \eta\vert ^{\cf(\eta)}$. Thus $\vert \eta + \vert \eta\vert ^{\cf(\eta)}\vert  = \vert \eta\vert ^{\cf(\eta)}$, so $\eta + \vert \eta\vert ^{\cf(\eta)} < (\vert \eta\vert ^{\cf(\eta)})^+ =: \gamma$, as desired. 
-$\square$
-
-\section{Exercise 24.10. (IP)}
-\begin{setup}[<a href="#ex24.10">Exercise 24.10</a>]
-The next exercise uses the notation from Chapter 8. Let $\kappa$ be a regular uncountable cardinal, let $M_0 = \kappa$, $M_{\eta+1} = \Tr(M_\eta)$, $M_\eta = \bigcap_{\nu<\cf{\eta}} M_{\xi_\nu}$ or $M_\nu = \bigtriangle_{\nu<\kappa} M_{\xi_\nu}$ (if $\cf{\eta} = \kappa$) as long as $M_\eta$ is stationary.
-\end{setup}
-
-Let $f_\eta$, $\eta < \kappa^+$, be the canonical functions on $\kappa$. Let $S_\eta = \lbrace \alpha < \kappa : o(\alpha) = f_\eta(\alpha)\rbrace$. Show that $S_\eta = M_\eta - M_{\eta+1}$ mod $I_\NS$ and that $o(S) = \eta$ for every stationary $S \subseteq S_\eta$.
-
-<a name="lem24.10.A"></a>
-<b>Lemma 24.10.A.</b> Let $S,T$ be stationary subsets of some $\alpha$. Then:
-
-$$
-\begin{align*}
-o(S \cup T) = \min\lbrace o(S),o(T)\rbrace
-\end{align*}
-$$
-
-<i>Proof.</i> Suppose not. Let $S \cup T$ be a $<$-minimal counterexample. Then $o(S \cup T) = \alpha$, and $o(S),o(T) > \alpha$. There exist $X < S$, $Y < T$ both of order $\alpha$. Since $X \cup Y < S \cup T$, $o(X \cup Y) = \alpha$ by minimality of counterexample. But this implies that $o(S \cup T) > o(X \cup Y) = \alpha$, a contradiction. 
-$\blacksquare$
-
-<b>Definition.</b>. A <b>largest set of order $\alpha$</b> is a stationary set $M$ such that $o(M) = \alpha$, and if $S$ is a stationary set with $o(S) = \alpha$, then $S \subseteq M$ mod $I_\NS$.
-
-<a name="lem24.10.B"></a>
-<b>Lemma 24.10.B.</b> Let $E_\eta$ be the canonical stationary set of order $\eta$. Then $M := E_\eta \cup \Tr(E_\eta)$ is the largest stationary set of order $\eta$, and $E_\eta = M - \Tr(M)$.
-
-<i>Proof.</i> We first show that $M$ is the largest set of order $\eta$ mod $I_{\NS}$. Now by <a href="#lem24.10.A">Lemma 24.10.A</a>, $o(M) = \min\lbrace o(E_\eta),o(\Tr(E_\eta))\rbrace = \eta$. Let $S$ be stationary of order $\eta$. Write $S = A \cup B$, where $A \subseteq E_\eta$ and $B \cap E_\eta = \emptyset$. By condition (i) of $E_\eta$, $o(A) = \eta$ and by condition (ii), $o(B) > \eta$. Therefore, by <a name="#8#lem8.13.E">Lemma 8.13.E</a> we have that $E_\eta < B$, i.e. $B \subseteq \Tr(E_\eta)$ mod $I_{\NS}$. Thus $A \cup B \subseteq E_\eta \cup \Tr(E_\eta) = M$, as desired.
-
-We now show that $E_\eta = M - \Tr(M)$. Begin by observing that $o(\Tr(E_\eta)) > \eta$, so $E_\eta \cap \Tr(E_\eta)$ must be non-stationary - to see this, suppose it is stationary. By condition (i) of $E_\eta$, $o(E_\eta \cap \Tr(E_\eta)) = \eta$, yet $o(E_\eta \cap \Tr(E_\eta)) \geq o(\Tr(E_\eta)) > \eta$ by <a name="#8#lem8.13.B">Lemma 8.13.B</a>, a contradiction. Therefore, we have that $E_\eta = M - \Tr(E_\eta)$ mod $I_{\NS}$. It suffices to show that $\Tr(E_\eta) = \Tr(M)$.
-
-Since $o(\Tr(M)) > \eta$, by <a name="#8#lem8.13.E">Lemma 8.13.E</a> we have that $E < \Tr(M)$, i.e. $\Tr(M) \subseteq \Tr(E)$. On the other hand, $E \subseteq M$ by <a href="https://clementyung.github.io/jech-solutions/chapter-8#ex8.11(i)">Exercise 8.11(i)</a>, $\Tr(E) \subseteq \Tr(M)$. This completes the proof. 
-$\blacksquare$
-
-<a name="lem24.10.C"></a>
-<b>Lemma 24.10.C.</b> Let $M$ be the largest stationary set of order $\eta$. Then for any stationary set $S$, we have $o(S) \geq \eta$ iff $S \subseteq M$ mod $I_\NS$.
-
-<i>Proof.</i> <u>$\implies$</u>: If $o(S) > \eta$, then by <a name="#8#lem8.13.E">Lemma 8.13.E</a> we have that $S \subseteq \Tr(E_\eta) \subseteq M$ mod $I_\NS$ and if $o(S) = \eta$ then $S \subseteq M$ mod $I_\NS$ by definition of $M$.
-
-<u>$\impliedby$</u> If $S \subseteq M = E_\eta \cup \Tr(E_\eta)$, then $S = A \cup B$ where $A \subseteq E_\eta$ and $B \subseteq \Tr(E_\eta)$ mod $I_\NS$ (as $E_\eta \cup \Tr(E_\eta))$ is non-stationary, as seen in the prove of <a href="#lem24.10.B">Lemma 24.10.B</a>). If $A$ is stationary, then $o(A) = \eta$ by condition (i) of $E_\eta$, and if $B$ is stationary then $o(B) \geq o(\Tr(E_\eta)) > \eta$. Therefore, by <a href="#lem24.10.A">Lemma 24.10.A</a> we have that $o(S) \geq \eta$. 
-$\blacksquare$
-
-<a name="lem24.10.D"></a>
-<b>Lemma 24.10.D.</b> Let $\eta < \kappa^+$. There exists a closed unbounded subset $D \subseteq \kappa$ such that for all regular cardinals $\alpha \in D$, $f_\eta\restrictedto\alpha$ is the $f_\eta(\alpha)^\text{th}$ canonical function on $\alpha$ (up to $I_{\NS}$).
-
-<i>Proof.</i> Let $\lbrace f_\eta : \eta < \kappa^+\rbrace$ be the canonical functions on $\kappa$ constructed in the way of the proof of Lemma 24.5. We refer to this construction as the <b>canonical construction</b>.
-
-We induct on $\eta$. The base case $\eta = 0$ and the successor case are trivial. We split the case where $\eta$ is a limit ordinal to two cases.
-
-Suppose $\cf(\eta) < \kappa$. Let $\lbrace \xi_\nu : \nu < \cf(\eta)\rbrace$ be a sequence converging to $\eta$. By the induction hypothesis, for each $\nu < \cf(\eta)$ there exists a closed unbounded set $C_\nu$ such that for all $\alpha \in C_\nu$, $f_{\xi_\nu}\restrictedto\alpha$ is the canonical function on $\alpha$ of norm $f_{\xi_\nu}(\alpha)$. Let $C := \bigcap_{\nu<\cf(\eta)} C_\nu$, where $C$ remains closed unbounded. Following the canonical construction, we have that $f_\eta(\alpha) = \sup_{\nu<\cf(\eta)} f_{\xi_\nu}(\alpha)$ for all $\alpha < \kappa$, which gives $f_\eta\restrictedto\alpha = \sup_{\nu<\eta} f_{\xi_\nu}\restrictedto\alpha$. This is consistent with the canonical construction. Furthermore, each $f_{\xi_\nu}\restrictedto\alpha$ is the $f_{\xi_\nu}(\alpha)^\text{th}$ canonical function on $\alpha$, so $f_\eta$ is the $\bb{\sup_{\nu<\cf(\eta)} f_{\xi_\nu}(\alpha)}^\text{th}$ canonical function on $\alpha$.
-
-The case where $\cf(\eta) = \kappa$ is similar, but we replace $<\!\kappa$-intersections (supremums) with diagonal intersections (supremums). 
-$\blacksquare$
-
-<i>Solution.</i> We will proceed in two steps. Let $E_\eta$ be the canonical stationary set of order $\eta$. Since the set of all successor ordinals below $\kappa$ is non-stationary, we may amend the definition of $M_0$ to $M_0 := \Lim(\kappa)$, the set of all limit ordinals below $\kappa$, without any issues.
-
-<b>Step 1 - Show that $E_\eta = M_\eta - M_{\eta+1}$</b>: We shall show that $M_\eta$ is in fact the largest set of order $\eta$ (it's clear from definition that the largest set of order $\eta$ is always unique up to $I_{\NS}$). Then the identity $E_\eta = M_\eta - M_{\eta+1}$ follows from <a href="#lem24.10.B">Lemma 24.10.B</a>.
-
-We induct on $\eta$. Clearly $M_0 = \kappa$ is the largest set of order $0$. Suppose $M_\eta$ is the largest set of order $\eta$. Let $M$ be the largest set of order $\eta + 1$, so $M_{\eta+1} \subseteq M$ mod $I_\NS$ by <a href="#lem24.10.C">Lemma 24.10.C</a> (since $o(M_{\eta+1}) \geq o(M_\eta) + 1 = \eta + 1$). Conversely, since $o(M) > \eta$, we have that $M \subseteq \Tr(E_\eta)$ by <a name="#8#lem8.13.E">Lemma 8.13.E</a>. By <a href="https://clementyung.github.io/jech-solutions/chapter-8#ex8.11(i)">Exercise 8.11(i)</a> and induction hypothesis, $E_\eta \subseteq M_\eta$ so $\Tr(E_\eta) \subseteq \Tr(M_\eta) = M_{\eta+1}$.
-
-Now suppose $\eta$ is a limit ordinal, and let $M$ be the largest set of order $\eta$. Since $M_\eta \subseteq M_\nu$ for all $\nu < \eta$ and $o(M_\nu) = \nu$ by induction hypothesis, we have that $o(M_\eta) \geq \eta$, so $M_\eta \subseteq M$ mod $I_\NS$ by <a href="#lem24.10.C">Lemma 24.10.C</a>. Conversely, since $M$ is stationary and $o(M) = \eta$, we have that $M \subseteq M_\nu$ mod $I_\NS$ for all $\nu < \eta$ by induction hypothesis. By observing that $M_\eta$ is in fact the infimum of $\lbrace M_\nu : \nu < \eta\rbrace$ in the Boolean algebra $P(\kappa)/I_\NS$, we conclude that $M \subseteq M_\eta$ mod $I_\NS$. Hence $M_\eta$ is the largest set of order $\eta$.
-
-<b>Step 2 - Show that $S_\eta = E_\eta$:</b> We induct on $\kappa$ By Step 1 and the identity $f_{\eta+1} = f_\eta + 1$, is suffices to show that for all $\eta$:
-
-$$
-\begin{align*}
-M_\eta = \lbrace \alpha < \kappa : o(\alpha) \geq f_\eta(\alpha)\rbrace
-\end{align*}
-$$
-
-We induct on $\eta < \kappa^+$. We first note that for $\eta < \kappa$, the canonical construction of $f_\eta$ dictates that $f_\eta(\alpha) = \eta$ for all $\alpha$. Thus, for $\eta < \kappa$ we wish to prove that $M_\eta = \lbrace \alpha < \kappa : o(\alpha) \geq \eta\rbrace$, which is easy to prove by induction. We also note that since the canonical construction of $f_\eta$ "coincides" with that of $M_\eta$ when $\eta < \kappa^+$ is a limit ordinal, the inductive step for limit ordinals is also straightforward. Thus we may focus our attention on when $\eta + 1 > \kappa$.
-
-We first note that if $E_\eta$ is non-empty, then we must have $o(\kappa) > \eta \geq \kappa$, and is therefore Mahlo by <a href="https://clementyung.github.io/jech-solutions/chapter-8#ex8.14">Exercise 8.14</a>. To prove the case for $M_{\eta+1}$, we wish to show that for almost all $\alpha \in M_\eta$, we have that:
-
-$$
-\begin{align*}
-o(\alpha) > f_\nu(\alpha) \iff \lbrace \xi < \alpha : o(\xi) \geq f_\nu(\xi)\rbrace \text{ is stationary in $\alpha$}
-\end{align*}
-$$
-
-By <a href="#lem24.10.D">Lemma 24.10.D</a>, there exists a closed unbounded subset $D \subseteq \kappa$ such that
- 
 $\square$
 
 <b>Remark.</b>. The sets $S_\eta$ are the <b>canonical stationary sets</b> (of order $\eta$).

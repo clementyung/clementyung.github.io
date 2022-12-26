@@ -1,12 +1,12 @@
 ---
-title: "22) Saturated Ideals
+title: "22) Saturated Ideals"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-22
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex22.1"></a>
 ## Exercise 22.1.

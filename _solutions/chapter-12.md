@@ -1,12 +1,12 @@
 ---
-title: "12) Models of Set Theory
+title: "12) Models of Set Theory"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-12
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex12.1"></a>
 ## Exercise 12.1.

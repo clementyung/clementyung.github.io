@@ -1,5 +1,5 @@
 ---
-title: "11) Borel and Analytic Sets
+title: "11) Borel and Analytic Sets"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-11

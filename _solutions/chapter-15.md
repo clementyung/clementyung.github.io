@@ -1,12 +1,12 @@
 ---
-title: "15) Applications of Forcing
+title: "15) Applications of Forcing"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-15
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex15.1"></a>
 ## Exercise 15.1.
@@ -255,58 +255,55 @@ $\square$
 
 <a name="ex15.14"></a>
 ## Exercise 15.14.
-<i>Solution.</i> Since $\kappa = \beth_\alpha^+$ is regular, $P_\alpha$ is $\beth_\alpha$-closed (see proof of Lemma 15.21). Furthermore, we note that:
+<i>Solution.</i> Let $P$ denote the forcing notion (15.18).
+
+<b>Claim.</b>. For each $\alpha < \lambda$, there is an $n \in \omega$ such that the function $f\restrictedto(\omega_{n+1} - \omega_n)$ is eventually equal to $\alpha$.
+
+<i>Proof.</i> Fix $\alpha < \lambda$. Let:
 
 $$
 \begin{align*}
-\lambda^{<\kappa} = \beth_{\alpha+1}^{\beth_\alpha} = (2^{\beth_\alpha})^{\beth_\alpha} = 2^{\beth_\alpha} = \beth_{\alpha+1} = \lambda
+D := \lbrace p \in P : \, &(\exists n \in \omega)(\exists \alpha \in \omega_{n+1} - \omega_n) \\
+&(\omega_{n+1} - \alpha \subseteq \dom(p) \wedge \text{$p\restrictedto(\omega_{n+1} - \alpha)$ is constantly $\alpha$})\rbrace
 \end{align*}
 $$
 
-so by Lemma 15.21, $\vert P_\alpha\vert  = \beth_{\alpha+1}$ and therefore the $\beth_{\alpha+1}^+$-chain condition is satisfied. Let $P$ be the Easton product of the $P_\alpha$'s, so direct limit is taken at inaccessible cardinal stages.
-
-<b>Claim.</b>. $P^{\leq\alpha}$ satisfies the $\beth_{\alpha+1}^+$-chain condition. If $\beth_\alpha$ is regular, then $P^{<\alpha}$ satisfies the $\beth_\alpha^+$-chain condition.
-
-<i>Proof.</i> We have:
+We shall show that $D$ is dense in $P$. For each $p \in P$ let:
 
 $$
 \begin{align*}
-\vert P^{\leq\alpha}\vert  = \prod_{\beta \leq \alpha} \vert P_\beta\vert  = \prod_{\beta \leq \alpha} \beth_\beta = \beth_\alpha^{\vert \alpha\vert } \leq (2^{\beth_\alpha})^{\vert \alpha\vert } = \beth_{\alpha+1}
+\alpha_n := \sup{\dom(p\restrictedto(\omega_{n+1} - \omega_n))}
 \end{align*}
 $$
 
-so $P^{\leq\alpha}$ satisfies the $\beth_{\alpha+1}^+$-chain condition.
-
-If $\beth_\alpha$ is regular then either $\alpha$ is a successor ordinal, or $\beth_\alpha = \alpha$ is inaccessible. If $\alpha = \beta + 1$, then $P^{<\alpha} = P^{\leq\beta}$ so it satisfies $\beth_\alpha^+$-chain condition by above. If $\alpha$ is inaccessible, then since direct limit is taken at stage $\alpha$ (i.e. $\vert s(p) \cap \alpha\vert  < \alpha$ for every $p \in P^{<\alpha}$), we have that:
+Then $\alpha_n \leq \omega_{n+1}$. We observe that we cannot have $\alpha_n = \omega_{n+1}$ for on an unbounded subset of $\omega$ - otherwise, since $\aleph_n$ is regular for all $n$, we have that $\vert \dom(p\restrictedto(\omega_{n+1} - \omega_n))\vert  = \aleph_{n+1}$ for each $n$ such that $\alpha_n = \omega_{n+1}$. So:
 
 $$
 \begin{align*}
-\vert P^{<\alpha}\vert  \leq \sum_{\beta<\alpha} \prod_{\gamma\leq\beta} \vert P^{\leq\gamma}\vert  = \sum_{\beta<\alpha} \beth_\beta^{\vert \beta\vert } \leq \sum_{\beta<\alpha} \beth_{\beta+1} = \beth_\alpha
+\vert \dom(p)\vert  = \sum_{n \in \omega} \mod{\dom\bb{p\restrictedto(\omega_{n+1} - \omega_n)}} = \sum_{n \in \omega} \aleph_n = \aleph_\omega
 \end{align*}
 $$
 
-On the other hand, clearly $\vert P^{<\alpha}\vert  \geq \vert P^{\leq\beta}\vert  = \beth_\beta$ for $\beta < \alpha$, so $\vert P^{<\alpha}\vert  = \beth_\alpha$. Therefore $P^{<\alpha}$ satisfies the $\beth_\alpha^+$-chain condition. 
+which contradicts that $\vert \dom(p)\vert  < \aleph_\omega$. Therefore, fix any $n$ such that $\alpha_n < \omega_{n+1}$. Let:
+
+$$
+\begin{align*}
+q := p \cup \lbrace (\beta,\alpha) : \beta \in \omega_{n+1} - \alpha_n\rbrace
+\end{align*}
+$$
+
+Clearly $q \leq p$, and $q$ is eventually constant with value $\alpha$. Furthermore:
+
+$$
+\begin{align*}
+\vert \dom(q)\vert  \leq \vert \dom(p)\vert  + \aleph_{n+1} < \aleph_\omega
+\end{align*}
+$$
+
+so $q \in P$, and therefore $q \in D$. Hence $D$ is dense. 
 $\blacksquare$
 
-<b>Claim.</b>. $P^{\geq\alpha}$ is $\beth_\alpha$-closed. In particular, $P^{>\alpha}$ is $\beth_{\alpha+1}$-closed.
-
-<i>Proof.</i> The proof is the same as that of $P^{\geq\lambda}$ for Easton forcing: If $C \subseteq P^{>\alpha}$ has pairwise compatible elements and $\vert C\vert  \leq \beth_\alpha$, then $p := \bigcup C$ is a condition in $P^{\geq\alpha}$. (15.10) is preserved for all regular $\gamma \geq \beth_\alpha$ and holds trivially for $\gamma < \beth_\alpha$. 
-$\blacksquare$
-
-We now show that for each ordinal $\alpha$, $\aleph_\alpha^{V[G]} = \beth_\alpha$, and $V[G] \models 2^{\aleph_\alpha} = \aleph_{\alpha+1}$.
-
-<u>$\beth_\alpha^+$ is a cardinal in $V[G]$:</u> First assume that $\beth_\alpha$ is regular. Suppose $\beth_\alpha^+$ is not a cardinal in $V[G]$. There exists a function $f \in V[G]$ that is a function on $\beth_\alpha$ onto $\beth_\alpha^+$. By above, we may decompose $V[G] = V[G^{<\alpha} \times G^{\geq\alpha}]$, and we have that $P^{<\alpha}$ satisfies the $\beth_\alpha^+$-chain condition, and $P^{\geq\alpha}$ is $\beth_\alpha$-closed. By Lemma 15.19, we have that $f \in V[G^{<\alpha}]$, so in $V[G^{<\alpha}]$ we have that $\beth_\alpha^+$ is not a cardinal. This is a contradiction, as $\beth_\alpha^+$ is regular and $P^{<\alpha}$ satisfies $\beth_\alpha^+$-chain condition by the above claim, so $\beth_\alpha^+$ is preserved (by Theorem 15.3).
-
-Now suppose that $\beth_\alpha$ is a singular limit cardinal, so $\alpha$ is a singular limit ordinal. Assume for a contradiction that $\beth_\alpha^+$ is not a cardinal in $V[G]$, so again we obtain a function $f \in V[G]$ on $\beth_\alpha$ onto $\beth_\alpha^+$. Now $\vert \beth_\alpha^+\vert ^{V[G]}$ is a cardinal in the ground model $V$ (as the property of cardinal is downward absolute), and we see that $\vert \beth_\alpha^+\vert ^{V[G]} = \vert \beth_\alpha\vert ^{V[G]} \leq \beth_\alpha$ in $V$. On the other hand,
-
-Let $g : \cf(\alpha) \to \beth_\alpha$ be onto (note that $g \in V \subseteq V[G]$, in particular $V[G]$ witnesses that $\beth_\alpha$ is a singular limit ordinal). Consider the onto function $f \circ g : \cf(\alpha) \to \beth_\alpha^+$. Then by Lemma 15.19 again, we have that in fact $g \circ f \in V[G^{\leq\cf(\alpha)}]$
-
-% <u>$\vert \beth_\alpha\vert ^{V[G]} = \aleph_\alpha^{V[G]}$:</u> We induct on $\alpha$. For $\alpha = 0$, this follows from the absoluteness of $\beth_0 = \aleph_0$. For $\alpha$ limit, we simply take supremum on both sides, so it remains to show the successor case.
-
-% Suppose $\vert \beth_\alpha\vert ^{V[G]} = \aleph_\alpha^{V[G]}$. Since $\beth_\alpha^+$ is a cardinal in $V[G]$ and $\beth_\alpha < \beth_\alpha^+$, we have that $\vert \beth_\alpha^+\vert ^{V[G]} > \vert \beth_\alpha\vert ^{V[G]} = \aleph_\alpha^{V[G]}$, so $\vert \beth_\alpha^+\vert ^{V[G]} \geq \aleph_{\alpha+1}^{V[G]}$. On the other hand, let $\kappa < \vert \beth_\alpha^+\vert ^{V[G]}$. Then $\kappa < \beth_\alpha^+$ (as $\vert \beth_\alpha^+\vert ^{V[G]} \leq \beth_\alpha^+$), and since $\kappa$ is a cardinal in the ground model (as "$\kappa$ is a cardinal" is downward absolute), we have that $\kappa \leq \beth_\alpha$. Therefore $\kappa \leq \vert \beth_\alpha\vert ^{V[G]} = \aleph_\alpha^{V[G]}$, so $\vert \beth_\alpha^+\vert ^{V[G]} = \aleph_{\alpha+1}^{V[G]}$
-
-% Note that $V[G] = V[G^{<\alpha}][G^\alpha][G^{>\alpha}]$. Since $P^{>\alpha}$ is $\beth_{\alpha+1}$-closed, we have that $\vert \beth_\alpha^+\vert $
- 
+Thus, the function $g$ in the hint is well-defined. Clearly $g$ is one-to-one. 
 $\square$
 
 <a name="ex15.16"></a>
@@ -720,57 +717,6 @@ $$
 We see that $J \subseteq \omega_1 \times \omega_1$ so $\vert J\vert  \leq \aleph_1$. Let $f : \omega_1 \to J$ be onto. Let $Y = \lbrace \beta_\gamma : \gamma < \omega_1\rbrace \subseteq X$ be unbounded such that for all $\alpha < \omega_1$, if $f(\alpha) = (s,t)$ then $s,t \in T_{\beta_\alpha}$. Then, for each $\beta_\alpha \in Y$, repeat the construction of $T_{\beta_\alpha+1}$ in <a href="#ex15.18">Exercise 15.18</a> so that there does not exist an automorphism $\pi : T_{\beta_\alpha+1} \to T_{\beta_\alpha+1}$ such that $\pi(s) = t$, where $f(\alpha) = (s,t)$.
 
 We shall show that $\T$ is rigid. Suppose not, so there exists a non-trivial automorphism $\pi$ of $\T$. Then we have $\pi(s) = t$ for some $s,t \in \T$. Let $\beta$ be the least limit ordinal such that $s,t \in T_\beta$. Then $f(\alpha) = (s,t)$ for some $\alpha$, so $\pi\restrictedto T_{\beta_\alpha}$ is an automorphism of $T_{\beta_\alpha}$ satisfying $T(s) = t$. Then $\pi\restrictedto T_{\beta_\alpha+1}$ is an automorphism of $T_{\beta_\alpha+1}$ such that $T(s) = t$, contradicting the construction in the previous paragraph. 
-$\square$
-
-\section{Exercise 15.27. (IP)}
-If $V = L$ then there exists a homogeneous Suslin tree.
-
-<i>Solution.</i> Consider the construction of a Suslin tree in Theorem 15.26.
-
-% Let $\vec{S} = \c{S_\alpha : \alpha < \omega_1}$ be a $\diamond$-sequence, and consider the Suslin tree constructed in Theorem 15.26. Let $C$ be the closed unbounded set (w.r.t. a maximal antichain $A$) in Lemma 15.27, and let $S$ be the stationary set such that $A \cap \alpha = S_\alpha$ for all $\alpha \in S \cap C$. We shall describe how we may construct $\T$ so that $T_\alpha$ is homogeneous for all $\alpha$. If $\alpha$ is a limit ordinal and $\alpha \notin S \cap C$, then we may follow the eventually-zero construction in <a href="#ex15.20">Exercise 15.20</a>. If $\alpha \in S \cap C$, then we follow the same construction in Lemma 15.25.
-
-% <b>Claim.</b>. %     $T_\alpha$ is homogeneous for all $\alpha$. Furthermore, if $\beta < \alpha$ and $\pi$ is an automorphism of $T_\beta$, then there exists an automorphism of $T_\alpha$ extending $\pi$.
-% 
-
-% <i>Proof.</i> %     For simplicity of this proof, shall take $\T$ as a subset of set of functions $t : \alpha \to \omega$, where $\alpha < \omega_1$ is a countable ordinal.
-
-%     We induct on $\alpha$. The base case $\alpha = 0$ is trivial. If $\alpha = \beta + 2$, then let $s,t \in T_\alpha$ be such that $\dom(s) = \dom(t) = \beta + 1$. Let $s' := s\restrictedto\beta$ and $t' := t\restrictedto\beta$. By induction hypothesis, there exists an automorphism $\pi : T_{\beta+1} \to T_{\beta+1}$ such that $\pi(s') = t'$. We define $\rho : T_\alpha \to T_\alpha$ by stipulating that:
-%     
-$$
-\begin{align*}
-%         \rho(u) := \pi(u\restrictedto\beta)^\frown\rho'(u(\beta))
-%     \end{align*}
-$$
-
-%     where:
-%     
-$$
-\begin{align*}
-%         \rho'(\gamma) :=
-%         \begin{cases}
-%             \gamma, &\text{if $\gamma \notin \lbrace s(\beta),t(\beta)\rbrace$} \\
-%             s(\beta), &\text{if $\gamma = t(\beta)$} \\
-%             t(\beta), &\text{if $\gamma = s(\beta)$}
-%         \end{cases}
-%     \end{align*}
-$$
-
-%     and clearly $\rho$ is an automorphism of $T_\alpha$ extending $\pi$ such that $\rho(s) = t$. This also shows that every automorphism of $T_{\beta+1}$ can be extended to one of $T_\alpha$.
-
-%     If $\alpha$ is a limit ordinal, then given $s,t \in T_\alpha$ we have that $s,t \in T_\beta$ for some $\beta < \alpha$. By induction hypothesis, let $\pi : T_\beta \to T_\beta$ be an automorphism such that $\pi(s) = t$. By induction hypothesis again, for each $\beta \leq \gamma < \alpha$, we let $\pi_\beta := \pi$, and define $\pi_\gamma$ such that $\pi_\gamma$ extends $\pi_\delta$ for all $\beta \leq \delta < \gamma$. Let $\rho := \bigcup_{\beta \leq \gamma < \alpha} \pi_\gamma$, and we see that $\rho : T_\alpha \to T_\alpha$ is an automorphism extending $\pi$ such that $\pi(s) = t$, so $T_\alpha$ is homogeneous and any automorphism of $T_\beta$ is extended.
-
-%     Now suppose $\alpha = \beta + 1$ where $\beta$ is a limit ordinal. Let $s,t \in T_\alpha$, with $\dom(s) = \dom(t) = \beta + 1$. We consider two cases.
-%     <ol>
-%         <li> Suppose $\beta \in S \cap C$.
-
-%         <u>Homogeneity:</u> This implies that $s = b_u$ and $t = b_v$ for some $u,v \in $
-
-%     </ol>
-% \end{midproof}
-
-% We thus do this for all limit ordinals, and therefore $T_\alpha$ is homogeneous for all $\alpha$. By <a href="#ex15.20">Exercise 15.20</a>, we see that $\T$ must be homogeneous.
-
-% \question{Not yet} 
 $\square$
 
 <a name="ex15.28"></a>

@@ -1,12 +1,12 @@
 ---
-title: "20) Very Large Cardinals
+title: "20) Very Large Cardinals"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-20
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex20.1"></a>
 ## Exercise 20.1.
@@ -133,70 +133,57 @@ $\square$
 
 <a name="ex20.8"></a>
 ## Exercise 20.8.
-<i>Solution.</i> Let $U$ be as in the hint. We first show that $U$ is a normal measure on $P_\kappa(\lambda)$.
-<ol>
-<li> Obviously $\emptyset \notin U$. We have $j(P_\kappa(\lambda)) = P_{j(\kappa)}(j(\lambda))$, and $\vert j"(\alpha)\vert  = \vert \alpha\vert  < \lambda < j(\kappa)$. Clearly $j"(\alpha) \subseteq j(\lambda)$, so $\lbrace \alpha < \lambda : j"(\alpha) \in j(P_\kappa(\lambda))\rbrace = \lambda \in D$. Hence $P_\kappa(\lambda) \in U$.</li>
+<i>Solution.</i> Note that we are assuming $D$ is normal when proving the equivalences here.
 
-<li> <u>Upward Closure:</u> This follows immediately by the fact that $j$ preserves inclusion and $D$ is upward closed..</li>
-<li> <u>$\kappa$-Directedness:</u> Let $\lbrace X_\beta : \beta < \mu\rbrace \subseteq U$ where $\mu < \kappa$. Then:
+<u>(i) $\implies$ (ii):</u> Suppose $X \in D$ witnesses the strong normality of $D$, and assume WLOG that $\emptyset \in X$. Let $\lbrace Z_x : x \in X\rbrace \subseteq D$, and suppose for a contradiction that $Z := \bigtriangle_{x \in X} Z_x \notin D$. Then this implies that:
 
 $$
 \begin{align*}
-\bigcap_{\beta < \mu} X_\beta \in U &\iff \ss{\alpha < \lambda : j"(\alpha) \in j\bb{\bigcap_{\beta < \mu} X_\beta}} \in D \\
-&\iff \lbrace \alpha < \lambda : (\forall \beta < \mu) \, j"(\alpha) \in j(X_\beta)\rbrace \in D \\
-&\iff \bigcap_{\beta < \mu} \lbrace \alpha < \lambda : j"(\alpha) \in j(X_\beta)\rbrace \in D
+P_\kappa(\lambda) - Z = \lbrace y : (\exists x \subsetneq y) \, x \in X \wedge y \notin Z_x\rbrace \in D
 \end{align*}
 $$
 
-in which the last statement follows from that $D$ is $\kappa$-complete.</li>
-
-<li> <u>Normality:</u> We first show that the measure $U$ is fine. For any $x \in P_\kappa(\lambda)$, we have:<br/>
-$$
-\begin{align*}
-j(\hat{x}) = \lbrace y \in P_{j(\kappa)}(j(\lambda)) : j(x) \subseteq y\rbrace
-\end{align*}
-$$
-
-Since $\vert x\vert  < \kappa$, $j(x) = j"(x)$. Thus, for all $\alpha < \lambda$ with $\alpha > \sup(x)$, $x \subseteq \alpha$ and thus $j"(x) \subseteq j"(\alpha)$. Therefore, $\lbrace \alpha < \lambda : j"(\alpha) \in j(\hat{x})\rbrace$ has complement of size $<\lambda$, and so must lie in $D$ by $\kappa$-completeness.
-
-We now show normality. Let $f : P_\kappa(\lambda) \to \lambda$ be such that for some $X \in U$ and for all $x \in X$ non-empty, $f(x) \in x$. By elementarity, we have that $(j(f))(x) \in x$ for all $x \in j(X)$. Let $A := \lbrace \alpha < \lambda : j"(\alpha) \in j(X)\rbrace$. Then for all $\alpha \in A$, $(j(f))(j"(\alpha)) \in j"(\alpha)$, so $(j(f))(j"(\alpha)) = j(\beta)$ for some $\beta < \alpha$. We thus may define $g : A \to \lambda$ by stipulating that:
+Define $f : P_\kappa(\lambda) \to X$ by stipulating that:
 
 $$
 \begin{align*}
-g(\alpha) = \beta, \; \text{where $\beta < \alpha$ is such that $(j(f))(j"(\alpha)) = j(\beta)$}
+f(y) :=
+\begin{cases}
+x, &\text{if for some $x \subsetneq y$, $x \in X$ and $y \notin Z_x$} \\
+\emptyset, &\text{otherwise}
+\end{cases}
 \end{align*}
 $$
 
-Then $g$ is regressive on $A$, and since $D$ is normal there exists a $B \subseteq A$, $B \in D$ such that $g$ is constant on $B$. Let $Y := \lbrace j"(\alpha) : \alpha \in B\rbrace$. Then $j(f)$ is constant on $Y$, and since $j$ is one-to-one, $f$ is also constant on $Y$, as desired.</li>
-</ol>
-We now show that $U$ is not strongly normal. Define a partition $F : [P_\kappa(\lambda)]^2 \to \lbrace 0,1\rbrace$ by stipulating that:
+By definition we see that $f(x) \subsetneq x$ for all $x \in X$. Since $X$ witnesses the strong normality of $D$, we have that there exists a $Y \in D$, $Y \subseteq X$, such that $f$ is constant on $Y$. We note that $f$ can't take the constant value $\emptyset$ on $Y$, as $Y$ and $P_\kappa(\lambda) - Z$ are disjoint. Thus, $f$ takes the value of some non-empty $x$ such that for all $y \in Y$, $y \notin Z_x$. In other words, $Y$ and $Z_x$ are disjoint, which is also not possible.
+
+<u>(ii) $\implies$ (iii):</u> Following the hint, we let $Z := \bigtriangle_{x \in X} Z_x$ and show that $X \cap Z$ is homogeneous for $F$, in the sense of (iii). Assume WLOG that on $X$, $F_x$ takes the constant value $0$ on all $x \in X$. Let $x,y \in X \cap Z$, and suppose that $x \subsetneq y$. Since $y \in Z$, $y \in Z_x$ as $x \subsetneq y$ and $x \in X$. Thus, $F(x,y) = F_x(y) = 0$ as $F_x$ takes the constant value $0$ on $Z_x$ (by choice of $X$).
+
+<u>(iii) $\implies$ (iv):</u> We note that (iv) follows from the hint. Indeed, suppose every $X \in D$ contains $x,y \in X$ such that $x \subsetneq y$ and $\lambda_x < \kappa_y$. Define a partition $F : [P_\kappa(\lambda)]^2 \to \lbrace 0,1\rbrace$ by stipulating that:
 
 $$
 \begin{align*}
 F(x,y) :=
 \begin{cases}
-1, &\text{if $x \subsetneq y$ and $\lambda_x \geq \kappa_y$,  /}
+1, &\text{if $x \subsetneq y$ and $\lambda_x < \kappa_y$, or $y \subsetneq x$ and $\lambda_y < \kappa_x$} \\
+0, &\text{otherwise}
 \end{cases}
 \end{align*}
 $$
 
-% Fix $X \in U$. We have $\lbrace \alpha < \lambda : j"(\alpha) \in j(X)\rbrace$ is unbounded in $\lambda$, and since $\kappa < \lambda$ there exist $\kappa < \alpha < \beta$ such that $j"(\alpha)$ and $j"(\beta)$ are in $j(X)$. Therefore:
-% 
+By (iii), there exists $X \in D$ such that $F$ is constant on $\lbrace \lbrace x,y\rbrace \in [X]^2 : x \subsetneq y$ or $y \subsetneq x\rbrace$. But by the hint, there must exist $\lbrace x,y\rbrace  \in [X]^2$ such that $x \subsetneq y$ and $\lambda_x < \kappa_y$, so $F(x,y) = 1$. By homogeneity, $F$ takes constant value $1$ on $\lbrace \lbrace x,y\rbrace \in [X]^2 : x \subsetneq y$ or $y \subsetneq x\rbrace$, which gives the desired set for (iv).
+
+It remains to prove the hint. This is rather straightforward: Let $X \in D$ and fix any $x \in X$, so $\lambda_x < \kappa$ as $\vert x\vert  < \kappa$. Let $z := x \cup \lbrace \lambda_x\rbrace$. Then $\hat{z} \in D$, so $\hat{z} \cap X \neq \emptyset$. Let $y \in \hat{z} \cap D$. Then clearly $\lambda_x \in y \cap \kappa = \kappa_y$, so $\lambda_x < \kappa_y$.
+
+<u>(iv) $\implies$ (i):</u> We follow the hint. Let $f : X \to X$ be as in the hint, so $j(f) : j(X) \to j(X)$ is a function in $\Ult_D$. Note that since $X \in D$, $j"(\lambda) \in j(X)$, so $(j(f))(j"(\lambda)) \in j(X)$. Let $x := (j(f))(j"(\lambda))$. By choice of $f$, we have that $x \subsetneq j"(\lambda)$ and $x \in j(X)$. By (iv), this implies that:
+
 $$
 \begin{align*}
-%     M \models (\exists x,y \in j(X)) \, x \subsetneq y \wedge \otp(x) > \kappa \wedge \otp(y) > \kappa
-% \end{align*}
+\vert x\vert  \leq \lambda_x < \kappa_{j"(\lambda)} < j"(\lambda) \cap \kappa = \kappa
+\end{align*}
 $$
 
-% We first note that:
-% 
-$$
-\begin{align*}
-%     M \models \lambda \geq \kappa \iff \lbrace x : \lambda_x \geq \kappa_x\rbrace \in U
-% \end{align*}
-$$
-
-The first statement is obviously true, so we have $X := \lbrace x : \lambda_x \geq \kappa_x\rbrace \in U$. 
+Therefore we must have $x = j(y)$ for some $y$. This means that $(j(f))(j"(\lambda)) = j (y)$, so $f(x) = y$ for almost all $x$ by the remark proceeding (20.21). 
 $\square$
 
 <a name="ex20.10"></a>
@@ -232,7 +219,8 @@ We next show that if $\beta$ is sufficiently large and $j : V_\beta \to V_\delta
 
 We now prove the lemma. Let $\alpha \geq \gamma + 2$ be sufficiently large and $j : V_\alpha \to V_\beta$ such that $j"(\gamma) \subseteq \gamma$. We consider two cases.
 <ol>
-<li> Suppose $\cf(\gamma) = \omega$. We can show that $j(\gamma) = \gamma$ - indeed, if $\lbrace \alpha_n : n \in \omega\rbrace$ is cofinal in $\gamma$ (in $V$), then $\lbrace j(\alpha_n) : n \in \omega\rbrace$ is cofinal in $j(\gamma)$ (in $M$). Since $j"(\gamma) \subseteq \gamma$, we have that $\lbrace j(\alpha_n) : n \in \omega\rbrace \subseteq \gamma$, so we must have $j(\gamma) = \gamma$.<br/>
+<li> Suppose $\cf(\gamma) = \omega$. We can show that $j(\gamma) = \gamma$ - indeed, if $\lbrace \alpha_n : n \in \omega\rbrace$ is cofinal in $\gamma$ (in $V$), then $\lbrace j(\alpha_n) : n \in \omega\rbrace$ is cofinal in $j(\gamma)$ (in $M$). Since $j"(\gamma) \subseteq \gamma$, we have that $\lbrace j(\alpha_n) : n \in \omega\rbrace \subseteq \gamma$, so we must have $j(\gamma) = \gamma$.
+
 In that case, we see that $j\restrictedto V_{\gamma+2} : V_{\gamma+2} \to V_{\gamma+2}$ is an elementary embedding, contradicting <a href="#lem20.10.A">Lemma 20.10.A</a>.</li>
 
 <li> Suppose $\cf(\gamma) > \omega$. Let $\kappa_n := j^n(\kappa)$, and let $\lambda := \lim_{n\to\infty} \kappa_n$. Then $j(\lambda) = \lambda$ (see the proof of Theorem 17.7), and since $\cf(\gamma) > \omega$ we have that $\lambda < \gamma$. Then $j\restrictedto V_{\lambda+2} : V_{\lambda+2} \to V_{\lambda+2}$ is an elementary embedding, contradicting <a href="#lem20.10.A">Lemma 20.10.A</a>..</li></ol> 
@@ -440,24 +428,30 @@ $\square$
 
 <a name="ex20.19"></a>
 ## Exercise 20.19.
-<i>Solution.</i> Let $E := \lbrace E_a : a \in [\lambda]^{<\omega}\rbrace$.
+<i>Solution.</i> We mimic the proof of Laver's Theorem 20.21. Suppose the assertion is false. For each $g : \kappa \to V_\kappa$, let $\lambda_g \geq \kappa$ be the least cardinal such that for some $x$ with $\vert \TC(x)\vert  \leq \lambda_g$, $j_E(g)(\kappa) \neq x$ for all $(\kappa,\lambda)$-extenders $E$. Let $\nu$ be greater than all the $\lambda_f$'s, and let $j : V \to M$ witness the $\nu$-strongess of $\kappa$ (so $j(\kappa) > \nu$ and $V_\nu \subseteq M$).
 
-<u>$\implies$:</u> Assume the latter hypothesis fails. For $m < \omega$, let $X_m \in E_{a_m}$ such that there exists no $h : \bigcup_{m \in \omega} a_m \to \kappa$ such that $h"(a_m) \in X_m$ for all $m$.
+Let $\varphi(h,\delta)$ be the statement that $h : \alpha \to V_\alpha$ for some cardinal $\alpha$, and $\delta \geq \alpha$ is the least cardinal $\delta \geq \alpha$ such that for some $x$ with $\vert \TC(x)\vert  \leq \delta$, there exists no $(\kappa,\lambda)$-extender $E$ such that $j_E(h)(\kappa) = x$. Given any $g : \kappa \to V_\kappa$, by our assumption in the first paragraph we have such a counterexample $x$ with $\vert \TC(x)\vert  \leq \lambda_g < \nu$, so $x \in V_\nu \in M$. Furthermore, $\nu$ is also chosen to be large enough so that $M$ contains all $(\kappa,\lambda_g)$-extenders for all $g$. Therefore, the statement "there is no $(\kappa,\lambda_g)$-extender $E$ such that $j_E(g)(\kappa) = x$" is absolute between $V$ and $M$, and we have that $M \models \varphi(g,\lambda_g)$ for all $g : \kappa \to V_\kappa$.
 
-<u>$\impliedby$:</u> Assume the latter hypothesis holds. Suppose for a contradiction that $\Ult_E$ is not well-founded, so there exists $\lbrace z_n : n < \omega\rbrace \subseteq E$ such that $z_{n+1} \in^\ast  z_n$ for all $n$. For each $n$, $z_n = j_{a_n,\infty}([f_n])$ for some $[f_n] \in \Ult_{E_{a_n}}$. By the directedneses of $\lbrace \Ult_{E_a} : a \in [\lambda]^{<\omega}\rbrace$, we may assume $a_n \subseteq a_{n+1}$ for all $n$. Thus, for all $n$ we have:
-
-$$
-\begin{align*}
-[f_{n+1}]_{E_{a_{n+1}}} \in i_{a_n,a_{n+1}}([f_n]_{E_{a_n}})
-\end{align*}
-$$
-
-Let $X_{n+1} \in E_{a_{n+1}}$ such that $f_{n+1}(a) \in (f_n \circ \pi_{a_n,a_{n+1}})(a)$ for all $a \in X_{n+1}$. By the latter hypothesis, let $h : \bigcup_{m \in \omega} a_m \to \kappa$ such that $h"(a_m) \in X_m$ for all $m$. Let:
+Let $A$ be the set of all $\alpha < \kappa$ such that $\varphi(h,\lambda_h)$ for all $h : \alpha \to V_\alpha$. Then $j(A)$ is the set of all $\alpha < j(\kappa)$ such that $\varphi(h,\lambda_h)$ for all $h : \alpha \to V_\alpha$, so $\kappa \in j(A)$ by above. Now define $g : V_\kappa \to V_\kappa$ inductively as follows: Let:
 
 $$
 \begin{align*}
-W := \lbrace x \in [\kappa]^{<\omega} : (\forall m < \omega) \, \pi_{x}
+g(\alpha) :=
+\begin{cases}
+x_\alpha, &\text{if $\alpha \in A$ and $x_\alpha$ witnesses $\varphi(g\restrictedto\alpha,\lambda_{g\restrictedto\alpha})$} \\
+\emptyset, &\text{otherwise}
+\end{cases}
 \end{align*}
 $$
- 
+
+Let $x := j(g)(\kappa)$. By elementarity of $j$, $x$ witnesses $\varphi(g,\lambda_g)$ in $M$, and hence in $V$ by absoluteness elaborated above. Let $E$ be the $(\kappa,\lambda_g)$-extender constructed from (20.31) to (20.37). Let $k : \Ult_E \to M$ be elementary such that $k \circ j_E = j$. By Lemma 20.29(i), we have that $k(x) = x$ as $\vert \TC(x)\vert  \leq \lambda_g$ and $x$ is finite (so $\max(x) < \lambda_g$). Thus:
+
+$$
+\begin{align*}
+(j_E(f))(\kappa) = k^{-1}((j(f))(\kappa)) = k^{-1}(x) = x
+\end{align*}
+$$
+
+contradicting that $x$ witnesses $\varphi(g,\lambda_g)$. 
 $\square$
+

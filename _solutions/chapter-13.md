@@ -1,12 +1,12 @@
 ---
-title: "13) Constructible Sets
+title: "13) Constructible Sets"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-13
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex13.1"></a>
 ## Exercise 13.1.

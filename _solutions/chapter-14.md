@@ -1,12 +1,12 @@
 ---
-title: "14) Forcing
+title: "14) Forcing"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-14
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex14.1"></a>
 ## Exercise 14.1.

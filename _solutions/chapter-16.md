@@ -1,12 +1,12 @@
 ---
-title: "16) Iterated Forcing and Martin's Axiom
+title: "16) Iterated Forcing and Martin's Axiom"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-16
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex16.1"></a>
 ## Exercise 16.1.
@@ -109,69 +109,102 @@ $\square$
 
 <a name="ex16.3"></a>
 ## Exercise 16.3.
-<i>Solution.</i> <u>$\Vert D : B \text{ is a complete Boolean algebra}\Vert  = 1$:</u> Let $A$ be a name such that $\Vert A \subseteq D : B\Vert  = 1$. Let $e := \sum \lbrace d : \Vert d/I \in A\Vert  = 1\rbrace$. Since $D$ is complete, $e$ is well-defined. Following the hint, we shall show that $\Vert e/I = \sum A\Vert  = 1$. To do this, we need to show that (i) for all $d$ such that $\Vert d/I \in A\Vert  = 1$, we have that $\Vert e/I \geq d/I\Vert  = 1$, and (ii) for all $f$, if $\Vert (\forall a \in A) \, f/I \geq a\Vert  = 1$ then $\Vert f/I \geq e/I\Vert  = 1$.
+<i>Solution.</i> We first need to show that $\Vert \dot{I} \text{ is an ideal}\Vert  = 1$, so that it makes sense to write $D/\dot{I}$.
 <ol>
-<li> Let $d \in D$ such that $\Vert d/I \in A\Vert  = 1$. By definition of $e$, we have that $e \geq d$. Thus:<br/>
+<li> We first have:<br/>
+$$
+\begin{gather*}
+\Vert 0 \in \dot{I}\Vert  = \sum\lbrace b \in B : b \cdot 0 = 0\rbrace = \sum B = 1 \\
+\Vert 1 \in \dot{I}\Vert  = \sum\lbrace b \in B : b \cdot 1 = 0\rbrace = \sum \lbrace 0\rbrace = 0
+\end{gather*}
+$$
+</li>
+
+<li> Fix $u,v \in D$, and suppose $\Vert u \in \dot{I}\Vert  = x$ and $\Vert v \in \dot{I}\Vert  = y$. We see that:<br/>
 $$
 \begin{align*}
-\Vert d \cdot (-e) \in I\Vert  &= \sum\lbrace b \in B : b \cdot d \cdot (-e) = 0\rbrace \\
-&= \sum\lbrace b \in B : b \cdot 0 = 0\rbrace \\
+\Vert u + v \in \dot{I}\Vert  &= \bb{-\sum\lbrace b \in B : b \cdot v = 0\rbrace} + \sum\lbrace b \in B : b \cdot (u + v) = 0\rbrace \\
+&= \sum\lbrace b \in B : b \cdot u + b \cdot v = 0\rbrace \\
+&= \sum\lbrace b \in B : b \cdot u = 0 \wedge b \cdot v = 0\rbrace
+\end{align*}
+$$
+
+Since $B$ is complete, there exists some $z \in B$ such that $z = \sum\lbrace b \in B : b \cdot u = 0 \wedge b \cdot v = 0\rbrace$. Since $x \cdot y = u = x \cdot y = v = 0$, clearly $z \geq x \cdot y$. On the other hand, since $\lbrace b \in B : b \cdot u = 0 \wedge b \cdot v = 0\rbrace \subseteq \lbrace b \in B : b \cdot u\rbrace$, we have that $z \leq x$. By the same reasoning, $z \leq y$, so $z = x \cdot y$.
+
+This gives:
+
+$$
+\begin{align*}
+&\eqbreak \Vert (u \in \dot{I} \wedge v \in \dot{I}) \to u + v \in \dot{I}\Vert  \\
+&= -\Vert u \in \dot{I}\Vert  + (-\Vert v \in \dot{I}\Vert ) + \Vert u + v \in \dot{I}\Vert  \\
+&= -x + (-y) + x \cdot y \\
 &= 1
 \end{align*}
 $$
+</li>
 
-so $\Vert e/I \geq d/I\Vert  = 1$.</li>
-
-<li> Suppose for all $a \in A$, we have that $\Vert f/I \geq a\Vert $. Then for all $d \in D$ such that $\Vert d/I \in A\Vert  = 1$, we have that $\Vert f/I \geq d/I\Vert  = 1$. In other words:<br/>
+<li> Fix $u,v \in D$ such that $v \leq u$. Suppose $\Vert u \in \dot{I}\Vert  = x$. Then $\lbrace b \in B : b \cdot u = 0\rbrace \subseteq \lbrace b \in B : b \cdot v = 0\rbrace$, so:<br/>
 $$
 \begin{align*}
-\Vert f/I \geq d/I\Vert  = 1 &\iff \Vert d \cdot (-f) \in I\Vert  = 1 \\
-&\iff \sum\lbrace b \in B : b \cdot d \cdot (-f) = 0\rbrace = 1
+x := \sum\lbrace b \in B : b \cdot u = 0\rbrace \leq \sum\lbrace b \in B : b \cdot v = 0\rbrace =: y
 \end{align*}
 $$
 
-Since $B$ is complete, this is equivalent to $d \cdot (-f) = 0$, i.e. $f \geq d$. Therefore $f \geq e$, as desired.</li>
+Therefore:
+
+$$
+\begin{align*}
+\Vert u \in \dot{I} \to v \in \dot{I}\Vert  = -x + y \geq -x + x = 1
+\end{align*}
+$$
+</li>
 </ol>
-Since $A$ is arbitrary, we have that $\Vert D : B \text{ is a complete Boolean algebra}\Vert  = 1$.
-
-<u>$D$ is isomorphic to $B * (D : B)$:</u> Define $\pi : D \to B * (D : B)$ by:
+We now show that in $V^B$, $D : B \cong D/\dot{I}$. We first note that if $\dot{F}$ is a filter, then by definition we have $D/\dot{F}$ consists of equivalence classes $[d]$ such that:
 
 $$
 \begin{align*}
-\pi(d) := (-b,d/I), \; \text{where } b := \sum\lbrace b' \in B : b' \leq d\rbrace
+u \sim v \iff u \leftrightarrow v \in F
 \end{align*}
 $$
 
-This map is well-defined, as such a $b$ exists as $B$ is complete, and by <a href="#ex16.3">Exercise 16.3</a> we have that $\forces_B d/I \in D : B$.
-
-We first show that $\pi$ is one-one. Suppose $\pi(d) = \pi(e)$, so $(-b,d/I) = (-c,e/I)$, where $c := \sum\lbrace b' \in B : b' \leq e\rbrace$. In other words, we have that $b = c$ and $\Vert d/I = e/I\Vert  \geq -b$. On the other hand, we note that:
+where:
 
 $$
 \begin{align*}
-\Vert d/I = e/I\Vert  = \sum\lbrace b' \in B : b' \cdot (d \symdiff e) = 0\rbrace
+u \leftrightarrow v = (u \cdot v) + ((-u) \cdot (-v)) = (u + (-v)) \cdot (v + (-u))
 \end{align*}
 $$
 
-Since $b \leq d$ and $b \leq e$, $b \leq d \cdot e$ so $b \cdot (d \symdiff e) = 0$. Therefore $\Vert d/I = e/I\Vert  \geq b$, so $\Vert d/I = e/I\Vert  = 1$. Hence $1 \cdot (d \symdiff e) = 0$, i.e. $d \symdiff e = 0$. Therefore $d = e$.
-
-We now show that $\pi$ is onto. Let $(-b,d/I) \in B * (D : B)$. Let:
+Thus, to show that $D : B \cong D/\dot{I}$, it suffices to show that:
 
 $$
 \begin{align*}
-e := (b + d) - \sum\lbrace b' : b' \leq d - b\rbrace
+\Vert u \symdiff v \in \dot{I}\Vert  = \Vert u \leftrightarrow v \in \dot{F}\Vert 
 \end{align*}
 $$
 
-We note that:
+We note that for any $w \in D$, we have:
 
 $$
 \begin{align*}
-(-b) \cdot (d - e) &= (-b) \cdot \bb{d - \bb{b + d - \sum\lbrace b' : b' \leq d - b\rbrace}} \\
-&= (-b) \cdot \bb{d \cdot \bb{(-b) \cdot (-d) + \sum\lbrace b' : b' \leq d - b\rbrace}} \\
-&= (-b) \cdot d \cdot \sum\lbrace b' : b' \leq d - b\rbrace
+\Vert w \in \dot{F}\Vert  &= \Vert (\exists b \in B)(b \in \dot{G} \wedge b \leq w)\Vert  \\
+&= \sum_{b \leq w} \Vert b \in \dot{G}\Vert  \\
+&= \sum_{b \leq w} b \\
+&= \sum\lbrace b \in B : b \cdot (-w) = 0\rbrace
 \end{align*}
 $$
- 
+
+Observe that $u \symdiff v = -(u \leftrightarrow v)$. Therefore:
+
+$$
+\begin{align*}
+\Vert u \leftrightarrow v \in \dot{F}\Vert  &= \sum\lbrace b \in B : b \cdot (-(u \leftrightarrow v)) = 0\rbrace \\
+&= \sum\lbrace b \in B : b \cdot (u \symdiff v) = 0\rbrace \\
+&= \Vert u \symdiff v \in \dot{I}\Vert 
+\end{align*}
+$$
+
+as desired. 
 $\square$
 
 <a name="ex16.5"></a>
@@ -303,7 +336,21 @@ $\square$
 
 <a name="ex16.17"></a>
 ## Exercise 16.17.
-<i>Solution.</i> We may assume WLOG that  Let $\gamma < \kappa$ and let $\c{p_\alpha : \alpha < \gamma}$ be a decreasing sequence of conditions in $P_\alpha$. 
+<i>Solution.</i> Note that the expression "$V^{P_\beta} \subseteq V^{P_\alpha}$" is not meant to be taken literally - see the paragraph before Lemma 15.44. Lemma 15.45 itself asserts that if $h$ satisfies Lemma 15.45, then $V^{P_\beta} \subseteq V^{P_\alpha}$.
+
+<u>$h(p) = p\restrictedto\beta$ satisfies Lemma 15.45:</u> Let $p,q \in P_\alpha$. Suppose $p \leq q$. Definition of an iteration requires that $p\restrictedto\beta \leq q\restrictedto\beta$, so $h(p) \leq h(q)$. Thus (i) of Lemma 15.45 is satisfied. Now let $p \in P_\alpha$, and fix $q \in P_\beta$ such that $q \leq h(p)$. By Definition 16.29(iii)(b), there exists some $p' \in P_\alpha$ such that $p'\restrictedto\beta = q$, and $p'(\gamma) = p(\gamma)$ for $\beta \leq \gamma < \alpha$. Then clearly $p' \leq p$ (in particular $p'$ and $p$ are compatible) and $h(p') = q$, so (ii) of Lemma 15.45 is satisfied.
+
+<u>$G_\beta = \lbrace p\restrictedto\beta : p \in G\rbrace$ is a generic filter on $P_\beta$:</u> Clearly $G_\beta$ is a filter on $P_\alpha$. Let $D \subseteq P_\beta$ be a dense subset. Let:
+
+$$
+\begin{align*}
+D' := \lbrace p \in P_\alpha : p\restrictedto\beta \in D\rbrace
+\end{align*}
+$$
+
+We see that $D'$ is dense in $P_\alpha$ - indeed, let $p \in P_\alpha$. Let $q \in P_\beta$ such that $q \leq p\restrictedto\beta$. By Definition 16.29(iii)(b) again, let $p' \in P_\alpha$ such that $p'\restrictedto\beta = q$, and $p'(\gamma) = p(\gamma)$ for $\beta \leq \gamma < \alpha$. Then clearly $p' \leq p$, and $p\restrictedto\beta = q \in D'$.
+
+Since $G$ is generic, we have that $p \in G \cap D'$ for some $p$. Then $p\restrictedto\beta \in G_\beta \cap D$, so $G_\beta$ is a generic filter. 
 $\square$
 
 <a name="ex16.19"></a>

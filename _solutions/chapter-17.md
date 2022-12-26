@@ -1,12 +1,12 @@
 ---
-title: "17) Large Cardinals
+title: "17) Large Cardinals"
 collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-17
 excerpt: ""
 ---
 
-{ % include commands.html % }
+{% include commands.html %}
 
 <a name="ex17.1"></a>
 ## Exercise 17.1.

@@ -38,22 +38,16 @@ Now we observe that at least one of $x_i$ must be in $M$ - otherwise, we have $\
 <i>Solution.</i> An equivalent formulation of the problem is to show that if $G$ is a composition of G&ouml;del operations, then $\pi(G(X,Y)) = G(\pi(X),\pi(Y))$.<br/>
 <br/>
 Note that, as discussed in Theorem 13.9, closure under G&ouml;del operations guarantees us that $\in$ is well-founded in $M$. By Mostoswki's Collapsing Theorem, $\pi$ is an isomosphism between $M$ and its transitive collapse. By G&ouml;del's Normal Form Theorem (Theorem 13.4 and Lemma 13.7), every set in $M$ can be represented by a formula. That is, for all $X_1,\dots,X_n \in M$, there exists a $\Delta_0$ formula $\varphi$ such that:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 G(X_1,\dots,X_n) = \lbrace (u_1,\dots,u_n) : u_1 \in X_1,\dots,u_n \in X_n, \varphi(u_1,\dots,u_n)\rbrace<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Since $\pi$ is an isomorphism:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \pi(G(X_1,\dots,X_n)) &= \lbrace (u_1,\dots,u_n) : u_1 \in \pi(X_1),\dots,u_n \in \pi(X_n), \varphi(u_1,\dots,u_n)\rbrace \\<br/>
 &= G(\pi(X_1),\dots,\pi(X_n))<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 as desired.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.4"></a><br/>
@@ -61,28 +55,21 @@ as desired.<p align="right">$\square$</p><br/>
 <i>Solution.</i> $G_8$ can be represented more simply - we show that $G_8(X) = \dom(G_{10}(G_9(X \times X)))$. Note that $G_9$ applies the permutation $(2,3)$ to all triples in the set, and $G_{10}$ applies the permutation $(1,2,3)$ to all triples in the set.<br/>
 <br/>
 Note that $(u,v,w) = ((u,v),w)$ by definition of ordered pairs, and:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 G_8(X) = G_8(X \cap \lbrace (u,v) : u,v \in V\rbrace)<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 where $V$ is the universe (or the model we're working in).<br/>
-<br/>
 $$
 \begin{align*}<br/>
 &\eqbreak \dom(G_{10}(G_9(X \times X))) \\<br/>
 &= \dom(G_{10}(\lbrace (u,w,v) : (u,v,w) \in X \times X\rbrace)) \\<br/>
 &= \dom(\lbrace (v,u,w) : (u,v,w) \in X \times X\rbrace) \\<br/>
 &= \lbrace (v,u) : (\exists w \in X) \, (u,v,w) \in X \times X\rbrace<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 It suffices to show that $X \cap \lbrace (u,v) : u,v \in V\rbrace = \lbrace (v,u) : (\exists w \in X) \, (u,v,w) \in X \times X\rbrace$. $\supseteq$ is immediate. Conversely, if $(u,v) \in X$, then $(u,v,(u,v)) \in X \times X$, which maps to $(u,v) \in X$ under the operation $\dom$.<br/>
 <br/>
 For $G_5$, we have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 &\eqbreak G_5(X,Y) \\<br/>
@@ -90,8 +77,7 @@ $$
 &= X \cup Y - ((X \cup Y - X) \cup (X \cup Y - Y)) \\<br/>
 &= G_4(X \cup Y,G_4(X \cup Y,X) \cup G_4(X \cup Y,Y)) \\<br/>
 &= G_4(G_6(G_1(X,Y)),G_6(G_1(G_4(G_6(G_1(X,Y)),X),G_4(G_6(G_1(X,Y)),Y))))<br/>
-\end{align*}<br/>
-$$
+\end{align*}$$
 <p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.5"></a><br/>
@@ -104,26 +90,20 @@ $$
 </ol>
 <br/>
 <i>Proof.</i> <u>(i) $\implies$ (ii):</u> Let $\varphi(x_1,\dots,x_m,y_1,\dots,y_n)$ be such a formula. Define a formula $\psi(x,y_1,\dots,y_n)$ by:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \psi(x,y_1,\dots,y_m) \iff \exists x_1 \, \dots \, \exists x_n \, (x = (x_1,\dots,x_n) \wedge \varphi(x_1,\dots,x_m,y_1,\dots,y_n))<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 By (i), for any classes $X_1,\dots,X_n$ there exists $Y$ such that $Y = \lbrace x : \psi(x,y_1,\dots,y_n)\rbrace$. Clearly $Y = \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace$, as desired.<br/>
 <br/>
 <u>(ii) $\implies$ (i):</u> Let $\varphi(x,y_1,\dots,y_n)$ be such a formula. By (ii) for any classes $X_1,\dots,X_n$ there exists a class $Y$ such that $Y = \lbrace (x) : \varphi(x,X_1,\dots,X_n)\rbrace$. By definition $(x) = \lbrace x\rbrace$, so $\bigcup Y = \lbrace x : \varphi(x,X_1,\dots,X_n)\rbrace$.<p align="right">$\blacksquare$</p><br/>
 <br/>
 <a name="lem13.5.B"></a><br/>
 <b>Lemma 13.5.B.</b> If $\varphi(u_1,\dots,u_n)$ is a formula with only set variables quantified, then there is a composition $G$ of the operations $G_1,\dots,G_{10}$ above such that for all classes $X_1,\dots,X_n$, there exist classes $X,Y$ such that:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 G_i(X,Y) = \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 where $X = G^{(1)}(X_1,\dots,X_n)$ and $X = G^{(2)}(X_1,\dots,X_n)$ for some composition $G^{(1)},G^{(2)}$.<br/>
 <br/>
 <i>Proof.</i> Similar to the original Normal Form Theorem, suffices to consider only formulas of the form:
@@ -136,193 +116,138 @@ where $X = G^{(1)}(X_1,\dots,X_n)$ and $X = G^{(2)}(X_1,\dots,X_n)$ for some com
 We induct on the complexity of $\varphi$, assuming that the statement holds for all subformulas of $\varphi$.<br/>
 <br/>
 <b>Case I - $\varphi$ is atomic:</b> If $\varphi$ is of the form $x_i \in x_j$ where $i \neq j$, then the proof that this can be written in terms of the $G_i$'s is very much similar to the Case I of Normal Form Theorem. For instance, in the easy case of $x_1 \in x_2$, we have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace = G_3 \times V \times \dots \times V<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 The use of $G_8,G_9$ and $G_{10}$ are needed to permutate the general case. If $\varphi$ is of the form $x_i \in X_j$, then:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace = V \times \dots \times X_j \times \dots \times V<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 where the $X_j$ is in the $i^\text{th}$ position. Finally, if $\varphi$ is of the form $X_i \in X_j$, then since none of the $x_i$ is not a free variables inside $\varphi$ we have that the set is either $V$ or empty ($\emptyset = V - V$).<br/>
 <br/>
 <b>Case II - $\varphi$ is a negation:</b> If $\varphi$ is $\neg\psi$, we have:<br/>
-<br/>
 $$
 \begin{gather*}<br/>
 \lbrace (x_1,\dots,x_m) : \neg\psi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace \\<br/>
 = \\<br/>
 V \times \dots \times V - \lbrace (x_1,\dots,x_m) : \psi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace<br/>
-\end{gather*}<br/>
-$$
-<br/>
+\end{gather*}$$
 <b>Case III - $\varphi$ is a conjunction:</b> If $\varphi$ is $\psi_1 \wedge \psi_2$, we have:<br/>
-<br/>
 $$
 \begin{gather*}<br/>
 \lbrace (x_1,\dots,x_m) : (\psi_1 \cap \psi_2)(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace \\<br/>
 = \\<br/>
 \lbrace (x_1,\dots,x_m) : \psi_1(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace \cap \lbrace (x_1,\dots,x_m) : \psi_2(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace<br/>
-\end{gather*}<br/>
-$$
-<br/>
+\end{gather*}$$
 <b>Case IV - $\varphi$ is existential:</b> Suppose $\varphi$ is $\exists y \, \psi(x_1,\dots,x_m,y,X_1,\dots,X_n)$ (see condition (iv)). Since $(x_1,\dots,x_m,y) = ((x_1,\dots,x_m),y)$, we have that:<br/>
-<br/>
 $$
 \begin{gather*}<br/>
 \lbrace (x_1,\dots,x_m) : \exists y \, \psi(x_1,\dots,x_m,y,X_1,\dots,X_n)\rbrace \\<br/>
 =\\<br/>
 \dom(\lbrace (x_1,\dots,x_{m+1}) : \psi(x_1,\dots,x_m,x_{m+1},X_1,\dots,X_n)\rbrace)<br/>
-\end{gather*}<br/>
-$$
+\end{gather*}$$
 <p align="right">$\blacksquare$</p><br/>
 <br/>
 <i>Solution.</i> Consider endowing $\mathsf{BG} \; - $Comprehension with the finite axiom schema:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \forall X \, \forall Y \, \exists Z \, Z = G_i(X,Y)<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 where the $G_i$'s are defined earlier in this exercise. Given a formula $\varphi$ in which only set variables are quantified, by <a href="#lem13.5.B">Lemma 13.5.B</a> let $G$ be a (finite) composition of operations such that:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 G(X,Y) = \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 We induct on the complexity of $G$. If $G = G_i$ for some $i$, then by the above axiom we immediately have $Z = G_i(X,Y)$ for some class $Z$. Otherwise, suppose $G(X,Y) = G_i(G^{(1)}(X',Y'),G^{(2)}(X",Y"))$ for some composition $G^{(1)},G^{(2)}$. By induction hypothesis, there exists classes $Z_1,Z_2$ such that $Z_1 = G^{(1)}(X',Y')$ and $Z_2 = G^{(2)}(X",Y")$. Then by the axiom again we have a class $Z$ such that $Z = G_i(Z_1,Z_2)$, which is the desired class. This implies the Axiom of Comprehension by <a href="#lem13.5.A">Lemma 13.5.A</a>.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.6"></a><br/>
 <h2>Exercise 13.6.</h2>
 <i>Solution.</i> We first note that since $M$ is transitive, for all $X \in M$ we have $P^M(X) = P(X) \cap M$. Indeed:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x \in P^M(X) &\iff (\forall y \in M)(y \in x \to y \in X) \\<br/>
 &\iff x \in M \wedge \forall y \, (y \in x \to y \in X) && \text{as $M$ is transitive} \\<br/>
 &\iff x \in M \wedge x \in P(X) \\<br/>
 &\iff x \in M \cap P(X)<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 We now prove the exercise by induction on $\alpha \in M$. Of course $V_0 = V_0^M = \emptyset$. If $\alpha$ is limit, then:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 V_\alpha^M = \bigcup_{\beta < \alpha} V_\beta^M = \bigcup_{\beta < \alpha} V_\beta \cap M = V_\alpha \cap M<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 We now prove for the successor case. We first observe that:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 V_{\alpha+1}^M = P^M(V_\alpha^M) = P(V_\alpha \cap M) \cap M<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 We shall show that $P(V_\alpha \cap M) \cap M = P(V_\alpha) \cap M$. $\subseteq$ is immediate. Conversely, if $x \in P(V_\alpha) \cap M$, then $x \in M$ and $x \subseteq V_\alpha$. Since $M$ is transitive, we have $x \subseteq M$, so $x \subseteq V_\alpha \cap M$. Thus $x \in P(V_\alpha \cap M)$. Therefore:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 V_{\alpha+1}^M = P(V_\alpha \cap M) \cap M = P(V_\alpha) \cap M = V_{\alpha+1} \cap M<br/>
-\end{align*}<br/>
-$$
+\end{align*}$$
 <p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.7"></a><br/>
 <h2>Exercise 13.7.</h2>
 <i>Solution.</i> A $\Sigma_1$ formulation of "$X$ is finite" is:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 X \text{ is finite} \iff \exists f \, (f \text{ is a one-to-one function} \wedge \dom(f) = X \wedge \ran(f) \in \omega)<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Note that all sentences in the bracket are $\Delta_0$ by Lemma 12.10.<br/>
 <br/>
 For a $\Pi_1$ formulation, recall from <a href="https://clementyung.github.io/jech-solutions/chapter-1#ex1.12">Exercise 1.12</a> and <a href="https://clementyung.github.io/jech-solutions/chapter-1#ex1.13">Exercise 1.13</a> that a set is finite iff $T$-finite. Thus:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 X \text{ is finite} \iff \forall X \, (X \subseteq P(S) \to ((\exists x \in X)(\forall y \in X) \, y \subseteq x))<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Note that "$X \subseteq P(S)$" is $\Delta_0$, as:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 X \subseteq P(S) &\iff (\forall x \in X) \, x \subseteq S \\<br/>
 &\iff (\forall x \in X)(\forall y \in x) \, y \in S<br/>
-\end{align*}<br/>
-$$
+\end{align*}$$
 <p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.8"></a><br/>
 <h2>Exercise 13.8.</h2>
 <i>Solution.</i> We first observe that if $(P,<)$, $(Q,<)$ are two $\Delta_0$ linear orders, then the statement "$P$ and $Q$ are order-isomorphic" is $\Sigma_1$, as it can be formulated as:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \exists f \, (f \text{ is a one-to-one and onto function} \wedge (\forall x \in P)(\forall y \in P)(x < y \iff f(x) < f(y)))<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Thus, given ordinals $\alpha,\beta$, we have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x = \alpha + \beta \iff x \text{ is an ordinal} \wedge \text{$(x,\in)$ is order-isomorphic to $(\alpha \times \lbrace 0\rbrace \cup \beta \times \lbrace 1\rbrace,<_\text{lex})$}<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 and:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x = \alpha \cdot \beta \iff x \text{ is an ordinal} \wedge \text{$(x,\in)$ is order-isomorphic to $(\alpha \times \beta,<_\text{lex})$}<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 where $<_\text{lex}$ denotes the lexicographical order. This implies that $\alpha + \beta$ and $\alpha \cdot \beta$ are $\Sigma_1$. But observe that:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x \in \dom(+) \iff x = (u,v) \wedge u \text{ is an ordinal} \wedge v \text{ is an ordinal}<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 which is $\Delta_0$. By Lemma 13.10(vii), these two functions are in fact $\Delta_1$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.9"></a><br/>
 <h2>Exercise 13.9.</h2>
 <i>Solution.</i> Noting that $\max\lbrace \alpha,\beta\rbrace = \bigcup \lbrace \alpha,\beta\rbrace$, it's easy to see that the canonical well-ordering (3.12) is $\Delta_0$. We have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x = \Gamma(\alpha,\beta) \iff & x \text{ is an ordinal} \\<br/>
 &\wedge \text{$(x,\in)$ is order-isomorphic to $(\lbrace (\xi,\eta) : (\xi,\eta) < (\alpha,\beta)\rbrace,<)$}<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 so as we see in the proof of <a href="#ex13.8">Exercise 13.8</a>, $\Gamma$ is $\Sigma_1$. Again, as we see in the proof of <a href="#ex13.8">Exercise 13.8</a>, $\dom(\Gamma) = \boldsymbol{\mathrm{ORD}} \times \boldsymbol{\mathrm{ORD}}$, which is $\Delta_0$, so $\Gamma$ is $\Delta_1$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.10"></a><br/>
 <h2>Exercise 13.10.</h2>
 <i>Solution.</i> Recall that (and as a result of <a href="https://clementyung.github.io/jech-solutions/chapter-6#lem6.6(i).A">Lemma 6.6(i).A</a>), we have that $x \in \TC(S)$ iff there exists a sequence $x = x_0 \in x_1 \in \dots \in x_n$, and $x_n \in S$. Thus:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x = \TC(S) \iff (&\forall y \in x) \, \exists f \, (f \text{ is a function} \\<br/>
@@ -330,9 +255,7 @@ x = \TC(S) \iff (&\forall y \in x) \, \exists f \, (f \text{ is a function} \\<b
 &\wedge f(0) = y \\<br/>
 &\wedge f\bb{\bigcup\dom(f)} \in S \\<br/>
 &\wedge (\forall n \in \dom(f))(n + 1 \in \dom(f) \to f(n) \in f(n+1)))<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Thus the function $\TC$ is $\Sigma_1$. We have $\dom(\TC) = V$ so by Lemma 13.10(vii), $\TC$ is $\Delta_1$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.11"></a><br/>
@@ -341,7 +264,6 @@ Thus the function $\TC$ is $\Sigma_1$. We have $\dom(\TC) = V$ so by Lemma 13.10
 <b>Lemma 13.11.A.</b> The function $\alpha \mapsto V_\alpha$ is $\Delta_1$.<br/>
 <br/>
 <i>Proof.</i> We have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x = V_\alpha \iff &\exists f \, (f \text{ is a function} \\<br/>
@@ -350,30 +272,23 @@ x = V_\alpha \iff &\exists f \, (f \text{ is a function} \\<br/>
 &\wedge f(\alpha) = x \\<br/>
 &\wedge (\forall \alpha \in \dom(f))(\alpha + 1 \in \dom(f) \to f(\alpha+1) = P(f(\alpha))) \\<br/>
 &\wedge (\forall \alpha \in \dom(f))(\alpha \text{ is a limit ordinal} \to f(\alpha) = \bigcup_{\beta \in \alpha} f(\beta)))<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Thus the function is $\Sigma_1$. The domain of the function is $\boldsymbol{\mathrm{ORD}}$, which is $\Delta_0$, so by Lemma 13.10(vii) the function is $\Delta_1$.<p align="right">$\blacksquare$</p><br/>
 <br/>
 <i>Solution.</i> We have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \alpha = \rank(x) \iff x \in V_{\alpha+1} \wedge x \notin V_\alpha<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 which is $\Delta_1$ by \ref{lem13.11.A}.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.12"></a><br/>
 <h2>Exercise 13.12.</h2>
 <i>Solution.</i> We have $X$ is countable iff:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \exists f \,(f \text{ is a one-to-one function} \wedge \dom(f) \in \omega \wedge \ran(f) = X)<br/>
-\end{align*}<br/>
-$$
+\end{align*}$$
 <p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.13"></a><br/>
@@ -383,25 +298,19 @@ $$
 <a name="ex13.14"></a><br/>
 <h2>Exercise 13.14.</h2>
 <i>Solution.</i> As we see in the remark after Lemma 13.13, given a $\Delta_0$ formula $\varphi$ we have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \models_0 \varphi[a_1,\dots,a_k] \iff \varphi \in \Delta_0 \wedge \exists M \, (M \text{ is transitive} \wedge (M,\in) \models \varphi[a_1,\dots,a_k])<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 This is allowed as $\Delta_0$ formulas are always absolute. Note that "$M$ is transitive" is $\Delta_0$ by Lemma 12.10. Furthermore, we have $(M,\in) \models \varphi[a_1,\dots,a_k] \iff \varphi^M[a_1,\dots,a_k]$, and the latter is always $\Delta_0$ as all the quantifiers are bounded. Finally, by $\varphi \in \Delta_0$ we mean "$\varphi$ is a $\Delta_0$ formula", which is $\Delta_0$ as $\Delta_0$ is here viewed as a countable set in the universe (under suitable encoding of formulas). Hence $\models_0$ is $\Sigma_1$.<br/>
 <br/>
 The same can also be done for $\Sigma_1$ (and hence $\Pi_1$ formulas): If $\exists y \, \varphi(x,y)$ holds, where $\varphi \in \Delta_0$, then let $M$ be a transitive set containing $x$, and we have that $(M,\in) \models \exists y \, \varphi(x,y)$. Thus $\models_1$ is also $\Sigma_1$.<br/>
 <br/>
 Now suppose $\models_n$ is $\Sigma_n$. Then, as written in the book, we have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \models_{n+1} (\exists x \, \varphi)[x,a_1,\dots,a_k] \iff \varphi \in \Pi_n \wedge \exists a \, (\neg\models_n (\neg\varphi)[a,a_1,\dots,a_k])<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 so $\models_{n+1}$ is $\Sigma_{n+1}$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.15"></a><br/>
@@ -450,23 +359,17 @@ By G&ouml;del's Condensation Lemma 13.17, $M = L_\alpha$ for some $\alpha < \ome
 <b>Lemma 13.19.A.</b> Given an infinite set $M$, we have $\vert \func{def}(M)\vert  = \vert M\vert $.<br/>
 <br/>
 <i>Proof.</i> Clearly $\lbrace a\rbrace \in \func{def}(M)$ for all $a \in M$, so $\vert \func{def}(M)\vert  \geq \vert M\vert $, On the other hand, consider the following map on $[M]^{<\omega} \times \mathit{Form}$ as follows:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 ((a_1,\dots,a_n),\varphi) \mapsto \lbrace x \in M : (M,\in) \models \varphi[x,a_1,\dots,a_n]\rbrace<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 This map is onto by definition, so we have $\vert \func{def}(M)\vert  \leq \vert M\vert ^{<\omega} \cdot \aleph_0 = \vert M\vert $.<p align="right">$\blacksquare$</p><br/>
 <br/>
 <i>Solution.</i> Note that since $\alpha \subseteq L_\alpha$, clearly $\vert L_\alpha\vert  \geq \vert \alpha\vert $. We prove the equality. We have $\vert L_\omega\vert  = \vert V_\omega\vert  = \omega$, and if $\alpha$ is a limit ordinal then:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 \vert L_\alpha\vert  = \mod{\bigcup_{\beta<\alpha} L_\beta} \leq \sum_{\beta < \alpha} \vert L_\beta\vert  = \vert \alpha\vert  \cdot \sup_{\beta < \alpha} \vert \beta\vert  = \vert \alpha\vert <br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 For the successor case, we have by <a href="#lem13.19.A">Lemma 13.19.A</a> that $\vert L_{\alpha+1}\vert  = \vert L_\alpha\vert  = \vert \alpha\vert  = \vert \alpha + 1\vert $.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.20"></a><br/>
@@ -478,14 +381,11 @@ For the successor case, we have by <a href="#lem13.19.A">Lemma 13.19.A</a> that 
 <i>Solution.</i> For $X \in L$, we let $o(X)$ denote the order-type of $X$ under the canonical well-ordering $<$.<br/>
 <br/>
 We note that $P(\omega) \cap L \subseteq L_{\omega_1^L}$ by <a href="#ex13.20">Exercise 13.20</a>. This implies that $P(\omega) \cap L \in L_{\omega_1^L + 1}$, as:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 P(\omega) \cap L = \lbrace x \in L_{\omega_1^L} : &(\exists \varphi \in \mathit{Form})(\exists \alpha < \omega_1) \\<br/>
 &(\exists a_1,\dots,a_n \in L_\alpha)(y \in x \leftrightarrow (L_\alpha,\in) \models \varphi[y,a_1,\dots,a_n])\rbrace<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Note that $\mathit{Form} \in L_{\omega+1}$ as the G&ouml;del numbering of formulas may be done without parameters.<br/>
 <br/>
 Since there is a definable (without parameters) function from $P(\omega)$ onto $\R$, we have that $\R \cap L \in L_{\omega_1^L+1}$. By Lemma 13.19, we have that $L_{\omega_1^L+\omega}$ witnesses the order-type of $\R^L$, so $o(\R^L) \in L_{\omega_1^L+\omega}$. But since for all $\alpha < \omega_1$ there exists $x \in \R^L$ such that $x \notin L_\alpha$ (since $L$ thinks that $L_\alpha$ is countable but $P^L(x)$ is uncountable), so $o(\R^L)$ must be an unbounded subset of an ordinal of uncountable cofinality. Therefore $o(\R^L) = \omega_1^L$. necessarily.<p align="right">$\square$</p><br/>
@@ -508,13 +408,10 @@ Since there is a definable (without parameters) function from $P(\omega)$ onto $
 <i>Solution.</i> As in the hint and Lemma 13.19, we have that $h_\varphi$ is well defined for all formulas $\varphi$. Given $X \subseteq L_\delta$, let $M \prec (L_\delta,\in)$ be the Skolem hull of $X$. We shall show that if $N \prec (L_\delta,\in)$ and $X \subseteq N$, then $M \subseteq N$.<br/>
 <br/>
 Let $a \in M$. If $a \in X$, then $a \in N$ as $X \subseteq N$. Otherwise, $a = h_\varphi(x_1,\dots,x_n)$ for some $x_1,\dots,x_n \in X$. Thus:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 M \models \exists x \, (x \text{ is the $<_\delta$-least element such that } \varphi[x,x_1,\dots,x_n]))<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Since $M$ is elementarily equivalent to $N$, we have that $N$ satisfies the same formula. Since such an $x$ is unique, which is $a$, we have that $a \in N$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.25"></a><br/>
@@ -551,25 +448,20 @@ We now show that $L[A] = L[X]$. We see that $\theta,E \in L[X]$, $\Gamma \in L \
 <ol>
 <li> $Y_0 = \emptyset = Y_0'$, and trivially $f\restrictedto Y_0 = g\restrictedto Y_0'$.</li>
 <li> Suppose $Y_\alpha = Y_\alpha'$ and $f\restrictedto Y_\alpha = g\restrictedto Y_\alpha'$. Let $x \in Y_{\alpha+1}$, and since $Y$ is transitive we have $x \subseteq Y_\alpha$ (since $y \in x \implies \rank(y) < \rank(x) = \alpha$). Let:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x' := \lbrace (g \circ f^{-1})(y) : y \in x\rbrace \in Y'<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 But since $\rank(y) = \alpha$ for all $y \in x$, and rank is preserved between isomorphisms, we have that $(g \circ f^{-1})(y) = y$ for all $y \in x$. Thus $x' = x$, and since $\rank(x) = \alpha + 1$ we have $x \in Y_{\alpha+1}$. Therefore $Y_{\alpha+1} \subseteq Y_{\alpha+1}$, and by symmetry of argument we have that equality holds.</li>
 <li> If $\alpha$ is limit, we have $Y_\alpha = \bigcup_{\beta<\alpha} Y_\beta = \bigcup_{\beta<\alpha} Y_\beta' = Y_\alpha'$.</li></ol>
 Therefore, if $\rank(Y) = \alpha$, then $Y = \bigcup_{\beta<\alpha} Y_\beta = \bigcup_{\beta<\alpha} Y_\beta' = Y'$.<p align="right">$\blacksquare$</p><br/>
 Note that the claim above is a theorem in $L[X]$ (recall we assume $V = L[X]$), not $L[A]$. But in $L[X]$ we already know that $(\TC(\lbrace X\rbrace),\in)$ is isomorphic to $(\theta,E)$, so we must have $\TC(\lbrace X\rbrace) = Y \in L[A]$. Finally, since $X$ is the element of $\TC(\lbrace X\rbrace)$ of the largest rank, we have that $X \in L[A]$. Therefore $L[X] \subseteq L[A]$.<br/>
 <br/>
 We have thus proved that $L[X] \models (L[X] = L[A])$. But since relative constructibility is $\Delta_1$ and hence absolute we have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 L[X] = L^{L[X]}[X] = L^{L[X]}[A] = L[A]<br/>
-\end{align*}<br/>
-$$
+\end{align*}$$
 <p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.28"></a><br/>
@@ -597,7 +489,6 @@ Let $\alpha < \omega_2$ be an ordinal such that $\omega_2 = \alpha^+$ in $L$. By
 <a name="ex13.32"></a><br/>
 <h2>Exercise 13.32.</h2>
 <i>Solution.</i> Given a fixed ordinal $\alpha$, for $\beta \leq \alpha$ we observe that $\func{def}_A(L_\beta[A]) = \func{def}_{A \cap L_\alpha[A]}(L_\beta[A])$, so we have that $L_\beta[A] = L_\beta[A \cap L_\alpha[A]]$ (see also the proof of Lemma 13.23). Thus for any ordinal $\alpha$ we have:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 L[A] &= \bigcup_{\alpha \in \boldsymbol{\mathrm{ORD}}} L_\alpha[A] \\<br/>
@@ -605,30 +496,22 @@ L[A] &= \bigcup_{\alpha \in \boldsymbol{\mathrm{ORD}}} L_\alpha[A] \\<br/>
 &= \bigcup_{\alpha \in \boldsymbol{\mathrm{ORD}}} L_\alpha[\bar{A} \cap L_\alpha[A]] \\<br/>
 &= \bigcup_{\alpha \in \boldsymbol{\mathrm{ORD}}} L_\alpha[\bar{A}] \\<br/>
 &= L[\bar{A}]<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 We first show that $L[A]$ is an inner model of $\ZF$. By Theorem 13.9, it suffices to show that it is closed under G&ouml;del operations and is almost universal. Closure under G&ouml;del operations follow immediately from the way $L[A]$ is constructed (see (13.20), (13.21) and (13.22)). For almost universality, given a set $X \subseteq M$ let $\alpha := \sup\lbrace \min\lbrace \beta \in \boldsymbol{\mathrm{ORD}} : x \in L_\beta[A]\rbrace : x \in X\rbrace$. Then clearly $X \subseteq L_{\alpha+1}[A]$ and $L_{\alpha+1}[A] \in L[A]$.<br/>
 <br/>
 $L[A]$ satisfies $\AC$ because we may define a global well-ordering $<_{L[A]}$ similar to $<_L$ in Theorem 13.18. Indeed, for ordinals $\alpha$ we let:<br/>
-<br/>
 $$
 \begin{gather*}<br/>
 W_0^\alpha := L_\alpha[A] \cup \lbrace L_\alpha[A]\rbrace \cup \lbrace A \cap L_\alpha[A]\rbrace \\<br/>
 W_{n+1}^\alpha := \lbrace G_i(X,Y) : X,Y \in W_n^\alpha, i = 1,\dots,10\rbrace<br/>
-\end{gather*}<br/>
-$$
-<br/>
+\end{gather*}$$
 and the remaining steps are verbatim to that of $<_L$.<br/>
 <br/>
 Finally, suppose $M$ is another inner model of $\ZF$ such that $V_\alpha^M \cap A \in M$ for all $\alpha$. Of course $L[A]$ is one such model as $A \cap L[A] \in L[A]$. We show inductively that $L_\alpha[A] \in M$ for all $\alpha \geq \omega$. Since all finite sets are $\Delta_0$ and $M$ is an inner model, we have $L_\omega[A] = V_\omega = V_\omega^M \in M$. If $\alpha$ is a limit ordinal, then we have that $L_\alpha^M[A] \in M$ and $L_\alpha^M[A] = \bigcup_{\beta<\alpha} L_\beta^M[A] = \bigcup_{\beta<\alpha} L_\beta[A] = L_\alpha[A]$. Now suppose $L_\alpha[A] \in M$. By Theorem 13.9, $M$ is closed under G&ouml;del operations. Since $A \cap V_\alpha^M \in M$ and clearly $L_\alpha[A] \subseteq V_\alpha^M$, we have that $A \cap L_\alpha[A] \in M$. Thus:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 L_{\alpha+1}[A] = \func{def}_A(L_\alpha[A]) = \cl(L_\alpha[A] \cup \lbrace L_\alpha[A]\rbrace \cup \lbrace A \cap L_\alpha[A]\rbrace) \cap P(L_\alpha[A]) \in M<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 Therefore $L[A] \subseteq M$ by transitivity of $M$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.33"></a><br/>
@@ -647,14 +530,11 @@ Therefore $L[A] \subseteq M$ by transitivity of $M$.<p align="right">$\square$</
 Clearly $M \subseteq L(M,X)$ as $V_\alpha^M = V_\alpha \cap M \subseteq L_\alpha(M,X)$ for all $\alpha$, and if $X \in V_\alpha$ then $X \in L_\alpha(M,X)$. The proof that $L(M,X)$ is closed under G&ouml;del operations and is almost universal is almost identical to that of $L[A]$ and $L(A)$ (see also <a href="#ex13.32">Exercise 13.32</a>). Thus, $L(M,X)$ is an inner model of $\ZF$. Finally, if $N$ is a transitive model of $\ZF$ such that $N$ contains $M$ as a subclass (so $M \cap V_\alpha \in N$ for all $\alpha$) and $X \in N$, then since $N$ is closed under G&ouml;del operations one may prove by transfinite induction that $L_\alpha(M,X) \in N$ for all ordinals $\alpha$. Thus $L(M,X)$ is indeed the least such model.<br/>
 <br/>
 Now suppose further that $M \models \AC$. We shall show that $L_\alpha(M,X)$ has a well-ordering $<_\alpha$ for all $\alpha$, so since $L(M,X)$ is transitive it implies that every set is well-orderable. $L_0(M,X) = \emptyset$ is no problem, and if $\alpha$ is limit we let $<_\alpha \; := \bigcup_{\beta<\alpha} <_\beta$. Now suppose $<_\alpha$ is well-defined. Let:<br/>
-<br/>
 $$
 \begin{gather*}<br/>
 W_0^\alpha := L_\alpha(M,X) \cup \lbrace L_\alpha(M,X)\rbrace \cup \lbrace (M \cap \lbrace X\rbrace) \cap L_\alpha(M,X)\rbrace \\<br/>
 W_{n+1}^\alpha := \lbrace G_i(X,Y) : X,Y \in W_n^\alpha, i = 1,\dots,10\rbrace<br/>
-\end{gather*}<br/>
-$$
-<br/>
+\end{gather*}$$
 We define $<_{\alpha+1}'$ in the same way as (13.15) (which is an end-extension of $<_\alpha$). Now since $M \cap V_\alpha = V_\alpha^M \in M$ and $M \models \AC$, there exists a well-order in $M \subseteq L(M,X)$, $<_\alpha"$, on $M \cap V_\alpha$. Thus, we may define $<_{\alpha+1}$ by having $<_\alpha"$ end-extending $v_{\alpha+1}'$, then setting $X$ as the last element if $X \in L_{\alpha+1}(M,X) - L_\alpha(M,X)$. Then $<_{\alpha+1}$ is easily seen to be a well-order of $L_{\alpha+1}(M,X)$. Note that this does not imply that $L(M,X)$ satisfies Axiom of Global Choice, but if we further assume that $M$ satisfies Axiom of Global Choice, then so does $L(M,X)$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.35"></a><br/>
@@ -666,13 +546,10 @@ Conversely, suppose $X$ is definable in some $V_\gamma$, so $X = \lbrace u \in V
 <a name="ex13.36"></a><br/>
 <h2>Exercise 13.36.</h2>
 <i>Solution.</i> Suppose $F = \lbrace (\alpha,x) : \varphi(\alpha,x)\rbrace$ for some formula $\varphi$. Let $x \in \ran(F)$. If $x = F(\alpha)$, we shall show that:<br/>
-<br/>
 $$
 \begin{align*}<br/>
 x = \lbrace y : \exists z \, (\varphi(\alpha,z) \wedge y \in z)\rbrace<br/>
-\end{align*}<br/>
-$$
-<br/>
+\end{align*}$$
 If $y \in x$, then since $\varphi[\alpha,x]$ we have in particular that $\exists z \, (\varphi(\alpha,z) \wedge y \in z)$. Conversely, suppose $y \in z$ for some $z$ such that $\varphi[\alpha,z]$. But since $F$ is a function, there exists a unique set $z$ such that $y \in z and$ $\varphi[\alpha,z]$. Since we know that $\varphi[\alpha,x]$, we have that $z = x$ necessarily. Thus $y \in x$. Therefore $x$ is ordinal definable (with parameter $\alpha$).<br/>
 <br/>
 The latter assertion follows immediately: If $M$ is a class with a definable one-to-one correspondence $F : \boldsymbol{\mathrm{ORD}} \to M$, then $M = \ran(F) \subseteq OD$.<p align="right">$\square$</p><br/>

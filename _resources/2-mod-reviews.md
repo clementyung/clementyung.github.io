@@ -113,14 +113,14 @@ The module was mapped to MA3265 Introduction to Number Theory.
 |MA5210     |Differentiable Manifolds                               |A+     |<a href="http://disq.us/p/2hgimvp" target="_blank">Link</a>|
 |MA5220     |Logic and Foundation of Mathematics II                 |A+     |<a href="http://disq.us/p/2hgioo4" target="_blank">Link</a>|
 
-## AY21/22 Online Summer Exchange (University of Toronto)
+## AY20/21 Online Summer Exchange (University of Toronto)
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
 |MAT401     |Polynomial Fields and Equations                        |B      |                                                           |
 |MAT495     |Independent Reading in Mathematics                     |A+     |                                                           |
 
-The module MAT401 was mapped to MA4203 Galois Theory. The module MA495 was mapped to an exchange enrichment module.
+The module MAT401 was mapped to MA4203 Galois Theory. The module MAT495 was mapped to an exchange enrichment module.
 
 ## AY21/22 Semester 1
 
@@ -129,9 +129,9 @@ The module MAT401 was mapped to MA4203 Galois Theory. The module MA495 was mappe
 |MA4199     |Honours Project in Mathematics                         |IP     |See Next Semester                                          |
 |MA4235     |Topics in Graph Theory                                 |A-     |<a href="http://disq.us/p/2m4qv35" target="_blank">Link</a>|
 |MA6219     |Recursion Theory                                       |A      |<a href="http://disq.us/p/2m4qt4t" target="_blank">Link</a>|
-|ST3131     |Regressive Anaylsis                                    |A-     |<a href="http://disq.us/p/2m4qwi9" target="_blank">Link</a>|
+|ST3131     |Regression Anaylsis                                    |A-     |<a href="http://disq.us/p/2m4qwi9" target="_blank">Link</a>|
 
-## AY21/22 Semester 1
+## AY21/22 Semester 2
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|

@@ -1,8 +1,8 @@
 ---
-title: "Testing"
+title: "Testing2"
 collection: solutions
 type: "Type"
-permalink: /jech-solutions/testing
+permalink: /jech-solutions/testing2
 excerpt: ""
 ---
 <body>

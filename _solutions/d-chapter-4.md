@@ -8,226 +8,242 @@ excerpt: ""
 
 {% include commands.html %}
 
-In this chapter, we shall not use the Axiom of Choice for any of the exercises.
-
-<a name="ex4.1"></a>
-## Exercise 4.1.
-<i>Solution.</i> Let $C(\R)$ be the set of all continuous functions $\R \to \R$. Following the hint, by identifying the continuous functions $f : \R \to \R$ by their definition on $\Q$, there is an injection $F : C(\R) \to {}^{\R}\Q$ given by $F(f) = f\restrictedto\Q$. But $\vert {}^{\R}\Q\vert  = \vert \R\vert ^{\vert \Q\vert } = (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0 \cdot \aleph_0} = 2^{\aleph_0} = \mathfrak{c}$. 
-$\square$
-
-<a name="ex4.2"></a>
-## Exercise 4.2.
-<i>Solution.</i> We shall write:
-
+<body>
+<a name="ex4.1"></a><br/>
+<h2>Exercise 4.1.</h2>
+<i>Solution.</i> Let $C(\R)$ be the set of all continuous functions $\R \to \R$. Following the hint, by identifying the continuous functions $f : \R \to \R$ by their definition on $\Q$, there is an injection $F : C(\R) \to {}^{\R}\Q$ given by $F(f) = f\restrictedto\Q$. But $\vert {}^{\R}\Q\vert  = \vert \R\vert ^{\vert \Q\vert } = (2^{\aleph_0})^{\aleph_0} = 2^{\aleph_0 \cdot \aleph_0} = 2^{\aleph_0} = \mathfrak{c}$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.2"></a><br/>
+<h2>Exercise 4.2.</h2>
+<i>Solution.</i> We shall write:<br/>
 $$
-\begin{align*}
-\tau_a = a_0 + \xi_0 + a_1 + \xi_1 + a_2 + \xi_2 + \cdots
-\end{align*}
+\begin{align*}<br/>
+\tau_a = a_0 + \xi_0 + a_1 + \xi_1 + a_2 + \xi_2 + \cdots<br/>
+\end{align*}$$
+Suppose $\tau_a = \tau_b$, so there exists an isomorphism $f : \tau_a \to \tau_b$. Suppose for a contradiction that there is some $n$ such that $a_n \neq b_n$. Let $n$ be the least natural number such that $a_n \neq b_n$, and assume WLOG that $a_n > b_n$. Let $y = \max b_n$, and suppose $f(x) = y$. Then $y < f(x + 1) \in \xi_n$. Since $\xi_n$ is the order-type of the integers, there exists a $y' \in \tau_b$ such that $f(x) < y' < f(x + 1)$. By order-preserving property, there is no $x'$ such that $f(x') = y'$, contradicting bijectivity.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.3"></a><br/>
+<h2>Exercise 4.3.</h2>
+<a name="lem4.3.A"></a><br/>
+<b>Lemma 4.3.A.</b> Let $\Z[x]$ denote the the set of all polynomials of integer coefficients. Then $\Z[x]$ is countably infinite.<br/>
+<br/>
+<i>Proof.</i> Note that $\Z$ is countable, as the map $f : \boldsymbol{N} \to \Z$ defined by:<br/>
 $$
-
-Suppose $\tau_a = \tau_b$, so there exists an isomorphism $f : \tau_a \to \tau_b$. Suppose for a contradiction that there is some $n$ such that $a_n \neq b_n$. Let $n$ be the least natural number such that $a_n \neq b_n$, and assume WLOG that $a_n > b_n$. Let $y = \max b_n$, and suppose $f(x) = y$. Then $y < f(x + 1) \in \xi_n$. Since $\xi_n$ is the order-type of the integers, there exists a $y' \in \tau_b$ such that $f(x) < y' < f(x + 1)$. By order-preserving property, there is no $x'$ such that $f(x') = y'$, contradicting bijectivity. 
-$\square$
-
-<a name="ex4.3"></a>
-## Exercise 4.3.
-<a name="lem4.3.A"></a>
-<b>Lemma 4.3.A.</b> Let $\Z[x]$ denote the the set of all polynomials of integer coefficients. Then $\Z[x]$ is countably infinite.
-
-<i>Proof.</i> Note that $\Z$ is countable, as the map $f : \boldsymbol{N} \to \Z$ defined by:
-
+\begin{align*}<br/>
+f(n) =<br/>
+\begin{cases}<br/>
+k, &\text{if $n = 2k$ for some $k \in \boldsymbol{N}$} \\<br/>
+-k, &\text{if $n = 2k + 1$ for some $k \in \boldsymbol{N}$}<br/>
+\end{cases}<br/>
+\end{align*}$$
+is a bijection. We may now define a map $g : \Z[x] \to \boldsymbol{N}$ defined by:<br/>
 $$
-\begin{align*}
-f(n) =
-\begin{cases}
-k, &\text{if $n = 2k$ for some $k \in \boldsymbol{N}$} \\
--k, &\text{if $n = 2k + 1$ for some $k \in \boldsymbol{N}$}
-\end{cases}
-\end{align*}
+\begin{align*}<br/>
+g(a_nx^n + \cdots + a_1x + a_0) = 2^{f^{-1}(a_0)}3^{f^{-1}(a_1)}\cdots p_{n+1}^{f^{-1}(a_n)}<br/>
+\end{align*}$$
+where $p_n$ is the $n^\text{th}$ smallest prime number. Fundamental Theorem of Arithmetic then tells us that $g$ is injective (in fact it's bijective, but we do not need it here). Thus, $\Z[x]$ is countable, and clearly it is infinite.<p align="right">$\blacksquare$</p><br/>
+<br/>
+<a name="lem4.3.B"></a><br/>
+<b>Lemma 4.3.B.</b> $\Z[x]$ is well-orderable.<br/>
+<br/>
+<i>Proof.</i> We define $\prec \; \subseteq \Z[x] \times \Z[x]$ as follows: Given $a_nx^n + \cdots + a_1x + a_0,b_mx^m + \cdots + b_1x + b_0 \in \Z[x]$, we define:<br/>
 $$
-
-is a bijection. We may now define a map $g : \Z[x] \to \boldsymbol{N}$ defined by:
-
+\begin{gather*}<br/>
+a_nx^n + \cdots + a_1x + a_0 \prec b_mx^m + \cdots + b_1x + b_0 \\<br/>
+\updownarrow \\<br/>
+n < m \text{ or } (n = m \wedge a_n < b_m)<br/>
+\end{gather*}$$
+It's easy to check that $\prec$ defines a well-order, with the zero polynomial being the minimal element.<p align="right">$\blacksquare$</p><br/>
+<br/>
+<i>Solution.</i> Let $X$ be the set of all algebraic reals. Define $h : X \to \boldsymbol{N} \times \Z[x]$ by $h(a) = (k,p(x))$, where $p(x)$ is the $\prec$-least polynomial (as in <a href="#lem4.3.B">Lemma 4.3.B</a>), and $a$ is the $(k + 1)^\text{th}$ smallest root of $p(x)$. Then $h$ is clearly injective, and since $\Z[x]$ is countable by <a href="#lem4.3.A">Lemma 4.3.A</a>, $\boldsymbol{N} \times \Z[x]$ is also countable, so $X$ must be countable.<p align="right">$\square$</p><br/>
+<br/>
+<b>Remark.</b>. If we assume $\AC$, then this exercise becomes far easier as countable union of countable sets is countable (which makes proving <a href="#lem4.3.A">Lemma 4.3.A</a> slightly easier), and every set is well-orderable (trivialising <a href="#lem4.3.B">Lemma 4.3.B</a>).<br/>
+<br/>
+<a name="ex4.4"></a><br/>
+<h2>Exercise 4.4.</h2>
+<i>Solution.</i> Using a choiceless bijection we may work with the Baire space $\N = \omega^\omega$ in place of $\R$, and $S \subseteq \N$. Let $S = \lbrace f_i : i \in \omega\rbrace$. Define:<br/>
 $$
-\begin{align*}
-g(a_nx^n + \cdots + a_1x + a_0) = 2^{f^{-1}(a_0)}3^{f^{-1}(a_1)}\cdots p_{n+1}^{f^{-1}(a_n)}
-\end{align*}
+\begin{align*}<br/>
+X = \prod_{i \in \omega} \lbrace f_i(i)+1,f_i(i)+2\rbrace<br/>
+\end{align*}$$
+Clearly $X \cap S = \emptyset$, for if $f \in X$ then for any $i \in \omega$, $f(i) > f_i(i)$. Thus, $X \subseteq \N - S$. Clearly $\vert X\vert  = 2^{\aleph_0} = \mathfrak{c}$, so $\vert \N - S\vert  \geq \mathfrak{c}$. On the other hand, $\vert \N - S\vert  \leq \vert \N\vert  = \mathfrak{c}$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.5"></a><br/>
+<h2>Exercise 4.5.</h2>
+<a name="ex4.5(i)"></a><br/>
+<h3>Exercise 4.5(i).</h3>
+The set of all irrational numbers has cardinality $\mathfrak{c}$.<br/>
+<br/>
+<i>Solution.</i> This follows from <a href="#ex4.4">Exercise 4.4</a> and that $\Q$ is countable.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.5(ii)"></a><br/>
+<h3>Exercise 4.5(ii).</h3>
+The set of all transcendental numbers has cardinality $\mathfrak{c}$.<br/>
+<br/>
+<i>Solution.</i> This follows from <a href="#ex4.4">Exercise 4.4</a> and that by <a href="#ex4.3">Exercise 4.3</a>, the set of all algebraic numbers is countable.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.6"></a><br/>
+<h2>Exercise 4.6.</h2>
+<a name="lem4.6.A"></a><br/>
+<b>Lemma 4.6.A.</b> Every open set of reals is a countable union of disjoint open intervals.<br/>
+<br/>
+<b>Note.</b>. For this exercise, we use $(a,b)$ to denote the open interval, and $\c{a,b}$ to denote ordered pair.<br/>
+<br/>
+<i>Proof.</i> Let $U \subseteq \R$ be open. First observe that for $x \in U$, there exists a maximal open interval $U_x \subseteq U$ containing $x$ - this is because all open sets are generated by open intervals as basic sets, and if $U_x,U_x'$ are open intervals containing $x$, then $U_x \cup U_x'$ is also an open interval containing $x$.<br/>
+<br/>
+For each $x \in U$, let $U_x \subseteq U$ be the maximal open interval that contains $x$. Let $\U := \lbrace U_x : x \in U\rbrace$ be the set of all maximal open intervals in $U$. Then they must be disjoint, as if $U_x \cap U_y \neq \emptyset$ then $U_x \cup U_y$ is a larger open interval. Clearly $\bigcup \U = U$, so it remains to show that $\U$ is countable.<br/>
+<br/>
+Write $\U = \lbrace U_i : i \in I\rbrace$, where $I$ is an index set and $U_i \cap U_j = \emptyset$ for $i \neq j$. For each $i$, there exists a rational number $q_i \in U_i$. Since the $U_i$'s are disjoint, the map $U_i \mapsto q_i$ is one-to-one. Thus $I$ is countable as desired. Note that the map $U_i \mapsto q_i$ does not require the Axiom of Choice, as there is a choiceless algorithm to obtain a rational number $q_i \in U_i$.<p align="right">$\blacksquare$</p><br/>
+<br/>
+<i>Solution.</i> Let $X := \lbrace \c{a,b} \in \R \times \R : a < b\rbrace$, and let $\mathcal{T}$ denote the set of all open subsets of $\R$. let $\mathcal{B}$ be the set of all open intervals of $\R$. Consider the one-to-one map $f$ of $X$ onto $\mathcal{B}$ defined by $f(\c{a,b}) = (a,b)$. Clearly $\vert X\vert  = \mathfrak{c}$, so $\vert \mathcal{B}\vert  = \mathfrak{c}$.<br/>
+<br/>
+Now define $g : [\mathcal{B}]^\omega \to \mathcal{T}$ by:<br/>
 $$
-
-where $p_n$ is the $n^\text{th}$ smallest prime number. Fundamental Theorem of Arithmetic then tells us that $g$ is injective (in fact it's bijective, but we do not need it here). Thus, $\Z[x]$ is countable, and clearly it is infinite. 
-$\blacksquare$
-
-<a name="lem4.3.B"></a>
-<b>Lemma 4.3.B.</b> $\Z[x]$ is well-orderable.
-
-<i>Proof.</i> We define $\prec \; \subseteq \Z[x] \times \Z[x]$ as follows: Given $a_nx^n + \cdots + a_1x + a_0,b_mx^m + \cdots + b_1x + b_0 \in \Z[x]$, we define:
-
+\begin{align*}<br/>
+g(\lbrace B_i : i \in \omega\rbrace) = \bigcup_{i \in \omega}<br/>
+\end{align*}$$
+By <a href="#lem4.6.A">Lemma 4.6.A</a>, $g$ is onto. Thus:<br/>
 $$
-\begin{gather*}
-a_nx^n + \cdots + a_1x + a_0 \prec b_mx^m + \cdots + b_1x + b_0 \\
-\updownarrow \\
-n < m \text{ or } (n = m \wedge a_n < b_m)
-\end{gather*}
+\begin{align*}<br/>
+\vert \mathcal{T}\vert  \leq \vert [\mathcal{B}]^\omega\vert  = \vert \mathcal{B}\vert ^{\aleph_0} = \mathfrak{c}^{\aleph_0} = \mathfrak{c}<br/>
+\end{align*}$$
+On the other hand, we have$\vert \mathcal{T}\vert  \geq \vert \mathcal{B}\vert  = \mathfrak{c}$, so equality holds.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.7"></a><br/>
+<h2>Exercise 4.7.</h2>
+<i>Solution.</i> We first show that the Cantor set $\C$ is closed. Let $x \in \R$, and write $x = \sum_{n=1}^\infty \frac{a_n}{3^n}$ where $a_n \in \lbrace 0,1,2\rbrace$. Suppose on the contrary that $a_N = 1$ for some $N$, and it's not the case that $a_n = 0$ for all $n > N$ or $a_n = 2$ for all $n > N$. We write:<br/>
 $$
-
-It's easy to check that $\prec$ defines a well-order, with the zero polynomial being the minimal element. 
-$\blacksquare$
-
-<i>Solution.</i> Let $X$ be the set of all algebraic reals. Define $h : X \to \boldsymbol{N} \times \Z[x]$ by $h(a) = (k,p(x))$, where $p(x)$ is the $\prec$-least polynomial (as in <a href="#lem4.3.B">Lemma 4.3.B</a>), and $a$ is the $(k + 1)^\text{th}$ smallest root of $p(x)$. Then $h$ is clearly injective, and since $\Z[x]$ is countable by <a href="#lem4.3.A">Lemma 4.3.A</a>, $\boldsymbol{N} \times \Z[x]$ is also countable, so $X$ must be countable. 
-$\square$
-
-<b>Remark.</b>. If we assume $\AC$, then this exercise becomes far easier as countable union of countable sets is countable (which makes proving <a href="#lem4.3.A">Lemma 4.3.A</a> slightly easier), and every set is well-orderable (trivialising <a href="#lem4.3.B">Lemma 4.3.B</a>).
-
-<a name="ex4.4"></a>
-## Exercise 4.4.
-<i>Solution.</i> Using a choiceless bijection we may work with the Baire space $\N = \omega^\omega$ in place of $\R$, and $S \subseteq \N$. Let $S = \lbrace f_i : i \in \omega\rbrace$. Define:
-
+\begin{align*}<br/>
+x = \sum_{n=0}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N} + s = \sum_{n=0}^{N-1} \frac{a_n}{3^n} + \frac{2}{3^N} - t<br/>
+\end{align*}$$
+where $0 < s,t < \frac{1}{3^N}$. Now let $y = \sum_{n=1}^\infty \frac{b_n}{3^n} \in \C$. If $y \leq x$, then it can't be that $y > \sum_{n=1}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N}$, for otherwise we must have $b_N = 1$. Thus $y \leq \sum_{n=1}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N}$, hence $x - y \geq s$. By similar reasoning, if $y \geq x$ then $y - x \geq t$. Thus, $x$ is not a limit point of $\C$, so all points not in $\C$ are not limit points.<br/>
+<br/>
+We now show that $\C$ has no isolated points. Fix $y = \sum_{n=1}^\infty \frac{b_n}{3^n} \in \C$. For any $\epsilon > 0$, let $N$ be large enough so that $\frac{2}{3^N} < \epsilon$. If $b_n = 2$ for some $n \geq N$, then $z := y - \frac{2}{3^n} \in \C$ and $\vert y - z\vert  < \epsilon$. Otherwise, $z := y + \frac{2}{3^N} \in \C$ and $\vert y - z\vert  < \epsilon$. Thus $y$ is not isolated.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.8"></a><br/>
+<h2>Exercise 4.8.</h2>
+<i>Solution.</i> The proof of Theorem 4.5. may be repeated. We provide a similar proof that can also serve as an alternative proof to Theorem 4.5.<br/>
+<br/>
+We shall define a one-to-one function $f$ with $\dom(f) = 2^{<\omega}$ and $f(s)$ is an open set for all $s \in \omega^{<\omega}$, with $f(s) \cap P \neq \emptyset$. We define this inductively.<br/>
+<br/>
+Let $f(\emptyset) = (a,b)$. Suppose for all $s \in \omega^{<\omega}$ with $\length(s) = n$, $f(s)$ are defined such that $f(s) \cap P \neq \emptyset$, and $f(s_1) \cap f(s_2) = \emptyset$ for $s_1 \neq s_2$ of length $n$. Say $x \in f(s) \cap P$, and let $(c,d) \subseteq f(s)$ such that $x \in (c,d)$. Since $P$ is perfect, $x$ is a limit point so there exists $x_0,x_1 \in P \cap (c,d)$ such that $x_0 \neq x_1$ and $\vert x_0 - x\vert  > 0$, $\vert x_1 - x\vert  > 0$. We define $f(s^\frown(0)),f(s^\frown(1))$ as the open sets containing $x_0$ and $x_1$ respectively such that $x,x_1 \notin f(s^\frown(0))$ and $x,x_0 \notin f(s^\frown(1))$ (clearly such open sets exist). Note that if $s' \neq s$ and $\length(s') = n$, then since $f(s^\frown(i)) \subseteq f(s)$ we have $f(s^\frown(i)) \cap f(s'^\frown(i')) = \emptyset$ for $i,i' \in \lbrace 0,1\rbrace$.<br/>
+<br/>
+Now for each $l \in 2^\omega$, let $X_l := \bigcap_{n=0}^\infty f(l\restrictedto n)$. $X_l$ is a nested intersection of bounded open sets, so it contains a single point $x_l \in X_l$. Then $\lbrace x_l : l \in 2^\omega\rbrace \subseteq P \cap (a,b)$, so $\vert P \cap (a,b)\vert  = \mathfrak{c}$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.9"></a><br/>
+<h2>Exercise 4.9.</h2>
+<i>Solution.</i> Let $x \in P_2 - P_1$. Since $x \notin P_1$ and $P_1$ is perfect, $x$ is isolated from $P_1$, i.e. there exists an open neighbourhood $(a,b) \ni x$ such that $(a,b) \cap P_1 = \emptyset$. Then $\emptyset \neq P_2 \cap (a,b) \subseteq P_2 - P_1$, and by <a href="#ex4.8">Exercise 4.8</a> $\vert P_2 \cap (a,b)\vert  = \mathfrak{c}$. Thus $\vert P_2 - P_1\vert  = \mathfrak{c}$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.10"></a><br/>
+<h2>Exercise 4.10.</h2>
+<i>Solution.</i> Since $P$ is closed, $P^\ast  \subseteq P$. On the other hand, for every $x \in P$ is a limit point, and hence a condensation point by <a href="#ex4.8">Exercise 4.8</a>, so $P \subseteq P^\ast $.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.11"></a><br/>
+<h2>Exercise 4.11.</h2>
+<i>Solution.</i> Clearly if $P \subseteq F$ then $P^\ast  \subseteq F^\ast $, and $P = P^\ast $.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.12"></a><br/>
+<h2>Exercise 4.12.</h2>
+<i>Solution.</i> As in the hint, for each $a \in F^\ast $, since every neighbourhood of $a$ has uncountably many points and $\vert F - P\vert  \leq \aleph_0$, must have that $a$ is a limit point of $P$. Since $P$ is closed, $a \in P$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.13"></a><br/>
+<h2>Exercise 4.13.</h2>
+<i>Solution.</i> This is an immediate consequence of <a href="#ex4.12">Exercise 4.12</a>.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.14"></a><br/>
+<h2>Exercise 4.14.</h2>
+<i>Solution.</i> Note that we require Axiom of Choice to prove the Baire Category Theorem.<br/>
+<br/>
+Suppose $\Q = \bigcap_{n=0}^\infty U_n$, where each $U_n$ is open. Since $\Q$ is dense, so is each $U_n$. Thus $\R - \Q = \bigcup_{n=0}^\infty (\R - U_n)$, where each $\R - U_n$ is closed nowhere dense. Clearly $\Q = \bigcup_{q \in \Q} \lbrace q\rbrace$ is also a countable union of closed nowhere dense sets, therefore $\R$ is a countable union of closed nowhere dense sets. This contradicts the Baire Category Theorem, which implies that $\R$ is not a countable union of closed nowhere dense sets.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.15"></a><br/>
+<h2>Exercise 4.15.</h2>
+<i>Solution.</i> Since $f$ is continuous, we have that:
+<ol>
+<li> If $B$ is open, then $f_{-1}(B)$ is open.</li>
+<li> $f_{-1}(\R - B) = \R - f_{-1}(B)$.</li>
+<li> $f_{-1}\bb{\bigcup_{n=0}^\infty B_n} = \bigcup_{n=0}^\infty f_{-1}(B_n)$.</li>
+</ol>
+This implies that if $B$ is Borel, then $f_{-1}(B)$ belongs to the $\sigma$-algebra generated by $\mathcal{B}' := \lbrace f_{-1}(U) : U \text{is open in $\R$}\rbrace$. Since $f_{-1}(U)$ are all open, we have that $\mathcal{B}'$ is included in the $\sigma$-algebra generated by open sets, so in particular $f_{-1}(B)$ is Borel.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.16"></a><br/>
+<h2>Exercise 4.16.</h2>
+<i>Solution.</i> For $x \in \R$ and $r > 0$, let $B_r(x)$ denote the open ball of radius $r$ around $x$. We have:<br/>
 $$
-\begin{align*}
-X = \prod_{i \in \omega} \lbrace f_i(i)+1,f_i(i)+2\rbrace
-\end{align*}
+\begin{align*}<br/>
+&\iffbreak \text{$f$ is continuous at $x$} \\<br/>
+&\iff (\forall \epsilon > 0)(\exists \delta > 0)(\forall y \in \R)(\vert x - y\vert  \leq \delta \to \vert f(x) - f(y)\vert  < \epsilon) \\<br/>
+&\iff (\forall \epsilon > 0)(\exists \delta > 0)(\forall y \in \R)(y \in \bar{B_\delta(x)} \to f(y) \in B_\epsilon(f(x))) \\<br/>
+&\iff (\forall \epsilon > 0)(\exists \delta > 0)(B_\delta(x) \subseteq f_{-1}(B_\epsilon(f(x)))) \\<br/>
+&\iff x \in \bigcap_{n=1}^\infty \bigcup_{\substack{U \text{ open} \\ U \subseteq f_{-1}\bb{B_{\frac{1}{n}}(f(x)))}}} U<br/>
+\end{align*}$$
+which is a $G_\delta$ set.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.17"></a><br/>
+<h2>Exercise 4.17.</h2>
+<a name="ex4.17(i)"></a><br/>
+<h3>Exercise 4.17(i).</h3>
+$\N \times \N$ is homeomorphic to $\N$.<br/>
+<br/>
+<i>Solution.</i> Define $F : \N \times \N \to \N$ by stipulating that for all $f \in \N$, we have $F(f) = (g,h)$, where $g(n) = f(2n)$ and $h(n) = f(2n+1)$ for all $n$. Clearly $F$ is a one-to-one and onto function. We shall show that $F$ is in fact a homeomorphism.<br/>
+<br/>
+We first show that $F$ is continuous. Fix $s,t$ be two finite sequences, and we wish to show that $F_{-1}(O(s) \times O(t))$ is open. Fix $f \in F_{-1}(O(s) \times O(t))$. We then have for $n > \max\lbrace 2 \cdot \length(s), 2 \cdot \length(t) + 1\rbrace$, if $g \in \N$ and $f\restrictedto n = g\restrictedto n$, then $g \in F_{-1}(O(s) \times O(t))$. In other words, $O(f\restrictedto n) \subseteq F_{-1}(O(s) \times O(t))$, so $F_{-1}(O(s) \times O(t))$ is open.<br/>
+<br/>
+A similar reasoning can be used to show that $F$ is an open map. Fix a finite sequence $s$. Then for $(f,g) \in F"(O(s))$, only the first $\leq\f{\frac{\length(s)}{2}} + 1$ values of $f$ and $g$ are restricted, so $O(f\restrictedto k) \times O(g\restrictedto l) \subseteq F"(O(s))$ for some $k,l$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.17(ii)"></a><br/>
+<h3>Exercise 4.17(ii).</h3>
+$\N^\omega$ is homeomorphic to $\N$.<br/>
+<br/>
+<i>Solution.</i> Let $\Gamma : \omega \times \omega \to \omega$ be Cantor's pairing function. Define $G : \N \to \N^\omega$ be stipulating that for all $f \in \N$, if $G(f) = \c{f_n : n \in \omega}$, then $f_n(k) = f(\Gamma(n,k))$ for all $k$. Then $G$ is one-to-one and onto, and one may repeat a proof similar to that of <a href="#ex4.17(i)">Exercise 4.17(i)</a> that $G$ is a homeomorphism. Note that $\N^\omega$ is equipped with the product topology, so basic open sets are of the form $\prod_{i \in \omega} U_i$, where $U_i = \N$ for all but finitely many $i$, and if $U_i \neq \N$ then $U_i = O(s_i)$ for some finite sequence $i$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.18"></a><br/>
+<h2>Exercise 4.18.</h2>
+<i>Solution.</i> If $s \in T_F$, then $s \subseteq f$ for some $f \in F$, so we may extend $s$ in the direction of $f$ (i.e. take $t \subseteq f$ such that $\length(t) > \length(s)$, and we have that $s \subseteq t$).<br/>
+<br/>
+We show that $F \mapsto T_F$ is a one-to-one correspondence. Let $F,F'$ be two closed subsets of $\N$, and suppose $T_F = T_{F'}$. Let $f \in F$, so $f\restrictedto n \in T_F = T_{F'}$ for all $n$. Thus, for each $n$ there exists an $f_n \in T_{F'}$ such that $f\restrictedto n = f_n\restrictedto n$. Then $f_n \to f$ under the metrisable topology of $\N$, so $f \in T_{F'}$. Thus $F \subseteq F'$, and by symmetry of argument we have $F = F'$. This gives that the map is one-to-one.<br/>
+<br/>
+To see that the map is onto, let $T$ be a sequential tree without maximal node. We shall show that $T_{[T]} = T$. $T_{[T]} \subseteq T$ is clear. Conversely, if $s \in T$ then since $T$ has no maximal node, there exists an infinite sequence $s \subseteq s_1 \subseteq s_2 \subseteq \dots$ in $T$. Then $f := \bigcup_{i=1}^\infty s_i$ is an infinite branch in $T$, so $f \in [T]$. Then $s \subseteq f$ so $s \in T_{[T]}$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.19"></a><br/>
+<h2>Exercise 4.19.</h2>
+<i>Solution.</i> It suffices to show that the perfect set $P$ constructed in Theorem 4.5 is homeomorphic to the Cantor set. For each $f \in \lbrace 0,1\rbrace^\omega$, define $f' \in \lbrace 0,2\rbrace^\omega$ by $f'(n) = 0$ if $f(n) = 0$, and $f'(n) = 2$ if $f(n) = 1$. We also let $a_f$ be the unique element in $P \cap \bigcap_{n=0}^\infty I_{f\restrictedto n}$. Define a function $F$ from $P$ to $\C$ by:<br/>
 $$
-
-Clearly $X \cap S = \emptyset$, for if $f \in X$ then for any $i \in \omega$, $f(i) > f_i(i)$. Thus, $X \subseteq \N - S$. Clearly $\vert X\vert  = 2^{\aleph_0} = \mathfrak{c}$, so $\vert \N - S\vert  \geq \mathfrak{c}$. On the other hand, $\vert \N - S\vert  \leq \vert \N\vert  = \mathfrak{c}$. 
-$\square$
-
-<a name="ex4.5"></a>
-## Exercise 4.5.
-<a name="ex4.5(i)"></a>
-### Exercise 4.5(i).
-<i>Solution.</i> This follows from <a href="#ex4.4">Exercise 4.4</a> and that $\Q$ is countable. 
-$\square$
-
-<a name="ex4.5(ii)"></a>
-### Exercise 4.5(ii).
-<i>Solution.</i> This follows from <a href="#ex4.4">Exercise 4.4</a> and that by <a href="#ex4.3">Exercise 4.3</a>, the set of all algebraic numbers is countable. 
-$\square$
-
-<a name="ex4.6"></a>
-## Exercise 4.6.
-<a name="lem4.6.A"></a>
-<b>Lemma 4.6.A.</b> Every open set of reals is a countable union of disjoint open intervals.
-
-<b>Note.</b>. For this exercise, we use $(a,b)$ to denote the open interval, and $\c{a,b}$ to denote ordered pair.
-
-<i>Proof.</i> Let $U \subseteq \R$ be open. First observe that for $x \in U$, there exists a maximal open interval $U_x \subseteq U$ containing $x$ - this is because all open sets are generated by open intervals as basic sets, and if $U_x,U_x'$ are open intervals containing $x$, then $U_x \cup U_x'$ is also an open interval containing $x$.
-
-For each $x \in U$, let $U_x \subseteq U$ be the maximal open interval that contains $x$. Let $\U := \lbrace U_x : x \in U\rbrace$ be the set of all maximal open intervals in $U$. Then they must be disjoint, as if $U_x \cap U_y \neq \emptyset$ then $U_x \cup U_y$ is a larger open interval. Clearly $\bigcup \U = U$, so it remains to show that $\U$ is countable.
-
-Write $\U = \lbrace U_i : i \in I\rbrace$, where $I$ is an index set and $U_i \cap U_j = \emptyset$ for $i \neq j$. For each $i$, there exists a rational number $q_i \in U_i$. Since the $U_i$'s are disjoint, the map $U_i \mapsto q_i$ is one-to-one. Thus $I$ is countable as desired. Note that the map $U_i \mapsto q_i$ does not require the Axiom of Choice, as there is a choiceless algorithm to obtain a rational number $q_i \in U_i$. 
-$\blacksquare$
-
-<i>Solution.</i> Let $X := \lbrace \c{a,b} \in \R \times \R : a < b\rbrace$, and let $\mathcal{T}$ denote the set of all open subsets of $\R$. let $\mathcal{B}$ be the set of all open intervals of $\R$. Consider the one-to-one map $f$ of $X$ onto $\mathcal{B}$ defined by $f(\c{a,b}) = (a,b)$. Clearly $\vert X\vert  = \mathfrak{c}$, so $\vert \mathcal{B}\vert  = \mathfrak{c}$.
-
-Now define $g : [\mathcal{B}]^\omega \to \mathcal{T}$ by:
-
+\begin{align*}<br/>
+F(a_f) = \sum_{n=0}^\infty \frac{f'(n)}{3^{n+1}}<br/>
+\end{align*}$$
+We now show that $F$ is a homeomorphism (under the subspace topologies of $P$ and $\C$ respectively). Note the subspace topology of $\C$ is generated by $O_k(x)$ for $x \in \C$ and $k \in \omega$, where:<br/>
 $$
-\begin{align*}
-g(\lbrace B_i : i \in \omega\rbrace) = \bigcup_{i \in \omega}
-\end{align*}
+\begin{align*}<br/>
+O_k(x) := \ss{y \in \C : y = \sum_{n=1}^\infty \frac{b_n}{3^n} \wedge (\forall n \leq k) \, a_n = b_n}<br/>
+\end{align*}$$
+The subspace topology of $P$ is generated by $\lbrace a_f : f \supseteq s\rbrace$ for all $s \in S$ (or $\lbrace a_f : f \in O(s)\rbrace$).<br/>
+<br/>
+Fix $U \subseteq \C$ open, and let $a_f \in F_{-1}(U)$ for some $f \in \lbrace 0,1\rbrace^\omega$. Then $F(f) \in U$, and since $U$ is open we have that $O_k(F(f)) \subseteq U$ for some $k$ large enough. But this implies that for all $s \in O(f\restrictedto k)$ and $g \supseteq s$, we have that $a_g \in F_{-1}(U)$. Thus $\lbrace a_g : g \in O(f\restrictedto k)\rbrace \subseteq F_{-1}(U)$, so $F_{-1}(U)$ is open. The same approach can be used to show that $F$ is an open map, so it is a homeomorphism.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex4.20"></a><br/>
+<h2>Exercise 4.20.</h2>
+<i>Solution.</i> Let $X$ be a Polish space, and let $D$ denote the dense subset of $X$. We shall show that the function $F : X \to [0,1]^\omega$ in the hint (w.r.t. $D$) is one-to-one, and a homeomorphism to its image (under the subspace topology).<br/>
+<br/>
+To see that $F$ is one-one, let $x,y \in X$ and suppose $x \neq y$. Let $d(x,y) = \delta$. Let $x_n \in B_{\frac{\delta}{3}}(x)$ (possible by denseness). Then $d(x,x_n) < \frac{\delta}{3}$ but $d(y,x_n) \geq d(y,x) - d(x,x_n) > \frac{2\delta}{3}$, so $F(x) \neq F(y)$.<br/>
+<br/>
+Let $U \subseteq \lbrace 0,1\rbrace^\omega$ be open, and we wish to show that $F_{-1}(U)$ is open. Let $x \in F_{-1}(U)$, and let $\epsilon_0,\dots,\epsilon_n > 0$ be such that $\prod_{i<n} B_{\epsilon_i}(F(x)(i)) \times [0,1]^\omega \subseteq U$. Let $V := \bigcap_{i<n} B_{\epsilon_i}(x)$, which is open. If $y \in V$, then for $i < n$ we have:<br/>
 $$
-
-By <a href="#lem4.6.A">Lemma 4.6.A</a>, $g$ is onto. Thus:
-
+\begin{align*}<br/>
+\vert d(y,x_i) - d(x,x_i)\vert  \leq d(y,x) < \epsilon_i \implies F(y)(i) \in B_{\epsilon_i}(F(x)(i))<br/>
+\end{align*}$$
+Thus $F(y) \in U$, so $x \in V \subseteq F_{-1}(U)$. Hence $F_{-1}(U)$ is open.<br/>
+<br/>
+Now let $V \subseteq X$ be open, and we wish to show that $F"(V) \subseteq F"(X)$ is open under the subspace topology. Let $f \in F"(V)$, and let $x \in V$ such that $F(x) = f$. Let $\epsilon > 0$ such that $B_\epsilon(x) \subseteq V$. WLOG suppose $x_0 \in B_{\frac{\epsilon}{3}}(x)$. Then we see that $f \in (B_{\frac{\epsilon}{3}}(f(0)) \times [0,1]^\omega) \cap F"(X) \subseteq F"(X)$, for if $y \in X$ is such that $F(y) \in B_\epsilon(f(0)) \times [0,1]^\omega$, then:<br/>
 $$
-\begin{align*}
-\vert \mathcal{T}\vert  \leq \vert [\mathcal{B}]^\omega\vert  = \vert \mathcal{B}\vert ^{\aleph_0} = \mathfrak{c}^{\aleph_0} = \mathfrak{c}
-\end{align*}
+\begin{align*}<br/>
+d(x,y) \leq d(x,x_0) + d(x_0,y) \leq 2d(x,x_0) + \frac{\epsilon}{3} < \epsilon<br/>
+\end{align*}$$
+Thus $y \in B_\epsilon(x) \subseteq V$, so $F"(V)$ is open.<br/>
+<br/>
+It remains to show that $F"(X)$ is a $G_\delta$ subspace of $[0,1]^\omega$. We shall show that:<br/>
 $$
-
-On the other hand, we have$\vert \mathcal{T}\vert  \geq \vert \mathcal{B}\vert  = \mathfrak{c}$, so equality holds. 
-$\square$
-
-<a name="ex4.7"></a>
-## Exercise 4.7.
-<i>Solution.</i> We first show that the Cantor set $\C$ is closed. Let $x \in \R$, and write $x = \sum_{n=1}^\infty \frac{a_n}{3^n}$ where $a_n \in \lbrace 0,1,2\rbrace$. Suppose on the contrary that $a_N = 1$ for some $N$, and it's not the case that $a_n = 0$ for all $n > N$ or $a_n = 2$ for all $n > N$. We write:
-
-$$
-\begin{align*}
-x = \sum_{n=0}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N} + s = \sum_{n=0}^{N-1} \frac{a_n}{3^n} + \frac{2}{3^N} - t
-\end{align*}
-$$
-
-where $0 < s,t < \frac{1}{3^N}$. Now let $y = \sum_{n=1}^\infty \frac{b_n}{3^n} \in \C$. If $y \leq x$, then it can't be that $y > \sum_{n=1}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N}$, for otherwise we must have $b_N = 1$. Thus $y \leq \sum_{n=1}^{N-1} \frac{a_n}{3^n} + \frac{1}{3^N}$, hence $x - y \geq s$. By similar reasoning, if $y \geq x$ then $y - x \geq t$. Thus, $x$ is not a limit point of $\C$, so all points not in $\C$ are not limit points.
-
-We now show that $\C$ has no isolated points. Fix $y = \sum_{n=1}^\infty \frac{b_n}{3^n} \in \C$. For any $\epsilon > 0$, let $N$ be large enough so that $\frac{2}{3^N} < \epsilon$. If $b_n = 2$ for some $n \geq N$, then $z := y - \frac{2}{3^n} \in \C$ and $\vert y - z\vert  < \epsilon$. Otherwise, $z := y + \frac{2}{3^N} \in \C$ and $\vert y - z\vert  < \epsilon$. Thus $y$ is not isolated. 
-$\square$
-
-<a name="ex4.8"></a>
-## Exercise 4.8.
-<i>Solution.</i> The proof of Theorem 4.5. may be repeated. We provide a similar proof that can also serve as an alternative proof to Theorem 4.5.
-
-We shall define a one-to-one function $f$ with $\dom(f) = 2^{<\omega}$ and $f(s)$ is an open set for all $s \in \omega^{<\omega}$, with $f(s) \cap P \neq \emptyset$. We define this inductively.
-
-Let $f(\emptyset) = (a,b)$. Suppose for all $s \in \omega^{<\omega}$ with $\length(s) = n$, $f(s)$ are defined such that $f(s) \cap P \neq \emptyset$, and $f(s_1) \cap f(s_2) = \emptyset$ for $s_1 \neq s_2$ of length $n$. Say $x \in f(s) \cap P$, and let $(c,d) \subseteq f(s)$ such that $x \in (c,d)$. Since $P$ is perfect, $x$ is a limit point so there exists $x_0,x_1 \in P \cap (c,d)$ such that $x_0 \neq x_1$ and $\vert x_0 - x\vert  > 0$, $\vert x_1 - x\vert  > 0$. We define $f(s^\frown(0)),f(s^\frown(1))$ as the open sets containing $x_0$ and $x_1$ respectively such that $x,x_1 \notin f(s^\frown(0))$ and $x,x_0 \notin f(s^\frown(1))$ (clearly such open sets exist). Note that if $s' \neq s$ and $\length(s') = n$, then since $f(s^\frown(i)) \subseteq f(s)$ we have $f(s^\frown(i)) \cap f(s'^\frown(i')) = \emptyset$ for $i,i' \in \lbrace 0,1\rbrace$.
-
-Now for each $l \in 2^\omega$, let $X_l := \bigcap_{n=0}^\infty f(l\restrictedto n)$. $X_l$ is a nested intersection of bounded open sets, so it contains a single point $x_l \in X_l$. Then $\lbrace x_l : l \in 2^\omega\rbrace \subseteq P \cap (a,b)$, so $\vert P \cap (a,b)\vert  = \mathfrak{c}$. 
-$\square$
-
-<a name="ex4.9"></a>
-## Exercise 4.9.
-<i>Solution.</i> Let $x \in P_2 - P_1$. Since $x \notin P_1$ and $P_1$ is perfect, $x$ is isolated from $P_1$, i.e. there exists an open neighbourhood $(a,b) \ni x$ such that $(a,b) \cap P_1 = \emptyset$. Then $\emptyset \neq P_2 \cap (a,b) \subseteq P_2 - P_1$, and by <a href="#ex4.8">Exercise 4.8</a> $\vert P_2 \cap (a,b)\vert  = \mathfrak{c}$. Thus $\vert P_2 - P_1\vert  = \mathfrak{c}$. 
-$\square$
-
-<a name="ex4.10"></a>
-## Exercise 4.10.
-<i>Solution.</i> Since $P$ is closed, $P^\ast  \subseteq P$. On the other hand, for every $x \in P$ is a limit point, and hence a condensation point by <a href="#ex4.8">Exercise 4.8</a>, so $P \subseteq P^\ast $. 
-$\square$
-
-<a name="ex4.11"></a>
-## Exercise 4.11.
-<i>Solution.</i> Clearly if $P \subseteq F$ then $P^\ast  \subseteq F^\ast $, and $P = P^\ast $. 
-$\square$
-
-<a name="ex4.12"></a>
-## Exercise 4.12.
-<i>Solution.</i> As in the hint, for each $a \in F^\ast $, since every neighbourhood of $a$ has uncountably many points and $\vert F - P\vert  \leq \aleph_0$, must have that $a$ is a limit point of $P$. Since $P$ is closed, $a \in P$. 
-$\square$
-
-<a name="ex4.13"></a>
-## Exercise 4.13.
-<i>Solution.</i> This is an immediate consequence of <a href="#ex4.12">Exercise 4.12</a>. 
-$\square$
-
-<a name="ex4.14"></a>
-## Exercise 4.14.
-<i>Solution.</i> Note that we require Axiom of Choice to prove the Baire Category Theorem.
-
-Suppose $\Q = \bigcap_{n=0}^\infty U_n$, where each $U_n$ is open. Since $\Q$ is dense, so is each $U_n$. Thus $\R - \Q = \bigcup_{n=0}^\infty (\R - U_n)$, where each $\R - U_n$ is closed nowhere dense. Clearly $\Q = \bigcup_{q \in \Q} \lbrace q\rbrace$ is also a countable union of closed nowhere dense sets, therefore $\R$ is a countable union of closed nowhere dense sets. This contradicts the Baire Category Theorem, which implies that $\R$ is not a countable union of closed nowhere dense sets. 
-$\square$
-
-<a name="ex4.15"></a>
-## Exercise 4.15.
-<i>Solution.</i> Let $X$ be a Polish space, and let $D$ denote the dense subset of $X$. We shall show that the function $F : X \to [0,1]^\omega$ in the hint (w.r.t. $D$) is one-to-one, and a homeomorphism to its image (under the subspace topology).
-
-To see that $F$ is one-one, let $x,y \in X$ and suppose $x \neq y$. Let $d(x,y) = \delta$. Let $x_n \in B_{\frac{\delta}{3}}(x)$ (possible by denseness). Then $d(x,x_n) < \frac{\delta}{3}$ but $d(y,x_n) \geq d(y,x) - d(x,x_n) > \frac{2\delta}{3}$, so $F(x) \neq F(y)$.
-
-Let $U \subseteq \lbrace 0,1\rbrace^\omega$ be open, and we wish to show that $F_{-1}(U)$ is open. Let $x \in F_{-1}(U)$, and let $\epsilon_0,\dots,\epsilon_n > 0$ be such that $\prod_{i<n} B_{\epsilon_i}(F(x)(i)) \times [0,1]^\omega \subseteq U$. Let $V := \bigcap_{i<n} B_{\epsilon_i}(x)$, which is open. If $y \in V$, then for $i < n$ we have:
-
-$$
-\begin{align*}
-\vert d(y,x_i) - d(x,x_i)\vert  \leq d(y,x) < \epsilon_i \implies F(y)(i) \in B_{\epsilon_i}(F(x)(i))
-\end{align*}
-$$
-
-Thus $F(y) \in U$, so $x \in V \subseteq F_{-1}(U)$. Hence $F_{-1}(U)$ is open.
-
-Now let $V \subseteq X$ be open, and we wish to show that $F"(V) \subseteq F"(X)$ is open under the subspace topology. Let $f \in F"(V)$, and let $x \in V$ such that $F(x) = f$. Let $\epsilon > 0$ such that $B_\epsilon(x) \subseteq V$. WLOG suppose $x_0 \in B_{\frac{\epsilon}{3}}(x)$. Then we see that $f \in (B_{\frac{\epsilon}{3}}(f(0)) \times [0,1]^\omega) \cap F"(X) \subseteq F"(X)$, for if $y \in X$ is such that $F(y) \in B_\epsilon(f(0)) \times [0,1]^\omega$, then:
-
-$$
-\begin{align*}
-d(x,y) \leq d(x,x_0) + d(x_0,y) \leq 2d(x,x_0) + \frac{\epsilon}{3} < \epsilon
-\end{align*}
-$$
-
-Thus $y \in B_\epsilon(x) \subseteq V$, so $F"(V)$ is open.
-
-It remains to show that $F"(X)$ is a $G_\delta$ subspace of $[0,1]^\omega$. We shall show that:
-
-$$
-\begin{align*}
-F"(X) = \bigcap_{n=1}^\infty \bigcup_{x \in X} B_{\frac{1}{n}}(f(x)) =: Y
-\end{align*}
-$$
-
-Clearly $F"(X) \subseteq Y$. Conversely, we see that $y \in Y$ precisely if $(\forall n > 0)(\exists x \in X) \, d(f(x),y) < \frac{1}{n}$. In other words, $y$ is in the closure of $F"(X)$. But since $F$ is a homeomorphism and $X$ is complete, $F"(X)$ is closed and therefore $y \in F"(X)$. 
-$\square$
+\begin{align*}<br/>
+F"(X) = \bigcap_{n=1}^\infty \bigcup_{x \in X} B_{\frac{1}{n}}(f(x)) =: Y<br/>
+\end{align*}$$
+Clearly $F"(X) \subseteq Y$. Conversely, we see that $y \in Y$ precisely if $(\forall n > 0)(\exists x \in X) \, d(f(x),y) < \frac{1}{n}$. In other words, $y$ is in the closure of $F"(X)$. But since $F$ is a homeomorphism and $X$ is complete, $F"(X)$ is closed and therefore $y \in F"(X)$.<p align="right">$\square$</p>\n</body>

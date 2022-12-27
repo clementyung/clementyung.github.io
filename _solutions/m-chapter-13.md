@@ -280,7 +280,7 @@ $$
 \begin{align*}<br/>
 \alpha = \rank(x) \iff x \in V_{\alpha+1} \wedge x \notin V_\alpha<br/>
 \end{align*}$$
-which is $\Delta_1$ by \ref{lem13.11.A}.<p align="right">$\square$</p><br/>
+which is $\Delta_1$ by <a href="#lem13.11.A">Lemma 13.11.A</a>.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.12"></a><br/>
 <h2>Exercise 13.12.</h2>

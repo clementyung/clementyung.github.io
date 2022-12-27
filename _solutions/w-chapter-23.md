@@ -8,189 +8,153 @@ excerpt: ""
 
 {% include commands.html %}
 
-<a name="ex23.1"></a>
-## Exercise 23.1.
-<i>Solution.</i> The proof of Theorem 23.3 can be replicated with $E_\lambda^\kappa$ replaced with $E$. We provide more details.
-
-We define $C_\nu$ ,$c_\alpha^\nu$, $c_\alpha$ as in the proof of Theorem 23.3. Then $S := \Lim(C) \cap E = \lbrace \alpha \in E_\lambda^\kappa : C \cap \alpha$ is unbounded in $\alpha\rbrace$ is stationary, as $\Lim(C)$ is closed unbounded. We claim that for each $\alpha \in S$, there exists a $\nu(\alpha) < \lambda^+$ such that $c_\alpha = c_\alpha^{\nu(\alpha)}$ - otherwise, there exists an unbounded sequence $\lbrace \nu_\gamma : \gamma < \lambda^+\rbrace$ (which is of size $\lambda+$ as $\lambda+$ is regular) such that $c_\alpha = \bigcup_{\beta<\lambda^+} \bb{c_\alpha^\beta - \bigcup_{\gamma < \beta} c_\alpha^\gamma}$, and each $c_\alpha^\beta - \bigcup_{\gamma < \beta} c_\alpha^\gamma$ are pairwise disjoint and non-empty. Then $\vert c_\alpha\vert  = \lambda^+$, but $c_\alpha \subseteq c_\alpha^0$ and $\vert c_\alpha^0\vert  = \lambda$, a contradiction.
-
-Therefore, the map $\nu$ is regressive on the stationary set $S \cap \lbrace \alpha < \kappa : \alpha > \lambda^+\rbrace$, so by Fodor's theorem it takes a constant value on a stationary set $T$, which the proof calls this value $\nu$. Then for all $\alpha \in T$, $c_\alpha^\nu \subseteq C_\nu$, and since $T \subseteq S$ we have that $c_\alpha^\nu \subseteq \alpha$ is closed unbounded. This contradicts the choice of $C_\nu$. 
-$\square$
-
-<a name="ex23.2"></a>
-## Exercise 23.2.
-<i>Solution.</i> We expand on the hint. Note that in the hint, they denote $\Lim(X)$ by $X'$.
-
-We first note that $E$ is stationary, as $\lambda < \lambda^+ < \kappa$ and $\cf(\lambda^+) = \lambda^+ > \lambda$. In particular, $E$ is unbounded, so $C_0 := E$ is closed unbounded. For each $n$, since $C_n$ is closed unbounded we have that $C_n' \subseteq C_n$ is also closed unbounded.
-
-Let $\alpha$ be the least element of $C \cap E_\lambda^\kappa$. We observe that $\alpha \in C_{n+1}$ for all $n$, so $C_n' \subseteq C_n$ contains an end-segment of $c_\alpha$. Suppose $c_\alpha - \beta_n \subseteq C_n'$ for all $n$. Then $c_\alpha - (\sup_n \beta_n) \subseteq C$. Since $\cf(\alpha) > \lambda > \aleph_0$, $\sup_n\beta_n < \alpha$, so $C$ contains an end-segment of $c_\alpha$.
-
-Since $\alpha \in C \subseteq E'$ is a limit of ordinals of cofinality $>\lambda$, by (23.3) all non-limit elements of $c_\alpha$ have cofinality $>\lambda$. Let $\beta \in C \cap c_\alpha$ such that $\cf(\beta) > \lambda$ (possible as an end-segment of $c_\alpha$ is in $C$). Observe that for all $n < \omega$, since $\beta \in C_n'$ we have that $C_n \cap \beta$ is a closed unbounded subset of $\beta$. Since $\cf(\beta) > \aleph_0$, we have $C \cap \beta$ is a closed unbounded subset of $\beta$. As $\cf(\beta) > \lambda$, the $\lambda^\text{th}$ element of $C \cap \beta$ has cofinality $\lambda$, so $\beta < \alpha$ and $C \cap \beta \cap E_\lambda^\kappa$. This is a conatradiction. 
-$\square$
-
-<a name="ex23.3"></a>
-## Exercise 23.3.
-<i>Solution.</i> Let $P$ be the notion of forcing in the hint. We shall show that this $P$ works.
-
-<u>$P$ is $\aleph_0$-closed:</u> Let $p_0 \subseteq p_1 \subseteq \dots$ be an increasing $\omega$-sequence of conditions. Write $p_n = \c{C_\alpha : \alpha \leq \gamma_n}$, and let $\gamma := \lim_{n \to \omega} \gamma_n$. Note that $\gamma < \omega_2$ as $\omega_2$ is regular. Let $C_\gamma := \lbrace \gamma_n + 1 : n < \omega\rbrace$ . Then clearly $C_\gamma$ is closed unbounded in $\gamma$, so (i) of (23.4) is satisfied. $C_\gamma$ contains no limit ordinals, so (ii) of (23.4) is trivially satisfied. Finally, observing that $\cf(\gamma) = \omega < \omega_1$, we of course have $\vert C_\gamma\vert  = \aleph_0 < \aleph_1$. Thus $\c{C_\alpha : \alpha \leq \gamma} \in P$ is stronger than all of $p_n$.
-
+<body>
+<a name="ex23.1"></a><br/>
+<h2>Exercise 23.1.</h2>
+<i>Solution.</i> The proof of Theorem 23.3 can be replicated with $E_\lambda^\kappa$ replaced with $E$. We provide more details.<br/>
+<br/>
+We define $C_\nu$ ,$c_\alpha^\nu$, $c_\alpha$ as in the proof of Theorem 23.3. Then $S := \Lim(C) \cap E = \lbrace \alpha \in E_\lambda^\kappa : C \cap \alpha$ is unbounded in $\alpha\rbrace$ is stationary, as $\Lim(C)$ is closed unbounded. We claim that for each $\alpha \in S$, there exists a $\nu(\alpha) < \lambda^+$ such that $c_\alpha = c_\alpha^{\nu(\alpha)}$ - otherwise, there exists an unbounded sequence $\lbrace \nu_\gamma : \gamma < \lambda^+\rbrace$ (which is of size $\lambda+$ as $\lambda+$ is regular) such that $c_\alpha = \bigcup_{\beta<\lambda^+} \bb{c_\alpha^\beta - \bigcup_{\gamma < \beta} c_\alpha^\gamma}$, and each $c_\alpha^\beta - \bigcup_{\gamma < \beta} c_\alpha^\gamma$ are pairwise disjoint and non-empty. Then $\vert c_\alpha\vert  = \lambda^+$, but $c_\alpha \subseteq c_\alpha^0$ and $\vert c_\alpha^0\vert  = \lambda$, a contradiction.<br/>
+<br/>
+Therefore, the map $\nu$ is regressive on the stationary set $S \cap \lbrace \alpha < \kappa : \alpha > \lambda^+\rbrace$, so by Fodor's theorem it takes a constant value on a stationary set $T$, which the proof calls this value $\nu$. Then for all $\alpha \in T$, $c_\alpha^\nu \subseteq C_\nu$, and since $T \subseteq S$ we have that $c_\alpha^\nu \subseteq \alpha$ is closed unbounded. This contradicts the choice of $C_\nu$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.2"></a><br/>
+<h2>Exercise 23.2.</h2>
+<i>Solution.</i> We expand on the hint. Note that in the hint, they denote $\Lim(X)$ by $X'$.<br/>
+<br/>
+We first note that $E$ is stationary, as $\lambda < \lambda^+ < \kappa$ and $\cf(\lambda^+) = \lambda^+ > \lambda$. In particular, $E$ is unbounded, so $C_0 := E$ is closed unbounded. For each $n$, since $C_n$ is closed unbounded we have that $C_n' \subseteq C_n$ is also closed unbounded.<br/>
+<br/>
+Let $\alpha$ be the least element of $C \cap E_\lambda^\kappa$. We observe that $\alpha \in C_{n+1}$ for all $n$, so $C_n' \subseteq C_n$ contains an end-segment of $c_\alpha$. Suppose $c_\alpha - \beta_n \subseteq C_n'$ for all $n$. Then $c_\alpha - (\sup_n \beta_n) \subseteq C$. Since $\cf(\alpha) > \lambda > \aleph_0$, $\sup_n\beta_n < \alpha$, so $C$ contains an end-segment of $c_\alpha$.<br/>
+<br/>
+Since $\alpha \in C \subseteq E'$ is a limit of ordinals of cofinality $>\lambda$, by (23.3) all non-limit elements of $c_\alpha$ have cofinality $>\lambda$. Let $\beta \in C \cap c_\alpha$ such that $\cf(\beta) > \lambda$ (possible as an end-segment of $c_\alpha$ is in $C$). Observe that for all $n < \omega$, since $\beta \in C_n'$ we have that $C_n \cap \beta$ is a closed unbounded subset of $\beta$. Since $\cf(\beta) > \aleph_0$, we have $C \cap \beta$ is a closed unbounded subset of $\beta$. As $\cf(\beta) > \lambda$, the $\lambda^\text{th}$ element of $C \cap \beta$ has cofinality $\lambda$, so $\beta < \alpha$ and $C \cap \beta \cap E_\lambda^\kappa$. This is a conatradiction.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.3"></a><br/>
+<h2>Exercise 23.3.</h2>
+<i>Solution.</i> Let $P$ be the notion of forcing in the hint. We shall show that this $P$ works.<br/>
+<br/>
+<u>$P$ is $\aleph_0$-closed:</u> Let $p_0 \subseteq p_1 \subseteq \dots$ be an increasing $\omega$-sequence of conditions. Write $p_n = \c{C_\alpha : \alpha \leq \gamma_n}$, and let $\gamma := \lim_{n \to \omega} \gamma_n$. Note that $\gamma < \omega_2$ as $\omega_2$ is regular. Let $C_\gamma := \lbrace \gamma_n + 1 : n < \omega\rbrace$ . Then clearly $C_\gamma$ is closed unbounded in $\gamma$, so (i) of (23.4) is satisfied. $C_\gamma$ contains no limit ordinals, so (ii) of (23.4) is trivially satisfied. Finally, observing that $\cf(\gamma) = \omega < \omega_1$, we of course have $\vert C_\gamma\vert  = \aleph_0 < \aleph_1$. Thus $\c{C_\alpha : \alpha \leq \gamma} \in P$ is stronger than all of $p_n$.<br/>
+<br/>
 <u>$P$ is $\aleph_1$-distributive:</u> As in the hint, fix $p_0 \in P$ such that $p_0 \forces \dot{f} : \omega_1 \to \boldsymbol{\mathrm{ORD}}$, and let $p_{\alpha+1}$ be chosen such that $p_{\alpha+1}$ decides $\dot{f}(\alpha)$. We write $p_\alpha = \c{C_\beta : \beta \leq \gamma_\alpha}$. If $\alpha$ is a limit ordinal, we construct $C_{\gamma_\alpha}$ as follows:
 <ol>
-<li> If $\alpha = \omega$, let $C_{\gamma_\omega} := \lbrace \gamma_n + 1 : n < \omega\rbrace$Lib</li>
-<li> If $\Lim(\alpha)$ is bounded, we let $\beta$ be the largest limit ordinal below $\alpha$. fix a countable sequence $\lbrace \xi_n : n < \omega\rbrace$, cofinal in $\alpha$, such that $\xi_0 > \gamma_\beta$. Let:
-
+<li> If $\alpha = \omega$, let $C_{\gamma_\omega} := \lbrace \gamma_n + 1 : n < \omega\rbrace$.</li>
+<li> If $\Lim(\alpha)$ is bounded, we let $\beta$ be the largest limit ordinal below $\alpha$. fix a countable sequence $\lbrace \xi_n : n < \omega\rbrace$, cofinal in $\alpha$, such that $\xi_0 > \gamma_\beta$. Let:<br/>
 $$
-\begin{align*}
-C_{\gamma_\alpha} := C_{\gamma_\beta} \cup \lbrace \gamma_\beta\rbrace \cup \lbrace \xi_n + 1 : n < \omega\rbrace
-\end{align*}
-$$
+\begin{align*}<br/>
+C_{\gamma_\alpha} := C_{\gamma_\beta} \cup \lbrace \gamma_\beta\rbrace \cup \lbrace \xi_n + 1 : n < \omega\rbrace<br/>
+\end{align*}$$
 </li>
-
-<li> If $\Lim(\alpha)$ is unbounded, we let<br/>
-$$
-\begin{align*}
-C_{\gamma_\alpha} := \bigcup_{\beta \in \Lim(\alpha)} C_{\gamma_\beta}
-\end{align*}
-$$
+<li> If $\Lim(\alpha)$ is unbounded, we let<br/>$$
+\begin{align*}<br/>
+C_{\gamma_\alpha} := \bigcup_{\beta \in \Lim(\alpha)} C_{\gamma_\beta}<br/>
+\end{align*}$$
 </li>
 </ol>
 We shall induct on limit ordinals $\alpha$ that $C_{\gamma_\alpha} \subseteq \gamma_\alpha$ is closed unbounded, countable (so (iii) of (23.4) is satisfied), satisfies (ii) of (23.4), and if $\beta < \alpha$ is a limit ordinal then $C_{\gamma_\beta}$ is an initial segment of $C_{\gamma_\alpha}$. Note that clearly in all cases, $C_{\gamma_\alpha} \subseteq \gamma_\alpha$ is unbounded.
 <ol>
-<li> The case for $\alpha = \omega$ is done as in the proof above that $P$ is $\aleph_0$-closedLib</li>
-<li> Suppose $\Lim(\alpha)$ is bounded. Let $\lbrace \delta_\xi : \xi < \alpha'\rbrace \subseteq C_{\gamma_\alpha}$ be a sequence. Let $\delta := \sup_{\xi<\alpha'} \delta_\xi$. If $\delta > \gamma_\beta$, then the sequence must be unbounded as $\xi_n + 1$ are not limit ordinals. Otherwise, then the sequence must lie in $C_{\gamma_\beta}$. Since $\gamma_\beta \in C_{\gamma_\alpha}$ and $C_{\gamma_\beta}$ is closed unbounded, $\delta \in C_{\gamma_\beta} \cup \lbrace \gamma_\beta\rbrace$ necessarily. Thus $C_{\gamma_\alpha}$ is closed in $\gamma_\alpha$.
-
-Since $C_{\gamma_\beta}$ is countable by induction hypothesis, so is $C_{\gamma_\alpha}$.
-
+<li> The case for $\alpha = \omega$ is done as in the proof above that $P$ is $\aleph_0$-closed.</li>
+<li> Suppose $\Lim(\alpha)$ is bounded. Let $\lbrace \delta_\xi : \xi < \alpha'\rbrace \subseteq C_{\gamma_\alpha}$ be a sequence. Let $\delta := \sup_{\xi<\alpha'} \delta_\xi$. If $\delta > \gamma_\beta$, then the sequence must be unbounded as $\xi_n + 1$ are not limit ordinals. Otherwise, then the sequence must lie in $C_{\gamma_\beta}$. Since $\gamma_\beta \in C_{\gamma_\alpha}$ and $C_{\gamma_\beta}$ is closed unbounded, $\delta \in C_{\gamma_\beta} \cup \lbrace \gamma_\beta\rbrace$ necessarily. Thus $C_{\gamma_\alpha}$ is closed in $\gamma_\alpha$.<br/>
+<br/>
+Since $C_{\gamma_\beta}$ is countable by induction hypothesis, so is $C_{\gamma_\alpha}$.<br/>
+<br/>
 Let $\delta \in \Lim(C_{\gamma_\alpha})$. Then $\delta \leq \gamma_\beta$, as $\xi_n + 1$ are not limit ordinals. If $\delta = \gamma_\beta$, then since $\xi_0 > \gamma_\beta$ we of course have $C_{\gamma_\alpha} \cap \gamma_\beta = C_{\gamma_\beta}$. If $\delta < \gamma_\beta$, then $\delta \in \Lim(C_{\gamma_\beta})$, so by induction hypothesis we have $C_{\gamma_\alpha} \cap \delta = C_{\gamma_\beta} \cap \delta = C_\delta$. In particular, if $\delta = \gamma_\xi$ for some limit $\xi < \alpha$, then $C_{\gamma_\alpha} \cap \gamma_\xi = C_{\gamma_\xi}$.</li>
-
-<li> Suppose $\Lim(\alpha)$ is unbounded. Let $\lbrace \delta_\xi : \xi < \alpha'\rbrace \subseteq C_{\gamma_\alpha}$ be a sequence. Let $\delta := \sup_{\xi<\alpha'} \delta_\xi$. Clearly $\delta \leq \gamma_\alpha$, and if $\delta = \gamma_\alpha$ then there's no problem. Otherwise, $\delta \leq \gamma_\beta$ for some $\beta \in \Lim(\alpha)$, so $\delta \leq \gamma_\beta$ for some $\beta \in \Lim(\alpha)$. Let $\beta' \in \Lim(\alpha)$ be such that $\beta' > \beta$. Then the sequence is a bounded sequence that lies entirely in $C_{\gamma_{\beta'}}$, which is closed unbounded in $\gamma_{\beta'}$ by induction hypothesis. Thus $\delta \in C_{\gamma_{\beta'}} \subseteq C_{\gamma_\alpha}$.<br/>
-Since $C_{\gamma_\beta}$ is countable for all $\beta \in \Lim(\alpha)$ by induction hypothesis, and $\alpha$ is a countable ordinal, $C_{\gamma_\alpha}$ is a countable union of countable sets, hence countable.
-
-Let $\delta \in \Lim(C_{\gamma_\alpha})$. Then $\delta \in \Lim(C_{\gamma_\beta})$ for some $\beta \in \Lim(\alpha)$. By induction hypothesis, we have that for all $\beta' \geq \beta$ such that $\beta' \in \Lim(\alpha)$, $C_{\gamma_{\beta'}} \cap \delta = C_\delta$. Thus:
-
+<li> Suppose $\Lim(\alpha)$ is unbounded. Let $\lbrace \delta_\xi : \xi < \alpha'\rbrace \subseteq C_{\gamma_\alpha}$ be a sequence. Let $\delta := \sup_{\xi<\alpha'} \delta_\xi$. Clearly $\delta \leq \gamma_\alpha$, and if $\delta = \gamma_\alpha$ then there's no problem. Otherwise, $\delta \leq \gamma_\beta$ for some $\beta \in \Lim(\alpha)$, so $\delta \leq \gamma_\beta$ for some $\beta \in \Lim(\alpha)$. Let $\beta' \in \Lim(\alpha)$ be such that $\beta' > \beta$. Then the sequence is a bounded sequence that lies entirely in $C_{\gamma_{\beta'}}$, which is closed unbounded in $\gamma_{\beta'}$ by induction hypothesis. Thus $\delta \in C_{\gamma_{\beta'}} \subseteq C_{\gamma_\alpha}$.<br/><br/>
+Since $C_{\gamma_\beta}$ is countable for all $\beta \in \Lim(\alpha)$ by induction hypothesis, and $\alpha$ is a countable ordinal, $C_{\gamma_\alpha}$ is a countable union of countable sets, hence countable.<br/>
+<br/>
+Let $\delta \in \Lim(C_{\gamma_\alpha})$. Then $\delta \in \Lim(C_{\gamma_\beta})$ for some $\beta \in \Lim(\alpha)$. By induction hypothesis, we have that for all $\beta' \geq \beta$ such that $\beta' \in \Lim(\alpha)$, $C_{\gamma_{\beta'}} \cap \delta = C_\delta$. Thus:<br/>
 $$
-\begin{align*}
-C_{\gamma_\alpha} \cap \delta = \bigcup_{\beta \in \Lim(\alpha)} C_{\gamma_\beta} \cap \delta = C_\delta
-\end{align*}
-$$
-
+\begin{align*}<br/>
+C_{\gamma_\alpha} \cap \delta = \bigcup_{\beta \in \Lim(\alpha)} C_{\gamma_\beta} \cap \delta = C_\delta<br/>
+\end{align*}$$
 Note that for the last equality, if $\beta' < \beta$ then by induction hypothesis $C_{\gamma_{\beta'}}$ is an initial segment of $C_{\gamma_\beta}$, so $C_{\gamma_{\beta'}} \cap \delta \subseteq C_{\gamma_\beta} \cap \delta$. Again, in particular if $\delta = \gamma_\xi$ for some $\xi < \alpha$, then $C_{\gamma_\alpha} \cap \gamma_\xi = C_{\gamma_\xi}$.</li>
 </ol>
-
-This completes the construction of $p_\alpha$ for limit $\alpha$. Let $\gamma := \lim_{\alpha \to \omega_1} \gamma_\alpha$, and let $C_\gamma := \bigcup_{\alpha<\omega_1} C_{\gamma_\alpha}$. As in the proof above for which $\Lim(\alpha)$ is unbounded, $p \in P$ indeed and decides all of $\dot{f}(\alpha)$.
-
-<u>$V[G]$ satisfies $\square_{\omega_1}$:</u> If $G$ is a generic filter over $P$, then $G$ forms a chain and so clearly $\bigcup G$ is the desired square-sequence in $V[G]$. 
-$\square$
-
-<a name="ex23.4"></a>
-## Exercise 23.4.
-<i>Solution.</i> Let $\c{\alpha_\gamma : \gamma < \cf(\alpha)}$ be an increasing sequence cofinal in $\cf(\alpha)$. For each $\gamma < \cf(\alpha)$, define:
-
+<br/>
+This completes the construction of $p_\alpha$ for limit $\alpha$. Let $\gamma := \lim_{\alpha \to \omega_1} \gamma_\alpha$, and let $C_\gamma := \bigcup_{\alpha<\omega_1} C_{\gamma_\alpha}$. As in the proof above for which $\Lim(\alpha)$ is unbounded, $p \in P$ indeed and decides all of $\dot{f}(\alpha)$.<br/>
+<br/>
+<u>$V[G]$ satisfies $\square_{\omega_1}$:</u> If $G$ is a generic filter over $P$, then $G$ forms a chain and so clearly $\bigcup G$ is the desired square-sequence in $V[G]$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.4"></a><br/>
+<h2>Exercise 23.4.</h2>
+<i>Solution.</i> Let $\c{\alpha_\gamma : \gamma < \cf(\alpha)}$ be an increasing sequence cofinal in $\cf(\alpha)$. For each $\gamma < \cf(\alpha)$, define:<br/>
 $$
-\begin{align*}
-\alpha_\gamma' :=
-\begin{cases}
-\alpha_\gamma + 1, &\text{if $\gamma$ is not limit} \\
-\sup_{\xi < \gamma} \alpha_\xi, &\text{otherwise}
-\end{cases}
-\end{align*}
+\begin{align*}<br/>
+\alpha_\gamma' :=<br/>
+\begin{cases}<br/>
+\alpha_\gamma + 1, &\text{if $\gamma$ is not limit} \\<br/>
+\sup_{\xi < \gamma} \alpha_\xi, &\text{otherwise}<br/>
+\end{cases}<br/>
+\end{align*}$$
+Then clearly $\c{\alpha_\gamma' : \gamma < \cf(\alpha)}$ is a normal sequence cofinal in $\cf(\alpha)$ such that $\alpha_\gamma'$ is limit iff $\gamma$ is limit. Also, if $\gamma$ is limit then $\cf(\alpha_\gamma') = \cf(\gamma) < \cf(\alpha)$. Thus, if we let $C := \lbrace \alpha_\gamma' : \gamma < \cf(\alpha)\rbrace$, then $C$ is closed unbounded in $\alpha$ with the property in the hint. Thus $S$ does not reflect at $\alpha$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.5"></a><br/>
+<h2>Exercise 23.5.</h2>
+<i>Solution.</i> We note that:<br/>
 $$
-
-Then clearly $\c{\alpha_\gamma' : \gamma < \cf(\alpha)}$ is a normal sequence cofinal in $\cf(\alpha)$ such that $\alpha_\gamma'$ is limit iff $\gamma$ is limit. Also, if $\gamma$ is limit then $\cf(\alpha_\gamma') = \cf(\gamma) < \cf(\alpha)$. Thus, if we let $C := \lbrace \alpha_\gamma' : \gamma < \cf(\alpha)\rbrace$, then $C$ is closed unbounded in $\alpha$ with the property in the hint. Thus $S$ does not reflect at $\alpha$. 
-$\square$
-
-<a name="ex23.5"></a>
-## Exercise 23.5.
-<i>Solution.</i> We note that:
-
+\begin{align*}<br/>
+E_\lambda^\kappa \cap \alpha = \lbrace \beta < \alpha : \cf(\beta) = \lambda\rbrace = E_\lambda^\alpha<br/>
+\end{align*}$$
+We may repeat Fodor's Theorem 8.7 on limit ordinals of uncountable cofinality to show that $E_\lambda^\alpha$ is indeed stationary, so $E_\lambda^\kappa$ reflects at $\alpha$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.6"></a><br/>
+<h2>Exercise 23.6.</h2>
+<i>Solution.</i> Following the hint and the proof of Lemma 23.9, let $A_0 := \lbrace p\rbrace$, and if $\alpha$ is a limit ordinal let $A_\alpha := \bigcup_{\beta<\alpha} A_\beta$. For each $\alpha$, we let $\gamma_\alpha := \sup\lbrace \max(q) : q \in A_\alpha\rbrace$, and define:<br/>
 $$
-\begin{align*}
-E_\lambda^\kappa \cap \alpha = \lbrace \beta < \alpha : \cf(\beta) = \lambda\rbrace = E_\lambda^\alpha
-\end{align*}
+\begin{align*}<br/>
+A_{\alpha+1} := A_\alpha \cup \lbrace r(q) : r(q) \forces \beta(q) \in \dot{C}\rbrace<br/>
+\end{align*}$$
+where $r(q),\beta(q)$ are as in the hint. By replacing $r$ with $r \cup \lbrace \beta\rbrace$ if necessary, we may assume further that $\max(r) \geq \beta$. The sequence $\c{\gamma_\alpha : \alpha < \omega_1}$ is thus normal (increasing and continuous). Recall that every normal sequence has a closed unbounded subset of fixed points (i.e. $\lambda = \gamma_\lambda$). Since $T$ is stationary (in $V$), let $\lambda \in T$ be one such fixed point, so if $\alpha < \lambda$ then $\gamma_\alpha < \lambda$. Let $\c{\alpha_n : n < \omega}$ be a sequence cofinal in $\lambda$.<br/>
+<br/>
+As in the proof of Lemma 23.9, we can find a sequence of conditions $\c{p_n : n < \omega}$ such that $p_n \in A_{\alpha_n}$, and $p_{n+1} \leq p_n$ for all $n$. Let $q := \bigcup_{n=0}^\infty p_n \cup \lbrace \lambda\rbrace$, so $q \in P$ and $q \leq p_n$ for all $n$ (as $\max(p_n) = \gamma_{\alpha_n} \to \lambda$). Since $\gamma_{\alpha_n} < \beta(p_{\alpha_n}) \leq \gamma_{\alpha_{n+1}}$, we have that $\lim_n \beta(p_{\alpha_n}) = \lambda$ as well. Since $q \forces \beta(p_{\alpha_n}) \in \dot{C}$ for all $n$ and $q \forces \dot{C}$ s closed unbounded, this implies that $q \forces \lambda \in \dot{C}$. Thus $T$ remains stationary in $V[G]$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.7"></a><br/>
+<h2>Exercise 23.7.</h2>
+<i>Solution.</i> We attempt the mimic the proof of Lemma 23.9, and use the additional assumptions to patch the gaps.<br/>
+<br/>
+Let $p \forces \dot{f} : \omega_1 \to \boldsymbol{\mathrm{ORD}}$. We construct a chain $\lbrace A_\alpha : \alpha < \omega_2\rbrace$ of sets in the same manner: Let $A_0 := \lbrace p\rbrace$, and if $\alpha$ is limit we let $A_\alpha := \bigcup_{\beta<\alpha} A_\beta$. Let $\gamma_\alpha := \sup\lbrace \max(q) : q \in A_\alpha\rbrace$. For each $q \in A_\alpha$ and each $\xi < \omega_1$, let $r = r(q,\xi) \in P_S$ such that $r \leq q$, $r$ decides $\dot{f}(\xi)$, and $\max(r) > \gamma_\alpha$. Let $A_{\alpha+1} := A_\alpha \cup \lbrace r(q,\xi) : q \in A_\alpha, \xi < \omega_1\rbrace$.<br/>
+<br/>
+The sequence $\c{\gamma_\alpha : \alpha < \omega_1}$ is normal, so $C := \lbrace \lambda < \omega_2 :$ if $\alpha < \lambda$ then $\gamma_\alpha < \lambda\rbrace$ is closed unbounded. Since $S \cap E_{\aleph_1}^{\aleph_2}$ is stationary, we may obtain a limit ordinal $\lambda \in C \cap S \cap E_{\aleph_1}^{\aleph_2}$. Let $\c{\alpha_\xi : \xi < \omega_1}$ be a sequence cofinal in $\lambda$.<br/>
+<br/>
+We define a sequence $\c{p_\xi : \xi < \omega_1}$ as follows: Let $p_0 = p$. Define $p_{\xi+1}$ such that $p_{\xi+1} \in A_{\alpha_\xi}$, $p_{\xi+1} \leq p_\xi$ and $p_{\xi+1}$ decides $\dot{f}(\xi)$. Suppose $\xi$ is limit. Now let $\mu := \sup_{\delta<\xi} \max(p_\xi)$. Then $\mu < \lambda$ is a limit ordinal such that $\cf(\mu) = \omega$, and since $E_{\aleph_0}^{\aleph_2} \subseteq S$, $\mu \in S$. Thus let $p_\xi := \bigcup_{\delta < \xi} p_\delta \cup \lbrace \mu\rbrace$. Then $p_\xi$ is a closed bounded subset of $S$, so $p_\xi \in P$, and $p_\xi \leq p_\delta$ for all $\delta < \xi$.<br/>
+<br/>
+We may then finish the proof the same way as that of Lemma 23.9: We have $\lim_n \max(p_n) = \lambda$, so $q := \bigcup_{\xi<\omega_1} p_\xi \cup \lambda \in P$ is a condition such that $q \leq p_\xi$ for all $\xi < \omega_1$. Thus $q$ decides all of $\dot{f}(\xi)$, so there exists some $f$ which $q \forces \dot{f} = f$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.8"></a><br/>
+<h2>Exercise 23.8.</h2>
+<i>Solution.</i> I believe that inaccessibility is not required - it suffices for $\kappa$ to be regular.<br/>
+<br/>
+Let $P_S^{(\lambda)} := \lbrace p \in P_S : \max(p) > \lambda\rbrace$ as in the hint. We shall show that it is $\lambda$-closed for all $\lambda < \kappa$.<br/>
+<br/>
+Fix a limit ordinal $\mu \leq \lambda$. Let $p_0 \geq p_1 \geq \dots \geq p_\alpha \geq \dots$ be a sequence in $P_S^{(\lambda)}$ with $\alpha < \mu$. Let $\gamma := \sup_{\alpha < \mu} \max(p_\alpha)$. We note that $\gamma > \lambda$, and since $\gamma$ is a limit of $\mu$ many ordinals below $\lambda^+$, $\gamma < \lambda^+$. Thus, $\gamma$ is a singular limit ordinal, so $\gamma \in S$. Let $p_\mu := \bigcup_{\alpha < \mu} p_\alpha \cup \lbrace \gamma\rbrace$. Then clearly $p_\mu \in P_S^{(\lambda)}$ and $p_\mu \leq p_\alpha$ for all $\alpha < \mu$, so $P_S^{(\lambda)}$ is $\lambda$-closed.<br/>
+<br/>
+This implies that $P_S$ is forcing equivalent to a $\lambda$-distributive forcing notion for all $\lambda < \kappa$, so $P_S$ is $\lambda$-distributive for all $\lambda < \kappa$.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.9"></a><br/>
+<h2>Exercise 23.9.</h2>
+<i>Solution.</i> Let $I$ be a nontrivial normal $\kappa$-complete ideal on $\omega_1$. Recall that every such ideal extends the nonstationary ideal, i.e. $I_\mathrm{NS} \subseteq I$. If $I$ is not $\aleph_2$-saturated, then by <a href="https://clementyung.github.io/jech-solutions/chapter-22#ex22.11">Exercise 22.11</a> there exists an almost disjoint family of $\kappa^+$ sets of positive measure, say $\lbrace A_\alpha : \alpha < \kappa^+\rbrace$ with $A_\alpha \in I^+$. Since $I_\mathrm{NS} \subseteq I$, $I^+ \subseteq I_\mathrm{NS}^+$ so $A_\alpha$ is stationary for all $\alpha$. Thus there exists an almost disjoint family of $\kappa^+$ stationary sets. Since every bounded subset of $\kappa$ is non-stationary, $\lbrace A_\alpha : \alpha < \kappa^+\rbrace$ forms a partition of $P(\kappa)/I_\mathrm{NS}$ of size $\kappa^+$. This implies that $I_\mathrm{NS}$ is not $\aleph_2$-saturated.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.10"></a><br/>
+<h2>Exercise 23.10.</h2>
+<i>Solution.</i> We shall show that in the case where $\kappa$ is regular, every almost disjoint family is strongly almost disjoint, and therefore the existence of a strongly almost disjoint family follows from Lemma 9.22.<br/>
+<br/>
+Let $\lbrace X_\xi : \xi < \kappa^+\rbrace$ be an almost disjoint family. By definition, $\vert X_\xi\vert  = \kappa$ for all $\xi$, and are hence unbounded as $\kappa$ is regular. Let $\theta < \kappa^+$, and we write $\lbrace X_\xi : \xi < \theta\rbrace = \lbrace Y_\zeta : \zeta < \vert \theta\vert \rbrace$, where $Y_\zeta \neq Y_{\zeta'}$ for $\zeta \neq \zeta'$. For each $\zeta' < \zeta$, we have $\vert Y_\zeta \cap Y_{\zeta'}\vert  < \kappa$, so there exists some $\delta_{\zeta',\zeta} < \kappa$ such that $Y_\zeta \cap Y_{\zeta'} \subseteq \delta_{\zeta',\zeta}$. Let:<br/>
 $$
-
-We may repeat Fodor's Theorem 8.7 on limit ordinals of uncountable cofinality to show that $E_\lambda^\alpha$ is indeed stationary, so $E_\lambda^\kappa$ reflects at $\alpha$. 
-$\square$
-
-<a name="ex23.6"></a>
-## Exercise 23.6.
-<i>Solution.</i> Following the hint and the proof of Lemma 23.9, let $A_0 := \lbrace p\rbrace$, and if $\alpha$ is a limit ordinal let $A_\alpha := \bigcup_{\beta<\alpha} A_\beta$. For each $\alpha$, we let $\gamma_\alpha := \sup\lbrace \max(q) : q \in A_\alpha\rbrace$, and define:
-
-$$
-\begin{align*}
-A_{\alpha+1} := A_\alpha \cup \lbrace r(q) : r(q) \forces \beta(q) \in \dot{C}\rbrace
-\end{align*}
-$$
-
-where $r(q),\beta(q)$ are as in the hint. By replacing $r$ with $r \cup \lbrace \beta\rbrace$ if necessary, we may assume further that $\max(r) \geq \beta$. The sequence $\c{\gamma_\alpha : \alpha < \omega_1}$ is thus normal (increasing and continuous). Recall that every normal sequence has a closed unbounded subset of fixed points (i.e. $\lambda = \gamma_\lambda$). Since $T$ is stationary (in $V$), let $\lambda \in T$ be one such fixed point, so if $\alpha < \lambda$ then $\gamma_\alpha < \lambda$. Let $\c{\alpha_n : n < \omega}$ be a sequence cofinal in $\lambda$.
-
-As in the proof of Lemma 23.9, we can find a sequence of conditions $\c{p_n : n < \omega}$ such that $p_n \in A_{\alpha_n}$, and $p_{n+1} \leq p_n$ for all $n$. Let $q := \bigcup_{n=0}^\infty p_n \cup \lbrace \lambda\rbrace$, so $q \in P$ and $q \leq p_n$ for all $n$ (as $\max(p_n) = \gamma_{\alpha_n} \to \lambda$). Since $\gamma_{\alpha_n} < \beta(p_{\alpha_n}) \leq \gamma_{\alpha_{n+1}}$, we have that $\lim_n \beta(p_{\alpha_n}) = \lambda$ as well. Since $q \forces \beta(p_{\alpha_n}) \in \dot{C}$ for all $n$ and $q \forces \dot{C}$ s closed unbounded, this implies that $q \forces \lambda \in \dot{C}$. Thus $T$ remains stationary in $V[G]$. 
-$\square$
-
-<a name="ex23.7"></a>
-## Exercise 23.7.
-<i>Solution.</i> We attempt the mimic the proof of Lemma 23.9, and use the additional assumptions to patch the gaps.
-
-Let $p \forces \dot{f} : \omega_1 \to \boldsymbol{\mathrm{ORD}}$. We construct a chain $\lbrace A_\alpha : \alpha < \omega_2\rbrace$ of sets in the same manner: Let $A_0 := \lbrace p\rbrace$, and if $\alpha$ is limit we let $A_\alpha := \bigcup_{\beta<\alpha} A_\beta$. Let $\gamma_\alpha := \sup\lbrace \max(q) : q \in A_\alpha\rbrace$. For each $q \in A_\alpha$ and each $\xi < \omega_1$, let $r = r(q,\xi) \in P_S$ such that $r \leq q$, $r$ decides $\dot{f}(\xi)$, and $\max(r) > \gamma_\alpha$. Let $A_{\alpha+1} := A_\alpha \cup \lbrace r(q,\xi) : q \in A_\alpha, \xi < \omega_1\rbrace$.
-
-The sequence $\c{\gamma_\alpha : \alpha < \omega_1}$ is normal, so $C := \lbrace \lambda < \omega_2 :$ if $\alpha < \lambda$ then $\gamma_\alpha < \lambda\rbrace$ is closed unbounded. Since $S \cap E_{\aleph_1}^{\aleph_2}$ is stationary, we may obtain a limit ordinal $\lambda \in C \cap S \cap E_{\aleph_1}^{\aleph_2}$. Let $\c{\alpha_\xi : \xi < \omega_1}$ be a sequence cofinal in $\lambda$.
-
-We define a sequence $\c{p_\xi : \xi < \omega_1}$ as follows: Let $p_0 = p$. Define $p_{\xi+1}$ such that $p_{\xi+1} \in A_{\alpha_\xi}$, $p_{\xi+1} \leq p_\xi$ and $p_{\xi+1}$ decides $\dot{f}(\xi)$. Suppose $\xi$ is limit. Now let $\mu := \sup_{\delta<\xi} \max(p_\xi)$. Then $\mu < \lambda$ is a limit ordinal such that $\cf(\mu) = \omega$, and since $E_{\aleph_0}^{\aleph_2} \subseteq S$, $\mu \in S$. Thus let $p_\xi := \bigcup_{\delta < \xi} p_\delta \cup \lbrace \mu\rbrace$. Then $p_\xi$ is a closed bounded subset of $S$, so $p_\xi \in P$, and $p_\xi \leq p_\delta$ for all $\delta < \xi$.
-
-We may then finish the proof the same way as that of Lemma 23.9: We have $\lim_n \max(p_n) = \lambda$, so $q := \bigcup_{\xi<\omega_1} p_\xi \cup \lambda \in P$ is a condition such that $q \leq p_\xi$ for all $\xi < \omega_1$. Thus $q$ decides all of $\dot{f}(\xi)$, so there exists some $f$ which $q \forces \dot{f} = f$. 
-$\square$
-
-<a name="ex23.8"></a>
-## Exercise 23.8.
-<i>Solution.</i> I believe that inaccessibility is not required - it suffices for $\kappa$ to be regular.
-
-Let $P_S^{(\lambda)} := \lbrace p \in P_S : \max(p) > \lambda\rbrace$ as in the hint. We shall show that it is $\lambda$-closed for all $\lambda < \kappa$.
-
-Fix a limit ordinal $\mu \leq \lambda$. Let $p_0 \geq p_1 \geq \dots \geq p_\alpha \geq \dots$ be a sequence in $P_S^{(\lambda)}$ with $\alpha < \mu$. Let $\gamma := \sup_{\alpha < \mu} \max(p_\alpha)$. We note that $\gamma > \lambda$, and since $\gamma$ is a limit of $\mu$ many ordinals below $\lambda^+$, $\gamma < \lambda^+$. Thus, $\gamma$ is a singular limit ordinal, so $\gamma \in S$. Let $p_\mu := \bigcup_{\alpha < \mu} p_\alpha \cup \lbrace \gamma\rbrace$. Then clearly $p_\mu \in P_S^{(\lambda)}$ and $p_\mu \leq p_\alpha$ for all $\alpha < \mu$, so $P_S^{(\lambda)}$ is $\lambda$-closed.
-
-This implies that $P_S$ is forcing equivalent to a $\lambda$-distributive forcing notion for all $\lambda < \kappa$, so $P_S$ is $\lambda$-distributive for all $\lambda < \kappa$. 
-$\square$
-
-<a name="ex23.9"></a>
-## Exercise 23.9.
-<i>Solution.</i> Let $I$ be a nontrivial normal $\kappa$-complete ideal on $\omega_1$. Recall that every such ideal extends the nonstationary ideal, i.e. $I_\mathrm{NS} \subseteq I$. If $I$ is not $\aleph_2$-saturated, then by <a href="https://clementyung.github.io/jech-solutions/chapter-22#ex22.11">Exercise 22.11</a> there exists an almost disjoint family of $\kappa^+$ sets of positive measure, say $\lbrace A_\alpha : \alpha < \kappa^+\rbrace$ with $A_\alpha \in I^+$. Since $I_\mathrm{NS} \subseteq I$, $I^+ \subseteq I_\mathrm{NS}^+$ so $A_\alpha$ is stationary for all $\alpha$. Thus there exists an almost disjoint family of $\kappa^+$ stationary sets. Since every bounded subset of $\kappa$ is non-stationary, $\lbrace A_\alpha : \alpha < \kappa^+\rbrace$ forms a partition of $P(\kappa)/I_\mathrm{NS}$ of size $\kappa^+$. This implies that $I_\mathrm{NS}$ is not $\aleph_2$-saturated. 
-$\square$
-
-<a name="ex23.10"></a>
-## Exercise 23.10.
-<i>Solution.</i> We shall show that in the case where $\kappa$ is regular, every almost disjoint family is strongly almost disjoint, and therefore the existence of a strongly almost disjoint family follows from Lemma 9.22.
-
-Let $\lbrace X_\xi : \xi < \kappa^+\rbrace$ be an almost disjoint family. By definition, $\vert X_\xi\vert  = \kappa$ for all $\xi$, and are hence unbounded as $\kappa$ is regular. Let $\theta < \kappa^+$, and we write $\lbrace X_\xi : \xi < \theta\rbrace = \lbrace Y_\zeta : \zeta < \vert \theta\vert \rbrace$, where $Y_\zeta \neq Y_{\zeta'}$ for $\zeta \neq \zeta'$. For each $\zeta' < \zeta$, we have $\vert Y_\zeta \cap Y_{\zeta'}\vert  < \kappa$, so there exists some $\delta_{\zeta',\zeta} < \kappa$ such that $Y_\zeta \cap Y_{\zeta'} \subseteq \delta_{\zeta',\zeta}$. Let:
-
-$$
-\begin{align*}
-\delta_\zeta := \max\ss{\sup_{\zeta'<\zeta} \delta_{\zeta',\zeta},\sup_{\zeta'<\zeta} \delta_{\zeta'}}
-\end{align*}
-$$
-
-Since $\kappa$ is regular (and by induction hypothesis that $\delta_{\zeta'} < \kappa$ for all $\zeta' < \zeta$, $\delta_\zeta < \kappa$. Then clearly $Y_{\zeta'} \cap Y_\zeta \subseteq \delta_\zeta$ for all $\zeta' < \zeta$, and therefore $(Y_{\zeta'} - \delta_{\zeta'}) \cap (Y_\zeta - \delta_\zeta) = \emptyset$. Since $\lbrace X_\xi : \xi < \theta\rbrace = \lbrace Y_\zeta : \zeta < \vert \theta\vert \rbrace$, $\lbrace X_\xi : \xi < \kappa^+\rbrace$ is strongly almost disjoint. 
-$\square$
-
-<a name="ex23.11"></a>
-## Exercise 23.11.
+\begin{align*}<br/>
+\delta_\zeta := \max\ss{\sup_{\zeta'<\zeta} \delta_{\zeta',\zeta},\sup_{\zeta'<\zeta} \delta_{\zeta'}}<br/>
+\end{align*}$$
+Since $\kappa$ is regular (and by induction hypothesis that $\delta_{\zeta'} < \kappa$ for all $\zeta' < \zeta$, $\delta_\zeta < \kappa$. Then clearly $Y_{\zeta'} \cap Y_\zeta \subseteq \delta_\zeta$ for all $\zeta' < \zeta$, and therefore $(Y_{\zeta'} - \delta_{\zeta'}) \cap (Y_\zeta - \delta_\zeta) = \emptyset$. Since $\lbrace X_\xi : \xi < \theta\rbrace = \lbrace Y_\zeta : \zeta < \vert \theta\vert \rbrace$, $\lbrace X_\xi : \xi < \kappa^+\rbrace$ is strongly almost disjoint.<p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.11"></a><br/>
+<h2>Exercise 23.11.</h2>
 <i>Solution.</i> The hint solves the problem. We provide the details.
 <ol>
-<li> For each $i \neq j$, $S_i \cap S_j$ is non-stationary, so $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset in $V[G]$. By the c.c.c. of Cohen forcing and Lemma 22.25, $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset $\forces \omega_1 - A_{i,j} \subseteq \omega_1 - (S_i \cap S_j)$, where $A_{i,j} \in V$. Then $\forces S_i \cap S_j \subseteq A_{i,j}$Lib</li>
+<li> For each $i \neq j$, $S_i \cap S_j$ is non-stationary, so $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset in $V[G]$. By the c.c.c. of Cohen forcing and Lemma 22.25, $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset $\forces \omega_1 - A_{i,j} \subseteq \omega_1 - (S_i \cap S_j)$, where $A_{i,j} \in V$. Then $\forces S_i \cap S_j \subseteq A_{i,j}$.</li>
 <li> In the ground model $V$, by $\GCH$ we have that $\sat(I_{NS}) \leq 2^{\aleph_1} = \aleph_2$. Thus the partition $\lbrace i,j\rbrace \to A_{i,j}$ has at most $\aleph_2$ colours. Also in the ground model, by <a href="https://clementyung.github.io/jech-solutions/chapter-9#ex9.2">Exercise 9.2</a> we have that $(\exp_1(\aleph_2))^+ \to (\aleph_3)_{\aleph_2}^2$. Under $\GCH$, we have $(\exp_1(\aleph_2))^+ = \aleph_4$.</li>
-
 <li> Since $A$ is non-stationary, $\omega_1 - A$ is has a closed unbounded subset, so $S_i - A = S_i \cap (\omega_1 - A)$ remains stationary, and in particular unbounded. Thus, $\lbrace S_i - A : i < \in H\rbrace$ gives $\aleph_3$ disjoint stationary subsets of $\omega_1$ in $V[G]$, yielding the required contradiction.</li>
-</ol> 
-$\square$
-
-<a name="ex23.12"></a>
-## Exercise 23.12.
-<i>Solution.</i> We expand on the hint. Firstly, Theorem 8.10 allows us to partition $E_{\aleph_0}^{\aleph_1}$ into $\omega_2$ many pairwise disjoint stationary sets, $\lbrace S_i : i < \omega_2\rbrace$. For each $\alpha \in E_{\aleph_1}^{\aleph_3}$, we fix a closed unbounded subset $C_\alpha \subseteq \alpha$ of size $\aleph_1$. Define a map $f : E_{\aleph_1}^{\aleph_3} \to \omega_2$ by:
-
+</ol><p align="right">$\square$</p><br/>
+<br/>
+<a name="ex23.12"></a><br/>
+<h2>Exercise 23.12.</h2>
+<i>Solution.</i> We expand on the hint. Firstly, Theorem 8.10 allows us to partition $E_{\aleph_0}^{\aleph_1}$ into $\omega_2$ many pairwise disjoint stationary sets, $\lbrace S_i : i < \omega_2\rbrace$. For each $\alpha \in E_{\aleph_1}^{\aleph_3}$, we fix a closed unbounded subset $C_\alpha \subseteq \alpha$ of size $\aleph_1$. Define a map $f : E_{\aleph_1}^{\aleph_3} \to \omega_2$ by:<br/>
 $$
-\begin{align*}
-f(\alpha) := \min\lbrace i_\alpha \in \omega_2 : (\forall i \geq i_\alpha) \, S_i \cap C_\alpha = \emptyset\rbrace
-\end{align*}
-$$
-
-This is well-defined as $C_\alpha$ is a bounded subset of the regular cardinal $\omega_3$. Since $\omega_2 < \omega_3$ are regular, $f$ is regressive on a stationary subset of $E_{\aleph_1}^{\aleph_3}$, so by Fodor's Theorem it takes a constant value $i$ on some stationary subset $A \subseteq E_{\aleph_1}^{\aleph_3}$. Thus for all $\alpha \in A$, $i_\alpha = i$ so $S_i \cap C_\alpha = \emptyset$ by definition of $f$. Hence $S_i$ does not reflect at $\alpha$. 
-$\square$
+\begin{align*}<br/>
+f(\alpha) := \min\lbrace i_\alpha \in \omega_2 : (\forall i \geq i_\alpha) \, S_i \cap C_\alpha = \emptyset\rbrace<br/>
+\end{align*}$$
+This is well-defined as $C_\alpha$ is a bounded subset of the regular cardinal $\omega_3$. Since $\omega_2 < \omega_3$ are regular, $f$ is regressive on a stationary subset of $E_{\aleph_1}^{\aleph_3}$, so by Fodor's Theorem it takes a constant value $i$ on some stationary subset $A \subseteq E_{\aleph_1}^{\aleph_3}$. Thus for all $\alpha \in A$, $i_\alpha = i$ so $S_i \cap C_\alpha = \emptyset$ by definition of $f$. Hence $S_i$ does not reflect at $\alpha$.<p align="right">$\square$</p>\n</body>

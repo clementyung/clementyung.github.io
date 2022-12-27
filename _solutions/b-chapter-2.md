@@ -104,7 +104,7 @@ $$
 \alpha \cdot (\beta + \gamma) &= \alpha \cdot \lim_{\xi \to \gamma} (\beta + \xi) \\<br/>
 &= \lim_{\xi \to \gamma} \alpha \cdot (\beta + \xi) \text{} && \text{as $\beta + \gamma$ is limit} \\<br/>
 &= \lim_{\xi \to \gamma} (\alpha \cdot \beta + \alpha \cdot \xi) && \text{by induction hypothesis} \\<br/>
-&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by <a href="#lem2.8.A">Lemma 2.8.A</a>} \\<br/>
+&= \alpha \cdot \beta + \lim_{\xi \to \gamma} \alpha \cdot \xi &&\text{as $\alpha \cdot \gamma$ is limit, by Lemma 2.8.A} \\<br/>
 &= \alpha \cdot \beta + \alpha \cdot \gamma<br/>
 \end{align*}$$
 <p align="right">$\square$</p><br/>
@@ -147,7 +147,7 @@ $$
 \begin{align*}<br/>
 (\alpha^\beta)^{\delta + 1} &= (\alpha^\beta)^\delta \cdot \alpha^\beta \\<br/>
 &= \alpha^{\beta \cdot \delta} \cdot \alpha^\beta && \text{by induction hypothesis} \\<br/>
-&= \alpha^{\beta \cdot \delta + \beta} && \text{by <a href="#ex2.8(ii)">Exercise 2.8(ii)</a>} \\<br/>
+&= \alpha^{\beta \cdot \delta + \beta} && \text{by Exercise 2.8(ii)} \\<br/>
 &= \alpha^{\beta \cdot (\delta + 1)}<br/>
 \end{align*}$$
 If $\gamma$ is a limit ordinal, then:<br/>

@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-[I'm currently making some adjustments to the site, so you may see some strange things going on here.]
-
 I am a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore.
 
 My interest revolves around set theory, infinitary combinatorics, topological Ramsey spaces, and set theory's interactions with analysis. I wrote my Honours thesis under Asst. Prof. Spencer Unger (University of Toronto) and Prof. Yang Yue (National University of Singapore), titled "Diagonalisation Forcing of Infinite Block Sequences". I'm currently researching on forcing with a special class of topological Ramsey spaces under Asst. Prof. Spencer Unger.

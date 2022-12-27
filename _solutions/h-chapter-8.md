@@ -234,7 +234,7 @@ $$
 \begin{align*}<br/>
 S \cap F &= S \cap F \cap \Tr(T) \\<br/>
 &= S \cap F \cap \Tr(A \cup B \cup C) \\<br/>
-&= S \cap F \cap (\Tr(A) \cup \Tr(B) \cup \Tr(C)) && \text{by <a href="#ex8.11(ii)">Exercise 8.11(ii)</a>} \\<br/>
+&= S \cap F \cap (\Tr(A) \cup \Tr(B) \cup \Tr(C)) && \text{by Exercise 8.11(ii)} \\<br/>
 &= S \cap F \cap \Tr(C)<br/>
 \end{align*}$$
 where the last equality hold as, as shown, $\Tr(A)$ and $\Tr(B)$ have empty intersection with $S$. Therefore $S \cap F \subseteq \Tr(C)$. Furthermore, if $D$ is any closed unbounded set, then $\emptyset \neq S \cap F \cap D \subseteq \Tr(C) \cap D$, so we have that $C$ is stationary by <a href="#lem8.13.C">Lemma 8.13.C</a>. By <a href="#lem8.13.B">Lemma 8.13.B</a>, this implies that $C < S$.<br/>

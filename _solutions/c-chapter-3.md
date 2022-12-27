@@ -74,7 +74,7 @@ Then $h$ is well-defined as $\omega$ is well-ordered, and clearly $h$ is injecti
 <h2>Exercise 3.3.</h2>
 <i>Solution.</i> We shall show that the $f : \boldsymbol{N} \times \boldsymbol{N} \to \boldsymbol{N}$ in the hint is bijective.<br/>
 <br/>
-<u>Injective:</u> Suppose $f(m_1,n_1) = f(m_2,n_2)$, so $2^{m_1}(2n_1 + 1) - 1 = 2^{m_2}(2n_2 + 1) - 1 \implies 2^{m_1}(2n_1 + 1) = 2^{m_2}(2n_2 + 1)$. Now the $2^{n_i}$'s are odd, so $\nu_2(2^{m_i}(2n_i + 1)) = m_i$ (the \hyperlink{https://en.wikipedia.org/wiki/P-adic\_order}{$p$-adic order}). By Fundamental Theorem of Arithmetic, we have that $m_1 = m_2$. This implies that $2n_1 + 1 = 2n_2 + 1$, which easily gives $n_1 = n_2$. Thus $(m_1,n_1) = (m_2,n_2)$.<br/>
+<u>Injective:</u> Suppose $f(m_1,n_1) = f(m_2,n_2)$, so $2^{m_1}(2n_1 + 1) - 1 = 2^{m_2}(2n_2 + 1) - 1 \implies 2^{m_1}(2n_1 + 1) = 2^{m_2}(2n_2 + 1)$. Now the $2^{n_i}$'s are odd, so $\nu_2(2^{m_i}(2n_i + 1)) = m_i$. By Fundamental Theorem of Arithmetic, we have that $m_1 = m_2$. This implies that $2n_1 + 1 = 2n_2 + 1$, which easily gives $n_1 = n_2$. Thus $(m_1,n_1) = (m_2,n_2)$.<br/>
 <br/>
 <u>Surjective:</u> For any $N \in \boldsymbol{N}$, $N + 1$ is a positive integer, and by the Fundamental Theorem of Arithmetic we may write $N + 1 = 2^mN_2$ for some $m \in \boldsymbol{N}$ and $N_2 \in \boldsymbol{N}$, where $N_2$ is an odd integer. Then $N_2 = 2n + 1$ for some $n \in \boldsymbol{N}$, so $f(m,n) = 2^m(2n + 1) - 1 = N$.<p align="right">$\square$</p><br/>
 <br/>

@@ -83,26 +83,18 @@ We prove this by transfinite induction.
 <a name="ex6.4"></a><br/>
 <h2>Exercise 6.4.</h2>
 <i>Solution.</i> We can do better. We show that if $\rank(x) = \alpha$ and $\rank(y) = \beta$, then:<br/>
-<center><br/>
-\begin{tabular}{\vert c\vert c\vert }<br/>
-\hline<br/>
-Set & Rank \\<br/>
-\hline<br/>
-\hline<br/>
-$\lbrace x,y\rbrace$ & $\max\lbrace \alpha,\beta\rbrace + 1$ \\<br/>
-\hline<br/>
-$\c{x,y}$ & $\max\lbrace \alpha,\beta\rbrace + 2$ \\<br/>
-\hline<br/>
-$x \cup y$ & $\max\lbrace \alpha,\beta\rbrace$ \\<br/>
-\hline<br/>
-$\bigcup x$ & $\bigcup \alpha$ \\<br/>
-\hline<br/>
-$P(x)$ & $\alpha + 1$ \\<br/>
-\hline<br/>
-$x^y$ & $\max\lbrace \alpha,\beta\rbrace + 1$ \\<br/>
-\hline<br/>
-\end{tabular}<br/>
-</center><br/>
+</body>
+
+| Set | Rank |
+|:--:|:----:|
+| $\lbrace x,y\rbrace$ | $\max\lbrace\alpha,\beta\rbrace + 1$ |
+| $\c{x,y}$ | $\max\lbrace\alpha,\beta\rbrace + 2$ |
+| $x \cup y$ | $\max\lbrace\alpha,\beta\rbrace$ |
+| $\bigcup x$ | $\bigcup \alpha$ |
+| $P(x)$ | $\alpha + 1$ |
+| $x^y$ | $\max\lbrace\alpha,\beta\rbrace$ |
+
+<body>
 We use <a href="#ex6.1">Exercise 6.1</a>. It's clear that if $x \subseteq y$ then $\rank(x) \leq \rank(y)$.<br/>
 <br/>
 <u>$\lbrace x,y\rbrace$:</u><br/>

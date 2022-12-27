@@ -183,7 +183,7 @@ which is a $G_\delta$ set.<p align="right">$\square$</p><br/>
 <br/>
 We first show that $F$ is continuous. Fix $s,t$ be two finite sequences, and we wish to show that $F_{-1}(O(s) \times O(t))$ is open. Fix $f \in F_{-1}(O(s) \times O(t))$. We then have for $n > \max\lbrace 2 \cdot \length(s), 2 \cdot \length(t) + 1\rbrace$, if $g \in \N$ and $f\restrictedto n = g\restrictedto n$, then $g \in F_{-1}(O(s) \times O(t))$. In other words, $O(f\restrictedto n) \subseteq F_{-1}(O(s) \times O(t))$, so $F_{-1}(O(s) \times O(t))$ is open.<br/>
 <br/>
-A similar reasoning can be used to show that $F$ is an open map. Fix a finite sequence $s$. Then for $(f,g) \in F"(O(s))$, only the first $\leq\f{\frac{\length(s)}{2}} + 1$ values of $f$ and $g$ are restricted, so $O(f\restrictedto k) \times O(g\restrictedto l) \subseteq F"(O(s))$ for some $k,l$.<p align="right">$\square$</p><br/>
+A similar reasoning can be used to show that $F$ is an open map. Fix a finite sequence $s$. Then for $(f,g) \in F"(O(s))$, only the first $\leq\left\lfloor{\frac{\length(s)}{2}}\right\rfloor + 1$ values of $f$ and $g$ are restricted, so $O(f\restrictedto k) \times O(g\restrictedto l) \subseteq F"(O(s))$ for some $k,l$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex4.17(ii)"></a><br/>
 <h3>Exercise 4.17(ii).</h3>

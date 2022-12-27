@@ -24,8 +24,9 @@ Call this property (T). Note that if a set is transitive, then every element of 
 <li> If $X,Y \subseteq \cl(M)$ then immediately $Z = X \cap Y \subseteq X \subseteq \cl(M)$. Since $X$ satisfies property (T), so does $Z$.</li>
 <li> If $Z = \bigcup X$, let $z \in^\ast  Z$. Then $z \in^\ast  y \in X$. By IH, $X$ satisfies the property (T), so $z \in \cl(M)$, hence $Z$ satisfies the property (T).</li>
 <li> If $Z = \dom(X)$, let $z \in^\ast  Z$. Then $(z',y) = \lbrace \lbrace z'\rbrace,\lbrace z',y\rbrace\rbrace \in X$ for some $y$ and $z \in z'$ or $z = z'$. We see that $z' \in \lbrace z'\rbrace \in (z',y) \in X$, so by IH on $X$, $z \in \cl(M)$.</li>
-<li>[(8-10)] Similar to that of (7).</li>
-</ol><p align="right">$\square$</p><br/>
+</ol>
+For $G_8$-$G_{10}$, they are similar to that of (7).<br/>
+<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex13.2"></a><br/>
 <h2>Exercise 13.2.</h2>

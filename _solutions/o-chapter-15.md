@@ -337,24 +337,14 @@ We now show that the Suslin tree $\T$ is homogeneous. Let $x,y \in \T$, so there
 <br/>
 <a name="ex15.21"></a><br/>
 <h2>Exercise 15.21.</h2>
-\begin{setup}[<a href="#ex15.21">Exercise 15.21</a>, <a href="#ex15.22">Exercise 15.22</a>]<br/>
-Let $(P,<)$ be the notion of forcing consisting of finite trees $(T,<_T)$ such that $T \subseteq \omega_1$, and such that $\alpha < \beta$ if $\alpha <_T \beta$; $(T_1,<_{T_1})$ is stronger than $(T_2,<_{T_2})$ if and only if $T_1 \supseteq T_2$ and $<_{T_1} \; = \; <_{T_2} \cap \, (T_2 \times T_2)$ [sic]\footnote{Replace "$<_{T_1} \; = \; <_{T_2} \cap \, (T_2 \times T_2)$" with "$<_{T_2} \; = \; <_{T_1} \cap \, (T_2 \times T_2)$".}. If $G$ is a generic set of conditions, then $\T = \bigcup\lbrace T : T \in G\rbrace$ is a Suslin tree. The crucial properties to verify are: (a) $(P,<)$ satisfies the countable chain condition, and (b) $\T$ has no uncountable antichain.<br/>
-\end{setup}<br/>
-<br/>
-$(P,<)$ satisfies c.c.c.<br/>
-<br/>
-\begin{hint}<br/>
-Given an uncountable set $W$ of conditions, use $\Delta$-Lemma to find an uncountable $Z \subseteq W$ such that any $X,Y \in Z$ are compatible.<br/>
-\end{hint}<br/>
-<br/>
 <a name="lem15.21.A"></a><br/>
 <b>Lemma 15.21.A.</b> Let $(P,<_P)$ and $(Q,<_Q)$ be two partial orders with $P,Q \subseteq \boldsymbol{\mathrm{ORD}}$. Fix $x_0 \in P$ and $y_0 \in Q$. Suppose that:
-<ol>[label=(\alph*)]<br/>
+<ol>
 <li> If $x <_P y$ or $x <_Q y$, then $x < y$.</li>
 <li> For all $x \in P \cap Q$, we have $\pred_P(x) = \pred_Q(x)$.</li>
 <li> $(\pred_P(x_0) \cup \lbrace x_0\rbrace) \cap Q = (\pred_Q(y_0) \cup \lbrace y_0\rbrace) \cap P$.</li></ol>
 Then there exists a partial order $(R,<_R)$ satisfying (i) above such that:
-<ol>
+<ol type="i">
 <li> $R = P \cup Q$.</li>
 <li> $<_P \, = \, <_R \cap \, (P \times P)$.</li>
 <li> $<_Q \, = \, <_R \cap \, (Q \times Q)$.</li>
@@ -383,7 +373,7 @@ It remains to show that the properties (ii) and (iii). The proof of each is the 
 The only cases which cannot be easily reduced are the case where $(x,y) \in B$ and $y <_P z$, and $(x,y) \in A$ and $y <_Q z$.<br/>
 <br/>
 Now suppose $x <_R y$ and $x,y \in P$, so there exist a sequence $(x,z_0),(z_0,z_1),\dots,(z_n,y)$ all in $S$. Note that since $y \in P$, we have $z <_P y$ iff $z <_Q y$. By the above observations, we may reduce it to either one of the following:
-<ol>[label=(\arabic*)]<br/>
+<ol>
 <li> $(x,y) \in A$.</li>
 <li> $(x,y) \in B$.</li>
 <li> $(x,z) \in B$ and $z <_P y$.</li></ol>
@@ -417,16 +407,6 @@ Now for each $\xi \in Z'$, consider the set $\lbrace \pred_{T_\xi}(\alpha_\xi) :
 <br/>
 <a name="ex15.23"></a><br/>
 <h2>Exercise 15.23.</h2>
-\begin{setup}{<a href="#ex15.23">Exercise 15.23</a>, <a href="#ex15.24">Exercise 15.24</a>}<br/>
-Let $Q$ consists of all countable sequences $p = \c{S_\xi : \xi < \alpha}$ ($\alpha < \omega_1$) where $S_\xi \subseteq \xi$ for all $\xi < \alpha$; let $p \leq q$ if and only if $p$ extends $q$. $Q$ is $\aleph_0$-closed.<br/>
-\end{setup}<br/>
-<br/>
-Let $G$ be $Q$-generic. Then $V[G] \models \diamond$.<br/>
-<br/>
-\begin{hint}<br/>
-If $p \forces$ ($\dot{C}$ is closed unbounded set and $\dot{X} \subseteq \omega_1$), find $q \leq p$ such that $q = \c{S_\xi : \xi \leq \alpha}$ and $q \forces (\alpha \in \dot{C} \text{ and } \dot{X} \cap \alpha = S_\alpha)$.<br/>
-\end{hint}<br/>
-<br/>
 <a name="lem15.23.A"></a><br/>
 <b>Lemma 15.23.A.</b> Let $P$ be an $\omega$-closed partial order, and let $\lbrace p_n : n < \omega\rbrace \subseteq P$. Then there exists a $q \in P$ such that for all $n$, either $q \leq p_n$, or $q$ and $p_n$ are incompatible.<br/>
 <br/>

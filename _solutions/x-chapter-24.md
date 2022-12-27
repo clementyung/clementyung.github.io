@@ -85,11 +85,10 @@ for every $\alpha < \cf(\eta)$. Then $\vert F\vert  \leq \aleph_{\eta + \Vert \v
 <br/>
 But since $\vert \lbrace \varphi : \cf(\eta) \to \eta\rbrace\vert  = \vert \eta\vert ^{\cf(\eta)}$, we clearly have that $\Vert \varphi\Vert  \leq \vert \eta\vert ^{\cf(\eta)}$. Thus $\vert \eta + \vert \eta\vert ^{\cf(\eta)}\vert  = \vert \eta\vert ^{\cf(\eta)}$, so $\eta + \vert \eta\vert ^{\cf(\eta)} < (\vert \eta\vert ^{\cf(\eta)})^+ =: \gamma$, as desired.<p align="right">$\square$</p><br/>
 <br/>
-</p><br/>
 <br/>
-<b>Remark.</b>. The sets $S_\eta$ are the <b>canonical stationary sets</b> (of order $\eta$).<br/>
+<b>Remark.</b> The sets $S_\eta$ are the <b>canonical stationary sets</b> (of order $\eta$).<br/>
 <br/>
-<b>Note.</b>. This definition coincides with the same definition presented in <a href="https://clementyung.github.io/jech-solutions/chapter-8#ex8.13">Exercise 8.13</a>.<br/>
+<b>Note.</b> This definition coincides with the same definition presented in <a href="https://clementyung.github.io/jech-solutions/chapter-8#ex8.13">Exercise 8.13</a>.<br/>
 <br/>
 <a name="ex24.11"></a><br/>
 <h2>Exercise 24.11.</h2>

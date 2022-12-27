@@ -65,7 +65,7 @@ Since $I$ is $\sigma$-saturated, there exists some $\gamma < \omega_1$ such that
 <br/>
 For the proof that $J$ is $\sigma$-saturated, we may also follow the proof of Lemma 22.11, the following statement may not hold anymore as $I$ need not be prime:<br/>
 <center><br/>
-By the $\kappa$-completeness of $I$, we have $Y = \bigcap_{\xi<\omega_1} Y_\xi \notin I$. Thus $Y \neq \emph{}$,\dots<br/>
+By the $\kappa$-completeness of $I$, we have $Y = \bigcap_{\xi<\omega_1} Y_\xi \notin I$. Thus $Y \neq \emptyset$,\dots<br/>
 </center><br/>
 However, we may instead use <a href="#ex22.4">Exercise 22.4</a> to obtain an uncountable subset $W \subseteq \omega_1$ such that  $\bigcap_{\xi \in W} Y_\xi$ is non-empty. Take $\alpha \in \bigcap_{\xi \in W} Y_\xi$, and the rest of the proof follows.<p align="right">$\square$</p><br/>
 <br/>
@@ -90,12 +90,6 @@ Now if $\alpha \in B$, then we have $f_\alpha(n) \leq g(n)$ for all $n$. By <a h
 <br/>
 <a name="ex22.8"></a><br/>
 <h2>Exercise 22.8.</h2>
-If $I$ is $\kappa^+$-saturated, then $P(\kappa)/I$ is a complete Boolean algebra.<br/>
-<br/>
-\begin{hint}<br/>
-By <a href="https://clementyung.github.io/jech-solutions/chapter-7#ex7.33">Exercise 7.33</a> it suffices to show that $B$ is $\kappa^+$-complete. Show that $\sum W$ exists in $B$ for every incompatible $W \subseteq B$. Extend $W$ to a partition $Z$ of $B$; $Z = \lbrace [X_\alpha] : \alpha < \kappa\rbrace$. Let $Y_\alpha = X_\alpha - \bigcup_{\beta<\alpha} X_\beta$, and $Y = \bigcup\lbrace Y_\alpha : [X_\alpha] \in W\rbrace$. Show that $[Y] = \sum W$ in $B$.<br/>
-\end{hint}<br/>
-<br/>
 <a name="lem22.8.A"></a><br/>
 <b>Lemma 22.8.A.</b> Let $B$ be a $\kappa$-complete Boolean algebra, and let $X \subseteq B$ such that $\vert X\vert  = \kappa$ and $\sum X$ exists. Then there exists a $Y \subseteq B$ such that elements in $Y$ are pairwise disjoint, and $\sum Y$ exists with $\sum Y = \sum X$.<br/>
 <br/>

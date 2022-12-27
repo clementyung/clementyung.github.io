@@ -148,7 +148,6 @@ $$
 \end{align*}$$
 as desired.<p align="right">$\square$</p><br/>
 <br/>
-</p><br/>
 <br/>
 <a name="ex16.5"></a><br/>
 <h2>Exercise 16.5.</h2>
@@ -236,7 +235,7 @@ Since $E_D := \lbrace q \in Q : q \leq w \text{ for some }w \in W_D\rbrace$ is d
 <br/>
 By the absoluteness in the definition of a normal $\omega_1$-tree (and the fact that $\omega_1$ is preserved due to c.c.c.), we have that $T$ remains a normal $\omega_1$-tree in $V[G]$. By definition of $P_T$, we have that antichains in $T$ are at most countable iff $P_T$ satisfies the c.c.c., which holds by the first paragraph. Therefore $T$ is a normal Suslin tree in $V[G]$. Note that this also implies that no uncountable chains are added, as otherwise by <a href="https://clementyung.github.io/jech-solutions/chapter-9#ex9.7">Exercise 9.7</a> it produces an uncountable antichain in $T$.<p align="right">$\square$</p><br/>
 <br/>
-<b>Remark.</b>. It follows that the existence of a Suslin tree is consistent with $2^{\aleph_0} > \aleph_1$.<br/>
+<b>Remark.</b> It follows that the existence of a Suslin tree is consistent with $2^{\aleph_0} > \aleph_1$.<br/>
 <br/>
 <a name="ex16.15"></a><br/>
 <h2>Exercise 16.15.</h2>
@@ -266,7 +265,6 @@ We see that $D'$ is dense in $P_\alpha$ - indeed, let $p \in P_\alpha$. Let $q \
 <br/>
 Since $G$ is generic, we have that $p \in G \cap D'$ for some $p$. Then $p\restrictedto\beta \in G_\beta \cap D$, so $G_\beta$ is a generic filter.<p align="right">$\square$</p><br/>
 <br/>
-</p><br/>
 <br/>
 <a name="ex16.19"></a><br/>
 <h2>Exercise 16.19.</h2>

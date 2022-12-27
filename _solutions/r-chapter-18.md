@@ -13,7 +13,6 @@ excerpt: ""
 <h2>Exercise 18.1.</h2>
 <i>Solution.</i> By Lemma 17.29, we have that $\kappa \to (\alpha)_{2^{\aleph_0}}^{<\omega}$, so by Lemma 17.24, $(\L_\kappa,\in)$ has a set of indiscernibles of order-type $\omega_1$. By Lemma 18.17, this implies that there exists a remarkable model, and hence $0^\sharp$ exists.<p align="right">$\square$</p><br/>
 <br/>
-<b>Remark.</b>. In fact, by Theorem 9.19 of Kanamori's <i>The Higher Infinite</i>, if such a cardinal exists then $x^\sharp$ exists for all $x \subseteq \omega$.<br/>
 <br/>
 <a name="ex18.2"></a><br/>
 <h2>Exercise 18.2.</h2>

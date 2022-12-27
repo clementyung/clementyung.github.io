@@ -44,8 +44,6 @@ f(x), &\text{if $f(x)$ is an ordinal} \\<br/>
 \end{align*}$$
 <p align="right">$\square$</p><br/>
 <br/>
-% <b>Remark.</b>. %     Well-foundedness is "used" in this exercise in the sense that if $\Ult$ is not well-founded (ill-founded), it doesn't make sense to discuss about ordinals in $\Ult$ - this is because if it is ill-founded, it must contain a decreasing chain of ordinals. See \hyperlink{https://math.stackexchange.com/questions/4214944/does-non-well-foundedness-of-a-model-imply-a-decreasing-sequence-of-ordinals-j/4214950\#4214950}{this MSE post}.<br/>
-% <br/>
 <br/>
 <a name="ex17.4"></a><br/>
 <h2>Exercise 17.4.</h2>

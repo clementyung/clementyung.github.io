@@ -84,9 +84,7 @@ which gives the desired model.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex21.7"></a><br/>
 <h2>Exercise 21.7.</h2>
-\begin{setup}[<a href="#ex21.7">Exercise 21.7</a>]<br/>
-The Prikry model $V[G]$ of Theorem 21.10 provides an example of a singular Rowbottom cardinal. The exercise below shows that $\kappa$ has in $V[G]$ the combinatorial property equivalent to being a Rowbottom cardinal.<br/>
-\end{setup}<br/>
+<b>Remark.</b> The Prikry model $V[G]$ of Theorem 21.10 provides an example of a singular Rowbottom cardinal. The exercise below shows that $\kappa$ has in $V[G]$ the combinatorial property equivalent to being a Rowbottom cardinal.<br/>
 <br/>
 <i>Proof.</i> We prove the equivalence. The proof is similar to that of <a href="https://clementyung.github.io/jech-solutions/chapter-17#ex17.31">Exercise 17.31</a>.<br/>
 <br/>
@@ -105,11 +103,6 @@ By the combinatorial property, there exists a $H \subseteq \kappa$ of size $\kap
 <br/>
 By <a name="#12#lem12.12.B">Lemma 12.12.B</a> it suffices to show that for all existential formulas $\exists y \, \varphi(x,y)$, if $\A \models \exists y \, \varphi(x,y)$ and $x \in B$. then $\B \models \exists y \, \varphi(x,y)$. But this follows from that if $h_n = h_\varphi$, then $h_n(x) \in B$, so indeed $\B \models \exists y \, \varphi(x,y)$.<p align="right">$\blacksquare$</p><br/>
 <br/>
-In the Prikry model, for every partition $F : [\kappa]^{<\omega} \to \lambda$ into $\lambda < \kappa$ pieces there exists a set $H \subseteq \kappa$ of size $\kappa$ such that $F$ takes at most $\aleph_0$ values on $[H]^{<\omega}$.<br/>
-<br/>
-\begin{hint}<br/>
-Let $\dot{F}$ be a name for $F$ and let $(s_0,A_0)$ be a condition (such that $\max(s_0) < \min(A_0)$). Let $g$ be a partition of $[\kappa]^{<\omega} \times [\kappa]^{<\omega}$ into $\lambda$ pieces, defined as follows: If $s \in [A_0]^{<\omega}$ and for some $X \subseteq A_0$, $(s_0 \cup s, X) \forces \dot{F}(t) = \alpha$, then let $g(s,t) = \alpha$; otherwise, let $g(s,t) = 0$. Show that there is $A \subseteq A_0$ in $D$ and a countable $S \subseteq \lambda$ such that $g([A]^{<\omega} \times [A^{<\omega}]) \subseteq S$ [sic]\footnote{Replace "$g([A]^{<\omega} \times [A^{<\omega}]) \subseteq S$" with $g([A]^{<\omega} \times [A]^{<\omega}) \subseteq S$}. Then $(s_0,A) \forces \dot{F}([A]^{<\omega}) \subseteq S$.<br/>
-\end{hint}<br/>
 <br/>
 <a name="lem21.7.A"></a><br/>
 <b>Lemma 21.7.A.</b> Let $\kappa$ be a measurable cardinal, and let $D$ be a normal measure on $\kappa$. For every partition $g : [\kappa]^{<\omega} \times [\kappa]^{<\omega} \to \lambda$ with $\lambda < \kappa$, there exists a set $H \in D$ such that $F\restrictedto([H]^{<\omega} \times [H]^{<\omega})$ takes on at most countably many values.<br/>

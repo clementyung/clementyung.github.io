@@ -50,14 +50,13 @@ Note that we used &Lstrok;o&sacute; theorem for the $\L_{\kappa,\kappa}$ languag
 <a name="ex20.3"></a><br/>
 <h2>Exercise 20.3.</h2>
 <i>Solution.</i> Note that we assume implicitly that $\kappa,\lambda$ are both regular cardinals. We may mimic the proof of Lemma 20.2 to obtain the solution here. Let:
-<ol>
-<li>[(iii)] Suppose $\Sigma$ is a set of sentences in the language of $\L_{\kappa,\omega}$, and $\vert \Sigma\vert  \leq \lambda$. If every subset of $\Sigma$ of size less than $\kappa$ has a model, then $\Sigma$ has a model.</li></ol>
+(iii) Suppose $\Sigma$ is a set of sentences in the language of $\L_{\kappa,\omega}$, and $\vert \Sigma\vert  \leq \lambda$. If every subset of $\Sigma$ of size less than $\kappa$ has a model, then $\Sigma$ has a model.
 We shall show that (i) $\implies$ (iii) $\implies$ (ii) $\implies$ (i).<br/>
 <br/>
 <u>(i) $\implies$ (iii):</u> By a bijection we of course have that there exists a fine measure on $P_\kappa(A)$ for any $\vert A\vert  = \lambda$. The (ii) $\implies$ (iii) part of the proof of Lemma 20.2 can be mimic-ed completely.<br/>
 <br/>
 <u>(iii) $\implies$ (ii):</u> Let $F$ be a $\kappa$-complete filter on $S$ generated $E \subseteq P(S)$, with $\vert E\vert  \leq \lambda$. We consider the $\L_{\kappa,\omega}$-language which has a unary predicate symbol $\dot{X}$ for each $X \subseteq S$, and a constant symbol $c$. Let $\Sigma$ be the set of $\L_{\kappa,\omega}$ consisting of:
-<ol>[label={(\alph*)}]<br/>
+<ol type=a>
 <li> All sentences true in $(S,X)_{X \subseteq S}$.</li>
 <li> $\dot{X}(c)$ for all $X \in E$.</li></ol>
 Note that (a) is a countable set, and since $\vert E\vert  \leq \lambda$, there are at most $\lambda$ many sentences of the form (b). Therefore, $\vert \Sigma\vert  \leq \lambda$. The $\kappa$-completeness of $F$ ensures that every set of less than $\kappa$ sentences in $\Sigma$ has a model. Thus by (iii), $\Sigma$ has a model $\A = (A,X^{\A},c)_{X \in E}$. Define $U \subseteq P(S)$ by:<br/>
@@ -145,16 +144,9 @@ $$
 \end{align*}$$
 Therefore we must have $x = j(y)$ for some $y$. This means that $(j(f))(j"(\lambda)) = j (y)$, so $f(x) = y$ for almost all $x$ by the remark proceeding (20.21).<p align="right">$\square$</p><br/>
 <br/>
-</p><br/>
 <br/>
 <a name="ex20.10"></a><br/>
 <h2>Exercise 20.10.</h2>
-If $\kappa$ is extendible then $V_\kappa \prec_{\Sigma_3} V$.<br/>
-<br/>
-\begin{hint}<br/>
-Use <a href="#ex20.7">Exercise 20.7</a>, and show that there are arbitrarily large inaccessible $\lambda > \kappa$ such that $V_\kappa \prec V_\lambda$.<br/>
-\end{hint}<br/>
-<br/>
 <a name="lem20.10.A"></a><br/>
 <b>Lemma 20.10.A.</b> For any ordinal $\lambda$, there does not exist an elementary embedding $j : V_{\lambda+2} \to V_{\lambda+2}$.<br/>
 <br/>
@@ -314,12 +306,6 @@ Therefore $\lambda = j^n(\kappa)$. Finally, the proof of $M^\lambda \subseteq M$
 <br/>
 <a name="ex20.18"></a><br/>
 <h2>Exercise 20.18.</h2>
-If $\kappa$ is strong then $V_\kappa \prec_{\Sigma_2} V$.<br/>
-<br/>
-\begin{hint}<br/>
-As in <a href="#ex20.7">Exercise 20.7</a>.<br/>
-\end{hint}<br/>
-<br/>
 <a name="lem20.18.A"></a><br/>
 <b>Lemma 20.18.A.</b> If $\kappa$ is a strong cardinal, then for all $\lambda \geq \kappa$ and any set $x$, there exists an elementary embedding $j : V \to M$ such that $j(\kappa) > \lambda$ and $x \in M$. Consequently, $\kappa$ is strong iff it is $\lambda$-strong for all $\lambda \geq \kappa$.<br/>
 <br/>
@@ -351,5 +337,4 @@ $$
 \end{align*}$$
 contradicting that $x$ witnesses $\varphi(g,\lambda_g)$.<p align="right">$\square$</p><br/>
 <br/>
-</p>
 </body>

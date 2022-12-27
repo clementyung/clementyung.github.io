@@ -101,7 +101,7 @@ B_3 := \lbrace \alpha_3 \in B_2 : (\forall \alpha_2 \in B_2 \cap \alpha_3)(\fora
 \end{align*}$$
 Again, if $n = 2$ then $[B_3]^3 \subseteq A$ by definition. This can be repeated for any $n$.<p align="right">$\square$</p><br/>
 <br/>
-<b>Remark.</b>. Compare with Theorem 10.22.<br/>
+<b>Remark.</b> Compare with Theorem 10.22.<br/>
 <br/>
 <a name="ex19.7"></a><br/>
 <h2>Exercise 19.7.</h2>
@@ -213,7 +213,6 @@ $$
 \end{align*}$$
 where $\varphi$ is a first-order formula asserting that $C$ is a closed unbounded subset of $\omega_1$. Since $\omega_1 \in L$, $\lbrace \alpha < \omega_1 : X_\alpha \in D\rbrace \in L$, as desired.<p align="right">$\square$</p><br/>
 <br/>
-</p><br/>
 <br/>
 <a name="ex19.13"></a><br/>
 <h2>Exercise 19.13.</h2>

@@ -15,8 +15,8 @@ excerpt: ""
 <center><br/>
 If $x \in^\ast  Z$ (i.e. there's a finite sequence $x \in x_1 \in \cdots \in x_n \in Z$), then $x \in \cl(M)$.<br/>
 </center><br/>
-Call this property (T). Note that if a set is transitive, then every element of this set satisfies this condition. Let $X,Y \in \cl(M)$:<br/>
-</ol>
+Call this property (T). Note that if a set is transitive, then every element of this set satisfies this condition. Let $X,Y \in \cl(M)$:
+<ol>
 <li> If $Z = \lbrace X,Y\rbrace$, then immediately $Z \subseteq \cl(M)$, and satisfies the property (T).</li>
 <li> If $Z = X \times Y \in \cl(M)$, let $z = (x,y) = \lbrace \lbrace x\rbrace,\lbrace x,y\rbrace\rbrace \in Z$. Then $x,y \in Z$ by IH on $X,Y \in \cl(M)$, so by $G_1$ we have that $\lbrace x\rbrace,\lbrace x,y\rbrace \in \cl(M)$. By $G_1$ again, $x = \lbrace \lbrace x\rbrace,\lbrace x,y\rbrace\rbrace \in \cl(M)$, so $Z \subseteq \cl(M)$. This also proves that property (T) is satisfied.</li>
 <li> Since $\varepsilon(X,Y) \subseteq X \times Y$, this follows from (2).</li>
@@ -80,8 +80,8 @@ $$
 <a name="ex13.5"></a><br/>
 <h2>Exercise 13.5.</h2>
 <a name="lem13.5.A"></a><br/>
-<b>Lemma 13.5.A.</b> The following are equivalent in $\mathsf{BG} \; - $ Comprehension:<br/>
-</ol>
+<b>Lemma 13.5.A.</b> The following are equivalent in $\mathsf{BG} \; - $ Comprehension:
+<ol>
 <li> $\forall X_1 \, \dots \, \forall X_n \, \exists Y \, Y = \lbrace x : \varphi(x,X_1,\dots,X_n)\rbrace$, where $\varphi$ is a formula in which only set variables are quantified.</li>
 <li> $\forall X_1 \, \dots \, \forall X_n \, \exists Y \, Y = \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace$, where $\varphi$ is a formula in which only set variables are quantified.</li>
 </ol>
@@ -101,8 +101,8 @@ G_i(X,Y) = \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace
 \end{align*}<br/>
 $$
 where $X = G^{(1)}(X_1,\dots,X_n)$ and $X = G^{(2)}(X_1,\dots,X_n)$ for some composition $G^{(1)},G^{(2)}$.<br/>
-<i>Proof.</i> Similar to the original Normal Form Theorem, suffices to consider only formulas of the form:<br/>
-</ol>
+<i>Proof.</i> Similar to the original Normal Form Theorem, suffices to consider only formulas of the form:
+<ol>
 <li> The only logical symbols in $\varphi$ are $\neg$, $\wedge$ and $\exists$ (quantified over sets).</li>
 <li> $=$ does not occur.</li>
 <li> The only occurrence of $\in$ is $x_i \in x_j$ for $i \neq j$, $x_i \in X_j$, or $X_i \in X_j$.</li>
@@ -329,13 +329,13 @@ so $\models_{n+1}$ is $\Sigma_{n+1}$.<p align="right">$\square$</p><br/>
 <u>$L_\kappa \subseteq H_\kappa$:</u> Let $X \in L_\kappa$, so $X \in L_\alpha$ for some ordinal $\alpha < \kappa$. Since $L_\alpha$ is transitive, we have $\TC(X) \subseteq L_\alpha$. By <a href="#ex13.19">Exercise 13.19</a>, we have that $\vert X\vert  \leq \vert L_\alpha\vert  = \vert \alpha\vert  < \kappa$, so $X \in H_\kappa$. We do not require $V = L$ here.<br/>
 <u>$H_\kappa \subseteq L_\kappa$:</u> Let $X \in H_\kappa$, and suppose $\kappa = \lambda^+$. Then $\vert \TC(X)\vert  \leq \lambda$. Since $V = L$, $X \in L_\delta$ for some $\delta$, so $\TC(\lbrace X\rbrace) \subseteq L_\delta$. Then $\vert \TC(\lbrace X\rbrace)\vert  \leq \vert L_\delta\vert  = \vert \delta\vert  \leq \lambda$, so by L\"{o}wenheim-Skolem Theorem there exists an elementary submodel $M \prec (L_\delta,\in)$ of size $\lambda$ such that $\TC(\lbrace X\rbrace) \subseteq M$. Let $M'$ be the transitive collapse of $M$. Since $\TC(\lbrace X\rbrace) \subseteq M$ and $\TC(\lbrace X\rbrace)$ is transitive, $\TC(\lbrace X\rbrace) \subseteq M'$. By G\"{o}del's Condensation Lemma, we have that $M' = L_\gamma$ for some ordinal $\gamma$. Since $\vert M\vert  = \vert \gamma\vert  = \lambda$, we have that $\gamma < \lambda^+$. Thus $X \in \TC(\lbrace X\rbrace) \subseteq L_\gamma \subseteq L_{\lambda^+}$.<p align="right">$\blacksquare$</p><br/>
 <a name="lem13.17.B"></a><br/>
-<b>Lemma 13.17.B.</b> For regular uncountable cardinals $\kappa$, we have that:<br/>
-</ol>
+<b>Lemma 13.17.B.</b> For regular uncountable cardinals $\kappa$, we have that:
+<ol>
 <li> $H_\kappa \models$ All sets are of cardinality $<\kappa$.</li>
 <li> $L_{\kappa^L} \models$ All sets are of cardinality $<\kappa^L$.</li>
 </ol>
-<i>Proof.</i> \hfill<br/>
-</ol>
+<i>Proof.</i> \hfill
+<ol>
 <li> Let $X \in H_\kappa$, so $\vert \TC(X)\vert  < \kappa$. Let $\lambda < \kappa$ be a cardinal such that there exists a one-to-one function $f$ on $X$ into $\lambda$. But as we saw in the proof that $H_\kappa \models \AC$ in <a href="https://clementyung.github.io/jech-solutions/chapter-12#ex12.13">Exercise 12.13</a>, we in fact have $f \in H_\kappa$ (and that $\lambda \in H_\kappa$). Thus $H_\kappa \models \vert X\vert  < \lambda$.</li>
 <li> By (i) and <a href="#lem13.17.A">Lemma 13.17.A</a>, we have that $L \models (L_{\kappa^L} \models$ All sets are of cardinality $<\kappa^L))$. But the sentence "$L_{\kappa^L} \models$ All sets are of cardinality $<\kappa^L$" is $\Delta_0$ (as all quantifiers are bounded), so it holds (in $V$).</li>
 </ol><p align="right">$\blacksquare$</p><br/>
@@ -415,8 +415,8 @@ Let $X \subseteq \omega$, so $X \in L_{\omega+1}[A]$. Let $M \prec L_{\omega_1}[
 <i>Solution.</i> Assume $V = L[X]$ and $X \in L[X]$. Let $(\theta,E)$, where $\theta$ is an ordinal and $E \subseteq \theta \times \theta$ is a relation such that $(\theta,E)$ is isomorphic to $\TC(\lbrace X\rbrace)$. Let $A = \Gamma"(E) \subseteq \boldsymbol{\mathrm{ORD}}$. We note that $\Gamma$ is a mapping definable without parameters, so $\Gamma \in L$.<br/>
 We now show that $L[A] = L[X]$. We see that $\theta,E \in L[X]$, $\Gamma \in L \subseteq L[X]$ so $A = \Gamma"(E) \in L[X]$. Therefore $L[A] \subseteq L[X]$ by \ref{lem13.27.A}. Conversely, since $E = \Gamma_{-1}(A) \in L[A]$, we have $\theta = \dom(E) \cup \ran(E) \in L[A]$. Since $E$ is a well-founded relation, in $L[A]$ there exists a transitive set $Y$ such that $(\theta,E)$ is isomorphic to $(Y,\in)$.<br/>
 <b>Claim.</b>. The transitive set $Y$ is unique.<br/>
-<i>Proof.</i> Suppose $Y'$ is another transitive set such that $(\theta,E)$ is isomorphic to $(Y',\in)$. Let $f : Y \to \theta$ and $g : Y' \to \theta$ be the isomorphisms. For each ordinal $\alpha$, let $Y_\alpha := \lbrace x \in Y : \rank(x) = \alpha\rbrace$, and similarly for $Y_\alpha'$. We shall induct on $\alpha$ that $Y_\alpha = Y_\alpha'$, and $f\restrictedto Y_\alpha = g\restrictedto Y_\alpha'$.<br/>
-</ol>
+<i>Proof.</i> Suppose $Y'$ is another transitive set such that $(\theta,E)$ is isomorphic to $(Y',\in)$. Let $f : Y \to \theta$ and $g : Y' \to \theta$ be the isomorphisms. For each ordinal $\alpha$, let $Y_\alpha := \lbrace x \in Y : \rank(x) = \alpha\rbrace$, and similarly for $Y_\alpha'$. We shall induct on $\alpha$ that $Y_\alpha = Y_\alpha'$, and $f\restrictedto Y_\alpha = g\restrictedto Y_\alpha'$.
+<ol>
 <li> $Y_0 = \emptyset = Y_0'$, and trivially $f\restrictedto Y_0 = g\restrictedto Y_0'$.</li>
 <li> Suppose $Y_\alpha = Y_\alpha'$ and $f\restrictedto Y_\alpha = g\restrictedto Y_\alpha'$. Let $x \in Y_{\alpha+1}$, and since $Y$ is transitive we have $x \subseteq Y_\alpha$ (since $y \in x \implies \rank(y) < \rank(x) = \alpha$). Let:<br/>
 $$
@@ -483,8 +483,8 @@ Therefore $L[A] \subseteq M$ by transitivity of $M$.<p align="right">$\square$</
 <i>Solution.</i> By <a href="#lem13.33.A">Lemma 13.33.A</a>, there exists a global well-order on $V$. This yields a one-to-one correspondence between $V$ and $\boldsymbol{\mathrm{ORD}}$, so there exists a class relation $E$ such that $(V,\in)$ is isomorphic to $(\boldsymbol{\mathrm{ORD}},E)$. Let $A := \Gamma"(E)$. Following the same argument in <a href="#ex13.27">Exercise 13.27</a>, we observe that $V = L[A]$ - indeed, since $L[A]$ witnesses the class $A$ (as $L[A]$ contains all the ordinals) and $\Gamma$ is definable without parameters, we obtain a transitive class $W \subseteq L[A]$ such that $(W,\in)$ is isomorphic to $(\boldsymbol{\mathrm{ORD}},E)$ in $L[A]$. But the uniqueness of $W$ (witnessed in $V$) implies that we must have $V = W$, so $V = L[A]$ necessarily.<p align="right">$\square$</p><br/>
 <a name="ex13.34"></a><br/>
 <h2>Exercise 13.34.</h2>
-<i>Solution.</i> Define a cumulative hierarchy as follows:<br/>
-</ol>
+<i>Solution.</i> Define a cumulative hierarchy as follows:
+<ol>
 <li> $L_0(M,X) := \emptyset$.</li>
 <li> $L_{\alpha+1}(M,X) := \func{def}_{M \cup \lbrace X\rbrace}(L_\alpha(M,X)) \cup ((M \cup \lbrace X\rbrace) \cap V_\alpha)$.</li>
 <li> $L_\alpha(M,X) := \bigcup_{\beta<\alpha} L_\beta(M,X)$, if $\alpha$ is  limit.</li>

@@ -6,7 +6,7 @@ permalink: /jech-solutions/testing2
 excerpt: ""
 ---
 
-(% raw %)
+{% raw %}
 Main paragraph underscore $\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)$.
 <ol>
 <li>Item underscores $\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)$.</li>

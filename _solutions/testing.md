@@ -6,7 +6,7 @@ permalink: /jech-solutions/testing
 excerpt: ""
 ---
 
-Main paragraph underscore otherwise, we have $\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)$.
+Main paragraph underscore <span>$\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)$</span>.
 <ol>
 <li>Item underscores $\operatorname{ext}_\in(X) = \operatorname{ext}_\in(\emptyset)$.</li>
 </ol>

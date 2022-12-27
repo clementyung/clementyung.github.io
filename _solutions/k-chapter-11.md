@@ -151,4 +151,5 @@ Since the meager property is translational invariant, we have that $(a - q, b - 
 <br/>
 <a name="ex11.8"></a><br/>
 <h2>Exercise 11.8.</h2>
-<i>Solution.</i> The hint solves the problem.<p align="right">$\square$</p>\n</body>
+<i>Solution.</i> The hint solves the problem.<p align="right">$\square$</p>
+</body>

@@ -138,33 +138,14 @@ Thus, $\bigtriangle_{\alpha < \kappa} X_\alpha \subseteq \lambda$ is bounded. Th
 <h2>Exercise 8.11.</h2>
 <a name="ex8.11(i)"></a><br/>
 <h3>Exercise 8.11(i).</h3>
-If $S \subseteq T$ then $\Tr(S) \subseteq \Tr(T)$.<br/>
-<br/>
 <i>Solution.</i> This follows from that if $S \cap \alpha$ is stationary, then $T \cap \alpha$ is also stationary.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex8.11(ii)"></a><br/>
 <h3>Exercise 8.11(ii).</h3>
-$\Tr(S \cup T) = \Tr(S) \cup \Tr(T)$.<br/>
-<br/>
 <i>Solution.</i> By <a href="#ex8.11(i)">Exercise 8.11(i)</a>, we have $T(S \cup T) \supseteq \Tr(S) \cup \Tr(T)$. Conversely, let $\alpha \in \Tr(S \cup T)$. Then $\cf(\alpha) > \omega$ and $(S \cup T) \cap \alpha = (S \cap \alpha) \cup (T \cap \alpha)$ is stationary. If neither $S \cap \alpha$ nor $T \cap \alpha$ is stationary, then for some closed unbounded sets $C_S,C_T \subseteq \kappa$ we have $(S \cap \alpha) \cap C_S = \emptyset$ and $(T \cap \alpha) \cap C_T = \emptyset$. Then $C_S \cap C_T$ is still closed unbounded, and $(S \cup T) \cap \alpha \cap (C_S \cap C_T) = \emptyset$, a contradiction.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex8.11(iii)"></a><br/>
 <h3>Exercise 8.11(iii).</h3>
-$\Tr(\Tr(S)) \subseteq \Tr(S)$.<br/>
-<br/>
-\begin{lemma}{8.11(iii).A}<br/>
-\label{lem8.11(iii).A}<br/>
-Fix a limit ordinal $\alpha$ with $\cf(\alpha) > \omega$. For $X \subseteq \alpha$, let:<br/>
-$$
-\begin{align*}<br/>
-\Lim(X) := \lbrace \beta < \alpha : X \cap \beta \text{ is unbounded in } \beta\rbrace<br/>
-\end{align*}$$
-If $X$ is unbounded in $\alpha$, then $\Lim(X)$ is closed unbounded in $\alpha$.<br/>
-<br/>
-<i>Proof.</i> We first show that $\Lim(X)$ is unbounded in $\alpha$. Fix $\gamma < \alpha$, and since $X$ is unbounded we may inductively fix a sequence $\gamma < \beta_0 < \beta_1 < \dots$ of ordinals in $X$. Since $\cf(\alpha) > \omega$, $\beta := \Lim_n \beta_n < \alpha$, and $X \cap \beta$ is unbounded in $\beta$. Thus, $\beta \in \Lim(X)$ and $\beta > \gamma$.<br/>
-<br/>
-To see that $\Lim(X)$ is closed, let $\beta < \alpha$ such that $\Lim(X) \cap \beta$ is unbounded in $\beta$. We wish to show that $X \cap \beta$ is unbounded in $\beta$. Let $\gamma < \beta$, and since $\Lim(X) \cap \beta$ is unbounded there exists a $\delta \in \Lim(X)$ such that $\gamma < \delta < \beta$. Then $X \cap \delta$ is unbounded in $\delta$, so there exists a $\zeta \in X$ which $\gamma < \zeta < \delta$, as desired.<p align="right">$\blacksquare$</p><br/>
-<br/>
 <i>Solution.</i> Let $\alpha \in \Tr(\Tr(S))$, so $\cf(\alpha) > \omega$ and $\Tr(S) \cap \alpha$ is stationary. Now:<br/>
 $$
 \begin{align*}<br/>
@@ -174,21 +155,6 @@ Let $C$ be a closed unbounded subset of $\alpha$. Note that $\Lim(C) \subseteq C
 <br/>
 <a name="ex8.11(iv)"></a><br/>
 <h3>Exercise 8.11(iv).</h3>
-If $S \simeq T$ mod $I_\text{NS}$ then $\Tr(S) \simeq \Tr(T)$ mod $I_\text{NS}$.<br/>
-<br/>
-\begin{lemma}{8.11(iv).A}<br/>
-\label{lem8.11(iv).A}<br/>
-Let $X$ be an unbounded subset of some limit ordinal $\kappa$ such that for all limit point $\alpha$ of $X$, $\cf(\alpha) > \omega$. Then $\Lim(\Lim(X)) = \Lim(X)$.<br/>
-<br/>
-<i>Proof.</i> <u>$\Lim(\Lim(X)) \subseteq \Lim(X)$:</u> Let $\alpha \in \Lim(\Lim(X))$, and suppose $\alpha = \sup\lbrace \alpha_\beta : \beta < \cf(\alpha)\rbrace$ such that $\alpha_\beta \in \Lim(X)$ for all $\beta$. Then for each $\alpha_\beta$, suppose $\alpha_\beta = \sup\lbrace \alpha_{\beta,\xi} : \xi < \alpha_\beta\rbrace$. Then clearly:<br/>
-$$
-\begin{align*}<br/>
-\alpha = \sup\lbrace \alpha_{\beta,\xi} : \beta < \cf(\alpha), \xi < \cf(\alpha_\beta)\rbrace<br/>
-\end{align*}$$
-so $\alpha \in \Lim(X)$. Note that we do not require $\cf(\alpha) > \omega$ here.<br/>
-<br/>
-<u>$\Lim(\Lim(X)) \supseteq \Lim(X)$:</u> Let $\alpha \in \Lim(X)$, and suppose $\alpha = \sup\lbrace \alpha_\beta : \beta < \cf(\alpha)\rbrace$. Now $\cf(\alpha) > \omega$, so the set of limit ordinals below $\cf(\alpha)$ is unbounded in $\cf(\alpha)$. Thus, for limit ordinal $\beta < \cf(\alpha)$ we let $\alpha_\beta' := \sup_{\gamma < \beta} \alpha_\gamma$. $\alpha_\beta' \in \Lim(X)$ for all limit ordinals $\beta$, and clearly $\alpha = \sup\lbrace \alpha_\beta' : \beta < \cf(\alpha), \text{$\beta$ limit}\rbrace$, so $\alpha \in \Lim(\Lim(X))$.<p align="right">$\blacksquare$</p><br/>
-<br/>
 <i>Solution.</i> We only deal with ordinals of cofinality $>\omega$.<br/>
 <br/>
 We note that $S \simeq T$ mod $I_\text{NS}$ iff there exists some closed unbounded set $C$ such that $S \cap C = T \cap C$. Note that $S \cap \Lim(C) = T \cap \Lim(C)$.<br/>
@@ -363,4 +329,5 @@ so indeed $x \in P_\kappa(A)$.<br/>
 <i>Solution.</i> <u>Closedness:</u> Let $\beta < \kappa$ and let $\c{x_\xi : \xi < \beta}$ be a sequence of sets in $\lbrace x \in P_\kappa(\lambda) : x \cap \kappa \in \kappa\rbrace$. Let $x := \bigcup_{\xi<\beta}$. Once again as in the proof of <a href="#ex8.18">Exercise 8.18</a>, $\vert x\vert  < \kappa$. Furthermore, $x \cap \kappa = \sup_{\xi<\alpha} x_\xi \cap \kappa$ is the supremum of a set of ordinals, so $x \cap \kappa$ is an ordinal and $\vert x \cap \kappa\vert  \leq \vert x\vert  < \kappa$. Thus $x \in \kappa$.<br/>
 <br/>
 <u>Unboundedness:</u> Let $y \in X$. Let $\alpha = \sup{y}$. Since $\vert y\vert  < \kappa \leq \lambda$ and $\kappa$ is regular, $\alpha < \kappa$. Then $y \cap \kappa \subseteq (\alpha + 1) \cap \kappa \in \kappa$.<p align="right">$\square$</p><br/>
-\n</body>
+
+</body>

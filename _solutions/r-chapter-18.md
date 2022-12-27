@@ -164,4 +164,5 @@ It remains to prove that $\kappa$ is a singular cardinal in $M$ and $\lambda$ is
 <br/>
 <b>Claim.</b>. Suppose the Covering Theorem for $L$ holds in $L[x]$ but fails in $L[0^\sharp,x]$. Then the Covering Theorem for $L[x]$ fails in $L[0^\sharp,x]$.<br/>
 <br/>
-<i>Proof.</i> Suppose instead that the Covering Theorem for $L[x]$ holds in $L[0^\sharp,x]$. Let $X \in L[0^\sharp,x]$ be uncountable. By the Covering Theorem for $L[x]$, there exists a set $Y \subseteq X$ in $L[x]$ with $\vert Y\vert  = \vert X\vert $. Since the Covering Theorem for $L$ holds in $L[x]$, there exists a $Z \subseteq Y$ in $L$ with $\vert Z\vert  = \vert Y\vert  = \vert X\vert $. Thus the Covering Theorem for $L$ holds in $L[0^\sharp,x]$, a contradiction.<p align="right">$\blacksquare$</p><p align="right">$\square$</p>\n</body>
+<i>Proof.</i> Suppose instead that the Covering Theorem for $L[x]$ holds in $L[0^\sharp,x]$. Let $X \in L[0^\sharp,x]$ be uncountable. By the Covering Theorem for $L[x]$, there exists a set $Y \subseteq X$ in $L[x]$ with $\vert Y\vert  = \vert X\vert $. Since the Covering Theorem for $L$ holds in $L[x]$, there exists a $Z \subseteq Y$ in $L$ with $\vert Z\vert  = \vert Y\vert  = \vert X\vert $. Thus the Covering Theorem for $L$ holds in $L[0^\sharp,x]$, a contradiction.<p align="right">$\blacksquare$</p><p align="right">$\square$</p>
+</body>

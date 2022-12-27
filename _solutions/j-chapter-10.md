@@ -130,4 +130,5 @@ $$
 &\iff \ss{\alpha \in \kappa : x \in \bigcap_{\beta \in \alpha} P_\beta} \in D \\<br/>
 &\iff \bigtriangle_{\alpha < \kappa} (P_\alpha \cap \kappa) \in D<br/>
 \end{align*}$$
-in which the last assertion holds by normality of $D$.<p align="right">$\square$</p>\n</body>
+in which the last assertion holds by normality of $D$.<p align="right">$\square$</p>
+</body>

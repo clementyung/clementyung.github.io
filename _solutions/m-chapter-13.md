@@ -556,4 +556,5 @@ The latter assertion follows immediately: If $M$ is a class with a definable one
 <br/>
 <a name="ex13.37"></a><br/>
 <h2>Exercise 13.37.</h2>
-<i>Solution.</i> Let $M$ be a transitive model of $\ZF$ such that there exists a definable one-to-one correspondence with the class of all ordinals. By <a href="#ex13.36">Exercise 13.36</a>, we have $M \subseteq OD$. But since $M$ is transitive, for all $x \in M$ we have $\TC(\lbrace x\rbrace) \subseteq M \subseteq OD$. Thus $x \in HOD$, so we have in fact that $M \subseteq HOD$.<p align="right">$\square$</p>\n</body>
+<i>Solution.</i> Let $M$ be a transitive model of $\ZF$ such that there exists a definable one-to-one correspondence with the class of all ordinals. By <a href="#ex13.36">Exercise 13.36</a>, we have $M \subseteq OD$. But since $M$ is transitive, for all $x \in M$ we have $\TC(\lbrace x\rbrace) \subseteq M \subseteq OD$. Thus $x \in HOD$, so we have in fact that $M \subseteq HOD$.<p align="right">$\square$</p>
+</body>

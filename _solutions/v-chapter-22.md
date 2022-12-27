@@ -193,4 +193,5 @@ Y \subseteq \lbrace \alpha < \kappa : f(\alpha) < \gamma\rbrace<br/>
 \end{align*}$$
 Let $G$ be a generic filter containing $Y$, which implies that $X \in G$ as well. Since $\gamma < \kappa$ and $\kappa$ is the least ordinal moved, we have that $\Ult_G(M) \models [f]_G \in j_G(\gamma) = \gamma \in \kappa$. This contradicts the well-foundedness of $\Ult_G(M)$.<br/>
 <br/>
-We now show that $f$ is minimal. Suppose there exists $Y \subseteq X$ of positive measure and am unbounded function $g : Y \to M$ such that $g(\alpha) < f(\alpha)$ for all $\alpha \in Y$. Again, let $G$ be a generic filter containing $Y$. This implies that $[g]_G \in [f]_G = \kappa$, so $[g]_G = \alpha$ for some $\alpha < \kappa$. Since $\kappa$ is the least ordinal moved, $g$ is constant on $Y$, contradicting its unboundedness.<p align="right">$\square$</p>\n</body>
+We now show that $f$ is minimal. Suppose there exists $Y \subseteq X$ of positive measure and am unbounded function $g : Y \to M$ such that $g(\alpha) < f(\alpha)$ for all $\alpha \in Y$. Again, let $G$ be a generic filter containing $Y$. This implies that $[g]_G \in [f]_G = \kappa$, so $[g]_G = \alpha$ for some $\alpha < \kappa$. Since $\kappa$ is the least ordinal moved, $g$ is constant on $Y$, contradicting its unboundedness.<p align="right">$\square$</p>
+</body>

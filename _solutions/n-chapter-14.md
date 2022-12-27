@@ -138,8 +138,6 @@ $$
 <h2>Exercise 14.14.</h2>
 <a name="ex14.14(i)"></a><br/>
 <h3>Exercise 14.14(i).</h3>
-$\Vert \dot{G} \text{ is an ultrafilter on } B\Vert  = 1$.<br/>
-<br/>
 <i>Solution.</i> Recall that the statement "$G$ is an ultrafilter on $B$" is equivalent to the conjunction of the following:
 <ol>
 <li> $1 \in G$, $0 \notin G$.</li>
@@ -219,8 +217,6 @@ $$
 <br/>
 <a name="ex14.14(ii)"></a><br/>
 <h3>Exercise 14.14(ii).</h3>
-For every $X \subseteq B$, $\Vert \text{if $\check{X} \subseteq \dot{G}$ then $\prod X \in \dot{G}$}\Vert  = 1$.<br/>
-<br/>
 <i>Solution.</i> We first note that since $B$ is complete, and that $\Vert \dot{G} \text{ is an ultrafilter on } B\Vert  = 1$ by <a href="#ex14.14(i)">Exercise 14.14(i)</a>, we have that:<br/>
 $$
 \begin{align*}<br/>
@@ -261,4 +257,5 @@ $$
 \begin{align*}<br/>
 \Vert \pi(\dot{G}) \text{ is an ultrafilter on } \pi(B)\Vert  = \Vert \dot{H} \text{ is an ultrafilter on } B\Vert  = 1<br/>
 \end{align*}$$
-Similarly by <a href="#ex14.14(ii)">Exercise 14.14(ii)</a>, $H$ remains generic. $M[H] \subseteq M[G]$ as $G,\pi \in M[G]$ so $H = \pi(G) \in M[H]$. This argument is symmetric between $G$ and $H$, so $M[H] = M[G]$.<p align="right">$\square$</p>\n</body>
+Similarly by <a href="#ex14.14(ii)">Exercise 14.14(ii)</a>, $H$ remains generic. $M[H] \subseteq M[G]$ as $G,\pi \in M[G]$ so $H = \pi(G) \in M[H]$. This argument is symmetric between $G$ and $H$, so $M[H] = M[G]$.<p align="right">$\square$</p>
+</body>

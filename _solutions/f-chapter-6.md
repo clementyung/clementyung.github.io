@@ -75,7 +75,8 @@ We prove this by transfinite induction.
 <ol>
 <li> Since $\kappa$ is uncountable, $\beth_0 = \aleph_0 < \kappa$.</li>
 <li> If $\beth_\alpha < \kappa$, then since $\kappa$ is a strong limit, we have that $\beth_{\alpha+1} = 2^{\beth_\alpha} < \kappa$.</li>
-<li> If $\alpha$ is a limit ordinal, then $\sup\lbrace \beth_\beta : \beta < \alpha\rbrace \leq \kappa$. Since $\kappa$ is regular and $\alpha < \kappa$, then inequality must be strict.</li></ol><p align="right">$\blacksquare$</p><br/>
+<li> If $\alpha$ is a limit ordinal, then $\sup\lbrace \beth_\beta : \beta < \alpha\rbrace \leq \kappa$. Since $\kappa$ is regular and $\alpha < \kappa$, then inequality must be strict.</li>
+</ol><p align="right">$\blacksquare$</p><br/>
 <br/>
 <i>Solution.</i> If $\kappa = \omega$, then $\vert V_\omega\vert  = \aleph_0$ by <a href="#ex6.2">Exercise 6.2</a>. Otherwise, since $\kappa$ is uncountable we have $\omega + \kappa = \kappa$ (here addition is ordinal addition). Thus, by <a href="#ex6.2">Exercise 6.2</a> and <a href="#lem6.3.A">Lemma 6.3.A</a>, we have $\vert V_\kappa\vert  = \beth_\kappa$.<p align="right">$\square$</p><br/>
 <br/>
@@ -207,24 +208,6 @@ One may show that $+$ and $\times$ are well-defined (and are clearly definable i
 <h2>Exercise 6.6.</h2>
 <a name="ex6.6(i)"></a><br/>
 <h3>Exercise 6.6(i).</h3>
-$x \in B$ if and only if $\TC(x) \subseteq A$.<br/>
-<br/>
-\begin{lemma}{6.6(i).A}<br/>
-\label{lem6.6(i).A}<br/>
-For all sets $x$ we have:<br/>
-$$
-\begin{align*}<br/>
-\TC(x) = x \cup \bigcup_{y \in x} \TC(y)<br/>
-\end{align*}$$
-<i>Proof.</i> We prove the equality by induction on $\rank(x)$. Suppose $\rank(x) = \alpha$ and the equality holds for all sets of ranks $\beta < \alpha$. In particular, for $y,z$ such that $\rank(z) < \rank(y) < \alpha$, we have that $\TC(z) \subseteq \TC(y)$.<br/>
-<br/>
-For $\subseteq$, it suffices to show that $x \cup \bigcup_{y \in x} \TC(y)$ is transitive. Let $z \in x \cup \bigcup_{y \in x} \TC(y)$. We consider two cases.
-<ol>
-<li> If $z \in x$, then $\rank(z) < \rank(x)$. By induction hypothesis we have that $\TC(z) = z \cup \bigcup_{w \in z} \TC(w)$. Then for any $w \in z$, we have that $w \in \TC(w) \subseteq \TC(z) \subseteq x \cup \bigcup_{y \in x} \TC(y)$, so $z \subseteq \TC(x)$.</li>
-<li> If $z \in \TC(y)$ for some $y$, then $z \subseteq \TC(z) \subseteq \TC(y) \subseteq \TC(x)$.</li>
-</ol>
-For $\supseteq$, it suffices to show that for any transitive $T \ni x$, $x \cup \bigcup_{y \in x} \TC(y) \subseteq T$. $x \subseteq T$ follows by definition. For any $y \in x \subseteq T$, since $T$ is transitive we have that $y \subseteq T$. Therefore, $\TC(y) \subseteq T$ by definition.<p align="right">$\blacksquare$</p><br/>
-<br/>
 <i>Solution.</i> We induct on $\rank(x)$. Since $V_0 = \emptyset$, the base case is trivial. Suppose the statement holds for ranks $\beta < \alpha$, and suppose $\rank(x) = \alpha$.<br/>
 <br/>
 <u>$\implies$:</u> If $x \in B$, then by definition we have $x \in A$ and $x \subseteq B \subseteq A$, i.e. $\forall y \in x \, (y \in B)$. Since $\rank(y) < \rank(x)$, we have that $\TC(y) \subseteq A$. Thus, $\TC(x) = x \cup \bigcup_{y \in x} \TC(y) \subseteq A$.<br/>
@@ -233,8 +216,7 @@ For $\supseteq$, it suffices to show that for any transitive $T \ni x$, $x \cup 
 <br/>
 <a name="ex6.6(ii)"></a><br/>
 <h3>Exercise 6.6(ii).</h3>
-$B$ is the largest transitive class $B \subseteq A$.<br/>
-<br/>
 <i>Solution.</i> Let $C \subseteq A$ be another transitive class. We induct on $\rank(x)$ showing that if $x \in C$, then $x \in B$. Again, base case is trivial, so suppose the statement holds for ranks $\beta < \alpha$, and suppose $\rank(x) = \alpha$.<br/>
 <br/>
-Let $x \in C$. Since $C$ is transitive, $y \in C$ for all $y \in x$. Since $\rank(y) < \rank(x)$, by induction hypothesis we have that $y \in B$. In other words, $x \subseteq B$. By definition of $B$, $x \in B$.<p align="right">$\square$</p>\n</body>
+Let $x \in C$. Since $C$ is transitive, $y \in C$ for all $y \in x$. Since $\rank(y) < \rank(x)$, by induction hypothesis we have that $y \in B$. In other words, $x \subseteq B$. By definition of $B$, $x \in B$.<p align="right">$\square$</p>
+</body>

@@ -189,8 +189,6 @@ $$
 <h2>Exercise 5.14.</h2>
 <a name="ex5.14(i)"></a><br/>
 <h3>Exercise 5.14(i).</h3>
-$2^{<\kappa} = \kappa$ for all $\kappa$.<br/>
-<br/>
 <i>Solution.</i> If $\kappa = \aleph_{\alpha+1}$ then:<br/>
 $$
 \begin{align*}<br/>
@@ -205,8 +203,6 @@ $$
 <br/>
 <a name="ex5.14(ii)"></a><br/>
 <h3>Exercise 5.14(ii).</h3>
-$\kappa^{<\kappa} = \kappa$ for all regular $\kappa$.<br/>
-<br/>
 <i>Solution.</i> By Theorem 5.15:<br/>
 $$
 \begin{align*}<br/>
@@ -373,4 +369,5 @@ contradicting Corollary 5.13.<p align="right">$\square$</p><br/>
 <h2>Exercise 5.29.</h2>
 <i>Solution.</i> By Theorem 5.20(ii), we have that $\gimel(\kappa) = \kappa^{\cf(\kappa)} = \lambda^{\cf(\kappa)}$. If $\mu < \lambda$ and $\mu^{\cf(\kappa)} \geq \lambda$, then $\mu^{\cf(\kappa)} = \lambda^{\cf(\kappa)}$, contradicting minimality of $\lambda$. Thus, we must have that $\mu^{\cf(\kappa)} < \lambda$ for all $\mu < \lambda$.<br/>
 <br/>
-Now observe that we can't have $\cf(\lambda) > \cf(\kappa)$ - otherwise, by Theorem 5.20(iii) we have $\lambda^{\cf(\kappa)} = \lambda < \kappa$, a contradiction. Thus, by the same theorem, $\cf(\lambda) \leq \cf(\kappa)$ implies that $\lambda^{\cf(\kappa)} = \lambda^{\cf(\lambda)} = \gimel(\lambda)$, as desired.<p align="right">$\square$</p>\n</body>
+Now observe that we can't have $\cf(\lambda) > \cf(\kappa)$ - otherwise, by Theorem 5.20(iii) we have $\lambda^{\cf(\kappa)} = \lambda < \kappa$, a contradiction. Thus, by the same theorem, $\cf(\lambda) \leq \cf(\kappa)$ implies that $\lambda^{\cf(\kappa)} = \lambda^{\cf(\lambda)} = \gimel(\lambda)$, as desired.<p align="right">$\square$</p>
+</body>

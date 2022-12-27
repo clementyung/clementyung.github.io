@@ -72,14 +72,10 @@ Clearly $X \cap S = \emptyset$, for if $f \in X$ then for any $i \in \omega$, $f
 <h2>Exercise 4.5.</h2>
 <a name="ex4.5(i)"></a><br/>
 <h3>Exercise 4.5(i).</h3>
-The set of all irrational numbers has cardinality $\mathfrak{c}$.<br/>
-<br/>
 <i>Solution.</i> This follows from <a href="#ex4.4">Exercise 4.4</a> and that $\Q$ is countable.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex4.5(ii)"></a><br/>
 <h3>Exercise 4.5(ii).</h3>
-The set of all transcendental numbers has cardinality $\mathfrak{c}$.<br/>
-<br/>
 <i>Solution.</i> This follows from <a href="#ex4.4">Exercise 4.4</a> and that by <a href="#ex4.3">Exercise 4.3</a>, the set of all algebraic numbers is countable.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex4.6"></a><br/>
@@ -100,7 +96,7 @@ Write $\U = \lbrace U_i : i \in I\rbrace$, where $I$ is an index set and $U_i \c
 Now define $g : [\mathcal{B}]^\omega \to \mathcal{T}$ by:<br/>
 $$
 \begin{align*}<br/>
-g(\lbrace B_i : i \in \omega\rbrace) = \bigcup_{i \in \omega}<br/>
+g(\lbrace B_i : i \in \omega\rbrace) = \bigcup_{i \in \omega} B_i<br/>
 \end{align*}$$
 By <a href="#lem4.6.A">Lemma 4.6.A</a>, $g$ is onto. Thus:<br/>
 $$
@@ -183,8 +179,6 @@ which is a $G_\delta$ set.<p align="right">$\square$</p><br/>
 <h2>Exercise 4.17.</h2>
 <a name="ex4.17(i)"></a><br/>
 <h3>Exercise 4.17(i).</h3>
-$\N \times \N$ is homeomorphic to $\N$.<br/>
-<br/>
 <i>Solution.</i> Define $F : \N \times \N \to \N$ by stipulating that for all $f \in \N$, we have $F(f) = (g,h)$, where $g(n) = f(2n)$ and $h(n) = f(2n+1)$ for all $n$. Clearly $F$ is a one-to-one and onto function. We shall show that $F$ is in fact a homeomorphism.<br/>
 <br/>
 We first show that $F$ is continuous. Fix $s,t$ be two finite sequences, and we wish to show that $F_{-1}(O(s) \times O(t))$ is open. Fix $f \in F_{-1}(O(s) \times O(t))$. We then have for $n > \max\lbrace 2 \cdot \length(s), 2 \cdot \length(t) + 1\rbrace$, if $g \in \N$ and $f\restrictedto n = g\restrictedto n$, then $g \in F_{-1}(O(s) \times O(t))$. In other words, $O(f\restrictedto n) \subseteq F_{-1}(O(s) \times O(t))$, so $F_{-1}(O(s) \times O(t))$ is open.<br/>
@@ -193,8 +187,6 @@ A similar reasoning can be used to show that $F$ is an open map. Fix a finite se
 <br/>
 <a name="ex4.17(ii)"></a><br/>
 <h3>Exercise 4.17(ii).</h3>
-$\N^\omega$ is homeomorphic to $\N$.<br/>
-<br/>
 <i>Solution.</i> Let $\Gamma : \omega \times \omega \to \omega$ be Cantor's pairing function. Define $G : \N \to \N^\omega$ be stipulating that for all $f \in \N$, if $G(f) = \c{f_n : n \in \omega}$, then $f_n(k) = f(\Gamma(n,k))$ for all $k$. Then $G$ is one-to-one and onto, and one may repeat a proof similar to that of <a href="#ex4.17(i)">Exercise 4.17(i)</a> that $G$ is a homeomorphism. Note that $\N^\omega$ is equipped with the product topology, so basic open sets are of the form $\prod_{i \in \omega} U_i$, where $U_i = \N$ for all but finitely many $i$, and if $U_i \neq \N$ then $U_i = O(s_i)$ for some finite sequence $i$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex4.18"></a><br/>
@@ -246,4 +238,5 @@ $$
 \begin{align*}<br/>
 F"(X) = \bigcap_{n=1}^\infty \bigcup_{x \in X} B_{\frac{1}{n}}(f(x)) =: Y<br/>
 \end{align*}$$
-Clearly $F"(X) \subseteq Y$. Conversely, we see that $y \in Y$ precisely if $(\forall n > 0)(\exists x \in X) \, d(f(x),y) < \frac{1}{n}$. In other words, $y$ is in the closure of $F"(X)$. But since $F$ is a homeomorphism and $X$ is complete, $F"(X)$ is closed and therefore $y \in F"(X)$.<p align="right">$\square$</p>\n</body>
+Clearly $F"(X) \subseteq Y$. Conversely, we see that $y \in Y$ precisely if $(\forall n > 0)(\exists x \in X) \, d(f(x),y) < \frac{1}{n}$. In other words, $y$ is in the closure of $F"(X)$. But since $F$ is a homeomorphism and $X$ is complete, $F"(X)$ is closed and therefore $y \in F"(X)$.<p align="right">$\square$</p>
+</body>

@@ -254,4 +254,5 @@ Note that $g$ is well-defined as $S_\beta'$ are pairwise disjoint for $\beta < \
 <br/>
 <a name="ex9.13"></a><br/>
 <h2>Exercise 9.13.</h2>
-<i>Solution.</i> Following the hint, let $x,y \in [H]^n$ such that $n \in x$ and $n \notin y$ (obviously this is possible as $H$ is infinite). Then $F(x) = 1$ but $F(y) = 0$, so $F$ is not constant on $[H]^n$.<p align="right">$\square$</p>\n</body>
+<i>Solution.</i> Following the hint, let $x,y \in [H]^n$ such that $n \in x$ and $n \notin y$ (obviously this is possible as $H$ is infinite). Then $F(x) = 1$ but $F(y) = 0$, so $F$ is not constant on $[H]^n$.<p align="right">$\square$</p>
+</body>

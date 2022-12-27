@@ -94,8 +94,6 @@ The proof for function and constant symbols are similar.<p align="right">$\squar
 <h2>Exercise 12.3.</h2>
 <a name="ex12.3(i)"></a><br/>
 <h3>Exercise 12.3(i).</h3>
-$(A,<^\ast )$ is a linear ordering.<br/>
-<br/>
 <i>Solution.</i> Let $f,g,h : \kappa \to \kappa$ be three functions. Clearly $[f] \not<^\ast  [f]$, as $\lbrace \alpha \in \kappa : f(\alpha) < f(\alpha)\rbrace = \emptyset \notin U$. Since:<br/>
 $$
 \begin{align*}<br/>
@@ -118,8 +116,6 @@ where $R \in \lbrace =,<,>\rbrace$. Clearly $\kappa = X_< \sqcup X_= \sqcup X_>$
 <br/>
 <a name="ex12.3(ii)"></a><br/>
 <h3>Exercise 12.3(ii).</h3>
-If $U$ is $\sigma$-complete then $(A,<^\ast )$ is a well-ordering; $(A,<^\ast )$ is isomorphic, and can be identified with, $(\gamma,<)$, where $\gamma$ is an ordinal.<br/>
-<br/>
 <i>Solution.</i> We mimic the proof of Lemma 17.2. If $(A,<^\ast )$ was not a well-ordering, then there exists $f_i :  \kappa \to \kappa$, where $i \in \omega$, such that $[f_0] >^\ast  [f_1] >^\ast  \cdots$. For each $i$, denote:<br/>
 $$
 \begin{align*}<br/>
@@ -131,20 +127,12 @@ Hence, $(A,<^\ast )$ is isomorphic to its order-type.<p align="right">$\square$<
 <br/>
 <a name="ex12.3(iii)"></a><br/>
 <h3>Exercise 12.3(iii).</h3>
-If $U$ is $\kappa$-complete then $j(\alpha) = \alpha$ for all $\alpha < \kappa$.<br/>
-<br/>
 <i>Solution.</i> Recall from Corollary 12.5 that $j$ is an elementary embedding. Thus, we have that $j(\alpha)$ is an ordinal for all $\alpha$. Since $j$ preserves $\in$, by transfinite induction one have that $j(\alpha) \geq \alpha$ for each $\alpha$.<br/>
 <br/>
 On the other hand, suppose $[f] < j(\alpha)$ for some $f : \kappa \to \kappa$, then $f(\beta) < \alpha$ for almost all $\beta < \kappa$. By $\alpha$-completeness (since $\alpha < \kappa$), we have that $f(\beta) = \gamma$ for some $\gamma < \alpha$. Thus, $[f] < \alpha$, and hence $j(\alpha) \leq \alpha$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex12.3(iv)"></a><br/>
 <h3>Exercise 12.3(iv).</h3>
-If $d$ is the diagonal function, $[d] \geq \kappa$. The measure $U$ is normal if and only if $[d] = \kappa$.<br/>
-<br/>
-\begin{hint}<br/>
-Compare with <a href="https://clementyung.github.io/jech-solutions/chapter-10#ex10.5">Exercise 10.5</a>.<br/>
-\end{hint}<br/>
-<br/>
 <i>Solution.</i> Given a function $f : \kappa \to \kappa$, consider the property:<br/>
 $$
 \begin{align}<br/>
@@ -233,14 +221,10 @@ $$
 <h2>Exercise 12.6.</h2>
 <a name="ex12.6(i)"></a><br/>
 <h3>Exercise 12.6(i).</h3>
-If $M \models \vert X\vert  \leq \vert Y\vert $, then $\vert X\vert  \leq \vert Y\vert $.<br/>
-<br/>
 <i>Solution.</i> We have that $M \models \vert X\vert  \leq \vert Y\vert $ iff $M \models \exists f \,(f \text{ is a one-to-one function of $X$ into $Y$})$. By <a href="#ex12.5">Exercise 12.5</a>, $f$ remains a one-to-one function of $X$ into $Y$ in $V$, so $\vert X\vert  \leq \vert Y\vert $.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex12.6(ii)"></a><br/>
 <h3>Exercise 12.6(ii).</h3>
-If $\alpha \in M$ and $\alpha$ is a cardinal, then $M \models \alpha$ is a cardinal.<br/>
-<br/>
 <i>Solution.</i> We have $\alpha$ is a cardinal iff:<br/>
 $$
 \begin{align*}<br/>
@@ -407,4 +391,5 @@ $$
 \begin{align*}<br/>
 C := \lbrace x \in W : \varphi(u_1,\dots,u_n,x)\rbrace<br/>
 \end{align*}$$
-Replace each $M_i$ with $W_\alpha$, where $\alpha$ is the least ordinal such that $M_i \subseteq W_\alpha$. The rest of the proof passes again by transitivity of $W$.<p align="right">$\square$</p>\n</body>
+Replace each $M_i$ with $W_\alpha$, where $\alpha$ is the least ordinal such that $M_i \subseteq W_\alpha$. The rest of the proof passes again by transitivity of $W$.<p align="right">$\square$</p>
+</body>

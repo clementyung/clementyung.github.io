@@ -351,4 +351,5 @@ $$
 \end{align*}$$
 contradicting that $x$ witnesses $\varphi(g,\lambda_g)$.<p align="right">$\square$</p><br/>
 <br/>
-</p>\n</body>
+</p>
+</body>

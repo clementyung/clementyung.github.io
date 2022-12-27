@@ -83,8 +83,6 @@ $$
 <br/>
 <a name="ex2.8(i)"></a><br/>
 <h3>Exercise 2.8(i).</h3>
-$\alpha \cdot (\beta + \gamma) = \alpha \cdot \beta + \alpha \cdot \gamma$.<br/>
-<br/>
 <i>Solution.</i> We induct on $\gamma$. For $\gamma = 0$, we have:<br/>
 $$
 \begin{align*}<br/>
@@ -113,8 +111,6 @@ $$
 <br/>
 <a name="ex2.8(ii)"></a><br/>
 <h3>Exercise 2.8(ii).</h3>
-$\alpha^{\beta + \gamma} = \alpha^\beta \cdot \alpha^\gamma$.<br/>
-<br/>
 <i>Solution.</i> We induct on $\gamma$. For $\gamma = 0$, we have:<br/>
 $$
 \begin{align*}<br/>
@@ -141,8 +137,6 @@ $$
 <br/>
 <a name="ex2.8(iii)"></a><br/>
 <h3>Exercise 2.8(iii).</h3>
-$(\alpha^\beta)\gamma = \alpha^{\beta\cdot\gamma}$.<br/>
-<br/>
 <i>Solution.</i> We induct on $\gamma$. If $\gamma = 0$, then:<br/>
 $$
 \begin{align*}<br/>
@@ -169,8 +163,6 @@ $$
 <h2>Exercise 2.9.</h2>
 <a name="ex2.9(i)"></a><br/>
 <h3>Exercise 2.9(i).</h3>
-Show that $(\omega + 1) \cdot 2 \neq \omega \cdot 2 + 1 \cdot 2$.<br/>
-<br/>
 <i>Solution.</i> We first note that:<br/>
 $$
 \begin{align*}<br/>
@@ -180,8 +172,6 @@ Now we have $(\omega + 1) \cdot 2 = \omega + 1 + \omega + 1 = \omega + \omega + 
 <br/>
 <a name="ex2.9(ii)"></a><br/>
 <h3>Exercise 2.9(ii).</h3>
-Show that $(\omega \cdot 2)^2 \neq \omega^2 \cdot 2^2$.<br/>
-<br/>
 <i>Solution.</i> Observe that:<br/>
 $$
 \begin{align*}<br/>
@@ -241,20 +231,14 @@ $$
 <h2>Exercise 2.11.</h2>
 <a name="ex2.11(i)"></a><br/>
 <h3>Exercise 2.11(i).</h3>
-$\alpha < \beta$ and $\alpha + \gamma = \beta + \gamma$.<br/>
-<br/>
 <i>Solution.</i> As we saw in the proof of <a href="#ex2.9(i)">Exercise 2.9(i)</a>, $0 < 1$ but $0 + \omega = \omega = 1 + \omega$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex2.11(ii)"></a><br/>
 <h3>Exercise 2.11(ii).</h3>
-$\alpha < \beta$ and $\alpha \cdot \gamma = \beta \cdot \gamma$.<br/>
-<br/>
 <i>Solution.</i> As we saw in the proof of <a href="#ex2.9(ii)">Exercise 2.9(ii)</a>, $1 < 2$ but $1 \cdot \omega = \omega = 2 \cdot \omega$.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex2.11(iii)"></a><br/>
 <h3>Exercise 2.11(iii).</h3>
-$\alpha < \beta$ and $\alpha^\gamma = \beta^\gamma$.<br/>
-<br/>
 <i>Solution.</i> $2 < 3$ but:<br/>
 $$
 \begin{align*}<br/>
@@ -322,4 +306,5 @@ If $\beta$ is a limit ordinal, then for $\alpha < \omega^\beta$ we have that $\a
 <li> $(\forall y \; E \; x) \, a_y = F(\c{a_z : z \; E \; y})$.</li>
 <li> $x = G(\c{a_y : y \; E \; x})$.</li>
 </ol>
-The proof of Theorem 2.15 can be followed similarly to show that the $F$ above works.<p align="right">$\square$</p>\n</body>
+The proof of Theorem 2.15 can be followed similarly to show that the $F$ above works.<p align="right">$\square$</p>
+</body>

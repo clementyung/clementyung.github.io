@@ -125,4 +125,5 @@ $$
 \begin{align*}<br/>
 F(X) = \lbrace x \in Y : (\exists u \in X) \, x = F(u)\rbrace<br/>
 \end{align*}$$
-Note that if we denote $\varphi(u,x)$ as the formula "$x = F(u)$" then $\varphi$ is a property, so we may indeed apply Axiom Schema of Separation.<p align="right">$\square$</p>\n</body>
+Note that if we denote $\varphi(u,x)$ as the formula "$x = F(u)$" then $\varphi$ is a property, so we may indeed apply Axiom Schema of Separation.<p align="right">$\square$</p>
+</body>

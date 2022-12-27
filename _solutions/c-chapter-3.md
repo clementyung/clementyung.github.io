@@ -13,8 +13,6 @@ excerpt: ""
 <h2>Exercise 3.1.</h2>
 <a name="ex3.1(i)"></a><br/>
 <h3>Exercise 3.1(i).</h3>
-A subset of a finite set is finite.<br/>
-<br/>
 <i>Solution.</i> Let $X$ be a set with finite cardinality $\vert X\vert  = n$. We induct on $n$. If $n = 0$, then the only subset is $\emptyset$, which is finite. If $\vert X\vert  = n + 1$, then let $Y \subseteq X$. We consider two cases.
 <ol>
 <li> If $Y = X$, then since $X$ is finite, so is $Y$.</li>
@@ -23,8 +21,6 @@ A subset of a finite set is finite.<br/>
 <br/>
 <a name="ex3.1(ii)"></a><br/>
 <h3>Exercise 3.1(ii).</h3>
-The union of a finite set of finite sets is finite.<br/>
-<br/>
 <i>Solution.</i> First assume $A \cap B = \emptyset$. Suppose $\vert A\vert  = m$ and $\vert B\vert  = n$. First suppose $A \cap B = \emptyset$. Let $f : A \to m$ and $g : B \to n$ be bijections. Then define $h : A \sqcup B \to m + n$ by:<br/>
 $$
 \begin{align*}<br/>
@@ -40,30 +36,22 @@ For the general case, we observe that $A \cup B = A \cup (B - A)$, $A \cap (B - 
 <br/>
 <a name="ex3.1(iii)"></a><br/>
 <h3>Exercise 3.1(iii).</h3>
-The power set of a finite set is finite.<br/>
-<br/>
 <i>Solution.</i> This follows from Lemma 3.3, which asserts that if $\vert X\vert  = n$ then $\vert P(X)\vert  = 2^n$, which is finite.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex3.1(iv)"></a><br/>
 <h3>Exercise 3.1(iv).</h3>
-The image of a finite set (under a mapping) is finite.<br/>
-<br/>
 <i>Solution.</i> Let $X$ be a finite set and let $f : X \to Y$ be a mapping to some (not necessarily finite) set $Y$. Then, considering $f : X \to f"(X)$ (by adjusting the codomain), we obtain a bijection between $X$ and $f"(X)$. If $g : X \to n$ is a bijection, then $g \circ f^{-1} : f"(X) \to n$ is also a bijection, so $f"(X)$ is finite.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex3.2"></a><br/>
 <h2>Exercise 3.2.</h2>
 <a name="ex3.2(i)"></a><br/>
 <h3>Exercise 3.2(i).</h3>
-A subset of a countable set is at most countable.<br/>
-<br/>
 <i>Solution.</i> Note that a set is at most countable iff $\vert X\vert  \leq \vert \omega\vert $, iff there exists an injective mapping $X \to \omega$.<br/>
 <br/>
 Let $X$ be a countable set, and let $Y \subseteq X$. Consider the inclusion map $i : Y \to X$, which is of course injective. Since $X$ is countably, there exists a bijective map $f : X \to \omega$. Then $f \circ i : Y \to \omega$ is an injective mapping, so $Y$ is at most countable.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex3.2(ii)"></a><br/>
 <h3>Exercise 3.2(ii).</h3>
-The union of a finite set of countable sets is countable.<br/>
-<br/>
 <i>Solution.</i> Suppose $X_1,\dots,X_n$ are countable sets. Let $X := \bigcup_{i=1}^n X_i$. Since $X_1 \subseteq X$, $\vert X_1\vert  \leq \vert X\vert $ so $\vert X\vert  \geq \aleph_0$. To finish the proof, we need to find an injective mapping $X \to \omega$, so $\vert X\vert  \leq \aleph_0$.<br/>
 <br/>
 For each $i$, let $f_i : X_i \to \boldsymbol{N}$ be a bijection. Define $f : X \to \omega$ by stipulating that:<br/>
@@ -75,8 +63,6 @@ where $p_i$ denotes the $i^\text{th}$ smallest prime number. It's easy to see th
 <br/>
 <a name="ex3.2(iii)"></a><br/>
 <h3>Exercise 3.2(iii).</h3>
-The image of a countable set (under a mapping) is at most countable.<br/>
-<br/>
 <i>Solution.</i> Let $X,Y$ be sets, $X$ countable, and let $f : X \to Y$ be a mapping. Let $g : \omega \to X$ be a bijection. Then $f \circ g : \omega \to Y$. Now define $h : Y \to \omega$ by stipulating that:<br/>
 $$
 \begin{align*}<br/>
@@ -96,8 +82,6 @@ Then $h$ is well-defined as $\omega$ is well-ordered, and clearly $h$ is injecti
 <h2>Exercise 3.4.</h2>
 <a name="ex3.4(i)"></a><br/>
 <h3>Exercise 3.4(i).</h3>
-The set of all finite sequences in $\boldsymbol{N}$ is countable.<br/>
-<br/>
 <i>Solution.</i> Let $\boldsymbol{N}^{<\omega}$ denote the set of finite sequences in $\boldsymbol{N}$. Define a map $f : \boldsymbol{N}^{<\omega} \to \boldsymbol{N}$ as follows: For each $s = \c{s(0),\dots,s(n-1)} \in \boldsymbol{N}^{<\omega}$, let:<br/>
 $$
 \begin{align*}<br/>
@@ -107,8 +91,6 @@ where $p_k$ is the $k^\text{th}$ smallest prime number. The injectivity of this 
 <br/>
 <a name="ex3.4(ii)"></a><br/>
 <h3>Exercise 3.4(ii).</h3>
-The set of all finite subsets of a countable set is countable.<br/>
-<br/>
 <i>Solution.</i> WLOG we may show the statement for finite subsets of $\boldsymbol{N}$, the general case follows from establishing a bijection between $\boldsymbol{N}$ and the arbitrary countable set.<br/>
 <br/>
 Clearly $\vert \boldsymbol{N}\vert  \leq \vert [\boldsymbol{N}]^{<\omega}\vert $ by the injective map $n \mapsto \lbrace n\rbrace$. On the other hand, for each $\lbrace a_0,\dots,a_{n-1}\rbrace \in [\boldsymbol{N}]^{<\omega}$, where $a_0 < \cdots < a_{n-1}$, define the map from $[\boldsymbol{N}]^{<\omega}$ to $\boldsymbol{N}^{<\omega}$ by:<br/>
@@ -275,14 +257,6 @@ Clearly $g$ is one-to-one. Furthermore, $\ran(g)$ is a proper subset of $S$ as $
 <h2>Exercise 3.15.</h2>
 <a name="ex3.15(i)"></a><br/>
 <h3>Exercise 3.15(i).</h3>
-If $A$ and $B$ are D-finite, then $A \cup B$ and $A \times B$ are D-finite.<br/>
-<br/>
-\begin{lemma}{3.15(i).A}<br/>
-\label{lem3.15(i).A}<br/>
-If $A$ and $B$ are finite, $A \times B$ is finite.<br/>
-<br/>
-<i>Proof.</i> $A \cup B$ is finite by <a href="#ex3.1(ii)">Exercise 3.1(ii)</a>, so $P(P(A \cup B))$ is finite by <a href="#ex3.1(iii)">Exercise 3.1(iii)</a>. Observe that $A \times B \subseteq P(P(A \cup B))$, so by <a href="#ex3.1(i)">Exercise 3.1(i)</a> $A \times B$ is finite,<p align="right">$\blacksquare$</p><br/>
-<br/>
 <i>Solution.</i> Suppose $A \cup B$ is D-infinite, so by <a href="#ex3.14">Exercise 3.14</a> it contains a countable subset. Let $X \subseteq A \cup B$ be countable. Then $X = (X \cap A) \cup (X \cap B)$. By <a href="#ex3.2(i)">Exercise 3.2(i)</a>, $X \cap A$ and $X \cap B$ are at most countable. Since $A$ and $B$ are $D$-finite, they do not contain a countable subset. Thus, $X \cap A$ and $X \cap B$ are both finite. By <a href="#ex3.1(ii)">Exercise 3.1(ii)</a>, $X$ is finite, a contradiction.<br/>
 <br/>
 Suppose $A \times B$ is D-infinite with $X \subseteq A \times B$ countable. Let:<br/>
@@ -295,8 +269,6 @@ $X_A$ and $X_B$ are images under the mappings $(a,b) \mapsto a$ and $(a,b) \maps
 <br/>
 <a name="ex3.15(ii)"></a><br/>
 <h3>Exercise 3.15(ii).</h3>
-The set of all finite one-to-one sequences in a D-finite set is D-finite.<br/>
-<br/>
 <i>Solution.</i> Let $A$ be a D-finite set and let $A'$ denote the set of all one-to-one sequences of elements of $A'$. Suppose $A'$ is D-infinite with $X \subseteq A'$ countable. Write $X = \lbrace s_i : i < \omega\rbrace$. Define $x_i \in A$ inductively as follows:
 <ol>
 <li> $x_0 := s_0(0)$.</li>
@@ -315,8 +287,6 @@ but RHS is finite by <a href="#lem3.15(i).A">Lemma 3.15(i).A</a> and <a href="#e
 <br/>
 <a name="ex3.15(iii)"></a><br/>
 <h3>Exercise 3.15(iii).</h3>
-The union of a disjoint D-finite family of D-finite sets is D-finite.<br/>
-<br/>
 <i>Solution.</i> Let $I$ be D-finite, and for each $i \in I$ let $A_i$ be a D-finite set such that $i \neq j \implies A_i \cap A_j = \emptyset$. Let $A := \bigsqcup_{i \in I} A_i$. Suppose $A$ is D-infinite with a countable subset $X \subseteq A$. Write $X = \lbrace x_i : i < \omega\rbrace$.<br/>
 <br/>
 Define $Y = \lbrace y_i : i < \omega\rbrace \subseteq X$ inductively as follows:
@@ -330,4 +300,5 @@ In particular, this gives us $I' := \lbrace i_k : k < \omega\rbrace \subseteq I$
 <h2>Exercise 3.16.</h2>
 <i>Solution.</i> As in the hint, it suffices to show that $\lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty for each $n$, in which it's clear that they are pairwise unequal, so $P(P(A))$ is D-infinite.<br/>
 <br/>
-We induct on $n$ that $S_n := \lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $\vert X \cup \lbrace x\rbrace\vert  = n + 1$ by <a name="#1#lem1.13.A">Lemma 1.13.A</a>, so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty.<p align="right">$\square$</p>\n</body>
+We induct on $n$ that $S_n := \lbrace X \subseteq A : \vert X\vert  = n\rbrace$ is non-empty. $S_0$ is non-empty as $\emptyset \in S_0$. If $S_n$ is non-empty, let $X \in S_n$. Since $X \subseteq A$ is finite and $A$ is infinite, we have $A - X \neq \emptyset$, so let $x \in A - X$. Then $\vert X \cup \lbrace x\rbrace\vert  = n + 1$ by <a name="#1#lem1.13.A">Lemma 1.13.A</a>, so $X \cup \lbrace x\rbrace \in S_{n+1}$, i.e. $S_{n+1}$ is non-empty.<p align="right">$\square$</p>
+</body>

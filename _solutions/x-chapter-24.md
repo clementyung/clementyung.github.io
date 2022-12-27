@@ -127,4 +127,5 @@ $$
 &= \bigcup_{\gamma < \omega_1} (\gamma + 1) \cap S_\gamma \\<br/>
 &= \emptyset \in I<br/>
 \end{align*}$$
-as desired.<p align="right">$\square$</p>\n</body>
+as desired.<p align="right">$\square$</p>
+</body>

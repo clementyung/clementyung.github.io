@@ -157,4 +157,5 @@ $$
 \begin{align*}<br/>
 f(\alpha) := \min\lbrace i_\alpha \in \omega_2 : (\forall i \geq i_\alpha) \, S_i \cap C_\alpha = \emptyset\rbrace<br/>
 \end{align*}$$
-This is well-defined as $C_\alpha$ is a bounded subset of the regular cardinal $\omega_3$. Since $\omega_2 < \omega_3$ are regular, $f$ is regressive on a stationary subset of $E_{\aleph_1}^{\aleph_3}$, so by Fodor's Theorem it takes a constant value $i$ on some stationary subset $A \subseteq E_{\aleph_1}^{\aleph_3}$. Thus for all $\alpha \in A$, $i_\alpha = i$ so $S_i \cap C_\alpha = \emptyset$ by definition of $f$. Hence $S_i$ does not reflect at $\alpha$.<p align="right">$\square$</p>\n</body>
+This is well-defined as $C_\alpha$ is a bounded subset of the regular cardinal $\omega_3$. Since $\omega_2 < \omega_3$ are regular, $f$ is regressive on a stationary subset of $E_{\aleph_1}^{\aleph_3}$, so by Fodor's Theorem it takes a constant value $i$ on some stationary subset $A \subseteq E_{\aleph_1}^{\aleph_3}$. Thus for all $\alpha \in A$, $i_\alpha = i$ so $S_i \cap C_\alpha = \emptyset$ by definition of $f$. Hence $S_i$ does not reflect at $\alpha$.<p align="right">$\square$</p>
+</body>

@@ -664,4 +664,5 @@ $$
 \begin{align*}<br/>
 f(P_n) := \min{P_n}<br/>
 \end{align*}$$
-This is well-defined as $a_n,b_n$ are compatible for each $n \in \omega$. Then $f$ is a choice function on $\lbrace P_n : n \in \omega\rbrace$, a contradiction.<p align="right">$\square$</p>\n</body>
+This is well-defined as $a_n,b_n$ are compatible for each $n \in \omega$. Then $f$ is a choice function on $\lbrace P_n : n \in \omega\rbrace$, a contradiction.<p align="right">$\square$</p>
+</body>

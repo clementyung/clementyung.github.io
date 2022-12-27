@@ -289,4 +289,5 @@ For (i), let $A \subseteq P_\beta$ be an antichain. Let $D \subseteq P_\beta$ be
 <br/>
 For (ii), this follows from that $\kappa \geq \aleph_2$ is a regular cardinal, and $P$ is a countable support iteration.<br/>
 <br/>
-For (iii), we first note that under the countable support iteration, if $\cf(\beta) > \omega$ then $P_\beta$ is a direct limit. Since $E_{\aleph_1}^\kappa$ is a stationary subset of $\kappa$, the result follows.<p align="right">$\square$</p>\n</body>
+For (iii), we first note that under the countable support iteration, if $\cf(\beta) > \omega$ then $P_\beta$ is a direct limit. Since $E_{\aleph_1}^\kappa$ is a stationary subset of $\kappa$, the result follows.<p align="right">$\square$</p>
+</body>

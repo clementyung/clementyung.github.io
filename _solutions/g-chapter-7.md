@@ -421,12 +421,6 @@ where the last equality holds because $u \leq v$ and $u \leq x$. Then $w < v$ bu
 <h2>Exercise 7.27.</h2>
 <a name="ex7.27(i)"></a><br/>
 <h3>Exercise 7.27(i).</h3>
-Verify the distributive laws:<br/>
-$$
-\begin{align*}<br/>
-a \cdot \sum\lbrace u : u \in X\rbrace &= \sum\lbrace a \cdot u : u \in X\rbrace \\<br/>
-a + \prod\lbrace u : u \in X\rbrace &= \prod\lbrace a + u : u \in X\rbrace<br/>
-\end{align*}$$
 <i>Solution.</i>
 <ol>
 <li> Let $Y := \lbrace a \cdot u : u \in X\rbrace$. Let $v := \sum\lbrace u : u \in X\rbrace$. Then for all $u \in X$, $a \cdot v \geq a \cdot u$, so $a \cdot v$ is an upper bound of $Y$. To see that it is the least upper bound, let $w \in B$ be such that $a \cdot u \leq w$ for all $u \in X$. Then $u = (-a) \cdot u + a \cdot u \leq (-a) \cdot v + w$ for all $u \in X$, and since $v$ is the least upper bound of $X$, we have that $v \leq (-a) \cdot v + w$. Then $a \cdot v \leq a \cdot (-a) \cdot v + a \cdot w = a \cdot w \leq w$, so $a \cdot v$ is the least upper bound.</li>
@@ -434,12 +428,6 @@ a + \prod\lbrace u : u \in X\rbrace &= \prod\lbrace a + u : u \in X\rbrace<br/>
 <br/>
 <a name="ex7.27(ii)"></a><br/>
 <h3>Exercise 7.27(ii).</h3>
-Verify the De Morgan laws:<br/>
-$$
-\begin{align*}<br/>
--\sum\lbrace u : u \in X\rbrace &= \prod\lbrace -u : u \in X\rbrace \\<br/>
--\prod\lbrace u : u \in X\rbrace &= \sum\lbrace -u : u \in X\rbrace<br/>
-\end{align*}$$
 <i>Solution.</i> Let $Y := \lbrace -u : u \in X\rbrace$.
 <ol>
 <li> Let $v := \sum\lbrace u : u \in X\rbrace$. Then since $u \leq v$ for all $u \in X$, $-v \leq -u$ for all $u \in X$ so $v$ is a lower bound. If $w \leq -u$ for all $u \in X$, then $u \leq -w$ for all $u \in X$, so $v \leq -w$ as $v$ is the least upper bound of $X$. Thus $w \leq -v$, so $-v$ is the greatest lower bound of $Y$.</li>
@@ -555,4 +543,5 @@ $$
 \begin{align*}<br/>
 x = \sum_{\alpha < \lambda} x \cdot w_\alpha \leq \sum_{\alpha < \lambda} w_\alpha = \sum W<br/>
 \end{align*}$$
-Thus $\sum W$ is an upper bound of $X$. Let $v$ be an upper bound of $X$. Then since $W \subseteq X$ in particular $v$ is an upper bound of $W$. Thus $\sum W \leq v$ as $\sum W$ is the least upper bound of $W$. Therefore $\sum W = \sum X$.<p align="right">$\square$</p>\n</body>
+Thus $\sum W$ is an upper bound of $X$. Let $v$ be an upper bound of $X$. Then since $W \subseteq X$ in particular $v$ is an upper bound of $W$. Thus $\sum W \leq v$ as $\sum W$ is the least upper bound of $W$. Therefore $\sum W = \sum X$.<p align="right">$\square$</p>
+</body>

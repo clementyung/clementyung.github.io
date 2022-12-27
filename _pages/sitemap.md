@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Secret Page"
-permalink: /secret-page/
+permalink: /sitemap/
 author_profile: true
 ---
 

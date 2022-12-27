@@ -9,25 +9,24 @@ excerpt: ""
 {% include commands.html %}
 
 <body>
-
 <a name="ex13.1"></a>
 ## Exercise 13.1.
 <i>Solution.</i> Let $Z \in \cl(M)$, the transitive closure of $M$ under the G\"{o}del operations. We induct on the complexity of $Z$ under the operations to show that:
-\begin{center}
+<center>
 If $x \in^\ast  Z$ (i.e. there's a finite sequence $x \in x_1 \in \cdots \in x_n \in Z$), then $x \in \cl(M)$.
-\end{center}
+</center>
 Call this property (T). Note that if a set is transitive, then every element of this set satisfies this condition. Let $X,Y \in \cl(M)$:
 <ol>
-<li> If $Z = \lbrace X,Y\rbrace$, then immediately $Z \subseteq \cl(M)$, and satisfies the property (T)Lib</li>
+<li> If $Z = \lbrace X,Y\rbrace$, then immediately $Z \subseteq \cl(M)$, and satisfies the property (T).</li>
 <li> If $Z = X \times Y \in \cl(M)$, let $z = (x,y) = \lbrace \lbrace x\rbrace,\lbrace x,y\rbrace\rbrace \in Z$. Then $x,y \in Z$ by IH on $X,Y \in \cl(M)$, so by $G_1$ we have that $\lbrace x\rbrace,\lbrace x,y\rbrace \in \cl(M)$. By $G_1$ again, $x = \lbrace \lbrace x\rbrace,\lbrace x,y\rbrace\rbrace \in \cl(M)$, so $Z \subseteq \cl(M)$. This also proves that property (T) is satisfied.</li>
 
-<li> Since $\varepsilon(X,Y) \subseteq X \times Y$, this follows from (2)Lib</li>
+<li> Since $\varepsilon(X,Y) \subseteq X \times Y$, this follows from (2).</li>
 <li> If $X,Y \subseteq \cl(M)$ then immediately $Z = X - Y \subseteq X \subseteq \cl(M)$. Since $X$ satisfies property (T), so does $Z$.</li>
 
-<li> If $X,Y \subseteq \cl(M)$ then immediately $Z = X \cap Y \subseteq X \subseteq \cl(M)$. Since $X$ satisfies property (T), so does $Z$Lib</li>
+<li> If $X,Y \subseteq \cl(M)$ then immediately $Z = X \cap Y \subseteq X \subseteq \cl(M)$. Since $X$ satisfies property (T), so does $Z$.</li>
 <li> If $Z = \bigcup X$, let $z \in^\ast  Z$. Then $z \in^\ast  y \in X$. By IH, $X$ satisfies the property (T), so $z \in \cl(M)$, hence $Z$ satisfies the property (T).</li>
 
-<li> If $Z = \dom(X)$, let $z \in^\ast  Z$. Then $(z',y) = \lbrace \lbrace z'\rbrace,\lbrace z',y\rbrace\rbrace \in X$ for some $y$ and $z \in z'$ or $z = z'$. We see that $z' \in \lbrace z'\rbrace \in (z',y) \in X$, so by IH on $X$, $z \in \cl(M)$Lib</li>
+<li> If $Z = \dom(X)$, let $z \in^\ast  Z$. Then $(z',y) = \lbrace \lbrace z'\rbrace,\lbrace z',y\rbrace\rbrace \in X$ for some $y$ and $z \in z'$ or $z = z'$. We see that $z' \in \lbrace z'\rbrace \in (z',y) \in X$, so by IH on $X$, $z \in \cl(M)$.</li>
 <li>[(8-10)] Similar to that of (7).</li>
 </ol> 
 $\square$
@@ -107,7 +106,7 @@ $\square$
 <a name="lem13.5.A"></a>
 <b>Lemma 13.5.A.</b> The following are equivalent in $\mathsf{BG} \; - $ Comprehension:
 <ol>
-<li> $\forall X_1 \, \dots \, \forall X_n \, \exists Y \, Y = \lbrace x : \varphi(x,X_1,\dots,X_n)\rbrace$, where $\varphi$ is a formula in which only set variables are quantifiedLib</li>
+<li> $\forall X_1 \, \dots \, \forall X_n \, \exists Y \, Y = \lbrace x : \varphi(x,X_1,\dots,X_n)\rbrace$, where $\varphi$ is a formula in which only set variables are quantified.</li>
 <li> $\forall X_1 \, \dots \, \forall X_n \, \exists Y \, Y = \lbrace (x_1,\dots,x_m) : \varphi(x_1,\dots,x_m,X_1,\dots,X_n)\rbrace$, where $\varphi$ is a formula in which only set variables are quantified.</li>
 </ol>
 
@@ -137,10 +136,10 @@ where $X = G^{(1)}(X_1,\dots,X_n)$ and $X = G^{(2)}(X_1,\dots,X_n)$ for some com
 
 <i>Proof.</i> Similar to the original Normal Form Theorem, suffices to consider only formulas of the form:
 <ol>
-<li> The only logical symbols in $\varphi$ are $\neg$, $\wedge$ and $\exists$ (quantified over sets)Lib</li>
+<li> The only logical symbols in $\varphi$ are $\neg$, $\wedge$ and $\exists$ (quantified over sets).</li>
 <li> $=$ does not occur.</li>
 
-<li> The only occurrence of $\in$ is $x_i \in x_j$ for $i \neq j$, $x_i \in X_j$, or $X_i \in X_j$Lib</li>
+<li> The only occurrence of $\in$ is $x_i \in x_j$ for $i \neq j$, $x_i \in X_j$, or $X_i \in X_j$.</li>
 <li> All existential formulas are of the form $\exists y \, \varphi(y,x,X_1,\dots,X_n)$.</li>
 </ol>
 We induct on the complexity of $\varphi$, assuming that the statement holds for all subformulas of $\varphi$.
@@ -287,7 +286,6 @@ $\square$
 <a name="ex13.8"></a>
 ## Exercise 13.8.
 <i>Solution.</i> We first observe that if $(P,<)$, $(Q,<)$ are two $\Delta_0$ linear orders, then the statement "$P$ and $Q$ are order-isomorphic" is $\Sigma_1$, as it can be formulated as:
-\begin{small}
 
 $$
 \begin{align*}
@@ -295,9 +293,7 @@ $$
 \end{align*}
 $$
 
-\end{small}
 Thus, given ordinals $\alpha,\beta$, we have:
-\begin{small}
 
 $$
 \begin{align*}
@@ -305,7 +301,6 @@ x = \alpha + \beta \iff x \text{ is an ordinal} \wedge \text{$(x,\in)$ is order-
 \end{align*}
 $$
 
-\end{small}
 and:
 
 $$
@@ -455,13 +450,13 @@ $\blacksquare$
 <a name="lem13.17.B"></a>
 <b>Lemma 13.17.B.</b> For regular uncountable cardinals $\kappa$, we have that:
 <ol>
-<li> $H_\kappa \models$ All sets are of cardinality $<\kappa$Lib</li>
+<li> $H_\kappa \models$ All sets are of cardinality $<\kappa$.</li>
 <li> $L_{\kappa^L} \models$ All sets are of cardinality $<\kappa^L$.</li>
 </ol>
 
 <i>Proof.</i> \hfill
 <ol>
-<li> Let $X \in H_\kappa$, so $\vert \TC(X)\vert  < \kappa$. Let $\lambda < \kappa$ be a cardinal such that there exists a one-to-one function $f$ on $X$ into $\lambda$. But as we saw in the proof that $H_\kappa \models \AC$ in <a href="https://clementyung.github.io/jech-solutions/chapter-12#ex12.13">Exercise 12.13</a>, we in fact have $f \in H_\kappa$ (and that $\lambda \in H_\kappa$). Thus $H_\kappa \models \vert X\vert  < \lambda$Lib</li>
+<li> Let $X \in H_\kappa$, so $\vert \TC(X)\vert  < \kappa$. Let $\lambda < \kappa$ be a cardinal such that there exists a one-to-one function $f$ on $X$ into $\lambda$. But as we saw in the proof that $H_\kappa \models \AC$ in <a href="https://clementyung.github.io/jech-solutions/chapter-12#ex12.13">Exercise 12.13</a>, we in fact have $f \in H_\kappa$ (and that $\lambda \in H_\kappa$). Thus $H_\kappa \models \vert X\vert  < \lambda$.</li>
 <li> By (i) and <a href="#lem13.17.A">Lemma 13.17.A</a>, we have that $L \models (L_{\kappa^L} \models$ All sets are of cardinality $<\kappa^L))$. But the sentence "$L_{\kappa^L} \models$ All sets are of cardinality $<\kappa^L$" is $\Delta_0$ (as all quantifiers are bounded), so it holds (in $V$).</li>
 </ol> 
 $\blacksquare$
@@ -593,7 +588,7 @@ We now show that $L[A] = L[X]$. We see that $\theta,E \in L[X]$, $\Gamma \in L \
 
 <i>Proof.</i> Suppose $Y'$ is another transitive set such that $(\theta,E)$ is isomorphic to $(Y',\in)$. Let $f : Y \to \theta$ and $g : Y' \to \theta$ be the isomorphisms. For each ordinal $\alpha$, let $Y_\alpha := \lbrace x \in Y : \rank(x) = \alpha\rbrace$, and similarly for $Y_\alpha'$. We shall induct on $\alpha$ that $Y_\alpha = Y_\alpha'$, and $f\restrictedto Y_\alpha = g\restrictedto Y_\alpha'$.
 <ol>
-<li> $Y_0 = \emptyset = Y_0'$, and trivially $f\restrictedto Y_0 = g\restrictedto Y_0'$Lib</li>
+<li> $Y_0 = \emptyset = Y_0'$, and trivially $f\restrictedto Y_0 = g\restrictedto Y_0'$.</li>
 <li> Suppose $Y_\alpha = Y_\alpha'$ and $f\restrictedto Y_\alpha = g\restrictedto Y_\alpha'$. Let $x \in Y_{\alpha+1}$, and since $Y$ is transitive we have $x \subseteq Y_\alpha$ (since $y \in x \implies \rank(y) < \rank(x) = \alpha$). Let:
 
 $$
@@ -604,7 +599,7 @@ $$
 
 But since $\rank(y) = \alpha$ for all $y \in x$, and rank is preserved between isomorphisms, we have that $(g \circ f^{-1})(y) = y$ for all $y \in x$. Thus $x' = x$, and since $\rank(x) = \alpha + 1$ we have $x \in Y_{\alpha+1}$. Therefore $Y_{\alpha+1} \subseteq Y_{\alpha+1}$, and by symmetry of argument we have that equality holds.</li>
 
-<li> If $\alpha$ is limit, we have $Y_\alpha = \bigcup_{\beta<\alpha} Y_\beta = \bigcup_{\beta<\alpha} Y_\beta' = Y_\alpha'$Lib</li></ol>
+<li> If $\alpha$ is limit, we have $Y_\alpha = \bigcup_{\beta<\alpha} Y_\beta = \bigcup_{\beta<\alpha} Y_\beta' = Y_\alpha'$.</li></ol>
 Therefore, if $\rank(Y) = \alpha$, then $Y = \bigcup_{\beta<\alpha} Y_\beta = \bigcup_{\beta<\alpha} Y_\beta' = Y'$. 
 $\blacksquare$
 Note that the claim above is a theorem in $L[X]$ (recall we assume $V = L[X]$), not $L[A]$. But in $L[X]$ we already know that $(\TC(\lbrace X\rbrace),\in)$ is isomorphic to $(\theta,E)$, so we must have $\TC(\lbrace X\rbrace) = Y \in L[A]$. Finally, since $X$ is the element of $\TC(\lbrace X\rbrace)$ of the largest rank, we have that $X \in L[A]$. Therefore $L[X] \subseteq L[A]$.
@@ -694,7 +689,7 @@ $\square$
 <ol>
 <li> $L_0(M,X) := \emptyset$.</li>
 
-<li> $L_{\alpha+1}(M,X) := \func{def}_{M \cup \lbrace X\rbrace}(L_\alpha(M,X)) \cup ((M \cup \lbrace X\rbrace) \cap V_\alpha)$Lib</li>
+<li> $L_{\alpha+1}(M,X) := \func{def}_{M \cup \lbrace X\rbrace}(L_\alpha(M,X)) \cup ((M \cup \lbrace X\rbrace) \cap V_\alpha)$.</li>
 <li> $L_\alpha(M,X) := \bigcup_{\beta<\alpha} L_\beta(M,X)$, if $\alpha$ is  limit.</li>
 
 <li> $L(M,X) := \bigcup_{\alpha \in \boldsymbol{\mathrm{ORD}}} L_\alpha(M,X)$.</li>
@@ -738,5 +733,4 @@ $\square$
 <a name="ex13.37"></a>
 ## Exercise 13.37.
 <i>Solution.</i> Let $M$ be a transitive model of $\ZF$ such that there exists a definable one-to-one correspondence with the class of all ordinals. By <a href="#ex13.36">Exercise 13.36</a>, we have $M \subseteq OD$. But since $M$ is transitive, for all $x \in M$ we have $\TC(\lbrace x\rbrace) \subseteq M \subseteq OD$. Thus $x \in HOD$, so we have in fact that $M \subseteq HOD$. 
-$\square$
-</body>
+$\square$\n</body>

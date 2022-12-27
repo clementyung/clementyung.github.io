@@ -4,7 +4,7 @@ collection: solutions
 type: "Type"
 permalink: /jech-solutions/chapter-13
 excerpt: ""
- ---
+---
 
 {% include commands.html %}
 

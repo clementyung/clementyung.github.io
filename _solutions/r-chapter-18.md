@@ -89,10 +89,10 @@ $\square$
 
 <i>Proof.</i> For $\alpha < \kappa$, we shall define algebras $B_\alpha$ of subsets of $\kappa$ such that:
 <ol>
-<li> $\vert B_\alpha\vert  = \kappa$ for all $\alpha < \kappa$..</li>
+<li> $\vert B_\alpha\vert  = \kappa$ for all $\alpha < \kappa$Lib</li>
 <li> If $\beta < \alpha$, then $B_\beta \subseteq B_\alpha$.</li>
 
-<li> If $\mathcal{X} \subseteq B_\alpha$ and $\vert \mathcal{X}\vert  < \kappa$, then $\bigcap \mathcal{X} \in B_{\alpha+1}$ and $\bigcup \mathcal{X} \in B_{\alpha+1}$..</li></ol>
+<li> If $\mathcal{X} \subseteq B_\alpha$ and $\vert \mathcal{X}\vert  < \kappa$, then $\bigcap \mathcal{X} \in B_{\alpha+1}$ and $\bigcup \mathcal{X} \in B_{\alpha+1}$Lib</li></ol>
 Let $B_0 := B$. If $\alpha$ is a limit ordinal, let $B_\alpha := \bigcup_{\beta<\alpha} B_\beta$, which is still an algebra of sets as it is an increasing union of algebras of sets by induction hypothesis. Also, since $\vert B_\beta\vert  = \kappa$ for all $\beta < \alpha$ and $\alpha < \kappa$, the regularity of $\kappa$ implies that $\vert B_\alpha\vert  = \kappa$. If $B_\alpha$ is defined, we let:
 
 $$
@@ -109,7 +109,7 @@ where $\func{cl}$ here means take the closure of the set under finite union and 
 <ol>
 <li> If $X \in S$ and $Y \in S$, then $X \cup Y \in S$ and $X \cap Y \in S$.</li>
 
-<li> If $X \in T$ and $Y \in T$, then $X \cup Y \in T$ and $X \cap Y \in T$..</li></ol>
+<li> If $X \in T$ and $Y \in T$, then $X \cup Y \in T$ and $X \cap Y \in T$Lib</li></ol>
 
 <i>Proof.</i> We only show for the case of $X \cup Y$ - the case for $X \cap Y$ is symmetric.
 <ol>

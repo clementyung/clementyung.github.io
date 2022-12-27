@@ -179,10 +179,10 @@ $\square$
 ### Exercise 14.14(i).
 <i>Solution.</i> Recall that the statement "$G$ is an ultrafilter on $B$" is equivalent to the conjunction of the following:
 <ol>
-<li> $1 \in G$, $0 \notin G$..</li>
+<li> $1 \in G$, $0 \notin G$Lib</li>
 <li> $(\forall u \in G)(\forall v \in B)(u \leq v \to v \in G)$.</li>
 
-<li> $(\forall u \in G)(\forall v \in G) \, u \cdot v \in G$..</li>
+<li> $(\forall u \in G)(\forall v \in G) \, u \cdot v \in G$Lib</li>
 <li> $(\forall u \in B)(u \in G \vee -u \in G)$.</li>
 </ol>
 Thus, it suffices to show that all the statements above have Boolean values $1$. WLOG we may assume that $B$ is a complete Boolean algebra of sets, so by Lemma 14.21 we have that for $u,v \in B$, $u \leq v$ iff $\Vert \check{u} \leq \check{v}\Vert  = 1$. This implies that for any $u \in B$:
@@ -194,7 +194,7 @@ $$
 $$
 
 <ol>
-<li> We have $\Vert \check{1} \in \dot{G}\Vert  = \dot{G}(\check{1}) = 1$ and $\Vert \check{0} \in \dot{G}\Vert  = \dot{G}(\check{0}) = 0$..</li>
+<li> We have $\Vert \check{1} \in \dot{G}\Vert  = \dot{G}(\check{1}) = 1$ and $\Vert \check{0} \in \dot{G}\Vert  = \dot{G}(\check{0}) = 0$Lib</li>
 <li> Using <a href="#ex14.12">Exercise 14.12</a>:
 
 $$

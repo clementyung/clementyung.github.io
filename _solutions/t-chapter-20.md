@@ -65,7 +65,7 @@ $\square$
 ## Exercise 20.3.
 <i>Solution.</i> Note that we assume implicitly that $\kappa,\lambda$ are both regular cardinals. We may mimic the proof of Lemma 20.2 to obtain the solution here. Let:
 <ol>
-<li>[(iii)] Suppose $\Sigma$ is a set of sentences in the language of $\L_{\kappa,\omega}$, and $\vert \Sigma\vert  \leq \lambda$. If every subset of $\Sigma$ of size less than $\kappa$ has a model, then $\Sigma$ has a model..</li></ol>
+<li>[(iii)] Suppose $\Sigma$ is a set of sentences in the language of $\L_{\kappa,\omega}$, and $\vert \Sigma\vert  \leq \lambda$. If every subset of $\Sigma$ of size less than $\kappa$ has a model, then $\Sigma$ has a modelLib</li></ol>
 We shall show that (i) $\implies$ (iii) $\implies$ (ii) $\implies$ (i).
 
 <u>(i) $\implies$ (iii):</u> By a bijection we of course have that there exists a fine measure on $P_\kappa(A)$ for any $\vert A\vert  = \lambda$. The (ii) $\implies$ (iii) part of the proof of Lemma 20.2 can be mimic-ed completely.
@@ -74,7 +74,7 @@ We shall show that (i) $\implies$ (iii) $\implies$ (ii) $\implies$ (i).
 <ol>[label={(\alph*)}]
 <li> All sentences true in $(S,X)_{X \subseteq S}$.</li>
 
-<li> $\dot{X}(c)$ for all $X \in E$..</li></ol>
+<li> $\dot{X}(c)$ for all $X \in E$Lib</li></ol>
 Note that (a) is a countable set, and since $\vert E\vert  \leq \lambda$, there are at most $\lambda$ many sentences of the form (b). Therefore, $\vert \Sigma\vert  \leq \lambda$. The $\kappa$-completeness of $F$ ensures that every set of less than $\kappa$ sentences in $\Sigma$ has a model. Thus by (iii), $\Sigma$ has a model $\A = (A,X^{\A},c)_{X \in E}$. Define $U \subseteq P(S)$ by:
 
 $$
@@ -223,7 +223,7 @@ We now prove the lemma. Let $\alpha \geq \gamma + 2$ be sufficiently large and $
 
 In that case, we see that $j\restrictedto V_{\gamma+2} : V_{\gamma+2} \to V_{\gamma+2}$ is an elementary embedding, contradicting <a href="#lem20.10.A">Lemma 20.10.A</a>.</li>
 
-<li> Suppose $\cf(\gamma) > \omega$. Let $\kappa_n := j^n(\kappa)$, and let $\lambda := \lim_{n\to\infty} \kappa_n$. Then $j(\lambda) = \lambda$ (see the proof of Theorem 17.7), and since $\cf(\gamma) > \omega$ we have that $\lambda < \gamma$. Then $j\restrictedto V_{\lambda+2} : V_{\lambda+2} \to V_{\lambda+2}$ is an elementary embedding, contradicting <a href="#lem20.10.A">Lemma 20.10.A</a>..</li></ol> 
+<li> Suppose $\cf(\gamma) > \omega$. Let $\kappa_n := j^n(\kappa)$, and let $\lambda := \lim_{n\to\infty} \kappa_n$. Then $j(\lambda) = \lambda$ (see the proof of Theorem 17.7), and since $\cf(\gamma) > \omega$ we have that $\lambda < \gamma$. Then $j\restrictedto V_{\lambda+2} : V_{\lambda+2} \to V_{\lambda+2}$ is an elementary embedding, contradicting <a href="#lem20.10.A">Lemma 20.10.A</a>Lib</li></ol> 
 $\blacksquare$
 
 <i>Solution.</i> Let $\exists y \, \varphi(x,y)$ be a formula with $\varphi$ being $\Pi_2$, and $x \in V_\kappa$. By <a href="#ex20.7">Exercise 20.7</a> and that every extendible cardinal is supercompact (Theorem 20.4), if $V_\kappa \models \exists y \, \varphi(x,y)$ then $V \models \exists y \, \varphi(x,y)$.
@@ -241,7 +241,7 @@ $\square$
 <ol>
 <li> Obviously $\emptyset \notin U$. We have $j(P_\kappa^\ast (\lambda)) = P_{j(\kappa)}^\ast (j(\lambda))$, and $j"(\lambda) \subseteq j(\lambda)$, with $\otp(j"(\lambda)) = \otp(\lambda) = \lambda < j(\kappa)$. Thus $j"(\lambda) \in P_\kappa^\ast (\lambda)$.</li>
 
-<li> <u>Upward Closure:</u> Immediate..</li>
+<li> <u>Upward Closure:</u> ImmediateLib</li>
 <li> <u>$\kappa$-Directedness:</u> Let $\lbrace X_\beta : \beta < \mu\rbrace \subseteq U$ where $\mu < \kappa$. Then:
 
 $$
@@ -255,7 +255,7 @@ $$
 
 Since the last statement holds, $\bigcap_{\beta < \mu} X_\beta \in U$.</li>
 
-<li> <u>Normality:</u> Let $f : P_\kappa^\ast (\lambda) \to \lambda$ and $X \in U$ be such that $f(x) \in x$ for all non-empty $x \in X$, i.e. $f$ is regressive on $X$. By elementarity, $j(f)$ is regressive on $j(X)$, and since $X \in U$, $j"(\lambda) \in j(X)$. Thus, $(j(f))(j"(\lambda)) \in j"(\lambda)$, so $(j(f))(j"(\lambda)) = j(\gamma)$ for some $\gamma < \lambda$. Thus, $f(x) = \gamma$ for almost all $x$, as desired..</li></ol>
+<li> <u>Normality:</u> Let $f : P_\kappa^\ast (\lambda) \to \lambda$ and $X \in U$ be such that $f(x) \in x$ for all non-empty $x \in X$, i.e. $f$ is regressive on $X$. By elementarity, $j(f)$ is regressive on $j(X)$, and since $X \in U$, $j"(\lambda) \in j(X)$. Thus, $(j(f))(j"(\lambda)) \in j"(\lambda)$, so $(j(f))(j"(\lambda)) = j(\gamma)$ for some $\gamma < \lambda$. Thus, $f(x) = \gamma$ for almost all $x$, as desiredLib</li></ol>
 
 <u>$\impliedby$:</u> Let $U$ be a normal measure on $P_\kappa^\ast (\lambda)$, and let $M := \Ult_U(V)$ and let $j : V \to M$ be the canonical elementary embedding. The normality of $U$ gives us the $P_\kappa^\ast (\lambda)$ analog of Lemma 20.13, and that give $[f],[g] \in M$ we have:
 

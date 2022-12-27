@@ -24,7 +24,7 @@ This $e$ is well-defined by the completeness of $B(P)$ and fullness of $V^B$, an
 
 We shall show that $e$ is a dense embedding (i.e. it satisfies the conditions in Lemma 14.11).
 <ol>[label=(\Alph*)]
-<li> Since $1_{P * \dot{Q}} = (1_{P},\dot{1}_{Q})$, clearly $[e(1_{P * \dot{Q}})] = [\check{1}_{Q}]$..</li>
+<li> Since $1_{P * \dot{Q}} = (1_{P},\dot{1}_{Q})$, clearly $[e(1_{P * \dot{Q}})] = [\check{1}_{Q}]$Lib</li>
 <li> Suppose $(p_1,\dot{q}_1) \leq (p_2,\dot{q}_2)$, so $p_1 \leq p_2$ and $p_1 \forces \dot{q}_1 \leq \dot{q}_2$, i.e. $p_1 \leq \Vert \dot{q}_1 \leq \dot{q}_2\Vert $. If $e(p_1,\dot{q}_1) = [\dot{c}_1]$ and $e(p_2,\dot{q}_2) = [\dot{c}_2]$, then:
 
 $$
@@ -211,7 +211,7 @@ $\square$
 ## Exercise 16.5.
 <i>Solution.</i>
 <ol>
-<li> Suppose $(p_1,\dot{q_1}) \leq (p_2,\dot{q_2})$, so $p_1 \leq p_2$ and $p_1 \forces \dot{q}_1 \leq \dot{q}_2$. The in particular $p_1 \leq p_2$, so $h(p_1,\dot{q}_1) = h(p_2,\dot{q}_2)$..</li>
+<li> Suppose $(p_1,\dot{q_1}) \leq (p_2,\dot{q_2})$, so $p_1 \leq p_2$ and $p_1 \forces \dot{q}_1 \leq \dot{q}_2$. The in particular $p_1 \leq p_2$, so $h(p_1,\dot{q}_1) = h(p_2,\dot{q}_2)$Lib</li>
 <li> Let $(p,\dot{q}) \in P * Q$, and let $p' \leq h(p,\dot{q}) = p$. Then of course $p' \forces \dot{q} \leq \dot{q}$, so $(p',\dot{q}) \leq (p,\dot{q})$, and $h(p'\dot{q})$.</li>
 </ol> 
 $\square$
@@ -294,10 +294,10 @@ $\square$
 
 <b>Claim.</b>. There exists some $Q \subseteq P$ such that:
 <ol>
-<li> $\vert Q\vert  \leq \kappa$..</li>
+<li> $\vert Q\vert  \leq \kappa$Lib</li>
 <li> For all $D \in \D$, $W_D \subseteq Q$ and is a in fact a maximal antichain in $Q$.</li>
 
-<li> For all $p,q \in Q$ compatible, there exists an $r \in Q$ such that $r \leq p$ and $r \leq q$..</li></ol>
+<li> For all $p,q \in Q$ compatible, there exists an $r \in Q$ such that $r \leq p$ and $r \leq q$Lib</li></ol>
 
 <i>Proof.</i> Let $W := \bigcup_{D \in \D} W_D$. Since $\vert \D\vert  \leq \kappa$ and $\vert D\vert  \leq \aleph_0$ for all $D \in \D$, we have that $\vert W\vert  \leq \kappa$. For $n < \omega$, we define $Q_n$ inductively as follows: Let $Q_0 := W \cup \lbrace 1\rbrace$. Assume $Q_n$ is constructed and $\vert Q_n\vert   \leq \kappa$. Let $f_n$ be a choice function on $Q_n \times Q_n$ such that for all $p,q$, if $p$ and $q$ are compatible then $f_n(p,q) \leq p$ and $f_n(p,q) \leq q$ (otherwise, $f_n(p,q) = 1$). Let $Q_{n+1} := Q_n \cup \ran(f_n)$. Since $\vert Q_n\vert  \leq \kappa$, $\vert Q_{n+1}\vert  \leq \kappa$.
 
@@ -361,7 +361,7 @@ Now let $\gamma < \kappa$, and let $\c{p_\xi : \xi < \gamma}$ be a decreasing se
 <ol>
 <li> If $\beta = \delta + 1$, then let $q_\beta$ be such that $q_\beta\restrictedto\delta = \delta$, and in addition the following: Since $\forces_\delta \c{p_\alpha(\delta) : \alpha < \gamma}$ is a decreasing sequence in $\dot{Q}_\delta$ (note that if $\delta \notin S$, then $\forces_\delta p_\alpha(\delta) = 1$ for all $\alpha < \gamma$), and $\forces_\delta \dot{Q}_\delta$ is $<\!\kappa$-closed, we have that $\forces_\delta (\forall \alpha < \gamma) , \dot{r}_\delta \leq p_\alpha(\delta)$  for some $\dot{r}_\delta \in \dot{Q}_\delta$. Then let $q_\beta$ such that $\forces_\delta q_\beta(\delta) = \dot{r}_\delta$.</li>
 
-<li> If $\beta$ is a limit ordinal, then we simply let $q_\beta := \bigcup_{\delta<\beta} q_\delta$. To see that this is well-defined (i.e. $s(q_\beta) \in I$), we consider two cases. If $S \cap \beta$ is bounded in $\beta$, then $s(q_\beta) = s(q_\delta) \in I$ for some $\delta < \beta$. Otherwise, we must have $\cf(\beta) < \kappa$, so let $\c{\delta_\xi : \xi < \cf(\beta)}$ be a sequence in $S$ cofinal in $\beta$. Then $s(q_\beta) = \bigcup_{\xi<\cf(\beta)} s(q_{\delta_\xi})$, and by $\kappa$-completeness of $I$ we have that $s(q_\beta) \in I$..</li></ol> 
+<li> If $\beta$ is a limit ordinal, then we simply let $q_\beta := \bigcup_{\delta<\beta} q_\delta$. To see that this is well-defined (i.e. $s(q_\beta) \in I$), we consider two cases. If $S \cap \beta$ is bounded in $\beta$, then $s(q_\beta) = s(q_\delta) \in I$ for some $\delta < \beta$. Otherwise, we must have $\cf(\beta) < \kappa$, so let $\c{\delta_\xi : \xi < \cf(\beta)}$ be a sequence in $S$ cofinal in $\beta$. Then $s(q_\beta) = \bigcup_{\xi<\cf(\beta)} s(q_{\delta_\xi})$, and by $\kappa$-completeness of $I$ we have that $s(q_\beta) \in I$Lib</li></ol> 
 $\square$
 
 <a name="ex16.20"></a>
@@ -370,7 +370,7 @@ $\square$
 <ol>
 <li> For $\beta < \kappa$, $P_\beta$ satisfies the $\kappa$-chain condition for all $\beta < \kappa$.</li>
 
-<li> $P_\kappa$ is a direct limit..</li>
+<li> $P_\kappa$ is a direct limitLib</li>
 <li> For a stationary set of $\beta < \kappa$, $P_\beta$ is a direct limit.</li>
 </ol>
 For (i), let $A \subseteq P_\beta$ be an antichain. Let $D \subseteq P_\beta$ be a dense subset of size $<\kappa$. Then for each $p \in A$, there exists a $p' \in D$ such that $p' \leq p$. Furthermore, if $p \neq q$ in $A$ then $p' \neq q'$, for otherwise $p$ and $q$ are comparable, contradicting that $A$ is an antichain. Therefore, the map $p \mapsto p'$ is a one-to-one map on the set $A$ into $D$, which is of size $<\kappa$. Hence $A$ is of size $<\kappa$.

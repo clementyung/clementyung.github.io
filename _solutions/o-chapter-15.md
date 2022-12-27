@@ -70,8 +70,8 @@ In other words, the set:
 
 $$
 \begin{align*}
-D_\alpha &:= \lbrace p \in P : \exists \gamma < \cf(\kappa)[\lambda_{\gamma+1} - \lambda_\gamma \subseteq \dom(p) \\
-&\eqbreak \wedge \otp(\lbrace \xi \in \lambda_{\gamma+1} - \lambda_\gamma : q(\xi) = 1\rbrace) = \lambda_\gamma + \alpha]\rbrace
+D_\alpha &:= \lbrace p \in P : (\exists \gamma < \cf(\kappa))(\lambda_{\gamma+1} - \lambda_\gamma \subseteq \dom(p) \\
+&\eqbreak \wedge \otp(\lbrace \xi \in \lambda_{\gamma+1} - \lambda_\gamma : q(\xi) = 1\rbrace) = \lambda_\gamma + \alpha)\rbrace
 \end{align*}
 $$
 
@@ -177,7 +177,7 @@ $\square$
 ## Exercise 15.11.
 <i>Solution.</i> Let $A \subseteq P \times Q$ be an antichain. Let $B := \lbrace q \in Q : (\exists p \in P) \, (p,q) \in A\rbrace$. We consider two cases.
 <ol>
-<li> Suppose $B$ is countable. For each $q \in B$, let $A_q := \lbrace p \in P : (p,q) \in A\rbrace$. Since $A$ is an antichain, for two conditions $(p,q)$, $(p',q)$ in $A_q$, $(p,q) \perp (p',q)$ so $p \perp p'$. Thus $A_q \subseteq P$ is an antichain. Since $P$ satisfies c.c.c., $A_q$ must be countable. Thus $A = \bigcup_{q \in B} A_q \times \lbrace q\rbrace$ is countable..</li>
+<li> Suppose $B$ is countable. For each $q \in B$, let $A_q := \lbrace p \in P : (p,q) \in A\rbrace$. Since $A$ is an antichain, for two conditions $(p,q)$, $(p',q)$ in $A_q$, $(p,q) \perp (p',q)$ so $p \perp p'$. Thus $A_q \subseteq P$ is an antichain. Since $P$ satisfies c.c.c., $A_q$ must be countable. Thus $A = \bigcup_{q \in B} A_q \times \lbrace q\rbrace$ is countableLib</li>
 <li> Suppose $B$ is uncountable. Since $Q$ has property (K), there exists an uncountable $B' \subseteq B$ such that elements in $B'$ are pairwise compatible. Now for $q_1,q_2 \in B'$, if $(p_1,q_1) \in A$ and $(p_2,q_2) \in A$ then we must have $p_1 \perp p_2$, for other wise $(p_1,q_1) \not\perp (p_2,q_2)$. This implies that $A' := \lbrace p \in P : (\exists q \in B') \, (p,q) \in A\rbrace$ is an uncountable antichain, contradicting that $P$ satisfies c.c.c.</li>
 </ol>
 Thus $P \times Q$ satisfies c.c.c. 
@@ -187,10 +187,10 @@ $\square$
 ## Exercise 15.12.
 <i>Solution.</i> We elaborate on each identity used in the hint. Suppose $V[G] \models 2^{\cf(\kappa)} < \kappa$, i.e. $F(\cf(\kappa)) < \kappa$.
 <ol>
-<li> $(\kappa^{\cf(\kappa)})^{V[G]} = (\kappa^{\cf(\kappa)})^N$ follows from Lemma 15.19..</li>
+<li> $(\kappa^{\cf(\kappa)})^{V[G]} = (\kappa^{\cf(\kappa)})^N$ follows from Lemma 15.19Lib</li>
 <li> $(\kappa^{\cf(\kappa)})^N \leq (2^\kappa)^N$ follows from simple cardinal arithmetic: $\kappa^{\cf(\kappa)} \leq (2^\kappa)^{\cf(\kappa)} = 2^{\kappa \cdot \cf(\kappa)} = 2^\kappa$.</li>
 
-<li> $(2^\kappa)^N \leq \vert B(P^{\leq\cf(\kappa)})\vert ^\kappa$ follows from Lemma 15.1..</li>
+<li> $(2^\kappa)^N \leq \vert B(P^{\leq\cf(\kappa)})\vert ^\kappa$ follows from Lemma 15.1Lib</li>
 <li> To show that $\vert B(P^{\leq\cf(\kappa)})\vert ^\kappa = (F(\cf(\kappa)))^\kappa$, we first show that $\vert P^{\leq\cf(\kappa)}\vert  = F(\cf(\kappa))$. Given $\alpha < \cf(\kappa)$, we have $((\alpha,0,0),0) \in P^{\leq\cf(\kappa)}$, so we have that $\vert P^{\leq\cf(\kappa)}\vert  \geq F(\cf(\kappa))$. On the other hand, we have:
 
 $$
@@ -220,7 +220,7 @@ $$
 
 so $\vert B(P^{\leq\cf(\kappa)})\vert ^\kappa = (F(\cf(\kappa)))^\kappa$.</li>
 
-<li> Since $F(\cf(\kappa)) < \kappa$, we have that $(F(\cf(\kappa)))^\kappa = 2^\kappa = \kappa^+$, since the ground model satisfies $\GCH$..</li>
+<li> Since $F(\cf(\kappa)) < \kappa$, we have that $(F(\cf(\kappa)))^\kappa = 2^\kappa = \kappa^+$, since the ground model satisfies $\GCH$Lib</li>
 <li> Finally, we have that $\kappa^+ = (\kappa^+)^{V[G]}$ as all cardinals and cofinalities are preserved.</li>
 </ol> 
 $\square$
@@ -417,7 +417,7 @@ $$
 
 Let $X := \lbrace \ext(t) : t \in T\rbrace$, and let $T' := T \cup X$. We have seen that $T' < T$ and $T$ is of height $\alpha + 1$ ($X$ is countable as $T$ is, and $t \sqsubseteq \ext(t)$ for all $t \in T$). We now show that $T'$ satisfies (vi) and (vii).
 <ol>
-<li>[(vi)] Let $b \in X$, and let $b'$ be such that $b \sim b'$. Let $\beta < \alpha$ be such that for all $\beta \leq \gamma < \alpha$, $b'(\gamma) = 0$ (such a $\beta$ exists as $b \sim b'$, and $b$ is eventually zero). Let $t' := b'\restrictedto\beta$. By (iii) of (15.20), we may choose $\gamma$ and $t \in T$ such that $b = \ext(t)$ and $\dom(t) = \gamma$. Then since $b \sim b'$, $t \sim t'$ so $t' \in T$ as $T$ satisfies (vi). Then $b' = \ext(t') \in X$..</li>
+<li>[(vi)] Let $b \in X$, and let $b'$ be such that $b \sim b'$. Let $\beta < \alpha$ be such that for all $\beta \leq \gamma < \alpha$, $b'(\gamma) = 0$ (such a $\beta$ exists as $b \sim b'$, and $b$ is eventually zero). Let $t' := b'\restrictedto\beta$. By (iii) of (15.20), we may choose $\gamma$ and $t \in T$ such that $b = \ext(t)$ and $\dom(t) = \gamma$. Then since $b \sim b'$, $t \sim t'$ so $t' \in T$ as $T$ satisfies (vi). Then $b' = \ext(t') \in X$Lib</li>
 <li>[(vii)] Let $b,b' \in X$, so there exist $t,t'$ such that $b = \ext(t)$ and $b' = \ext(t')$. WLOG assume $\dom(t) \geq \dom(t')$. By (iii) of (15.20), there exists a $t" \geq t'$ such that $\dom(t) = \dom(t")$ and $\ext(t') = \ext(t")$. Then $t,t"$ are at the same level, and since $T$ satisfies (vii), $t \sim t"$. Since $t(\beta) = t"(\beta) = 0$ for $\beta \in \alpha - \dom(t)$, $b \sim b'$.</li>
 </ol>
 
@@ -459,18 +459,18 @@ Given an uncountable set $W$ of conditions, use $\Delta$-Lemma to find an uncoun
 <a name="lem15.21.A"></a>
 <b>Lemma 15.21.A.</b> Let $(P,<_P)$ and $(Q,<_Q)$ be two partial orders with $P,Q \subseteq \boldsymbol{\mathrm{ORD}}$. Fix $x_0 \in P$ and $y_0 \in Q$. Suppose that:
 <ol>[label=(\alph*)]
-<li> If $x <_P y$ or $x <_Q y$, then $x < y$..</li>
+<li> If $x <_P y$ or $x <_Q y$, then $x < y$Lib</li>
 <li> For all $x \in P \cap Q$, we have $\pred_P(x) = \pred_Q(x)$.</li>
 
-<li> $(\pred_P(x_0) \cup \lbrace x_0\rbrace) \cap Q = (\pred_Q(y_0) \cup \lbrace y_0\rbrace) \cap P$..</li></ol>
+<li> $(\pred_P(x_0) \cup \lbrace x_0\rbrace) \cap Q = (\pred_Q(y_0) \cup \lbrace y_0\rbrace) \cap P$Lib</li></ol>
 Then there exists a partial order $(R,<_R)$ satisfying (i) above such that:
 <ol>
 <li> $R = P \cup Q$.</li>
 
-<li> $<_P \, = \, <_R \cap \, (P \times P)$..</li>
+<li> $<_P \, = \, <_R \cap \, (P \times P)$Lib</li>
 <li> $<_Q \, = \, <_R \cap \, (Q \times Q)$.</li>
 
-<li> $x_0$ and $y_0$ are comparable..</li></ol>
+<li> $x_0$ and $y_0$ are comparableLib</li></ol>
 The lemma still holds if we omit condition (c), and remove the result (iv).
 
 <i>Proof.</i> Fix $x_0 \in P$ and $y_0 \in Q$. Consider the following relation on $R$:
@@ -490,26 +490,26 @@ It remains to show that the properties (ii) and (iii). The proof of each is the 
 <ol>
 <li> If $x <_P y$ and $y <_P z$, then immediately we have $x <_P z$.</li>
 
-<li> If $x <_Q y$ and $y <_P z$, then in particular we have $y \in P$. But since $\pred_Q(y) = \pred_P(y)$, we also have $x <_P y$, so $x <_P z$..</li>
+<li> If $x <_Q y$ and $y <_P z$, then in particular we have $y \in P$. But since $\pred_Q(y) = \pred_P(y)$, we also have $x <_P y$, so $x <_P z$Lib</li>
 <li> If $(x,y) \in A$ and $y <_P z$, then $y \leq_Q y_0$ and $y \in P$. By (c), this implies that $y \leq_P x_0$ and $y \in Q$. Since $x \leq_P x_0$ and $x < y$, we therefore have $x <_P y$ necessarily (as $\pred_P(x_0)$ is well-ordered by $<_P$). Therefore $x <_P z$.</li>
 
-<li> By symmetry, we may reduce the case of $y <_Q z$ and ($x <_P y$ or $x <_Q y$ or $(x,y) \in B$) to just $x <_Q z$..</li>
+<li> By symmetry, we may reduce the case of $y <_Q z$ and ($x <_P y$ or $x <_Q y$ or $(x,y) \in B$) to just $x <_Q z$Lib</li>
 <li> If $x <_P y$ and $(y,z) \in A$, then $x <_P y \leq_P x_0$ and $x < z$, so $(x,z) \in A$.</li>
 
-<li> If $x <_Q y$ and $(y,z) \in A$, then since $y \in P$ and $\pred_Q(y) = \pred_P(y)$, we have that $x <_P y$ so $(x,z) \in A$ by above..</li>
+<li> If $x <_Q y$ and $(y,z) \in A$, then since $y \in P$ and $\pred_Q(y) = \pred_P(y)$, we have that $x <_P y$ so $(x,z) \in A$ by aboveLib</li>
 <li> If $(x,y) \in A$ and $(y,z) \in A$, then in particular we have $x,y \leq_P x_0$ and $x < y$. This implies that $x <_P y$, so by above we have that $(x,z) \in A$.</li>
 
-<li> If $(x,y) \in B$ and $(y,z) \in A$, then in particular we have $x \leq_P x_0$ and $z \leq_P x_0$ and $x < z$, so we must have $x <_P z$..</li>
+<li> If $(x,y) \in B$ and $(y,z) \in A$, then in particular we have $x \leq_P x_0$ and $z \leq_P x_0$ and $x < z$, so we must have $x <_P z$Lib</li>
 <li> By symmetry, we may reduce the case of $(y,z) \in B$ and $x <_R y$ to the case of $x <_Q z$ or $(x,z) \in B$.</li>
 </ol>
 The only cases which cannot be easily reduced are the case where $(x,y) \in B$ and $y <_P z$, and $(x,y) \in A$ and $y <_Q z$.
 
 Now suppose $x <_R y$ and $x,y \in P$, so there exist a sequence $(x,z_0),(z_0,z_1),\dots,(z_n,y)$ all in $S$. Note that since $y \in P$, we have $z <_P y$ iff $z <_Q y$. By the above observations, we may reduce it to either one of the following:
 <ol>[label=(\arabic*)]
-<li> $(x,y) \in A$..</li>
+<li> $(x,y) \in A$Lib</li>
 <li> $(x,y) \in B$.</li>
 
-<li> $(x,z) \in B$ and $z <_P y$..</li></ol>
+<li> $(x,z) \in B$ and $z <_P y$Lib</li></ol>
 For (1) and (2), since $x,y \in P$ we have that $x < y$ and $x,y \leq_P x_0$, so $x <_P y$. For (3), since $x \in P$, $x \leq_Q y_0$ implies $x \leq_P x_0$ by (c). But $z \leq_P x_0$ and $x < z$, so $x <_P z$. Therefore $x <_P y$. Thus, $<_P \, = \, <_R \cap \, (P \times P)$. 
 $\blacksquare$
 
@@ -532,7 +532,7 @@ For $\zeta < \omega_1$, define $Z_\zeta,Y_\zeta \subseteq \omega_1$ inductively 
 <ol>
 <li> Let $Z_0 := \emptyset$, $Y_0 := \omega_1$.</li>
 
-<li> Suppose $Z_\zeta$,$Y_\zeta$ has been defined with $Y_\zeta$ uncountable. Let $\xi$ be the least limit ordinal such that $\xi > \sup{Z_\zeta}$, and for all $\eta \in Z_\zeta$ we have that $\alpha_\xi > \sup{T_\eta}$. By repeating the proof in the first paragraph, there exists some $n$ such that the set of $\delta \in Y_\zeta$ in which $\alpha_{\xi+n} \notin T_\delta$ is uncountable. Let $Y_{\zeta+1}$ be this uncountable set, and let $Z_{\zeta+1} := Z_\zeta \cup \lbrace \xi+n\rbrace$..</li>
+<li> Suppose $Z_\zeta$,$Y_\zeta$ has been defined with $Y_\zeta$ uncountable. Let $\xi$ be the least limit ordinal such that $\xi > \sup{Z_\zeta}$, and for all $\eta \in Z_\zeta$ we have that $\alpha_\xi > \sup{T_\eta}$. By repeating the proof in the first paragraph, there exists some $n$ such that the set of $\delta \in Y_\zeta$ in which $\alpha_{\xi+n} \notin T_\delta$ is uncountable. Let $Y_{\zeta+1}$ be this uncountable set, and let $Z_{\zeta+1} := Z_\zeta \cup \lbrace \xi+n\rbrace$Lib</li>
 <li> If $\zeta$ is a limit ordinal, let $Z_\zeta := \bigcup_{\eta<\zeta} Z_\eta$.</li>
 </ol>
 Given $\zeta < \omega_1$, let $\eta,\delta \in Z_\zeta$, and suppose $\eta < \delta$. Then we see that if $\eta$ is chosen in the $\zeta^\text{th}$ stage (i.e. $Z_{\zeta+1} = Z_\zeta \cup \lbrace \eta\rbrace$), then $\delta \in Y_{\zeta+1}$ necessarily, so $\alpha_\eta \notin T_\delta$. On the other hand, if $\delta$ is chosen at the $(\zeta')^\text{th}$ stage, then we note that $\alpha_\delta > \sup{T_\eta}$, so in particular $\alpha_\delta \notin T_\eta$.
@@ -560,7 +560,7 @@ If $p \forces$ ($\dot{C}$ is closed unbounded set and $\dot{X} \subseteq \omega_
 
 <i>Proof.</i> Define a sequence $\c{q_n : n < \omega}$ as follows: Start with $q_0 := p_0$. Suppose $q_n$ is defined, and we consider two cases:
 <ol>
-<li> If $q_n$ and $p_{n+1}$ are incompatible, let $q_{n+1} := q_n$..</li>
+<li> If $q_n$ and $p_{n+1}$ are incompatible, let $q_{n+1} := q_n$Lib</li>
 <li> If $q_n$ and $p_{n+1}$ are compatible, let $q_{n+1} \in P$ such that $q_{n+1} \leq q_n$ and $q_{n+1} \leq p_{n+1}$.</li>
 </ol>
 Since $P$ is $\omega$-closed, there exists a $q \in P$ such that $q \leq p_n$ for all $n$. It's easy to see that $q$ is the desired condition. 
@@ -611,7 +611,7 @@ $\square$
 <a name="lem15.25.A"></a>
 <b>Lemma 15.25.A.</b> A purely combinatorial argument can be used to show that $\diamond$ is equivalent to the following statement:
 <ol>
-<li>[$\diamond'$] There exists a sequence of functions $h_\alpha$, $\alpha < \omega_1$, such that for every $f : \omega_1 \to \omega_1$, the set $\lbrace \alpha < \omega_1 : f\restrictedto\alpha = h_\alpha\rbrace$ is stationary..</li></ol>
+<li>[$\diamond'$] There exists a sequence of functions $h_\alpha$, $\alpha < \omega_1$, such that for every $f : \omega_1 \to \omega_1$, the set $\lbrace \alpha < \omega_1 : f\restrictedto\alpha = h_\alpha\rbrace$ is stationaryLib</li></ol>
 
 <i>Proof.</i> We prove the equivalence.
 
@@ -738,12 +738,12 @@ $\square$
 <ol>
 <li> $\dom(r) = \Gamma(\max{\dom(p)},\max{\dom(q)}) + 1$ (note that $\max{\dom(p)} = \dom(p) - 1$).</li>
 
-<li> Let $k \in \dom(r)$, and suppose $\Gamma(i,j) = k$. Note that then $i \in \dom(p)$ and $j \in \dom(q)$, as $k < \dom(r)$ implies that $(i,j) < (\max{\dom(p)},\max{\dom(q)})$. Then define $r(k) := \Gamma(p(i),q(j))$..</li></ol>
+<li> Let $k \in \dom(r)$, and suppose $\Gamma(i,j) = k$. Note that then $i \in \dom(p)$ and $j \in \dom(q)$, as $k < \dom(r)$ implies that $(i,j) < (\max{\dom(p)},\max{\dom(q)})$. Then define $r(k) := \Gamma(p(i),q(j))$Lib</li></ol>
 We note that $F$ is invertible, as given $r \in P$ we may define $(p,q) := F^{-1}(r)$ by:
 <ol>
 <li> If $\Gamma(m,n) + 1 = \dom(r)$, then $\dom(p) = m + 1$ and $\dom(q) = n + 1$.</li>
 
-<li> If $i \in \dom(p)$ and $j \in \dom(q)$ (so $\Gamma(i,j) < \dom(r)$), let $a,b$ be such that $\Gamma(a,b) = r(\Gamma(i,j))$. Then $p(i) := a$ and $q(j) := b$..</li></ol>
+<li> If $i \in \dom(p)$ and $j \in \dom(q)$ (so $\Gamma(i,j) < \dom(r)$), let $a,b$ be such that $\Gamma(a,b) = r(\Gamma(i,j))$. Then $p(i) := a$ and $q(j) := b$Lib</li></ol>
 Finally, to see that $F$ respects $\leq$, suppose $(p,q) \leq (p',q')$, so $p \leq p'$ and $q \leq q'$. Then $\dom(r) = \Gamma(\max{\dom(p)},\max{\dom(q)}) + 1 \leq \Gamma(\max{\dom(p')},\max{\dom(q')}) + 1 = \dom(r')$. Furthermore, for $k < \dom(r)$, if $\Gamma(i,j) = j$ then $i \in \dom(p)$ and $j \in \dom(q)$. This implies that $p(i) = p'(i)$ and $q(i) = q'(i)$. Therefore $r'(k) = r(k)$, so $r' \geq r$. The converse is similar.
 
 Thus, we have that $V[x] = V[x_1][x_2]$ as in the hint, which implies that $x$ is not minimal over the ground model. 
@@ -822,7 +822,7 @@ $\square$
 <ol>
 <li> There exists a $Y \subseteq X$, $\vert Y\vert  < \lambda$, such that $\sum X = \sum Y$.</li>
 
-<li> There exists a $Y \subseteq X$, $\vert Y\vert  < \lambda$, such that $\prod X = \prod Y$..</li></ol>
+<li> There exists a $Y \subseteq X$, $\vert Y\vert  < \lambda$, such that $\prod X = \prod Y$Lib</li></ol>
 
 <i>Proof.</i> Note that all sums/products here are well-defined as $B$ is complete.
 <ol>

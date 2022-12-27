@@ -36,7 +36,7 @@ $\square$
 
 <u>$P$ is $\aleph_1$-distributive:</u> As in the hint, fix $p_0 \in P$ such that $p_0 \forces \dot{f} : \omega_1 \to \boldsymbol{\mathrm{ORD}}$, and let $p_{\alpha+1}$ be chosen such that $p_{\alpha+1}$ decides $\dot{f}(\alpha)$. We write $p_\alpha = \c{C_\beta : \beta \leq \gamma_\alpha}$. If $\alpha$ is a limit ordinal, we construct $C_{\gamma_\alpha}$ as follows:
 <ol>
-<li> If $\alpha = \omega$, let $C_{\gamma_\omega} := \lbrace \gamma_n + 1 : n < \omega\rbrace$..</li>
+<li> If $\alpha = \omega$, let $C_{\gamma_\omega} := \lbrace \gamma_n + 1 : n < \omega\rbrace$Lib</li>
 <li> If $\Lim(\alpha)$ is bounded, we let $\beta$ be the largest limit ordinal below $\alpha$. fix a countable sequence $\lbrace \xi_n : n < \omega\rbrace$, cofinal in $\alpha$, such that $\xi_0 > \gamma_\beta$. Let:
 
 $$
@@ -56,7 +56,7 @@ $$
 </ol>
 We shall induct on limit ordinals $\alpha$ that $C_{\gamma_\alpha} \subseteq \gamma_\alpha$ is closed unbounded, countable (so (iii) of (23.4) is satisfied), satisfies (ii) of (23.4), and if $\beta < \alpha$ is a limit ordinal then $C_{\gamma_\beta}$ is an initial segment of $C_{\gamma_\alpha}$. Note that clearly in all cases, $C_{\gamma_\alpha} \subseteq \gamma_\alpha$ is unbounded.
 <ol>
-<li> The case for $\alpha = \omega$ is done as in the proof above that $P$ is $\aleph_0$-closed..</li>
+<li> The case for $\alpha = \omega$ is done as in the proof above that $P$ is $\aleph_0$-closedLib</li>
 <li> Suppose $\Lim(\alpha)$ is bounded. Let $\lbrace \delta_\xi : \xi < \alpha'\rbrace \subseteq C_{\gamma_\alpha}$ be a sequence. Let $\delta := \sup_{\xi<\alpha'} \delta_\xi$. If $\delta > \gamma_\beta$, then the sequence must be unbounded as $\xi_n + 1$ are not limit ordinals. Otherwise, then the sequence must lie in $C_{\gamma_\beta}$. Since $\gamma_\beta \in C_{\gamma_\alpha}$ and $C_{\gamma_\beta}$ is closed unbounded, $\delta \in C_{\gamma_\beta} \cup \lbrace \gamma_\beta\rbrace$ necessarily. Thus $C_{\gamma_\alpha}$ is closed in $\gamma_\alpha$.
 
 Since $C_{\gamma_\beta}$ is countable by induction hypothesis, so is $C_{\gamma_\alpha}$.
@@ -175,7 +175,7 @@ $\square$
 ## Exercise 23.11.
 <i>Solution.</i> The hint solves the problem. We provide the details.
 <ol>
-<li> For each $i \neq j$, $S_i \cap S_j$ is non-stationary, so $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset in $V[G]$. By the c.c.c. of Cohen forcing and Lemma 22.25, $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset $\forces \omega_1 - A_{i,j} \subseteq \omega_1 - (S_i \cap S_j)$, where $A_{i,j} \in V$. Then $\forces S_i \cap S_j \subseteq A_{i,j}$..</li>
+<li> For each $i \neq j$, $S_i \cap S_j$ is non-stationary, so $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset in $V[G]$. By the c.c.c. of Cohen forcing and Lemma 22.25, $\omega_1 - (S_i \cap S_j)$ has a closed unbounded subset $\forces \omega_1 - A_{i,j} \subseteq \omega_1 - (S_i \cap S_j)$, where $A_{i,j} \in V$. Then $\forces S_i \cap S_j \subseteq A_{i,j}$Lib</li>
 <li> In the ground model $V$, by $\GCH$ we have that $\sat(I_{NS}) \leq 2^{\aleph_1} = \aleph_2$. Thus the partition $\lbrace i,j\rbrace \to A_{i,j}$ has at most $\aleph_2$ colours. Also in the ground model, by <a href="https://clementyung.github.io/jech-solutions/chapter-9#ex9.2">Exercise 9.2</a> we have that $(\exp_1(\aleph_2))^+ \to (\aleph_3)_{\aleph_2}^2$. Under $\GCH$, we have $(\exp_1(\aleph_2))^+ = \aleph_4$.</li>
 
 <li> Since $A$ is non-stationary, $\omega_1 - A$ is has a closed unbounded subset, so $S_i - A = S_i \cap (\omega_1 - A)$ remains stationary, and in particular unbounded. Thus, $\lbrace S_i - A : i < \in H\rbrace$ gives $\aleph_3$ disjoint stationary subsets of $\omega_1$ in $V[G]$, yielding the required contradiction.</li>

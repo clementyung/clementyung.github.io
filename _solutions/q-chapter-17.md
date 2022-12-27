@@ -300,18 +300,18 @@ $\square$
 ## Exercise 17.18.
 <i>Solution.</i> Jech's hint is ambiguous, so we present the proof in Kanamori's <i>The Higher Infinite</i>. Consider appending the language $\L_{\kappa,\omega}$ with non-logical symbols $<$, $c$ and $c_\alpha$ for $\alpha < \kappa$. Let $\Sigma$ be a set consisting of the following sentences:
 <ol>
-<li> $<$ is a linear order..</li>
+<li> $<$ is a linear orderLib</li>
 <li> $\bigvee_{\alpha \in A} \bigvee_{\beta < \alpha} \, x = c_\beta$.</li>
 
-<li> For each $\alpha < \kappa$, $c \neq c_\alpha$ (call each of these statements $\varphi_\alpha$)..</li></ol>
+<li> For each $\alpha < \kappa$, $c \neq c_\alpha$ (call each of these statements $\varphi_\alpha$)Lib</li></ol>
 Note that $\vert \Sigma\vert  = \kappa$. Clearly $\Sigma$ does not have a model, as statements (ii) and (iii) contradict (and $A$ is cofinal). On the other hand, if $S \subseteq \Sigma$ and $\varphi_\alpha \notin S$ for some $\alpha < \kappa$, then we may interpret these sentences by:
 <ol>
 <li> $\A = \kappa$.</li>
 
-<li> Interpret each symbol $c_\beta$ by the ordinal $\beta$..</li>
+<li> Interpret each symbol $c_\beta$ by the ordinal $\beta$Lib</li>
 <li> Interpret $c$ by the ordinal $\alpha$.</li>
 
-<li> $c_\alpha < c_\beta$ iff $\alpha < \beta$..</li></ol>
+<li> $c_\alpha < c_\beta$ iff $\alpha < \beta$Lib</li></ol>
 which gives us a model $(\kappa,<,\lbrace \alpha : \alpha < \kappa\rbrace)$ of $S$. 
 $\square$
 
@@ -322,7 +322,7 @@ $\square$
 <ol>
 <li> For all $X \in \mathcal{A}$, $f(X) = X$ or $f(X) = \kappa - X$.</li>
 
-<li> $\bigcap \ran(f) \neq \emptyset$..</li></ol>
+<li> $\bigcap \ran(f) \neq \emptyset$Lib</li></ol>
 
 <i>Proof.</i> Let $\lambda := \vert \mathcal{A}\vert $. Let $\F$ be the set of all functions $f : \mathcal{A} \to \mathcal{B}$ such that $f(X) = X$ or $f(X) = \kappa - X$ for all $X \in \mathcal{A}$. Clearly $\vert \F\vert  = 2^\lambda$, and $2^\lambda < \kappa$ as $\kappa$ is inaccessible. Furthermore, we observe that $\bigcup_{f \in \F} \bigcap \ran(f) = \kappa$ - to see this, fix $\alpha \in \kappa$. Define $f : \mathcal{A} \to \mathcal{B}$ by stipulating that $f(X) = X$ if $\alpha \in X$, and $f(X) = \kappa - X$ otherwise (so $\alpha \in \kappa - X$). Then $\alpha \in \bigcap \ran(f)$.
 
@@ -341,10 +341,10 @@ $\blacksquare$
 <ol>
 <li> $S$ contains $\neg U(c_\emptyset)$.</li>
 
-<li> $S$ contains $U(c_X) \to U(c_Y)$ for all $X,Y \in \mathcal{B}$ such that $X \subseteq Y$..</li>
+<li> $S$ contains $U(c_X) \to U(c_Y)$ for all $X,Y \in \mathcal{B}$ such that $X \subseteq Y$Lib</li>
 <li> $S$ contains $U(c_X)$ for all $X \in F$.</li>
 
-<li> $S$ contains $\bigwedge_{X \in \mathcal{A}} U(c_X) \to U\bb{c_{\bigcap \mathcal{A}}}$ for all $\mathcal{A} \subseteq \mathcal{B}$ such that $\vert \mathcal{A}\vert  < \kappa$..</li>
+<li> $S$ contains $\bigwedge_{X \in \mathcal{A}} U(c_X) \to U\bb{c_{\bigcap \mathcal{A}}}$ for all $\mathcal{A} \subseteq \mathcal{B}$ such that $\vert \mathcal{A}\vert  < \kappa$Lib</li>
 <li> Let $\mathcal{C}$ be the set of all $X \in \mathcal{B}$ such that $S$ contains $U(c_X) \vee U(c_{\kappa - X})$. Then $\vert \mathcal{C}\vert  < \kappa$.</li>
 </ol>
 By interpreting $U(c_X)$ as $X \in U$, it suffices to find a $\kappa$-complete filter $U \supseteq F$ (satisfying (i)-(iv)) such that for all $X \in \mathcal{C}$, $X \in U$ or $\kappa - X \in U$. But this follows from <a href="#lem17.19.B">Lemma 17.19.B</a>. 
@@ -423,10 +423,10 @@ $\square$
 ## Exercise 17.23.
 <i>Solution.</i> We fill in the details in the hint.
 <ol>
-<li> Each of the $M_n$'s exists by L\"{o}wenheim-Skolem theorem..</li>
+<li> Each of the $M_n$'s exists by L\"{o}wenheim-Skolem theoremLib</li>
 <li> We induct on $n$ that $\vert M_n\vert  < \kappa$ and $\alpha_n < \kappa$. Clearly $\vert M_0\vert  = \aleph_0 < \kappa$. If $\vert M_n\vert  < \kappa$, then $\alpha_n \geq \sup\lbrace \rank(x) + 1 : x \in M_n\rbrace$. Since $\vert M_n\vert  < \kappa$ and $\kappa$ is regular, we may choose $\alpha_n < \kappa$. Since $\alpha_n < \kappa$, we have $\vert V_{\alpha_n}\vert  = \beth_{\alpha_n} < \beth_\kappa = \kappa$ (see <a name="#6#lem6.3.A">Lemma 6.3.A</a>).</li>
 
-<li> By regularity of $\kappa$ again, we have $\alpha = \lim_{n\to\omega} \alpha_n < \kappa$..</li>
+<li> By regularity of $\kappa$ again, we have $\alpha = \lim_{n\to\omega} \alpha_n < \kappa$Lib</li>
 <li> Clearly $\bigcup_{n<\omega} V_{\alpha_n} = \bigcup_{n<\omega} M_n$. The proof that $V_\alpha \prec (V_\kappa,\in,U)$ is almost verbatim to that of <a name="#12#lem12.12.A">Lemma 12.12.A</a>, which completes the proof.</li>
 </ol> 
 $\square$

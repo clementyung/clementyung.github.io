@@ -228,7 +228,7 @@ $$
 <i>Solution.</i> We have $\alpha$ is a cardinal iff:<br/>
 $$
 \begin{align*}<br/>
-\neg (\exists f \underbrace{(\exists \beta \in \alpha)\, (\text{$f$ is a function of $\alpha$ onto $\beta$})}_{\text{$\Delta_0$ formula, by <a href="#ex12.5">Exercise 12.5</a>}})<br/>
+\neg (\exists f \underbrace{(\exists \beta \in \alpha)\, (\text{$f$ is a function of $\alpha$ onto $\beta$})}_{\text{$\Delta_0$ formula, by Exercise 12.5}})<br/>
 \end{align*}$$
 Thus "$\alpha$ is a cardinal" is downward absolute, so $M \models \alpha$ is a cardinal.<p align="right">$\square$</p><br/>
 <br/>

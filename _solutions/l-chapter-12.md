@@ -277,9 +277,7 @@ Suppose it can be shown (with just $\ZFC$ minus Infinity) that existence of an i
 <li> Suppose $\sigma$ is $\forall y \, \psi(x,y)$, where $\psi$ is $\Sigma_m$ and $x \in V_\alpha$. For any $y \in V_\alpha$, we have $V_\alpha \models \psi(x,y)$ as $V_\alpha \prec_{\Sigma_m} V_\kappa$ by induction hypothesis. Thus $V_\alpha \models \forall y \, \psi(x,y)$.</li>
 </ol><p align="right">$\blacksquare$</p><br/>
 <br/>
-\begin{lemma}{12.12.B}[Tarski-Vaught Criterion]<br/>
-<br/>
-Let $\A = (A,\dots)$ and $\B = (B,\dots)$ be two structures. The following are equivalent:
+<b>Lemma 12.12.B (Tarski-Vaught Criterion).</b> Let $\A = (A,\dots)$ and $\B = (B,\dots)$ be two structures. The following are equivalent:
 <ol>
 <li> $\A \prec \B$.</li>
 <li> For all formulas of the form $\exists y \, \varphi(x,y)$, where $x \in A$, if $\B \models \exists y \, \varphi(x,y)$ then there exists a $y \in A$ such that $\A \models \varphi(x,y)$.</li>

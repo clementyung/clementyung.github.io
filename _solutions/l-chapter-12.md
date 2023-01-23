@@ -228,12 +228,69 @@ $$
 <i>Solution.</i> We have $\alpha$ is a cardinal iff:<br/>
 $$
 \begin{align*}<br/>
-\neg (\exists f \underbrace{(\exists \beta \in \alpha)\, (\text{$f$ is a function of $\alpha$ onto $\beta$})}_{\text{$\Delta_0$ formula, by Exercise 12.5}})<br/>
+\neg (\exists f \underbrace{(\exists \beta \in \alpha)\, (\text{$f$ is a function of $\alpha$ onto $\beta$})}_{\text{$\Delta_0$ formula, by <a href="#ex12.5">Exercise 12.5</a>}})<br/>
 \end{align*}$$
 Thus "$\alpha$ is a cardinal" is downward absolute, so $M \models \alpha$ is a cardinal.<p align="right">$\square$</p><br/>
 <br/>
 <a name="ex12.7"></a><br/>
 <h2>Exercise 12.7.</h2>
+<a name="lem12.7.A"></a><br/>
+<b>Lemma 12.7.A.</b> Let $(M,\in)$ be a model, where $M \subseteq V$, and $V$ is the universe which is a model of $\ZFC$.
+<ol>
+<li> If $(\forall x \in M)(\forall y \in M) \, \lbrace x,y\rbrace \in M$, then $M$ satisfies Pairing.</li>
+<li> If $(\forall z \in M)(\forall y \subseteq z) \, y \in M$, then $M$ satisfies Separation.</li>
+<li> $M$ satisfies Regularity.</li></ol>
+Suppose further that $M$ is transitive. Then:
+<ol>
+\setcounter{enumi}{3}<br/>
+<li> $M$ satisfies Extensionality.</li>
+<li> If $(\forall X \in M) \, \bigcup X \in M$, then $M$ satisfies Union.</li>
+<li> If $(\forall x \in M) \, \Po(x) \cap M \in M$, then $M$ satisfies Power Set.</li>
+<li> If every family of non-empty sets in $M$ has a choice function in $M$, then $M$ satisfies $\AC$.</li></ol>
+Suppose even further that $M$ satisfies the axioms Extensionality, Comprehension, Pairing, and Union. If $\omega \in M$, then $M$ satisfies Infinity.<br/>
+<br/>
+<i>Proof.</i> We refer to readers to the textbook for the formal statements of each axiom.
+<ol>
+<li> We wish to show that:<br/>
+$$
+\begin{align*}<br/>
+(\forall a \in M)(\forall b \in M)(\exists c \in M)(\forall x \in M)(x \in c \leftrightarrow x = a \vee x = b)<br/>
+\end{align*}$$
+Fix $a,b \in M$ and since $\lbrace a,b\rbrace \in M$ we let $c = \lbrace a,b\rbrace$. Then clearly $x \in c \leftrightarrow x = a \vee x = b$.</li>
+<li> We wish to show that:<br/>$$
+\begin{align*}<br/>
+(\forall X \in M)(\forall p \in M)(\exists Y \in M)(\forall u \in M) \, (u \in Y \leftrightarrow u \in X \wedge \varphi(u,p))<br/>
+\end{align*}$$
+For each $X \in M$ and $p \in M$, since the universe satisfies Separation there exists a $Y$ such that $\forall u \, (u \in Y \leftrightarrow u \in X \wedge \varphi(u,p))$. In particular we have $Y \subseteq X$, and since $M$ is closed under subsets we have $Y \in M$.</li>
+<li> We wish to show that:<br/>$$
+\begin{align*}<br/>
+(\forall S \in M)(S \neq \emptyset \to (\exists x \in S) \, S \cap x = \emptyset)<br/>
+\end{align*}$$
+But this is the relativised statement of a $\Pi_1$ statement, which is downward absolute. So $M$ must satisfy regularity.</li>
+<li> We wish to show that:<br/>$$
+\begin{align*}<br/>
+(\forall X \in M)(\forall Y \in M)((\forall u \in M)(u \in X \leftrightarrow u \in Y) \to X = Y)<br/>
+\end{align*}$$
+Let $X,Y \in M$. Suppose $X \neq Y$ (this sentence is absolute across models, not necessarily transitive). Then in $V$, there exists $u \in X - Y$ or $Y - X$. WLOG suppose $u \in X - Y$. Since $X \in M$ and $M$ is transitive, $u \in M$. Thus $(\exists u \in M)(u \in X \wedge \neg(u \in Y))$.</li>
+<li> We wish to show that:<br/>$$
+\begin{align*}<br/>
+(\forall X \in M)(\exists Y \in M)(\forall u \in M)(u \in Y \leftrightarrow \exists z \in M \, (z \in X \wedge u \in z))<br/>
+\end{align*}$$
+For each $X \in M$ let $Y = \bigcup X \in M$. Let $u \in M$. Since $Y$ is the candidate for union in $V$, we have $\exists z \in M \, (z \in X \wedge u \in z)$ implies $u \in Y$. Conversely, suppose $u \in Y$, so there exists some $z$ such that $z \in X$ and $u \in z$. We also need $z \in M$, but this follows from that $M$ is transitive.</li>
+<li> We wish to show that:<br/>$$
+\begin{align*}<br/>
+(\forall X \in M)(\exists Y \in M)(\forall u \in M)(u \in Y \leftrightarrow u \subseteq X)<br/>
+\end{align*}$$
+For each $X \in M$ let $Y = P(X) \cap M$. Let $u \in M$. If $u \in P(X) \cap M$, then immediately $u \subseteq X$ by definition of $P(X)$. If $u \subseteq X$, then since $u \in M$ already we have $y \in P(X) \cap M = Y$.</li>
+<li> We wish to show that if $S \in M$ is a family of sets and $\emptyset \notin S$, then there is a $f \in M$ on $S$ such that $M \models f$ is a choice function on $S$. Since there exists $f \in M$ such that $V \models f$ is a choice function on $S$, it suffices to show that "$f$ is a choice function" is downward absolute. But this is because $M$ is transitive, "$f$ is a function" is $\Delta_0$ (when $\dom(f) \in M$), and since $S \in M$ we have $(\forall X \in X) \, f(X) \in X$ is also $\Delta_0$.</li>
+<li> We wish to show that:<br/>
+$$
+\begin{align*}<br/>
+(\exists S \in M)(\emptyset \in S \wedge (\forall x \in S)(x \cup \lbrace x\rbrace \in S))<br/>
+\end{align*}$$
+Let $S = \omega$. Since $M$ is transitive, we have in particular that $\emptyset \in M$ and $\emptyset \in S$. Let $x \in S$. Since $M$ satisfies Pairing, we have $\lbrace x\rbrace \in M$, and $\lbrace x,\lbrace x\rbrace\rbrace \in M$. Since $M$ satisfies Union, we have $x \cup \lbrace x\rbrace \in M$. Then $x \cup \lbrace x\rbrace \in S$ in $M$ as $x \cup \lbrace x\rbrace \in S$ in $V$, and $\in$ is absolute across models (not necessarily transitive).</li>
+</ol><p align="right">$\blacksquare$</p><br/>
+<br/>
 <i>Solution.</i> We use <a href="#lem12.7.A">Lemma 12.7.A</a>.<br/>
 <br/>
 <u>Extensionality:</u> This follows from that $V_\alpha$ is transitive.<br/>
@@ -277,7 +334,9 @@ Suppose it can be shown (with just $\ZFC$ minus Infinity) that existence of an i
 <li> Suppose $\sigma$ is $\forall y \, \psi(x,y)$, where $\psi$ is $\Sigma_m$ and $x \in V_\alpha$. For any $y \in V_\alpha$, we have $V_\alpha \models \psi(x,y)$ as $V_\alpha \prec_{\Sigma_m} V_\kappa$ by induction hypothesis. Thus $V_\alpha \models \forall y \, \psi(x,y)$.</li>
 </ol><p align="right">$\blacksquare$</p><br/>
 <br/>
-<b>Lemma 12.12.B (Tarski-Vaught Criterion).</b> Let $\A = (A,\dots)$ and $\B = (B,\dots)$ be two structures. The following are equivalent:
+\begin{lemma}{12.12.B}[Tarski-Vaught Criterion]<br/>
+<br/>
+Let $\A = (A,\dots)$ and $\B = (B,\dots)$ be two structures. The following are equivalent:
 <ol>
 <li> $\A \prec \B$.</li>
 <li> For all formulas of the form $\exists y \, \varphi(x,y)$, where $x \in A$, if $\B \models \exists y \, \varphi(x,y)$ then there exists a $y \in A$ such that $\A \models \varphi(x,y)$.</li>
@@ -302,7 +361,7 @@ $$
 \end{align*}$$
 Since $\alpha_n < \kappa$, we have $\beth_{\alpha_n} < \kappa$. Thus, $\rank(h_k(V_{\alpha_n}))$ is the sup of $<\beth_{\alpha_n}$ many ordinals below $\kappa$, so $\rank(h_k(V_{\alpha_n})) < \kappa$ by regularity of $\kappa$. Therefore, there exists $\alpha_{n+1} < \kappa$ such that $\bigcup_{k=0}^\infty h_k(V_{\alpha_n}) \subseteq V_{\alpha_{n+1}}$. We may also choose $\alpha_{n+1} > \alpha_n$.<br/>
 <br/>
-<b>Claim.</b>. $\c{V_\alpha,\in} \prec \c{V_\kappa,\in}$.<br/>
+<b>Claim.</b> $\c{V_\alpha,\in} \prec \c{V_\kappa,\in}$.<br/>
 <br/>
 <i>Proof.</i> We use Tarski-Vaught criterion (<a href="#lem12.12.B">Lemma 12.12.B</a>). Let $\exists y \, \phi(x,y)$ be an existential formula, with $x \in V_\alpha$, and suppose $V_\kappa \models \exists y \, \phi(x,y)$. Then $V_\kappa \models \phi(h_\phi(x),x)$. Now $x \in V_{\alpha_n}$ for some $n$, so $h_\phi(x) \in h(V_{\alpha_n}) \subseteq V_{\alpha_{n+1}} \subseteq V_\alpha$. Thus $V_\alpha \models \exists y \, \phi(x,y)$.<p align="right">$\blacksquare$</p><br/>
 <br/>

@@ -241,8 +241,7 @@ Thus "$\alpha$ is a cardinal" is downward absolute, so $M \models \alpha$ is a c
 <li> If $(\forall z \in M)(\forall y \subseteq z) \, y \in M$, then $M$ satisfies Separation.</li>
 <li> $M$ satisfies Regularity.</li></ol>
 Suppose further that $M$ is transitive. Then:
-<ol>
-\setcounter{enumi}{3}<br/>
+<ol start="4">
 <li> $M$ satisfies Extensionality.</li>
 <li> If $(\forall X \in M) \, \bigcup X \in M$, then $M$ satisfies Union.</li>
 <li> If $(\forall x \in M) \, \Po(x) \cap M \in M$, then $M$ satisfies Power Set.</li>

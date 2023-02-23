@@ -10,7 +10,7 @@ redirect_from:
 
 I am Clement (Cheuk Wai) Yung, a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore.
 
-My interest revolves around set theory, infinitary combinatorics, topological Ramsey spaces, and set theory's interactions with analysis. I wrote my Honours thesis under Asst. Prof. Spencer Unger (University of Toronto) and Prof. Yang Yue (National University of Singapore), titled "Diagonalisation Forcing of Infinite Block Sequences". I'm currently researching on forcing with a special class of topological Ramsey spaces under Asst. Prof. Spencer Unger.
+My interest revolves around set theory, infinitary combinatorics and Ramsey theory. I wrote my Honours thesis under Asst. Prof. Spencer Unger (University of Toronto) and Prof. Yang Yue (National University of Singapore), titled "Diagonalisation Forcing of Infinite Block Sequences". I'm currently researching on forcing with a special class of topological Ramsey spaces under Asst. Prof. Spencer Unger.
 
 You can contact me at my email [clement.yung@mail.utoronto.ca](mailto:clement.yung@mail.utoronto.ca). I am rarely active on social media, but I enjoy hanging around Math StackExchange and MathOverflow (though I usually only ask questions on MathOverflow). 
 

@@ -1,5 +1,5 @@
 ---
-title: "Reviews of Modules in NUS"
+title: "Reading Seminar Summer 2023 on Set Theory/Recursion Theory"
 collection: resources
 type: "Type"
 permalink: /resources/reading-seminar-summer-2023/

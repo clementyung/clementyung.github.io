@@ -11,8 +11,8 @@ I will begin with the classical result that the Axiom of Determinacy, $\mathsf{A
 
 I will be uploading the notes I make here.
 
-| # |                                                                                         Topics                                                                                                |            Notes                                             |
-|:-:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
-| 1 |<b>Background</b>: Large cardinals, measurable cardinals, constructible universe. <b>Descriptive Set Theory</b>: Projective Hierarchy, $\Pi_1^1$ normal form. <b>Determinacy</b>: Infinite games, open determinacy. |<a href="/files/Seminar_Slides_1.pdf" target="_blank">Link</a>|
+| # |  Date     |                                                                                         Topics                                                                                                |            Notes                                             |
+|:-:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
+| 1 |12 May 2023|<b>Background</b>: Large cardinals, measurable cardinals, constructible universe. <b>Descriptive Set Theory</b>: Projective Hierarchy, $\Pi_1^1$ normal form. <b>Determinacy</b>: Infinite games, open determinacy. |<a href="/files/Seminar_Slides_1.pdf" target="_blank">Link</a>|
 
 

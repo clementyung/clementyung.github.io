@@ -7,9 +7,18 @@ permalink: /resources/reading-seminar-summer-2023/
 
 I am hosting a reading seminar in Summer 2023 in NUS. This reading seminar focuses on the intersection of set theory and recursion theory. We will meet every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
 
-I will begin with the classical result that the Axiom of Determinacy, $\mathsf{AD}$, implies that $\aleph_1$ is a measurable cardinal, proven using Martin's cone theorem. I have not decided on the subsequent topics.
+The topics we will be covering include (to be updated as time passes):
+<ol>
+<li>Consequences of $\mathsf{AD}$ - $\aleph_1$ is measurable, every subset of $\mathbb{R}$ is Lebesgue measurable.</li>
+</ol>
 
-I will be uploading the notes I make here.
+The sources which I use include:
+<ol>
+<li><i>Set Theory</i>, Thomas Jech (2003).</li>
+<li><i>Recursive Aspects of Descriptive Set Theory</i>, Richard Mansfield and Galen Weitkamp (1985).</li>
+</ol>
+
+The following table will be updated weekly. 
 
 | # |  Date     |                                                                                         Topics                                                                                                |            Notes                                             |
 |:-:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|

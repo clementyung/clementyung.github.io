@@ -10,7 +10,7 @@ I am hosting a reading seminar in Summer 2023 in NUS. This reading seminar focus
 The topics we will be covering include (to be updated as time passes):
 <ol>
 <li>Consequences of $\mathsf{AD}$ - $\aleph_1$ is measurable, every subset of $\mathbb{R}$ is Lebesgue measurable.</li>
-<li> Descriptive Set Theory - $\Pi_1^1$ normal form, absoluteness theorems..</li>
+<li> Descriptive Set Theory - $\Pi_1^1$ normal form, absoluteness theorems.</li>
 </ol>
 
 The sources which I use include:

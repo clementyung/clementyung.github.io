@@ -23,6 +23,6 @@ The following table will be updated weekly.
 | # |  Date     |                                                                                         Topics                                                                                                |            Notes                                             |
 |:-:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
 | 1 |12 May 2023|<b>Background</b>: Large cardinals, measurable cardinals, constructible universe. <b>Descriptive Set Theory</b>: Projective hierarchy, $\Pi_1^1$ normal form. <b>Determinacy</b>: Infinite games, open determinacy. |<a href="/files/Seminar_Slides_1.pdf" target="_blank">Link</a>|
-| 2 |19 May 2023|<b>Determinacy</b>: $\mathsf{AD}$ and relationship with $\mathsf{AC}$. <b>Martin's measure</b>: Recursive trees, Martin's measure, Martin's cone theorem. <b>$\mathsf{AD} and Lebesgue measure</b>. |<a href="/files/Seminar_Slides_2.pdf" target="_blank">Link</a>|
+| 2 |19 May 2023|<b>Determinacy</b>: $\mathsf{AD}$ and relationship with $\mathsf{AC}$. <b>Martin's measure</b>: Recursive trees, Martin's measure, Martin's cone theorem. <b>$\mathsf{AD}$ and Lebesgue measure</b>. |<a href="/files/Seminar_Slides_2.pdf" target="_blank">Link</a>|
 
 

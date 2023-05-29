@@ -15,8 +15,9 @@ The topics we will be covering include (to be updated as time passes):
 
 The sources which I use include:
 <ol>
-<li><i>Set Theory</i>, Thomas Jech (2003).</li>
 <li><i>Recursive Aspects of Descriptive Set Theory</i>, Richard Mansfield and Galen Weitkamp (1985).</li>
+<li><i>Set Theory</i>, Thomas Jech (2003).</li>
+<li><i>Set Theory</i>, Kenneth Kunen (2011).</li>
 </ol>
 
 The following table will be updated weekly. 

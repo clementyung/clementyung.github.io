@@ -20,7 +20,7 @@ The sources which I use include:
 <li><i>Set Theory</i>, Kenneth Kunen (2011).</li>
 </ol>
 
-The following table will be updated weekly. 
+The following table will be updated weekly. The notes are informal notes and they may change anytime without update. Readers should use them at their own risk.
 
 | # |  Date     |                                                                                         Topics                                                                                                |            Notes                                             |
 |:-:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|

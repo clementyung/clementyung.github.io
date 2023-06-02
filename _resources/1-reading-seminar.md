@@ -1,13 +1,13 @@
 ---
-title: "Reading Seminar Summer 2023 on Set Theory/Recursion Theory"
+title: "Reading Seminar Summer 2023 on Set Theory"
 collection: resources
 type: "Type"
 permalink: /resources/reading-seminar-summer-2023/
 ---
 
-I am hosting a reading seminar in Summer 2023 in NUS. This reading seminar focuses on the intersection of set theory and recursion theory. We will meet every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
+I am hosting a reading seminar in Summer 2023 in NUS. This reading seminar focuses descriptive set theory, determinacy, and various results in set theory that uses recursion theoretic methods to prvoe. We will meet every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
 
-The topics we will be covering include (to be updated as time passes):
+The topics we have covered so far (to be updated as time passes):
 <ol>
 <li>Consequences of $\mathsf{AD}$ - $\aleph_1$ is measurable, every subset of $\mathbb{R}$ is Lebesgue measurable.</li>
 <li>Descriptive Set Theory - $\Pi_1^1$ normal form, Mostowski absoluteness theorem, Shoenfield absoluteness theorem.</li>

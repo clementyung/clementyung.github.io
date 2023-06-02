@@ -10,7 +10,8 @@ I am hosting a reading seminar in Summer 2023 in NUS. This reading seminar focus
 The topics we will be covering include (to be updated as time passes):
 <ol>
 <li>Consequences of $\mathsf{AD}$ - $\aleph_1$ is measurable, every subset of $\mathbb{R}$ is Lebesgue measurable.</li>
-<li> Descriptive Set Theory - $\Pi_1^1$ normal form, Mostowski absoluteness theorem, Shoenfield absoluteness theorem.</li>
+<li>Descriptive Set Theory - $\Pi_1^1$ normal form, Mostowski absoluteness theorem, Shoenfield absoluteness theorem.</li>
+<li>Large cardinals and determinacy - $0^\sharp$ and analytic determinacy.</li>
 </ol>
 
 The sources which I use include:
@@ -27,5 +28,6 @@ The following table will be updated weekly. The notes are informal notes and the
 | 1 |12 May 2023|<b>Background</b>: Large cardinals, measurable cardinals, constructible universe. <b>Descriptive set theory</b>: Projective hierarchy, $\Pi_1^1$ normal form. <b>Determinacy</b>: Infinite games, open determinacy. |<a href="/files/Seminar_Slides_1.pdf" target="_blank">Link</a>|
 | 2 |19 May 2023|<b>Determinacy</b>: $\mathsf{AD}$ and its relationship with $\mathsf{AC}$. <b>Martin's measure</b>: Recursive trees, Martin's measure, Martin's cone theorem. <b>$\mathsf{AD}$ and Lebesgue measure</b>. |<a href="/files/Seminar_Slides_2.pdf" target="_blank">Link</a>|
 | 3 |26 May 2023|<b>Shoenfield absoluteness theorem</b>: $\kappa$-Suslin sets, tree representation of $\mathbf{\Sigma_2^1}$ sets, Shoenfield absoluteness theorem. |<a href="/files/Seminar_Slides_3.pdf" target="_blank">Link</a>|
+| 3 | 2 Jun 2023|<b>$0^\sharp$ and indiscernibles</b>: Silver indiscernibles, $0^\sharp$, basic consequences of $0^\sharp$. <b>Analytic determinacy</b>: $0^\sharp$ exists $\to$ $\Sigma_1^1$-$\mathsf{AD}$. |<a href="/files/Seminar_Slides_4.pdf" target="_blank">Link</a>|
 
 

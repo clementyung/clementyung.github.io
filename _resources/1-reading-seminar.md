@@ -32,5 +32,6 @@ The following table will be updated weekly. The notes are informal notes and the
 | 3 |26 May 2023|<b>Shoenfield absoluteness theorem</b>: $\kappa$-Suslin sets, tree representation of $\mathbf{\Sigma_2^1}$ sets, Shoenfield absoluteness theorem. |<a href="/files/Seminar_Slides_3.pdf" target="_blank">Link</a>|
 | 4 | 2 Jun 2023|<b>$0^\sharp$ and indiscernibles</b>: Silver indiscernibles, $0^\sharp$, basic consequences of $0^\sharp$. <b>Analytic determinacy</b>: $0^\sharp$ exists $\to$ $\Sigma_1^1$-$\mathsf{AD}$. |<a href="/files/Seminar_Slides_4.pdf" target="_blank">Link</a>|
 | 5 | 9 Jun 2023|<b>Kripke-Platek set theory</b>: Axioms of $\mathsf{KP}$, $\omega$-models, models of $\mathsf{KP}$ and their properties.|<a href="/files/Seminar_Slides_5.pdf" target="_blank">Link</a> <a href="/files/Seminar_5_Supplementary_Notes.pdf" target="_blank">Addedum</a>|
+| 6 | 21 Jul 2023|<b>Kripke-Platek set theory</b>: Well-founded models. <b>$\Sigma_1^1$-$\mathsf{AD} \to 0^\sharp$</b>: Basic properties of Friedman's set.|<a href="/files/Seminar_Slides_6.pdf" target="_blank">Link</a>|
 
 

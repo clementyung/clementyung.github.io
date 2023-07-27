@@ -11,8 +11,8 @@ The topics we have covered so far (to be updated as time passes):
 <ol>
 <li>Consequences of $\mathsf{AD}$ - $\aleph_1$ is measurable, every subset of $\mathbb{R}$ is Lebesgue measurable.</li>
 <li>Descriptive Set Theory - $\Pi_1^1$ normal form, Mostowski absoluteness theorem, Shoenfield absoluteness theorem.</li>
-<li>Large cardinals and determinacy - $0^\sharp$ and analytic determinacy.</li>
-<li>Admissible set theory - Kripke-Platek set theory, $\omega$-models.</li>
+<li>Large cardinals and determinacy - $0^\sharp$, elementary embeddings, analytic determinacy.</li>
+<li>Admissible set theory - Kripke-Platek set theory, $\omega$-models, well-founded models, admissible ordinals.</li>
 </ol>
 
 The sources which I use include:

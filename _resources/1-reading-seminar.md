@@ -5,9 +5,9 @@ type: "Type"
 permalink: /resources/reading-seminar-summer-2023/
 ---
 
-I am hosting a reading seminar in Summer 2023 in NUS. This reading seminar focuses on descriptive set theory, determinacy, and various results in set theory that uses recursion theoretic methods to prove. We are meeting every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
+I hosted a reading seminar in Summer 2023 in NUS. This reading seminar focused on descriptive set theory, determinacy, and various results in set theory that uses recursion theoretic methods to prove. We met every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
 
-The topics we have covered so far (to be updated as time passes):
+The topics we covered includes:
 <ol>
 <li>Consequences of $\mathsf{AD}$ - $\aleph_1$ is measurable, every subset of $\mathbb{R}$ is Lebesgue measurable.</li>
 <li>Descriptive Set Theory - $\Pi_1^1$ normal form, Mostowski absoluteness theorem, Shoenfield absoluteness theorem.</li>
@@ -15,7 +15,7 @@ The topics we have covered so far (to be updated as time passes):
 <li>Admissible set theory - Kripke-Platek set theory, $\omega$-models, well-founded models, admissible ordinals.</li>
 </ol>
 
-The sources which I use include:
+The sources which I used include:
 <ol>
 <li><i>Recursive Aspects of Descriptive Set Theory</i>, Richard Mansfield and Galen Weitkamp (1985).</li>
 <li><i>Set Theory</i>, Thomas Jech (2003).</li>
@@ -23,7 +23,7 @@ The sources which I use include:
 <li><i>Admissible Sets and Structures: An Approach to Definability Theory</i>, Jon Barwise (1975).</li>
 </ol>
 
-The following table will be updated weekly. The notes are informal notes and they may change anytime without update. Readers should use them at their own risk.
+The notes are informal notes and they may change anytime without update. Readers should use them at their own risk.
 
 | # |  Date     |                                                                                         Topics                                                                                                |            Notes                                             |
 |:-:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|
@@ -34,5 +34,6 @@ The following table will be updated weekly. The notes are informal notes and the
 | 5 | 9 Jun 2023|<b>Kripke-Platek set theory</b>: Axioms of $\mathsf{KP}$, $\omega$-models, models of $\mathsf{KP}$ and their properties.|<a href="/files/Seminar_Slides_5.pdf" target="_blank">Link</a> <a href="/files/Seminar_5_Supplementary_Notes.pdf" target="_blank">Addedum</a>|
 | 6 | 21 Jul 2023|<b>Kripke-Platek set theory</b>: Well-founded models. <b>$\Sigma_1^1$-$\mathsf{AD} \to 0^\sharp$ exists</b>: Basic properties of Friedman's set.|<a href="/files/Seminar_Slides_6.pdf" target="_blank">Link</a>|
 | 7 | 28 Jul 2023|<b>$\Sigma_1^1$-$\mathsf{AD} \to 0^\sharp$ exists</b>: Main proof. <b>Equivalences of $0^\sharp$</b>: Kunen's theorem.|<a href="/files/Seminar_Slides_7.pdf" target="_blank">Link</a>|
+| 8 | 4 Aug 2023|<b>My research.</b>: Ramsey theory, Ramsey spaces and MAD families.||
 
 

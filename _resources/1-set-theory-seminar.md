@@ -1,5 +1,5 @@
 ---
-title: "Student Set Theory Seminar at University of Toronto"
+title: "Student Set Theory and Combinatorics Seminar at University of Toronto"
 collection: resources
 type: "Type"
 permalink: /resources/student-set-theory-seminar/

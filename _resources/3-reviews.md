@@ -51,8 +51,6 @@ Contrary to the opinions of many logicians I've talked to, I feel that the 2011 
 
 ## <i>Combinatorial Set Theory: With a Gentle Introduction to Forcing</i>, Lorenz J. Halbeisen (2018)
 
-This is a very recent book on combinatorial set theory. It also serves as a bible, but (unsurprisingly) focuses on infinitary combinatorics.
-
-I rarely read this book, but from what I see, it provides many subtle details/connections between concepts in infinitary combinatorics. It is also much more updated due to its recency. Thus, this is the first book I look at if I can't find the details I want in Jech, Kunen and Kanamori.
+This is a very recent book on combinatorial set theory. It also serves as a bible, but (unsurprisingly) focuses on infinitary combinatorics. This book is especially helpful if you're looking for various properties (e.g. proper, adds a dominating real) of common forcings. The proofs are detailed and helpful, and its recency also makes it one of the more updated bibles.
 
 I strongly do not recommend starting on set theory, or just self-studying in general, with this book (yes I tried).

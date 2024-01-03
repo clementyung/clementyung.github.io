@@ -8,16 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-I am Clement (Cheuk Wai) Yung, a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore.
-
-My interest revolves around set theory, infinitary combinatorics, Ramsey theory, and set theory's interaction with analysis. I wrote my Honours thesis under Asst. Prof. Spencer Unger (University of Toronto) and Prof. Yang Yue (National University of Singapore), titled "Diagonalisation Forcing of Infinite Block Sequences". I'm currently researching the combinatorics of a class of sequence spaces, which is closely related to Ramsey spaces, under Asst. Prof. Spencer Unger.
+I am Clement (Cheuk Wai) Yung, a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore. I research on set theory and Ramsey theory under my supervisor Asst. Prof. Spencer Unger.
 
 You can contact me at my email [clement.yung@mail.utoronto.ca](mailto:clement.yung@mail.utoronto.ca). I am rarely active on social media, but I enjoy hanging around Math StackExchange and MathOverflow (though I usually only ask questions on MathOverflow). 
 
 <a href="https://math.stackexchange.com/users/620517/clement-yung"><img src="https://math.stackexchange.com/users/flair/620517.png" width="208" height="58" alt="profile for Clement Yung at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields" title="profile for Clement Yung at Mathematics Stack Exchange, Q&amp;A for people studying math at any level and professionals in related fields"></a>
 <a href="https://mathoverflow.net/users/146831/clement-yung"><img src="https://mathoverflow.net/users/flair/146831.png" width="208" height="58" alt="profile for Clement Yung at MathOverflow, Q&amp;A for professional mathematicians" title="profile for Clement Yung at MathOverflow, Q&amp;A for professional mathematicians"></a>
 
-My favourite video game is [Super Smash Bros. Ultimate](https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate). I used to occasionally join the locals in Singapore, but I have not had a chance so far in Toronto. I am a proud main of Mr. Game and Watch.
+My favourite video game is [Super Smash Bros. Ultimate](https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate). I am a proud main of Mr. Game and Watch. I used to join the locals in Singapore occasionally, but I have no intention of competing in the future. If you found a GnW online with a tag with a suspiciously close connection to what I've written in this site, you have probably found me.
 
 
 

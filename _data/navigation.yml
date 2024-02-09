@@ -3,6 +3,9 @@ main:
   - title: "Resources"
     url: /resources/
 
+  - title: "Research"
+    url: /research/
+
   - title: "Jech Solutions"
     url: /jech-solutions/
 

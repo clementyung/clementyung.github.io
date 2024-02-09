@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Research"
-permalink: /research/
+title: "Suggested Solutions to Jech's <i>Set Theory</i>"
+permalink: /jech-solutions/
 author_profile: true
 ---
 

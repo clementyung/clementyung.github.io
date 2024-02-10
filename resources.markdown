@@ -8,6 +8,6 @@ permalink: /resources/
 
 {% for post in site.resources %}
   <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
   </li>
 {% endfor %}

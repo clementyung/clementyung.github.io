@@ -6,6 +6,6 @@ permalink: /resources/
 
 {% for page in site.resources %}
   <li>
-      <a href="{{ page.permalink }}">{{ page.title }}</a>
+      <a href="{{ page.url }}">{{ page.title }}</a>
   </li>
 {% endfor %}

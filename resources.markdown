@@ -4,6 +4,8 @@ title: "Resources"
 permalink: /resources/
 ---
 
-{% for page in site.resources %}
-   test<a href="{{ page.url }}">{{ page.title }}</a>
+{% for post in site.resources %}
+  <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
 {% endfor %}

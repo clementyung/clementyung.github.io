@@ -1,7 +1,13 @@
 ---
-layout: page
+layout: default
 title: "Resources"
 permalink: /resources/
 ---
 
-(Testing)
+{% include base_path %}
+
+{% for post in site.resources %}
+  <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}

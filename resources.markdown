@@ -6,8 +6,8 @@ permalink: /resources/
 
 {% include base_path %}
 
-{% for post in site.resources %}
+{% for page in site.resources %}
   <li>
-      <a>{{ post.title }}</a>
+      <a href="{{ page.permalink }}">{{ page.title }}</a>
   </li>
 {% endfor %}

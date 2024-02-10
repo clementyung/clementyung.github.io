@@ -4,9 +4,9 @@ layout: default
 permalink: /resources/reading-seminar-summer-2023/
 ---
 
-I hosted a reading seminar in Summer 2023 in NUS. This reading seminar focused on descriptive set theory, determinacy, and various results in set theory that uses recursion theoretic methods to prove. We met every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
+I hosted a reading seminar in the Summer 2023 at NUS. This reading seminar focused on descriptive set theory, determinacy, and various results in set theory that use recursion theoretic methods to prove. We met every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
 
-The topics we covered includes:
+The topics we covered include:
 <ol>
 <li>Consequences of $\mathsf{AD}$ - $\aleph_1$ is measurable, every subset of $\mathbb{R}$ is Lebesgue measurable.</li>
 <li>Descriptive Set Theory - $\Pi_1^1$ normal form, Mostowski absoluteness theorem, Shoenfield absoluteness theorem.</li>
@@ -22,7 +22,7 @@ The sources which I used include:
 <li><i>Admissible Sets and Structures: An Approach to Definability Theory</i>, Jon Barwise (1975).</li>
 </ol>
 
-The notes are informal notes and they may change anytime without update. Readers should use them at their own risk.
+The notes are informal and they may change anytime without update. Readers should use them at their own risk.
 
 | # |  Date     |                                                                                         Topics                                                                                                |            Notes                                             |
 |:-:|:---------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------:|

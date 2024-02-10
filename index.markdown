@@ -1,8 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
 
 I am Clement (Cheuk Wai) Yung, a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore. I research on set theory and Ramsey theory under my supervisor Asst. Prof. Spencer Unger.

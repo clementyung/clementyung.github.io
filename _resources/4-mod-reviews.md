@@ -1,7 +1,6 @@
 ---
 title: "Reviews of Modules in NUS"
-collection: resources
-type: "Type"
+layout: default
 permalink: /resources/module-reviews/
 ---
 

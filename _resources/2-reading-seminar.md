@@ -1,7 +1,6 @@
 ---
 title: "Reading Seminar Summer 2023 on Set Theory"
-collection: resources
-type: "Type"
+layout: default
 permalink: /resources/reading-seminar-summer-2023/
 ---
 

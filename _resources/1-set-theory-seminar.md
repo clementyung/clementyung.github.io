@@ -1,7 +1,6 @@
 ---
 title: "Student Set Theory and Combinatorics Seminar at University of Toronto"
-collection: resources
-type: "Type"
+layout: default
 permalink: /resources/student-set-theory-seminar/
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: "Reviews of Books on Set Theory"
-collection: resources
-type: "Type"
+layout: default
 permalink: /resources/book-reviews/
 ---
 

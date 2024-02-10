@@ -4,6 +4,8 @@ layout: default
 permalink: /resources/book-reviews/
 ---
 
+{% include mathjax.html >}}
+
 I only started devoting myself to set theory in the second semester of my junior year, but thanks to various resources I was able to pick up the basics rather quickly. Here I list some of the books I've used (and am still using), and my brief view on their content.
 
 ## <i>Set Theory</i>, Kenneth Kunen (2011)

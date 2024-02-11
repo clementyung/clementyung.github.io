@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Resources | Clement Yung's Site"
+title: "Resources"
 permalink: /resources/
 ---
 

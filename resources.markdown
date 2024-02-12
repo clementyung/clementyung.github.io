@@ -7,7 +7,7 @@ permalink: /resources/
 {% for post in site.posts %}
    <ul>
    {% if post.categories == "resource" %}
-       <a href="{{ post.url }}">{{ post.title }} {{ post.excerpt }}</a>
+       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
    {% endif %}
    </ul>
 {% endfor %}

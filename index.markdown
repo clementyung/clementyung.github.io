@@ -3,7 +3,7 @@ title: "Hi, I'm Clement Yung"
 layout: default
 ---
 
-<img src="files/Front_Photo.jpg" alt="Guess why I'm wearing only one glove.">
+<img src="files/Front_Photo.jpg" alt="Guess why I'm wearing only one glove." style='height: 70%; width: 70%; object-fit: contain'>
 
 I am Clement (Cheuk Wai) Yung, a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore. My research is set theory and Ramsey theory, and my supervisor is Asst. Prof. Spencer Unger.
 

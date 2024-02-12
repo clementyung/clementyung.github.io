@@ -2,7 +2,7 @@
 title: "Reviews of Modules in NUS"
 layout: default
 permalink: /resources/module-reviews/
-category: resource
+categories: resource
 ---
 
 I wrote a review of almost every module I took as an undergraduate at National University of Singapore, and posted them on [NUSMods](https://nusmods.com). Here is a list of the modules I took and the links to their reviews.

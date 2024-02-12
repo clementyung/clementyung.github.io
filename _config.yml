@@ -19,8 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Clement Yung's Site
-email: "Email text"
-description: "Description text"
+email: ""
+description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

@@ -12,7 +12,7 @@ While I try my best to do all the exercises myself, I do not take full credit fo
 
 I do not claim that my solutions are fully correct. I attempted these exercises as a means to better understand the concepts in the same chapter, so I do not verify the correctness of most solutions here. If you spot any errors or typos, or just have any queries in general, feel free to drop me a mail at [clement.yung@mail.utoronto.ca](mailto:clement.yung@mail.utoronto.ca).
 
-{% for post in site.posts %}
+{% for post in site.posts reversed %}
    <ul>
    {% if post.category == "solution" %}
        <li><a href="{{ post.url }}">{{ post.title }}</a></li>

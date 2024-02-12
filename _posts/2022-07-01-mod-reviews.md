@@ -11,13 +11,13 @@ I wrote a review of almost every module I took as an undergraduate at National U
 
 If you are wondering why I did not take MA1101R Linear Algebra, MA1102R Calculus and ST1131 Introduction to Statistics, it is because I took the [advanced placement tests](https://www.science.nus.edu.sg/undergraduates/admissions/advanced-placement-credits/) for these three modules and passed. My grades for the tests were A-, B and C+ respectively, but the grades were not counted in the calculation of my overall CAP.
 
-## AY17/18 Semester 2 - Special Term (Part 1) (iBLOC)
+### AY17/18 Semester 2 - Special Term (Part 1) (iBLOC)
 
 |Module Code|     Module Name        | Grade |            Review                                         |
 |:---------:|:----------------------:|:-----:|:---------------------------------------------------------:|
 |CS1010X    |Programming Methodology |A      |<a href="http://disq.us/p/1xqoo51" target="_blank">Link</a>|
 
-## AY18/19 Semester 1
+### AY18/19 Semester 1
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -28,7 +28,7 @@ If you are wondering why I did not take MA1101R Linear Algebra, MA1102R Calculus
 |SP1541     |Exploring Science Communication through Popular Science|S      |<a href="http://disq.us/p/21fg1x4" target="_blank">Link</a>|
 |ST2137     |Computer Aided Data Analysis                           |A      |<a href="http://disq.us/p/21fg3jz" target="_blank">Link</a>|
 
-## AY18/19 Winter (Hanyang University)
+### AY18/19 Winter (Hanyang University)
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -36,7 +36,7 @@ If you are wondering why I did not take MA1101R Linear Algebra, MA1102R Calculus
 
 The module was mapped to PC1143 Introduction to Electricity & Magnetism.
 
-## AY18/19 Semester 2
+### AY18/19 Semester 2
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -48,13 +48,13 @@ The module was mapped to PC1143 Introduction to Electricity & Magnetism.
 |MA2108S    |Mathematical Analysis I (S)                            |A      |<a href="http://disq.us/p/228iahw" target="_blank">Link</a>|
 |ST2132     |Mathematical Statistics                                |A      |<a href="http://disq.us/p/228ibnw" target="_blank">Link</a>|
 
-## AY18/19 Special Term
+### AY18/19 Special Term
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
 |MA2288     |Basic UROPS in Mathematics I                           |A+     |<a href="http://disq.us/p/23tob86" target="_blank">Link</a>|
 
-## AY19/20 Semester 1
+### AY19/20 Semester 1
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -66,7 +66,7 @@ The module was mapped to PC1143 Introduction to Electricity & Magnetism.
 |MA3320     |Ordinary Differential Equations                        |A      |<a href="http://disq.us/p/26bg2vu" target="_blank">Link</a>|
 |ST5214     |Advanced Probability Theory                            |A+     |<a href="http://disq.us/p/26bg3po" target="_blank">Link</a>|
 
-## AY19/20 Semester 2
+### AY19/20 Semester 2
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -79,7 +79,7 @@ The module was mapped to PC1143 Introduction to Electricity & Magnetism.
 |ST4234     |Bayesian Statistics                                    |S      |<a href="http://disq.us/p/2aijxss" target="_blank">Link</a>|
 
 
-## AY19/20 Online Summer Exchange (Boston University)
+### AY19/20 Online Summer Exchange (Boston University)
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -87,13 +87,13 @@ The module was mapped to PC1143 Introduction to Electricity & Magnetism.
 
 The module was mapped to MA3265 Introduction to Number Theory.
 
-## AY19/20 Special Term Part I
+### AY19/20 Special Term Part I
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
 |CS2030     |Programming Methodology II                             |A      |<a href="http://disq.us/p/2ar9ecj" target="_blank">Link</a>|
 
-## AY20/21 Semester 1
+### AY20/21 Semester 1
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -105,7 +105,7 @@ The module was mapped to MA3265 Introduction to Number Theory.
 |MA5213     |Advanced Partial Differential Equations                |A+     |<a href="http://disq.us/p/2dzdyu5" target="_blank">Link</a>|
 |MA5219     |Logic and Foundation of Mathematics I                  |A      |<a href="http://disq.us/p/2dzdyy8" target="_blank">Link</a>|
 
-## AY20/21 Semester 2
+### AY20/21 Semester 2
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -115,7 +115,7 @@ The module was mapped to MA3265 Introduction to Number Theory.
 |MA5210     |Differentiable Manifolds                               |A+     |<a href="http://disq.us/p/2hgimvp" target="_blank">Link</a>|
 |MA5220     |Logic and Foundation of Mathematics II                 |A+     |<a href="http://disq.us/p/2hgioo4" target="_blank">Link</a>|
 
-## AY20/21 Online Summer Exchange (University of Toronto)
+### AY20/21 Online Summer Exchange (University of Toronto)
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -124,7 +124,7 @@ The module was mapped to MA3265 Introduction to Number Theory.
 
 The module MAT401 was mapped to MA4203 Galois Theory. The module MAT495 was mapped to an exchange enrichment module.
 
-## AY21/22 Semester 1
+### AY21/22 Semester 1
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
@@ -133,7 +133,7 @@ The module MAT401 was mapped to MA4203 Galois Theory. The module MAT495 was mapp
 |MA6219     |Recursion Theory                                       |A      |<a href="http://disq.us/p/2m4qt4t" target="_blank">Link</a>|
 |ST3131     |Regression Anaylsis                                    |A-     |<a href="http://disq.us/p/2m4qwi9" target="_blank">Link</a>|
 
-## AY21/22 Semester 2
+### AY21/22 Semester 2
 
 |Module Code|     Module Name                                       | Grade |            Review                                         |
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|

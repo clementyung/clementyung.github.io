@@ -5,6 +5,8 @@ permalink: /resources/reading-seminar-summer-2023/
 category: resource
 ---
 
+# Reading Seminar Summer 2023 on Set Theory
+
 I hosted a reading seminar in the Summer 2023 at NUS. This reading seminar focused on descriptive set theory, determinacy, and various results in set theory that use recursion theoretic methods to prove. We met every Friday 4-6pm from 12 May 2023 to 4 Aug 2023 at S17-0405, except for the weeks of 12 Jun 2023 to 14 Jul 2023.
 
 The topics we covered include:

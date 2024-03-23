@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Research"
-permalink: /research/
+title: "Research/Talks"
+permalink: /research-talks/
 ---
 
 I'm mostly working on set theory and Ramsey theory. In particular, I'm interested in studying Ramsey theory in topological Ramsey space-like spaces, where the pigeonhole principle fails. I'm also interested in expanding the framework of local Ramsey theory to such spaces.
@@ -18,7 +18,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 
 ### Talks
 <ul>
-   <li><em>Infinite games and Lebesgue measure</em>, Bird's Eye Conference, University of Toronto (Mar 2024).</li>
+   <li><em>Infinite games and Lebesgue measure</em>, Bird's Eye Conference, University of Toronto (Mar 2024). <a href="/files/Birds_Eye_Conference_Talk_Slides.pdf" target="_blank">Slides</a></li>
    <li><em>MAD families of Gowers' infinite block sequences</em>, Student Set Theory and Combinatorics Seminar, University of Toronto (Feb/Mar 2024).</li>
    <li><em>Kastanas game in sequence spaces</em>, Student Set Theory and Combinatorics Seminar, University of Toronto (Oct 2023).</li>
 </ul>

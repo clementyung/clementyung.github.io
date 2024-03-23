@@ -15,3 +15,10 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 <ul>
    <li><em>MAD Families of Gowers' Infinite Block Sequences</em>, <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
 </ul>
+
+### Talks
+<ul>
+   <li><em>Infinite games and Lebesgue measure</em>, Bird's Eye Conference, University of Toronto (Mar 2024).</li>
+   <li><em>MAD families of Gowers' infinite block sequences</em>, Student Set Theory and Combinatorics Seminar, University of Toronto (Feb/Mar 2024).</li>
+   <li><em>Kastanas game in sequence spaces</em>, Student Set Theory and Combinatorics Seminar, University of Toronto (Oct 2023).</li>
+</ul>

@@ -5,7 +5,7 @@ layout: default
 
 <img src="files/Front_Photo.jpg" alt="Guess why I'm wearing only one glove." style='height: 70%; width: 70%; object-fit: contain'>
 
-I am Clement (Cheuk Wai) Yung, a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore. My research is set theory and Ramsey theory, and my supervisor is Asst. Prof. Spencer Unger.
+I am Clement (Cheuk Wai) Yung, a graduate student (PhD Mathematics) at the University of Toronto. I did my undergraduate studies at the National University of Singapore. I am supervised by Asst. Prof. Spencer Unger.
 
 You can contact me at my email [clement.yung@mail.utoronto.ca](mailto:clement.yung@mail.utoronto.ca). I am rarely active on social media, but I enjoy hanging around Math StackExchange and MathOverflow (though I usually only ask questions on MathOverflow). 
 

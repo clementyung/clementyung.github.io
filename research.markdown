@@ -18,7 +18,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 
 ### Talks
 <ul>
-   <li><em>An alternative proof to the Mathias-Silver theorem using the Kastanas game</em>, CMS Winter Meeting 2024, Vancouver (Nov 2024).</li>
+   <li><em>An alternative proof to the Mathias-Silver theorem using the Kastanas game</em>, CMS Winter Meeting 2024, Vancouver (Nov 2024). <a href="/files/CMS_Talk_Slides__Mathias_Silver_theorem.pdf" target="_blank">Slides</a>.</li>
    <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, Logic Seminar, University of Maryland (Oct 2024). <a href="/files/Birds_Eye_Conference_Talk_Slides.pdf" target="_blank">Slides</a>.</li>
    <li><em>Weak A2 spaces and Ramsey games</em>, Fields Institute, University of Toronto (Mar 2024).</li>
 </ul>

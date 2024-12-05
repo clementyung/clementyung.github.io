@@ -129,7 +129,7 @@ The module MAT401 was mapped to MA4203 Galois Theory. The module MAT495 was mapp
 |MA4199     |Honours Project in Mathematics                         |IP     |See Next Semester                                          |
 |MA4235     |Topics in Graph Theory                                 |A-     |<a href="http://disq.us/p/2m4qv35" target="_blank">Link</a>|
 |MA6219     |Recursion Theory                                       |A      |<a href="http://disq.us/p/2m4qt4t" target="_blank">Link</a>|
-|ST3131     |Regression Anaylsis                                    |A-     |<a href="http://disq.us/p/2m4qwi9" target="_blank">Link</a>|
+|ST3131     |Regression Analysis                                    |A-     |<a href="http://disq.us/p/2m4qwi9" target="_blank">Link</a>|
 
 ### AY21/22 Semester 2
 

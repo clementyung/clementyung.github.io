@@ -9,7 +9,7 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
 {% for post in site.posts reversed %}
    <ul>
    {% if post.category == "solution" %}
-       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+       <li><a href="{{ post.url }}">{{ post.chapter }}</a></li>
    {% endif %}
    </ul>
 {% endfor %}

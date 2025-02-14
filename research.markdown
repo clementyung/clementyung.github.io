@@ -8,7 +8,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 
 ### Papers
 <ul>
-   <li><em>Full mad families in vector spaces and unconditional weak A2 spaces</em>. in progress. </li>
+   <li><em>Full mad families in vector spaces and unconditional weak A2 spaces</em>, in progress. </li>
    <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, submitted. <a href="https://arxiv.org/abs/2410.00200">arXiv</a>.</li>
 </ul>
 

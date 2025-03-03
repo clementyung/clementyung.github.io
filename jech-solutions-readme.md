@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Readme - Suggested Solutions to Jech's <i>Set Theory</i>"
+title: "Readme - Suggested Solutions to Jech's <em>Set Theory</em>"
 permalink: /jech-solutions/readme
 ---
 

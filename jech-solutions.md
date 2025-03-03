@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Suggested Solutions to Jech's <i>Set Theory</i>"
+title: "Suggested Solutions to Jech's <em>Set Theory</em>"
 permalink: /jech-solutions/
 ---
 

@@ -6,15 +6,16 @@ permalink: /research-talks/
 
 I'm mostly working on set theory and Ramsey theory. In particular, I'm interested in studying Ramsey theory in topological Ramsey space-like spaces, where the pigeonhole principle fails. I'm also interested in expanding the framework of local Ramsey theory to such spaces.
 
-### Papers
+### Papers/Preprints
 <ul>
    <li><em>Full mad families of vector spaces and unconditional weak A2 spaces</em>, in progress. </li>
    <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, submitted. <a href="https://arxiv.org/abs/2410.00200">arXiv</a>.</li>
 </ul>
 
-### Preprints
+### Notes
+This is a collection of results I have for some interesting problems I came across during my research. I do not intend to publish them in the near future.
 <ul>
-   <li><em>MAD families of Gowers' infinite block sequences</em>, <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
+   <li><em>Mad families of Gowers' infinite block sequences</em>, <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
 </ul>
 
 ### Talks

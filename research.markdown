@@ -20,7 +20,7 @@ This is a collection of my side projects, which consists of results I have for s
 
 ### Talks
 <ul>
-   <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, Logic Seminar, University of Waterloo (Feb 2025). <a href="/files/Waterloo_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
-   <li><em>An alternative proof to the Mathias-Silver theorem using the Kastanas game</em>, CMS Winter Meeting 2024, Richmond, British Columbia (Nov 2024). <a href="/files/CMS_Talk_Slides__Mathias_Silver_theorem.pdf" target="_blank">Slides</a>.</li>
-   <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, Logic Seminar, University of Maryland (Oct 2024). <a href="/files/UMD_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
+   <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, Logic Seminar, University of Waterloo, Ontario, Canada (Feb 2025). <a href="/files/Waterloo_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
+   <li><em>An alternative proof to the Mathias-Silver theorem using the Kastanas game</em>, CMS Winter Meeting 2024, British Columbia, Canada (Nov 2024). <a href="/files/CMS_Talk_Slides__Mathias_Silver_theorem.pdf" target="_blank">Slides</a>.</li>
+   <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, Logic Seminar, University of Maryland, Marylandm USA (Oct 2024). <a href="/files/UMD_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
 </ul>

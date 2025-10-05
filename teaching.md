@@ -5,7 +5,7 @@ permalink: /teaching/
 category: teaching
 ---
 
-Here is a summary of my teaching experience, along with links to my personal webpage for the course (if any).
+Here is a summary of my teaching experience, along with links to my personal webpages for the courses (if any).
 
 ### Academic Year 2025-26
 

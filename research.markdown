@@ -18,8 +18,9 @@ This is a collection of my side projects, which consist of results I obtained fo
    <li><em>Mad families of Gowers' infinite block sequences</em>, <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
 </ul>
 
-### Talks
+### Invited Talks
 <ul>
+   <li><em>Definability of mad families of vector spaces and the fullness property</em>, North American Descriptive Set Theory Meeting, Brin Mathematics Research Center, Maryland, USA (Oct 2025). <a href="/files/Brin_Talk_Slides_(Definability_of_mad_families).pdf" target="_blank">Slides</a>.</li>
    <li><em>Mad families of vector spaces</em>, Set theory seminar, University of Toronto, Ontario, Canada (Mar 2025). <a href="/files/Fields_Talk_Slides_(Mad_families).pdf" target="_blank">Slides</a>.</li>
    <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, Logic seminar, University of Waterloo, Ontario, Canada (Feb 2025). <a href="/files/Waterloo_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
    <li><em>An alternative proof to the Mathias-Silver theorem using the Kastanas game</em>, CMS Winter Meeting 2024, British Columbia, Canada (Nov 2024). <a href="/files/CMS_Talk_Slides__Mathias_Silver_theorem.pdf" target="_blank">Slides</a>.</li>

@@ -15,7 +15,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 ### Notes
 This is a collection of my side projects, which consist of results I obtained for some interesting problems I encountered during my research.
 <ul>
-   <li><strong>Mad families of Gowers' infinite block sequences</strong>, <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
+   <li><strong>Mad families of Gowers' infinite block sequences</strong>. <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
 </ul>
 
 ### Invited Talks

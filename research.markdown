@@ -9,7 +9,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 ### Papers/Preprints
 <ul>
    <li><em>Definability of mad families of vector spaces and two local Ramsey theories</em>, submitted. <a href="https://arxiv.org/abs/2503.24207">arXiv</a>.</li>
-   <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, to appear in the <em>Journal of Symbolic Logic</em>. <a href="https://arxiv.org/abs/2410.00200">arXiv</a>.</li>
+   <li><em>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</em>, to appear in the <strong>Journal of Symbolic Logic</strong>. <a href="https://arxiv.org/abs/2410.00200">arXiv</a>.</li>
 </ul>
 
 ### Notes

@@ -11,7 +11,7 @@ Here is a summary of my teaching experience, along with links to my personal web
 
 |Course Code|     Course Name                                       | Session     |            Page        |
 |:---------:|:-----------------------------------------------------:|:-----------:|:----------------------:|
-|MAT309     |Introduction to Mathematical Logic                     |Fall         ||
+|MAT309     |Introduction to Mathematical Logic                     |Fall         |<a href="/teaching/fall25-mat309">Link</a>|
 |MAT337     |Introduction to Real Analysis                          |Fall         |<a href="/teaching/fall25-mat337">Link</a>|
 |MAT337     |Introduction to Real Analysis                          |Winter       |                        |
 

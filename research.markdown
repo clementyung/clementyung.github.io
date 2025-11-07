@@ -20,10 +20,10 @@ This is a collection of my side projects, which consist of results I obtained fo
 
 ### Invited Talks
 <ul>
-   <li><strong>Definability of mad families of vector spaces and the fullness property</strong>, North American Descriptive Set Theory Meeting, Brin Mathematics Research Center, Maryland, USA (Oct 2025). <a href="/files/Slides/Brin_Talk_Slides_(Definability_of_mad_families).pdf" target="_blank">Slides</a>.</li>
-   <li><strong>Mad families of vector spaces</strong>, Set theory seminar, University of Toronto, Ontario, Canada (Mar 2025). <a href="/files/Slides/Fields_Talk_Slides_(Mad_families).pdf" target="_blank">Slides</a>.</li>
-   <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, Logic seminar, University of Waterloo, Ontario, Canada (Feb 2025). <a href="/files/Slides/Waterloo_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
-   <li><strong>An alternative proof to the Mathias-Silver theorem using the Kastanas game</strong>, CMS Winter Meeting 2024, British Columbia, Canada (Nov 2024). <a href="/files/Slides/CMS_Talk_Slides__Mathias_Silver_theorem.pdf" target="_blank">Slides</a>.</li>
-   <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, Logic seminar, University of Maryland, Maryland, USA (Oct 2024). <a href="/files/Slides/UMD_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
+   <li><strong>Definability of mad families of vector spaces and the fullness property</strong>, North American Descriptive Set Theory Meeting, Brin Mathematics Research Center, Maryland, USA (Oct 2025). <a href="/files/slides/Brin_Talk_Slides_(Definability_of_mad_families).pdf" target="_blank">Slides</a>.</li>
+   <li><strong>Mad families of vector spaces</strong>, Set theory seminar, University of Toronto, Ontario, Canada (Mar 2025). <a href="/files/slides/Fields_Talk_Slides_(Mad_families).pdf" target="_blank">Slides</a>.</li>
+   <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, Logic seminar, University of Waterloo, Ontario, Canada (Feb 2025). <a href="/files/slides/Waterloo_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
+   <li><strong>An alternative proof to the Mathias-Silver theorem using the Kastanas game</strong>, CMS Winter Meeting 2024, British Columbia, Canada (Nov 2024). <a href="/files/slides/CMS_Talk_Slides__Mathias_Silver_theorem.pdf" target="_blank">Slides</a>.</li>
+   <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, Logic seminar, University of Maryland, Maryland, USA (Oct 2024). <a href="/files/slides/UMD_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>
    <li><strong>Weak A2 spaces and Ramsey games</strong>, Set theory seminar, University of Toronto, Ontario, Canada (Mar 2024).</li>
 </ul>

@@ -17,10 +17,10 @@ The topics we covered include:
 
 The sources which I used include:
 <ol>
-<li>*Recursive Aspects of Descriptive Set Theory*, Richard Mansfield and Galen Weitkamp (1985).</li>
-<li>*Set Theory*, Thomas Jech (2003).</li>
-<li>*Set Theory*, Kenneth Kunen (2011).</li>
-<li>*Admissible Sets and Structures: An Approach to Definability Theory*, Jon Barwise (1975).</li>
+<li><em>Recursive Aspects of Descriptive Set Theory</em>, Richard Mansfield and Galen Weitkamp (1985).</li>
+<li><em>Set Theory</em>, Thomas Jech (2003).</li>
+<li><em>Set Theory</em>, Kenneth Kunen (2011).</li>
+<li><em>Admissible Sets and Structures: An Approach to Definability Theory</em>, Jon Barwise (1975).</li>
 </ol>
 
 The notes are informal and they may change anytime without update. Readers should use them at their own risk.

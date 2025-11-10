@@ -1,5 +1,5 @@
 {
-   "name": "Attempt 2 (3,3)",
+   "name": "Attempt 3 (3,3)",
    "description": "",
    "max_state": 99,
    "symbols": "012",

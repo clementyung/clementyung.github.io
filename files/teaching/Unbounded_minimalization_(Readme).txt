@@ -1,6 +1,6 @@
 States 1-12: TM for Diff(n,m).
         
-States 21-23: Convert $ to (n,0).
+States 21-23: Convert n to (n,0).
         
 States 31-55: Duplicate (n,m) to (n,m,n,m).
         

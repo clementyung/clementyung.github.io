@@ -5,9 +5,9 @@ permalink: /resources/module-reviews/
 category: resource
 ---
 
-I wrote a review of almost every module I took as an undergraduate at National University of Singapore, and posted them on [NUSMods](https://nusmods.com). Here is a list of the modules I took and the links to their reviews.
+I wrote a review of almost every module I took as an undergraduate at the National University of Singapore and posted them on [NUSMods](https://nusmods.com). Here is a list of the modules I took and the links to their reviews.
 
-If you are wondering why I did not take MA1101R Linear Algebra, MA1102R Calculus and ST1131 Introduction to Statistics, it is because I took the [advanced placement tests](https://www.science.nus.edu.sg/undergraduates/admissions/advanced-placement-credits/) for these three modules and passed. My grades for the tests were A-, B and C+ respectively, but the grades were not counted in the calculation of my overall CAP.
+I did not take MA1101R Linear Algebra, MA1102R Calculus and ST1131 Introduction to Statistics as I took their [advanced placement tests](https://www.science.nus.edu.sg/undergraduates/admissions/advanced-placement-credits/) and passed. My grades for the tests were A-, B and C+ respectively, but they were not counted toward my overall CAP.
 
 ### AY17/18 Semester 2 - Special Term (Part 1) (iBLOC)
 
@@ -32,7 +32,7 @@ If you are wondering why I did not take MA1101R Linear Algebra, MA1102R Calculus
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
 |GEN0064    |General Physics 2                                      |A+     |                                                           |
 
-The module was mapped to PC1143 Introduction to Electricity & Magnetism.
+This module was mapped to PC1143 Introduction to Electricity & Magnetism.
 
 ### AY18/19 Semester 2
 
@@ -83,7 +83,7 @@ The module was mapped to PC1143 Introduction to Electricity & Magnetism.
 |:---------:|:-----------------------------------------------------:|:-----:|:---------------------------------------------------------:|
 |MAT341     |Introduction to Number Theory                          |A+     |                                                           |
 
-The module was mapped to MA3265 Introduction to Number Theory.
+This module was mapped to MA3265 Introduction to Number Theory.
 
 ### AY19/20 Special Term Part I
 
@@ -120,7 +120,7 @@ The module was mapped to MA3265 Introduction to Number Theory.
 |MAT401     |Polynomial Fields and Equations                        |B      |                                                           |
 |MAT495     |Independent Reading in Mathematics                     |A+     |                                                           |
 
-The module MAT401 was mapped to MA4203 Galois Theory. The module MAT495 was mapped to an exchange enrichment module.
+MAT401 was mapped to MA4203 Galois Theory, and MAT495 was mapped to an exchange enrichment module.
 
 ### AY21/22 Semester 1
 

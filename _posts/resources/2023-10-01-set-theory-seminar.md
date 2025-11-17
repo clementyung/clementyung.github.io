@@ -5,6 +5,6 @@ permalink: "/resources/student-set-theory-seminar/"
 category: resource
 --- 
 
-I organised (along with Brinda V., UofT) Student Set Theory and Combinatorics Seminar (SSTCS) for the academic year 2024-2025. SSTCS is a medium for graduate students to present and listen to talks given by their peers, focusing on set theory and combinatorics. The list of talks given can be found <a href="https://docs.google.com/spreadsheets/d/1iLanndI0f6N4-kQPJ8UF86NI6BQm_CQyuxQL2xP2GxE/edit?usp=sharing" target="_blank">here</a>.
+I organised the Student Set Theory and Combinatorics Seminar (SSTCS) from Sep 2023 to Apr 2025, together with Brinda V. at the University of Toronto. SSTCS provides a platform for graduate students to present and attend talks by their peers on topics in set theory and combinatorics. The list of talks given can be found <a href="https://docs.google.com/spreadsheets/d/1iLanndI0f6N4-kQPJ8UF86NI6BQm_CQyuxQL2xP2GxE/edit?usp=sharing" target="_blank">here</a>.
 
 

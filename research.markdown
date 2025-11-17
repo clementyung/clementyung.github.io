@@ -4,7 +4,7 @@ title: "Research/Talks"
 permalink: /research-talks/
 ---
 
-I'm mostly working on set theory and Ramsey theory. In particular, I'm interested in studying Ramsey theory in topological Ramsey space-like spaces, where the pigeonhole principle fails. I'm also interested in expanding the framework of local Ramsey theory to such spaces.
+I'm mostly working on set theory and Ramsey theory. In particular, I'm interested in studying Ramsey theory in topological Ramsey space-like spaces, where the pigeonhole principle fails. 
 
 ### Papers/Preprints
 <ul>
@@ -13,7 +13,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 </ul>
 
 ### Notes
-This is a collection of my side projects, which consist of results I obtained for some interesting problems I encountered during my research.
+This is a collection of side projects consisting of results I obtained while working on interesting problems that arose during my research.
 <ul>
    <li><strong>Mad families of Gowers' infinite block sequences</strong>. <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
 </ul>

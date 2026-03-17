@@ -8,7 +8,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 
 ### Papers/Preprints
 <ul>
-   <li><strong>Definability of mad families of vector spaces and two local Ramsey theories</strong>, submitted. <a href="https://arxiv.org/abs/2503.24207">arXiv</a>.</li>
+   <li><strong>Full mad families of vector spaces and two local Ramsey theories</strong>, to appear in <em>Fundamenta Mathematicae</em>. <a href="https://arxiv.org/abs/2503.24207">arXiv</a> (to be updated).</li>
    <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, to appear in the <em>Journal of Symbolic Logic</em>. <a href="https://arxiv.org/abs/2410.00200">arXiv</a>.</li>
 </ul>
 
@@ -21,7 +21,7 @@ This collection of side projects presents results I obtained while working on in
 ### Invited Talks/Travels
 <ul>
    <li><strong>There is a completely separable mad family of vector spaces</strong>, Set theory seminar, University of Toronto, Ontario, Canada (Feb 2026). <a href="/files/slides/Fields_Talk_Slides_(CS_mad_families).pdf" target="_blank">Slides</a>.</li>
-   <li><strong>Projections between topological Ramsey spaces</strong>, Infinite Structural Ramsey Theory, Banff International Research Station, Alberta, Canada (Nov 2025).</li>
+   <li><strong>Projections between topological Ramsey spaces</strong> (Lightning talk), Infinite Structural Ramsey Theory, Banff International Research Station, Alberta, Canada (Nov 2025).</li>
    <li><strong>Definability of mad families of vector spaces and the fullness property</strong>, North American Descriptive Set Theory Meeting, Brin Mathematics Research Center, Maryland, USA (Oct 2025). <a href="/files/slides/Brin_Talk_Slides_(Definability_of_mad_families).pdf" target="_blank">Slides</a>.</li>
    <li><strong>Mad families of vector spaces</strong>, Set theory seminar, University of Toronto, Ontario, Canada (Mar 2025). <a href="/files/slides/Fields_Talk_Slides_(Mad_families).pdf" target="_blank">Slides</a>.</li>
    <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, Logic seminar, University of Waterloo, Ontario, Canada (Feb 2025). <a href="/files/slides/Waterloo_Talk_Slides_(wA2_Spaces).pdf" target="_blank">Slides</a>.</li>

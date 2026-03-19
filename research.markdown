@@ -8,7 +8,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 
 ### Papers/Preprints
 <ul>
-   <li><strong>Full mad families of vector spaces and two local Ramsey theories</strong>, to appear in <em>Fundamenta Mathematicae</em>. <a href="https://arxiv.org/abs/2503.24207">arXiv</a> (to be updated).</li>
+   <li><strong>Full mad families of vector spaces and two local Ramsey theories</strong>, to appear in <em>Fundamenta Mathematicae</em>. <a href="https://arxiv.org/abs/2503.24207">arXiv</a>.</li>
    <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, to appear in the <em>Journal of Symbolic Logic</em>. <a href="https://arxiv.org/abs/2410.00200">arXiv</a>.</li>
 </ul>
 
@@ -18,7 +18,7 @@ This collection of side projects presents results I obtained while working on in
    <li><strong>Mad families of Gowers' infinite block sequences</strong>. <a href="https://arxiv.org/abs/2402.07836">arXiv</a>.</li>
 </ul>
 
-### Invited Talks/Travels
+### Invited Talks
 <ul>
    <li><strong>There is a completely separable mad family of vector spaces</strong>, Set theory seminar, University of Toronto, Ontario, Canada (Feb 2026). <a href="/files/slides/Fields_Talk_Slides_(CS_mad_families).pdf" target="_blank">Slides</a>.</li>
    <li><strong>Projections between topological Ramsey spaces</strong> (Lightning talk), Infinite Structural Ramsey Theory, Banff International Research Station, Alberta, Canada (Nov 2025).</li>

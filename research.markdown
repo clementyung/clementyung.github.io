@@ -8,6 +8,7 @@ I'm mostly working on set theory and Ramsey theory. In particular, I'm intereste
 
 ### Papers/Preprints
 <ul>
+   <li><strong>On projections between topological Ramsey spaces</strong> (with Spencer Unger), in preparation.</li>
    <li><strong>Full mad families of vector spaces and two local Ramsey theories</strong>, to appear in <em>Fundamenta Mathematicae</em>. <a href="https://arxiv.org/abs/2503.24207">arXiv</a>.</li>
    <li><strong>Weak A2 spaces, the Kastanas game and strategically Ramsey sets</strong>, to appear in the <em>Journal of Symbolic Logic</em>. <a href="https://arxiv.org/abs/2410.00200">arXiv</a>.</li>
 </ul>

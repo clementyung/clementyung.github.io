@@ -15,6 +15,30 @@
 
 {% seo %}
     {% include head-custom.html %}
+    
+    <style>
+      /* Smooth expanding slide animation */
+      #profiles_row {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out, margin-top 0.4s ease-out;
+        margin-top: 0;
+      }
+      #profiles_row.open {
+        max-height: 100px; /* Adjust if the menu wraps to 3+ lines on tiny screens */
+        margin-top: 5px;
+      }
+      /* Subtle rotation toggle for the triangle indicator */
+      .arrow-toggle {
+        display: inline-block;
+        font-size: 0.75em;
+        vertical-align: middle;
+        transition: transform 0.3s ease;
+      }
+      .arrow-toggle.rotated {
+        transform: rotate(180deg);
+      }
+    </style>
   </head>
 
   <body style="font-family: Roboto">
@@ -24,9 +48,13 @@
         <header class="inner" style="padding-top: 20px !important; padding-bottom: 10px !important;">
           <h1><font color="white">{{ page.title }}</font></h1>
           <nav style="margin-bottom: 0 !important; padding-bottom: 10px !important; line-height: 1.8 !important;">
-            <a href="/" style="color:white;">Clement Yung</a> | <a href="/resources">Resources</a> | <a href="/research-talks">Research/Talks</a> | <a href="/teaching">Teaching</a> | <a href="/jech-solutions">Jech Solutions</a> | <a href="/files/Curriculum_Vitae.pdf">CV</a> | <span id="profiles_toggle" style="color: white; cursor: pointer; text-decoration: underline;">Profiles</span>
+            <span id="profiles_toggle" style="cursor: pointer; white-space: nowrap;">
+              <a href="/" style="color:white; text-decoration: underline;">Clement Yung</a> 
+              <span style="color: white; font-size: 0.9em; padding-left: 2px;">(<span class="arrow-toggle">▼</span> Profiles)</span>
+            </span>
+            | <a href="/resources">Resources</a> | <a href="/research-talks">Research/Talks</a> | <a href="/teaching">Teaching</a> | <a href="/jech-solutions">Jech Solutions</a> | <a href="/files/Curriculum_Vitae.pdf">CV</a>
             
-            <div id="profiles_row" style="display: none; margin-top: 5px;">
+            <div id="profiles_row">
               <span style="color: gray;">Profiles</span> | 
               <a href="https://math.stackexchange.com/users/620517" style="text-decoration: none; white-space: nowrap;"><img src="/files/Icon_MSE.png" alt="Math Stackexchange" style="height: 1em; display: inline; vertical-align: middle; border: none !important; outline: none !important; box-shadow: none !important; margin: 0 !important; padding: 0 !important;"> Math Stackexchange</a> | 
               <a href="https://mathoverflow.net/users/146831" style="text-decoration: none; white-space: nowrap;"><img src="/files/Icon_MO.png" alt="MathOverflow" style="height: 1em; display: inline; vertical-align: middle; border: none !important; outline: none !important; box-shadow: none !important; margin: 0 !important; padding: 0 !important;"> MathOverflow</a> | 
@@ -56,13 +84,15 @@
 
     <!-- TOGGLE SCRIPT -->
     <script>
-      document.getElementById('profiles_toggle').addEventListener('click', function() {
+      document.getElementById('profiles_toggle').addEventListener('click', function(e) {
+        // Prevent clicking the actual "Clement Yung" text link from triggering the jump if you just want to slide toggle
+        if (e.target.tagName === 'A') return; 
+
         var row = document.getElementById('profiles_row');
-        if (row.style.display === 'none') {
-          row.style.display = 'block';
-        } else {
-          row.style.display = 'none';
-        }
+        var arrow = document.querySelector('.arrow-toggle');
+        
+        row.classList.toggle('open');
+        arrow.classList.toggle('rotated');
       });
     </script>
   </body>

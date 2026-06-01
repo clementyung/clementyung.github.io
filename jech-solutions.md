@@ -11,7 +11,7 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
     <tr>
       <th style="text-align: left; padding: 8px;">Chapter</th>
       <th style="text-align: left; padding: 8px;">Title</th>
-      <th style="text-align: left; padding: 8px;">Missing Questions</th>
+      <th style="text-align: left; padding: 8px;">Missing Question(s)</th>
     </tr>
   </thead>
   <tbody>

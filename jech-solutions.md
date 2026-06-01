@@ -11,7 +11,7 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
     <tr>
       <th style="text-align: center; padding: 8px;">Chapter</th>
       <th style="text-align: center; padding: 8px;">Title</th>
-      <th style="text-align: center; padding: 8px;">Missing Question(s)</th>
+      <th style="text-align: center; padding: 8px;">Missing Questions</th>
     </tr>
   </thead>
   <tbody>
@@ -45,9 +45,9 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
         {% endif %}
 
         <tr>
-          <td style="padding: 8px; font-weight: bold;">{{ ch_number }}</td>
-          <td style="padding: 8px;"><a href="{{ post.url }}">{{ ch_title }}</a></td>
-          <td style="padding: 8px; color: #666;">{{ missing }}</td>
+          <td style="padding: 8px; font-weight: bold; text-align: center;">{{ ch_number }}</td>
+          <td style="padding: 8px; text-align: center;"><a href="{{ post.url }}">{{ ch_title }}</a></td>
+          <td style="padding: 8px; color: #666; text-align: center;">{{ missing }}</td>
         </tr>
       {% endif %}
     {% endfor %}

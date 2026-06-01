@@ -41,7 +41,7 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
         {% elsif ch_number == "24" %}
           {% assign missing = "24.10" %}
         {% else %}
-          {% assign missing = "None" %}
+          {% assign missing = "" %}
         {% endif %}
 
         <tr>

@@ -9,9 +9,9 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
 <table>
   <thead>
     <tr>
-      <th style="text-align: left; padding: 8px;">Chapter</th>
-      <th style="text-align: left; padding: 8px;">Title</th>
-      <th style="text-align: left; padding: 8px;">Missing Question(s)</th>
+      <th style="text-align: center; padding: 8px;">Chapter</th>
+      <th style="text-align: center; padding: 8px;">Title</th>
+      <th style="text-align: center; padding: 8px;">Missing Question(s)</th>
     </tr>
   </thead>
   <tbody>

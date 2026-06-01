@@ -19,23 +19,26 @@
 
   <body style="font-family: Roboto">
 
+    <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <h1><font color="white">{{ page.title }}</font></h1>
           <nav>
             <a href="/" style="color:white;">Clement Yung</a> | <a href="/resources">Resources</a> | <a href="/research-talks">Research/Talks</a> | <a href="/teaching">Teaching</a> | <a href="/jech-solutions">Jech Solutions</a> | <a href="/files/Curriculum_Vitae.pdf">CV</a>
             <br>
-            <span style="color: gray;">Profile</span> | <a href="https://math.stackexchange.com" style="color: white; text-decoration: none;"><img src="/files/Icon_MSE.png" alt="Math Stackexchange" style="height: 1em; vertical-align: middle;"> Math Stackexchange</a>
+            <span style="color: gray;">Profile</span> | <a href="https://math.stackexchange.com" style="color: white; text-decoration: none;"><img src="/files/Icon_MSE.png" alt="Math Stackexchange" style="height: 1em; vertical-align: middle; border: none; outline: none; box-shadow: none;"> Math Stackexchange</a>
           </nav>
         </header>
     </div>
 
+    <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {{ content }}
       </section>
     </div>
 
+    <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         {% if site.github.is_project_page %}

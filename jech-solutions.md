@@ -46,8 +46,8 @@ I spent most of my summer break before the start of my PhD doing exercises in Je
 
         <tr>
           <td style="padding: 8px; font-weight: bold; text-align: center;">{{ ch_number }}</td>
-          <td style="padding: 8px; text-align: center;"><a href="{{ post.url }}">{{ ch_title }}</a></td>
-          <td style="padding: 8px; color: #666; text-align: center;">{{ missing }}</td>
+          <td style="padding: 8px; text-align: left;"><a href="{{ post.url }}">{{ ch_title }}</a></td>
+          <td style="padding: 8px; color: #666; text-align: left;">{{ missing }}</td>
         </tr>
       {% endif %}
     {% endfor %}

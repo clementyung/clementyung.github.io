@@ -73,21 +73,25 @@ layout: default
         </div>
       </div>
 
-      <div class="about-item">
+      <div class="about-item about-dropdown-trigger about-static">
         <div class="about-icon-side">
           <img src="/pics/Flag_Singapore.png" alt="Singapore Flag" class="about-logo">
         </div>
-        <div class="about-text-side centered-text-side">
-          <div class="about-title">Raised in Singapore</div>
+        <div class="about-text-side">
+          <div class="about-title-row">
+            <span class="about-title">Raised in Singapore</span>
+          </div>
         </div>
       </div>
 
-      <div class="about-item">
+      <div class="about-item about-dropdown-trigger about-static">
         <div class="about-icon-side">
           <img src="/pics/Flag_Hong_Kong.png" alt="Hong Kong Flag" class="about-logo">
         </div>
-        <div class="about-text-side centered-text-side">
-          <div class="about-title">Born in Hong Kong</div>
+        <div class="about-text-side">
+          <div class="about-title-row">
+            <span class="about-title">Born in Hong Kong</span>
+          </div>
         </div>
       </div>
 
@@ -152,6 +156,16 @@ layout: default
   }
   html[data-theme="dark"] .about-dropdown-trigger:hover {
     background-color: rgba(255, 255, 255, 0.04);
+  }
+
+  /* Suppress interactive styling for static (non-dropdown) items */
+  .about-static {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .about-static:hover {
+    background-color: transparent !important;
   }
 
   .about-icon-side {
@@ -376,11 +390,6 @@ layout: default
 
     .about-text-side {
       text-align: left;
-    }
-
-    .centered-text-side {
-      height: auto;
-      margin-top: 14px; /* Keeps basic structural flow balance on small screens */
     }
 
     .profile-image-col {

@@ -220,8 +220,40 @@ permalink: /research-talks/
 </div>
 
 <style>
+  .research-container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .research-intro {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text-main);
+    margin-bottom: 40px;
+  }
+
+  .research-section {
+    margin-bottom: 50px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+  }
+
+  .section-desc {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-top: -12px;
+    margin-bottom: 24px;
+  }
+
   /* =======================================================
-     PUBLICATIONS LAYOUT
+     PUBLICATIONS STYLE
      ====================================================== */
   .publication-list {
     display: flex;
@@ -275,8 +307,67 @@ permalink: /research-talks/
   }
 
   /* =======================================================
-     TALKS-SPECIFIC OVERRIDES (research page uses inline display)
+     STATUS BADGES
      ====================================================== */
+  .status-badge {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.4;
+  }
+
+  .status-badge.preparation {
+    background: rgba(142, 142, 147, 0.12);
+    color: var(--text-muted);
+  }
+
+  .status-badge.success {
+    background: rgba(0, 122, 255, 0.1);
+    color: #006ddb;
+  }
+  html[data-theme="dark"] .status-badge.success {
+    background: rgba(10a, 132, 255, 0.15);
+    color: #5ea7ff;
+  }
+
+  /* =======================================================
+     CLEAN LIST TALKS STYLE
+     ====================================================== */
+  .talks-clean-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .talk-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .time-marker {
+    flex: 0 0 80px;
+    padding-top: 3px;
+  }
+
+  .time-date {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .talk-body {
+    flex: 1;
+  }
+
   .talk-title {
     font-size: 17px;
     font-weight: 700;
@@ -296,13 +387,14 @@ permalink: /research-talks/
     vertical-align: middle;
     display: inline-block;
   }
-
   html[data-theme="dark"] .talk-tag {
     background: rgba(255, 159, 10, 0.15);
     color: #ff9f0a;
   }
 
   .talk-venue {
+    font-size: 15px;
+    color: var(--text-main);
     display: inline;
   }
 
@@ -311,24 +403,105 @@ permalink: /research-talks/
     color: var(--text-muted);
     display: inline;
   }
-
+  
   .talk-venue::after {
     content: ", ";
   }
 
+  /* =======================================================
+     SIDE-ALIGNED HIGH-CONTRAST ACTION UTILITY BUTTONS
+     ====================================================== */
+  .pub-links, .talk-links {
+    margin-top: 0px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .talk-item > .talk-links {
-    min-width: 165px;
+    min-width: 165px; 
   }
 
-  .time-marker {
-    flex: 0 0 80px;
+  .pub-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    border: 1px solid var(--border-color);
   }
 
+  /* SPECIFIC REFINEMENT: Normal state typography rules requested */
+  .arxiv-btn {
+    background: rgba(179, 27, 27, 0.05);
+    color: #4a4a4a; /* Normal state light mode: dark grey text */
+    border-color: rgba(179, 27, 27, 0.2);
+  }
+  .arxiv-btn:hover {
+    background: #b31b1b;
+    color: #ffffff !important; /* Retained solid high-contrast hover signature */
+    border-color: #b31b1b;
+  }
+  html[data-theme="dark"] .arxiv-btn {
+    background: rgba(255, 100, 100, 0.08);
+    color: #b0b0b0; /* Normal state dark mode: highly visible but non-flashy grey text */
+    border-color: rgba(255, 100, 100, 0.25);
+  }
+  html[data-theme="dark"] .arxiv-btn:hover {
+    background: #ff6464;
+    color: #121212 !important; /* Retained dark contrast over solid background hover signature */
+  }
+
+  .slides-btn {
+    background: rgba(0, 122, 255, 0.05);
+    color: #0076f5;
+    border-color: rgba(0, 122, 255, 0.2);
+  }
+  .slides-btn:hover {
+    background: #0076f5;
+    color: #ffffff !important; 
+    border-color: #0076f5;
+  }
+  html[data-theme="dark"] .slides-btn {
+    background: rgba(10a, 132, 255, 0.08);
+    color: #4094ff;
+    border-color: rgba(10a, 132, 255, 0.25);
+  }
+  html[data-theme="dark"] .slides-btn:hover {
+    background: #4094ff;
+    color: #121212 !important;
+  }
+
+  /* =======================================================
+     MOBILE RESPONSIVE ADAPTATIONS
+     ====================================================== */
   @media (max-width: 680px) {
-    .publication-item {
+    .publication-item, .talk-item {
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
+    }
+
+    .talk-item {
+      gap: 4px;
+    }
+
+    .time-marker {
+      flex: 0 0 auto;
+      padding-top: 0;
+    }
+
+    .talk-body {
+      margin-top: 0;
+    }
+
+    .talk-title {
+      margin-top: 0;
     }
 
     .talk-venue, .talk-location {

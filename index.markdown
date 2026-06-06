@@ -393,27 +393,22 @@ layout: default
     }
 
     .profile-image-col {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
+      position: relative;
       width: 100%;
-      height: 0px; 
+      display: flex;
+      justify-content: center;
+      height: auto;
       z-index: 35;
     }
 
     .hanging-assembly {
-      margin-top: 0px; 
-      animation: none; 
+      margin-top: 0px;
+      animation: none;
       pointer-events: auto;
     }
 
     .hanging-anchor {
-      transform: translateY(-420px);
-    }
-
-    .hanging-anchor.mobile-expanded {
-      transform: translateY(-170px);
+      transform: none;
     }
 
     .hanging-pole {
@@ -433,10 +428,6 @@ layout: default
       padding: 0 16px;
       z-index: 10;
     }
-
-    .profile-text-col.mobile-pushed {
-      margin-top: 270px;
-    }
   }
 </style>
 
@@ -451,14 +442,8 @@ layout: default
         // Halt event escalation if clicking any dropdown list item
         if (e.target.closest('.about-dropdown-trigger')) return;
 
-        const isMobile = window.innerWidth <= 768;
-        if (isMobile) {
-          card.classList.toggle('mobile-expanded');
-          biography.classList.toggle('mobile-pushed');
-        } else {
-          if (!card.classList.contains('dangling')) {
-            card.classList.add('dangling');
-          }
+        if (!card.classList.contains('dangling')) {
+          card.classList.add('dangling');
         }
       });
 
@@ -473,7 +458,7 @@ layout: default
     const dropdowns = document.querySelectorAll('.about-dropdown-trigger');
     dropdowns.forEach(dropdown => {
       dropdown.addEventListener('click', (e) => {
-        e.stopPropagation(); // Stops interaction from running desktop picture shake logic
+        e.stopPropagation(); // Stops interaction from running picture shake logic
         dropdown.classList.toggle('is-expanded');
       });
     });

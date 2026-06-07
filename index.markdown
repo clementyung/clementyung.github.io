@@ -402,7 +402,7 @@ layout: default
     }
 
     .hanging-assembly {
-      margin-top: 0px;
+      margin-top: -110px;
       animation: none;
       pointer-events: auto;
     }

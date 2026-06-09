@@ -27,7 +27,7 @@ permalink: /jech-solutions/
         {% if ch_number == "7" %}
           {% assign missing = "Ex. 7.31" %}
         {% elsif ch_number == "15" %}
-          {% assign missing = "Ex. 15.11, 15.27" %}
+          {% assign missing = "Ex. 15.15, 15.27" %}
         {% elsif ch_number == "16" %}
           {% assign missing = "Ex. 16.4, 16.18" %}
         {% elsif ch_number == "19" %}
@@ -60,7 +60,7 @@ permalink: /jech-solutions/
 </div>
 
 <template id="jech-readme-template">
-  <p>I completed almost every exercise from Chapter 1 to Chapter 24, except 7.31, 15.11, 15.27, 16.4, 16.18, 19.12, 20.9, 20.20, and 24.10. Currently, I do not plan to do any further exercises.</p>
+  <p>I completed almost every exercise from Chapter 1 to Chapter 24, except 7.31, 15.15, 15.27, 16.4, 16.18, 19.12, 20.9, 20.20, and 24.10. Currently, I do not plan to do any further exercises.</p>
   
   <p>While I try my best to do all the exercises myself, I do not take full credit for all the solutions. Several external sources that I frequently consulted include the <a href="https://math.stackexchange.com/" target="_blank">Math StackExchange</a> network, the <a href="https://mathoverflow.net/" target="_blank">MathOverflow</a> network, <a href="https://frederic-wang.fr/mathematics/set-theory/jech/" target="_blank">a partial suggested solution manual written by Frederic Wang</a> (no longer available), and <a href="http://euclid.colorado.edu/~monkd/jech.pdf" target="_blank">notes written by J. D. Monk</a>.</p>
   

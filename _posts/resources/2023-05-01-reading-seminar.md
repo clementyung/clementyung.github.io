@@ -100,7 +100,7 @@ summary: "I hosted a reading seminar at NUS in Summer 2023. This reading seminar
           <div class="talk-venue"><strong>Determinacy:</strong> $\mathsf{AD}$ and its relationship with $\mathsf{AC}$. <br><strong>Martin's measure:</strong> Recursive trees, Martin's measure, Martin's cone theorem. <br><strong>$\mathsf{AD}$ and Lebesgue measure</strong>.</div>
         </div>
         <div class="talk-links">
-          <a href="/files/files/seminar-slides/Seminar_Slides_2.pdf" class="pub-btn slides-btn" target="_blank">
+          <a href="/files/seminar-slides/Seminar_Slides_2.pdf" class="pub-btn slides-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
             Slides
           </a>

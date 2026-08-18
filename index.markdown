@@ -71,7 +71,6 @@ layout: default
 
     </div>
 </div>
-</div>
 <style>
   /* Container establishes top alignment for the columns */
   .profile-container {

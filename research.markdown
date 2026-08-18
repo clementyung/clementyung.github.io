@@ -2,18 +2,13 @@
 layout: default
 title: "Research & Talks"
 permalink: /research-talks/
----
-
 <div class="research-container">
-  
-  <p class="research-intro">
+<p class="research-intro">
     I'm mostly working on set theory and Ramsey theory. In particular, I'm interested in studying Ramsey theory in topological Ramsey space-like spaces, where the pigeonhole principle fails.
   </p>
-
-  <section class="research-section">
+<section class="research-section">
     <h2 class="section-title">Papers & Preprints</h2>
     <div class="publication-list">
-      
       <div class="publication-item">
         <div class="pub-content">
           <h3 class="pub-title">
@@ -60,15 +55,13 @@ permalink: /research-talks/
       </div>
 
     </div>
-  </section>
-
-  <section class="research-section">
+</section>
+<section class="research-section">
     <h2 class="section-title">Notes</h2>
     <p class="section-desc">
       This collection of side projects presents results I obtained while working on interesting problems that arose during my research.
     </p>
     <div class="publication-list">
-      
       <div class="publication-item">
         <div class="pub-content">
           <h3 class="pub-title">Mad families of Gowers' infinite block sequences</h3>
@@ -82,11 +75,26 @@ permalink: /research-talks/
       </div>
 
     </div>
-  </section>
-
-  <section class="research-section">
+</section>
+<section class="research-section">
     <h2 class="section-title">Invited Talks</h2>
     <div class="talks-clean-list">
+      <div class="talk-item">
+        <div class="time-marker">
+          <span class="time-date">Aug 2026</span>
+        </div>
+        <div class="talk-body">
+          <h3 class="talk-title">Weak A2 spaces, the Kastanas game and strategically Ramsey sets</h3>
+          <div class="talk-venue">Logic seminar, National University of Singapore</div>
+          <div class="talk-location">Singapore</div>
+        </div>
+        <div class="talk-links">
+          <a href="/files/slides/NUS_Talk_Slides_(wA2_Spaces).pdf" class="pub-btn slides-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Presentation Slides
+          </a>
+        </div>
+      </div>
 
       <div class="talk-item">
         <div class="time-marker">
@@ -215,10 +223,8 @@ permalink: /research-talks/
       </div>
 
     </div>
-  </section>
-
+</section>
 </div>
-
 <style>
   .research-container {
     max-width: 850px;
@@ -519,4 +525,3 @@ permalink: /research-talks/
       margin-top: 4px;
     }
   }
-</style>

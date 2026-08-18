@@ -4,10 +4,8 @@ layout: default
 ---
 
 <div class="profile-container">
-  
-  <div class="profile-image-col">
+<div class="profile-image-col">
     <div class="hanging-assembly">
-      
       <div class="hanging-anchor" id="hanging-card">
         <div class="hanging-pole"></div>
         <div class="hanging-frame">
@@ -16,15 +14,13 @@ layout: default
       </div>
 
     </div>
-  </div>
-  
-  <div class="profile-text-col" id="profile-biography">
+</div>
+<div class="profile-text-col" id="profile-biography">
     <h2 class="section-title">Welcome!</h2>
     <p>
       I am Clement (Cheuk Wai) Yung, a PhD student in Mathematics at the University of Toronto. 
       I am supervised by Asst. Prof. Spencer Unger, and I am researching the intersections between set theory and Ramsey theory.
     </p>
-
     <h2 class="section-title">About me</h2>
     <div class="about-list-container">
       
@@ -73,33 +69,9 @@ layout: default
         </div>
       </div>
 
-      <div class="about-item about-dropdown-trigger about-static">
-        <div class="about-icon-side">
-          <img src="/pics/Flag_Singapore.png" alt="Singapore Flag" class="about-logo">
-        </div>
-        <div class="about-text-side">
-          <div class="about-title-row">
-            <span class="about-title">Raised in Singapore</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-item about-dropdown-trigger about-static">
-        <div class="about-icon-side">
-          <img src="/pics/Flag_Hong_Kong.png" alt="Hong Kong Flag" class="about-logo">
-        </div>
-        <div class="about-text-side">
-          <div class="about-title-row">
-            <span class="about-title">Born in Hong Kong</span>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </div>
-
 </div>
-
+</div>
 <style>
   /* Container establishes top alignment for the columns */
   .profile-container {
@@ -429,8 +401,6 @@ layout: default
       z-index: 10;
     }
   }
-</style>
-
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const card = document.getElementById('hanging-card');
@@ -463,4 +433,3 @@ layout: default
       });
     });
   });
-</script>

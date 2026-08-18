@@ -1,41 +1,36 @@
-\---
-
+---
 title: "Hi, I'm Clement Yung"
 layout: default
 ---
 
-\---
-
 <div class="profile-container">
-
-<div class="profile-image-col">
+  
+  <div class="profile-image-col">
     <div class="hanging-assembly">
+      
+      <div class="hanging-anchor" id="hanging-card">
+        <div class="hanging-pole"></div>
+        <div class="hanging-frame">
+          <img src="\pics\Front_Photo.jpg" alt="Clement Yung" class="profile-photo">
+        </div>
+      </div>
 
-&#x20;     <div class="hanging-anchor" id="hanging-card">
-<div class="hanging-pole"></div>
-<div class="hanging-frame">
-<img src="\\\\pics\\\\Front\\\_Photo.jpg" alt="Clement Yung" class="profile-photo">
-</div>
-</div>
-
-&#x20;   </div>
-
-
-</div>
-
-<div class="profile-text-col" id="profile-biography">
+    </div>
+  </div>
+  
+  <div class="profile-text-col" id="profile-biography">
     <h2 class="section-title">Welcome!</h2>
     <p>
       I am Clement (Cheuk Wai) Yung, a PhD student in Mathematics at the University of Toronto. 
       I am supervised by Asst. Prof. Spencer Unger, and I am researching the intersections between set theory and Ramsey theory.
     </p>
 
-&#x20;   <h2 class="section-title">About me</h2>
-<div class="about-list-container">
-
-&#x20;     <div class="about-item about-dropdown-trigger" id="uoft-dropdown">
+    <h2 class="section-title">About me</h2>
+    <div class="about-list-container">
+      
+      <div class="about-item about-dropdown-trigger" id="uoft-dropdown">
         <div class="about-icon-side">
-          <img src="/pics/Logo\\\_UofT.png" alt="University of Toronto Logo" class="about-logo">
+          <img src="/pics/Logo_UofT.png" alt="University of Toronto Logo" class="about-logo">
         </div>
         <div class="about-text-side">
           <div class="about-title-row">
@@ -57,7 +52,7 @@ layout: default
 
       <div class="about-item about-dropdown-trigger" id="nus-dropdown">
         <div class="about-icon-side">
-          <img src="/pics/Logo\\\_NUS.png" alt="National University of Singapore Logo" class="about-logo">
+          <img src="/pics/Logo_NUS.png" alt="National University of Singapore Logo" class="about-logo">
         </div>
         <div class="about-text-side">
           <div class="about-title-row">
@@ -80,7 +75,7 @@ layout: default
 
       <div class="about-item about-dropdown-trigger about-static">
         <div class="about-icon-side">
-          <img src="/pics/Flag\\\_Singapore.png" alt="Singapore Flag" class="about-logo">
+          <img src="/pics/Flag_Singapore.png" alt="Singapore Flag" class="about-logo">
         </div>
         <div class="about-text-side">
           <div class="about-title-row">
@@ -91,7 +86,7 @@ layout: default
 
       <div class="about-item about-dropdown-trigger about-static">
         <div class="about-icon-side">
-          <img src="/pics/Flag\\\_Hong\\\_Kong.png" alt="Hong Kong Flag" class="about-logo">
+          <img src="/pics/Flag_Hong_Kong.png" alt="Hong Kong Flag" class="about-logo">
         </div>
         <div class="about-text-side">
           <div class="about-title-row">
@@ -101,14 +96,12 @@ layout: default
       </div>
 
     </div>
-
-
-</div>
+  </div>
 
 </div>
 
 <style>
-  /\\\* Container establishes top alignment for the columns \\\*/
+  /* Container establishes top alignment for the columns */
   .profile-container {
     display: flex;
     flex-direction: row;
@@ -128,9 +121,9 @@ layout: default
     perspective: 1000px;
   }
 
-  /\\\* =======================================================
-     CLEAN LIST STRUCTURE \\\& INTERACTIVE DROPDOWN DRAWER
-     ====================================================== \\\*/
+  /* =======================================================
+     CLEAN LIST STRUCTURE & INTERACTIVE DROPDOWN DRAWER
+     ====================================================== */
   .about-list-container {
     display: flex;
     flex-direction: column;
@@ -143,7 +136,7 @@ layout: default
   .about-item {
     display: flex;
     flex-direction: row;
-    align-items: flex-start; /\\\* Aligns logos to top-line when dropdown text expands \\\*/
+    align-items: flex-start; /* Aligns logos to top-line when dropdown text expands */
     gap: 16px;
   }
 
@@ -157,15 +150,15 @@ layout: default
     transition: background-color 0.2s ease;
   }
 
-  /\\\* Subtle highlight on hover to show interactivity \\\*/
+  /* Subtle highlight on hover to show interactivity */
   .about-dropdown-trigger:hover {
     background-color: rgba(0, 0, 0, 0.03);
   }
-  html\\\[data-theme="dark"] .about-dropdown-trigger:hover {
+  html[data-theme="dark"] .about-dropdown-trigger:hover {
     background-color: rgba(255, 255, 255, 0.04);
   }
 
-  /\\\* Suppress interactive styling for static (non-dropdown) items \\\*/
+  /* Suppress interactive styling for static (non-dropdown) items */
   .about-static {
     cursor: default;
     pointer-events: none;
@@ -182,7 +175,7 @@ layout: default
     justify-content: center;
     width: 44px;
     height: 44px;
-    margin-top: 2px; /\\\* Centers icon alignment perfectly with the top line of text \\\*/
+    margin-top: 2px; /* Centers icon alignment perfectly with the top line of text */
   }
 
   .about-logo {
@@ -192,7 +185,7 @@ layout: default
     filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.08));
   }
 
-  html\\\[data-theme="dark"] .about-logo {
+  html[data-theme="dark"] .about-logo {
     filter: brightness(1.05) contrast(1.02);
   }
 
@@ -204,11 +197,11 @@ layout: default
     flex: 1;
   }
 
-  /\\\* Specific class to vertically center text rows without sub-labels \\\*/
+  /* Specific class to vertically center text rows without sub-labels */
   .centered-text-side {
-    height: 44px; /\\\* Matches icon side height context \\\*/
+    height: 44px; /* Matches icon side height context */
     justify-content: center;
-    margin-top: 2px; /\\\* Keeps geometric alignment balanced with top rows \\\*/
+    margin-top: 2px; /* Keeps geometric alignment balanced with top rows */
   }
 
   .about-title-row {
@@ -224,14 +217,14 @@ layout: default
     line-height: 1.3;
   }
 
-  /\\\* Structural UI Chevron element \\\*/
+  /* Structural UI Chevron element */
   .dropdown-chevron {
     color: var(--text-muted);
     opacity: 0.7;
     transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
-  /\\\* Rotate indicator when active \\\*/
+  /* Rotate indicator when active */
   .about-dropdown-trigger.is-expanded .dropdown-chevron {
     transform: rotate(180deg);
     color: var(--text-main);
@@ -246,7 +239,7 @@ layout: default
     margin-top: 2px;
   }
 
-  /\\\* Smooth height calculation drawer using grid layout mechanics \\\*/
+  /* Smooth height calculation drawer using grid layout mechanics */
   .dropdown-drawer {
     display: grid;
     grid-template-rows: 0fr;
@@ -258,7 +251,7 @@ layout: default
     grid-template-rows: 1fr;
   }
 
-  /\\\* Contains secondary meta lines to calculate text metrics dynamically \\\*/
+  /* Contains secondary meta lines to calculate text metrics dynamically */
   .drawer-content {
     min-height: 0;
     font-size: 14px;
@@ -276,9 +269,9 @@ layout: default
     transition-delay: 0.05s;
   }
 
-  /\\\* =======================================================
+  /* =======================================================
      DESKTOP ENGINE (Defaults)
-     ======================================================= \\\*/
+     ======================================================= */
   .hanging-assembly {
     display: flex;
     flex-direction: column;
@@ -364,9 +357,9 @@ layout: default
     100% { transform: rotate(0deg); }
   }
 
-  /\\\* =======================================================
+  /* =======================================================
      MOBILE RESPONSIVE ENGINE (Dynamic Layout Flow)
-     ======================================================= \\\*/
+     ======================================================= */
   @media (max-width: 768px) {
     .profile-container {
       flex-direction: column;
@@ -436,6 +429,7 @@ layout: default
       z-index: 10;
     }
   }
+</style>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -443,7 +437,7 @@ layout: default
     const biography = document.getElementById('profile-biography');
     
     // Main Panel Layout Routines
-    if (card \\\&\\\& biography) {
+    if (card && biography) {
       card.addEventListener('click', (e) => {
         // Halt event escalation if clicking any dropdown list item
         if (e.target.closest('.about-dropdown-trigger')) return;
@@ -469,7 +463,4 @@ layout: default
       });
     });
   });
-
-
-
-
+</script>

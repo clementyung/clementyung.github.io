@@ -1,6 +1,8 @@
 ---
 title: "Hi, I'm Clement Yung"
 layout: default
+---
+
 <div class="profile-container">
 <div class="profile-image-col">
     <div class="hanging-assembly">

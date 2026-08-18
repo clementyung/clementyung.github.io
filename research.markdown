@@ -2,6 +2,8 @@
 layout: default
 title: "Research & Talks"
 permalink: /research-talks/
+---
+
 <div class="research-container">
 <p class="research-intro">
     I'm mostly working on set theory and Ramsey theory. In particular, I'm interested in studying Ramsey theory in topological Ramsey space-like spaces, where the pigeonhole principle fails.

@@ -76,7 +76,6 @@ permalink: /research-talks/
         </div>
       </div>
 
-    <div class="publication-list">
       <div class="publication-item">
         <div class="pub-content">
           <h3 class="pub-title">Mad families of Gowers' infinite block sequences</h3>

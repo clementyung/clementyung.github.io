@@ -66,6 +66,19 @@ permalink: /research-talks/
     <div class="publication-list">
       <div class="publication-item">
         <div class="pub-content">
+          <h3 class="pub-title">Every subset of a topological Ramsey space is Ramsey in the Solovay model</h3>
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2609.11866" class="pub-btn arxiv-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            arXiv:2609.11866
+          </a>
+        </div>
+      </div>
+
+    <div class="publication-list">
+      <div class="publication-item">
+        <div class="pub-content">
           <h3 class="pub-title">Mad families of Gowers' infinite block sequences</h3>
         </div>
         <div class="pub-links">

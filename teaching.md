@@ -13,6 +13,37 @@ category: teaching
 
   <div class="semester-timeline">
 
+    <!-- Academic Year 2026-27 -->
+    <div class="semester-section">
+      <h3 class="semester-title">Academic Year 2026-27</h3>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 15%" class="text-center">Course Code</th>
+              <th style="width: 55%">Course Name</th>
+              <th style="width: 15%" class="text-center">Session</th>
+              <th style="width: 15%" class="text-center">Page</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center"><strong>MAT458</strong></td>
+              <td>Advanced Real Analysis II</td>
+              <td class="text-center"><span class="beautified-session">Winter</span></td>
+              <td class="text-center"><span class="no-link">—</span></td>
+            </tr>
+            <tr>
+              <td class="text-center"><strong>MAT457</strong></td>
+              <td>Advanced Real Analysis I</td>
+              <td class="text-center"><span class="beautified-session">Fall</span></td>
+              <td class="text-center"><span class="no-link">—</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <!-- Academic Year 2025-26 -->
     <div class="semester-section">
       <h3 class="semester-title">Academic Year 2025-26</h3>

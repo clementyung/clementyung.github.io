@@ -10,7 +10,8 @@ category: teaching
   <p class="intro-paragraph">
     Here is a summary of my teaching experience, along with links to my personal webpages for the courses (if any).
   </p>
-
+  
+  <!-- University of Toronto -->
   <details class="school-dropdown" open>
     <summary class="school-dropdown-title">
       University of Toronto
@@ -207,6 +208,48 @@ category: teaching
         </div>
       </div>
 
+    </div>
+  </details>
+
+  <!-- National University of Singapore -->
+  <details class="school-dropdown">
+    <summary class="school-dropdown-title">
+      National University of Singapore
+      <span class="dropdown-triangle" aria-hidden="true"></span>
+    </summary>
+
+    <div class="semester-timeline">
+
+      <!-- Academic Year 2019-20 -->
+      <div class="semester-section">
+        <h3 class="semester-title">Academic Year 2019-20</h3>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 15%" class="text-center">Course Code</th>
+                <th style="width: 55%">Course Name</th>
+                <th style="width: 15%" class="text-center">Session</th>
+                <th style="width: 15%" class="text-center">Page</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center"><strong>CS1231</strong></td>
+                <td>Discrete Structures</td>
+                <td class="text-center"><span class="beautified-session">Winter</span></td>
+                <td class="text-center"><span class="no-link">—</span></td>
+              </tr>
+              <tr>
+                <td class="text-center"><strong>CS1231</strong></td>
+                <td>Discrete Structures</td>
+                <td class="text-center"><span class="beautified-session">Fall</span></td>
+                <td class="text-center"><span class="no-link">—</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </details>
 

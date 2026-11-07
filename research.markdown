@@ -200,11 +200,15 @@ permalink: /research-talks/
           <span class="time-date">Nov 2026</span>
         </div>
         <div class="talk-body">
-          <h3 class="talk-title">Projections between Ramsey quasi-orders and topological Ramsey spaces (Part 1)</h3>
+          <h3 class="talk-title">Projections between Ramsey quasi-orders and topological Ramsey spaces</h3>
           <div class="talk-venue">Set theory seminar, University of Toronto</div>
           <div class="talk-location">Ontario, Canada</div>
         </div>
         <div class="talk-links">
+          <a href="/files/slides/Fields_Talk_Slides_(Projections,_Part_1).pdf" class="pub-btn slides-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Slides (1/2)
+          </a>
           <a href="https://www.youtube.com/watch?v=3GjAZfO4H9Q" class="pub-btn youtube-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
             YouTube
@@ -488,12 +492,9 @@ permalink: /research-talks/
   }
 
   .arxiv-btn {
-    box-sizing: border-box;
-    min-width: 180px;
-    justify-content: center;
     font-variant-numeric: tabular-nums;
     background: rgba(179, 27, 27, 0.05);
-    color: #b31b1b;
+    color: #b31b1b !important;
     border-color: rgba(179, 27, 27, 0.2);
   }
   .arxiv-btn:hover {
@@ -503,7 +504,7 @@ permalink: /research-talks/
   }
   html[data-theme="dark"] .arxiv-btn {
     background: rgba(255, 100, 100, 0.08);
-    color: #ff6464;
+    color: #ff6464 !important;
     border-color: rgba(255, 100, 100, 0.25);
   }
   html[data-theme="dark"] .arxiv-btn:hover {
@@ -533,7 +534,7 @@ permalink: /research-talks/
 
   .youtube-btn {
     background: rgba(255, 0, 0, 0.05);
-    color: #cc0000;
+    color: #ff0000 !important;
     border-color: rgba(255, 0, 0, 0.2);
   }
   .youtube-btn:hover {
@@ -542,12 +543,11 @@ permalink: /research-talks/
     border-color: #ff0000;
   }
   html[data-theme="dark"] .youtube-btn {
-    background: rgba(255, 78, 69, 0.08);
-    color: #ff4e45;
-    border-color: rgba(255, 78, 69, 0.25);
+    background: rgba(255, 0, 0, 0.08);
+    border-color: rgba(255, 0, 0, 0.25);
   }
   html[data-theme="dark"] .youtube-btn:hover {
-    background: #ff4e45;
+    background: #ff0000;
     color: #121212 !important;
   }
 

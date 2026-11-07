@@ -28,11 +28,14 @@ permalink: /research-talks/
         <div class="pub-content">
           <h3 class="pub-title">
             Full mad families of vector spaces and two local Ramsey theories
-            <span class="status-badge success">To Appear</span>
           </h3>
-          <div class="pub-journal">Fundamenta Mathematicae</div>
+          <div class="pub-journal">Fundamenta Mathematicae 274 (2026), no. 3, 237–285</div>
         </div>
         <div class="pub-links">
+          <a href="https://doi.org/10.4064/fm250607-18-3" class="pub-btn doi-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            Journal
+          </a>
           <a href="https://arxiv.org/abs/2503.24207" class="pub-btn arxiv-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
             arXiv:2503.24207
@@ -510,6 +513,26 @@ permalink: /research-talks/
   html[data-theme="dark"] .arxiv-btn:hover {
     background: #ff6464;
     color: #121212 !important; /* Retained dark contrast over solid background hover signature */
+  }
+
+  .doi-btn {
+    background: rgba(21, 128, 61, 0.05);
+    color: #15803d !important;
+    border-color: rgba(21, 128, 61, 0.2);
+  }
+  .doi-btn:hover {
+    background: #15803d;
+    color: #ffffff !important;
+    border-color: #15803d;
+  }
+  html[data-theme="dark"] .doi-btn {
+    background: rgba(74, 222, 128, 0.08);
+    color: #4ade80 !important;
+    border-color: rgba(74, 222, 128, 0.25);
+  }
+  html[data-theme="dark"] .doi-btn:hover {
+    background: #4ade80;
+    color: #121212 !important;
   }
 
   .slides-btn {

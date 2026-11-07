@@ -105,24 +105,7 @@ permalink: /research-talks/
         <div class="talk-links">
           <a href="/files/slides/NUS_Talk_Slides_(wA2_Spaces).pdf" class="pub-btn slides-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Presentation Slides
-          </a>
-        </div>
-      </div>
-
-      <div class="talk-item">
-        <div class="time-marker">
-          <span class="time-date">Feb 2026</span>
-        </div>
-        <div class="talk-body">
-          <h3 class="talk-title">There is a completely separable mad family of vector spaces</h3>
-          <div class="talk-venue">Set theory seminar, University of Toronto</div>
-          <div class="talk-location">Ontario, Canada</div>
-        </div>
-        <div class="talk-links">
-          <a href="/files/slides/Fields_Talk_Slides_(CS_mad_families).pdf" class="pub-btn slides-btn" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Presentation Slides
+            Slides
           </a>
         </div>
       </div>
@@ -151,24 +134,7 @@ permalink: /research-talks/
         <div class="talk-links">
           <a href="/files/slides/Brin_Talk_Slides_(Definability_of_mad_families).pdf" class="pub-btn slides-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Presentation Slides
-          </a>
-        </div>
-      </div>
-
-      <div class="talk-item">
-        <div class="time-marker">
-          <span class="time-date">Mar 2025</span>
-        </div>
-        <div class="talk-body">
-          <h3 class="talk-title">Mad families of vector spaces</h3>
-          <div class="talk-venue">Set theory seminar, University of Toronto</div>
-          <div class="talk-location">Ontario, Canada</div>
-        </div>
-        <div class="talk-links">
-          <a href="/files/slides/Fields_Talk_Slides_(Mad_families).pdf" class="pub-btn slides-btn" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Presentation Slides
+            Slides
           </a>
         </div>
       </div>
@@ -185,7 +151,7 @@ permalink: /research-talks/
         <div class="talk-links">
           <a href="/files/slides/Waterloo_Talk_Slides_(wA2_Spaces).pdf" class="pub-btn slides-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Presentation Slides
+            Slides
           </a>
         </div>
       </div>
@@ -202,7 +168,7 @@ permalink: /research-talks/
         <div class="talk-links">
           <a href="/files/slides/CMS_Talk_Slides__Mathias_Silver_theorem.pdf" class="pub-btn slides-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Presentation Slides
+            Slides
           </a>
         </div>
       </div>
@@ -219,7 +185,71 @@ permalink: /research-talks/
         <div class="talk-links">
           <a href="/files/slides/UMD_Talk_Slides_(wA2_Spaces).pdf" class="pub-btn slides-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-            Presentation Slides
+            Slides
+          </a>
+        </div>
+      </div>
+
+    </div>
+</section>
+<section class="research-section">
+    <h2 class="section-title">Internal Talks</h2>
+    <div class="talks-clean-list">
+      <div class="talk-item">
+        <div class="time-marker">
+          <span class="time-date">Nov 2026</span>
+        </div>
+        <div class="talk-body">
+          <h3 class="talk-title">Projections between Ramsey quasi-orders and topological Ramsey spaces (Part 1)</h3>
+          <div class="talk-venue">Set theory seminar, University of Toronto</div>
+          <div class="talk-location">Ontario, Canada</div>
+        </div>
+        <div class="talk-links">
+          <a href="https://www.youtube.com/watch?v=3GjAZfO4H9Q" class="pub-btn youtube-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+            YouTube
+          </a>
+        </div>
+      </div>
+
+      <div class="talk-item">
+        <div class="time-marker">
+          <span class="time-date">Feb 2026</span>
+        </div>
+        <div class="talk-body">
+          <h3 class="talk-title">There is a completely separable mad family of vector spaces</h3>
+          <div class="talk-venue">Set theory seminar, University of Toronto</div>
+          <div class="talk-location">Ontario, Canada</div>
+        </div>
+        <div class="talk-links">
+          <a href="/files/slides/Fields_Talk_Slides_(CS_mad_families).pdf" class="pub-btn slides-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Slides
+          </a>
+          <a href="https://www.youtube.com/watch?v=8g16BERFnWQ" class="pub-btn youtube-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+            YouTube
+          </a>
+        </div>
+      </div>
+
+      <div class="talk-item">
+        <div class="time-marker">
+          <span class="time-date">Mar 2025</span>
+        </div>
+        <div class="talk-body">
+          <h3 class="talk-title">Mad families of vector spaces</h3>
+          <div class="talk-venue">Set theory seminar, University of Toronto</div>
+          <div class="talk-location">Ontario, Canada</div>
+        </div>
+        <div class="talk-links">
+          <a href="/files/slides/Fields_Talk_Slides_(Mad_families).pdf" class="pub-btn slides-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16V4a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Slides
+          </a>
+          <a href="https://www.youtube.com/watch?v=-qWLRq8hbD0" class="pub-btn youtube-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+            YouTube
           </a>
         </div>
       </div>
@@ -351,7 +381,7 @@ permalink: /research-talks/
     color: #006ddb;
   }
   html[data-theme="dark"] .status-badge.success {
-    background: rgba(10a, 132, 255, 0.15);
+    background: rgba(10, 132, 255, 0.15);
     color: #5ea7ff;
   }
 
@@ -436,6 +466,7 @@ permalink: /research-talks/
     flex: 0 0 auto;
     display: flex;
     justify-content: flex-end;
+    gap: 8px;
   }
 
   .talk-item > .talk-links {
@@ -456,10 +487,13 @@ permalink: /research-talks/
     border: 1px solid var(--border-color);
   }
 
-  /* SPECIFIC REFINEMENT: Normal state typography rules requested */
   .arxiv-btn {
+    box-sizing: border-box;
+    min-width: 180px;
+    justify-content: center;
+    font-variant-numeric: tabular-nums;
     background: rgba(179, 27, 27, 0.05);
-    color: #4a4a4a; /* Normal state light mode: dark grey text */
+    color: #b31b1b;
     border-color: rgba(179, 27, 27, 0.2);
   }
   .arxiv-btn:hover {
@@ -469,7 +503,7 @@ permalink: /research-talks/
   }
   html[data-theme="dark"] .arxiv-btn {
     background: rgba(255, 100, 100, 0.08);
-    color: #b0b0b0; /* Normal state dark mode: highly visible but non-flashy grey text */
+    color: #ff6464;
     border-color: rgba(255, 100, 100, 0.25);
   }
   html[data-theme="dark"] .arxiv-btn:hover {
@@ -494,6 +528,26 @@ permalink: /research-talks/
   }
   html[data-theme="dark"] .slides-btn:hover {
     background: #4094ff;
+    color: #121212 !important;
+  }
+
+  .youtube-btn {
+    background: rgba(255, 0, 0, 0.05);
+    color: #cc0000;
+    border-color: rgba(255, 0, 0, 0.2);
+  }
+  .youtube-btn:hover {
+    background: #ff0000;
+    color: #ffffff !important;
+    border-color: #ff0000;
+  }
+  html[data-theme="dark"] .youtube-btn {
+    background: rgba(255, 78, 69, 0.08);
+    color: #ff4e45;
+    border-color: rgba(255, 78, 69, 0.25);
+  }
+  html[data-theme="dark"] .youtube-btn:hover {
+    background: #ff4e45;
     color: #121212 !important;
   }
 
@@ -535,6 +589,7 @@ permalink: /research-talks/
     .pub-links, .talk-item > .talk-links {
       width: 100%;
       justify-content: flex-start;
+      flex-wrap: wrap;
       min-width: 0 !important;
       margin-top: 4px;
     }

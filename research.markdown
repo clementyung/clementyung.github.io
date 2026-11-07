@@ -546,9 +546,9 @@ permalink: /research-talks/
     border-color: #0076f5;
   }
   html[data-theme="dark"] .slides-btn {
-    background: rgba(10a, 132, 255, 0.08);
+    background: rgba(10, 132, 255, 0.08);
     color: #4094ff;
-    border-color: rgba(10a, 132, 255, 0.25);
+    border-color: rgba(10, 132, 255, 0.25);
   }
   html[data-theme="dark"] .slides-btn:hover {
     background: #4094ff;

@@ -14,7 +14,7 @@ permalink: /research-talks/
       <div class="publication-item">
         <div class="pub-content">
           <h3 class="pub-title">
-            Projections between topological Ramsey spaces
+            Projections between Ramsey quasi-orders and topological Ramsey spaces
             <span class="status-badge preparation">In Preparation</span>
           </h3>
           <div class="pub-authors">

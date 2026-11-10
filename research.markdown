@@ -15,12 +15,17 @@ permalink: /research-talks/
         <div class="pub-content">
           <h3 class="pub-title">
             Projections between Ramsey quasi-orders and topological Ramsey spaces
-            <span class="status-badge preparation">In Preparation</span>
           </h3>
           <div class="pub-authors">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="author-icon"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             with Spencer Unger
           </div>
+        </div>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2611.12505" class="pub-btn arxiv-btn" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+            arXiv
+          </a>
         </div>
       </div>
 
@@ -38,7 +43,7 @@ permalink: /research-talks/
           </a>
           <a href="https://arxiv.org/abs/2503.24207" class="pub-btn arxiv-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-            arXiv:2503.24207
+            arXiv
           </a>
         </div>
       </div>
@@ -54,7 +59,7 @@ permalink: /research-talks/
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2410.00200" class="pub-btn arxiv-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-            arXiv:2410.00200
+            arXiv
           </a>
         </div>
       </div>
@@ -74,7 +79,7 @@ permalink: /research-talks/
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2609.11866" class="pub-btn arxiv-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-            arXiv:2609.11866
+            arXiv
           </a>
         </div>
       </div>
@@ -86,7 +91,7 @@ permalink: /research-talks/
         <div class="pub-links">
           <a href="https://arxiv.org/abs/2402.07836" class="pub-btn arxiv-btn" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
-            arXiv:2402.07836
+            arXiv
           </a>
         </div>
       </div>
@@ -495,7 +500,6 @@ permalink: /research-talks/
   }
 
   .arxiv-btn {
-    font-variant-numeric: tabular-nums;
     background: rgba(179, 27, 27, 0.05);
     color: #b31b1b !important;
     border-color: rgba(179, 27, 27, 0.2);

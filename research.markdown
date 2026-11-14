@@ -498,13 +498,17 @@ permalink: /research-talks/
   }
 
   .talk-links-stacked {
-    flex-direction: column;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
   }
 
   .talk-links-row {
-    display: flex;
-    gap: 8px;
+    display: contents;
+  }
+
+  .talk-links-stacked .pub-btn {
+    justify-content: center;
   }
 
   .pub-btn {
@@ -644,6 +648,6 @@ permalink: /research-talks/
     }
 
     .talk-links-stacked {
-      align-items: flex-start;
+      justify-content: start;
     }
   }

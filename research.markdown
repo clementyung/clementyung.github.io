@@ -69,7 +69,7 @@ permalink: /research-talks/
 <section class="research-section">
     <h2 class="section-title">Notes</h2>
     <p class="section-desc">
-      This collection of side projects presents results I obtained while working on interesting problems that arose during my research.
+      These are some secondary results I obtained while working on some problems that arose during my research.
     </p>
     <div class="publication-list">
       <div class="publication-item">
